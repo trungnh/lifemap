@@ -1,0 +1,8 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:dbname=lifemap_new;host=localhost;port=3306'
+      username: root
+      encoding: utf8
+      attributes: { 164: true }

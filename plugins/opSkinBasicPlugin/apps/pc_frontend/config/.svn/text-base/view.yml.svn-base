@@ -1,0 +1,3 @@
+default:
+  stylesheets:    [/opSkinBasicPlugin/css/main.css,/opSkinBasicPlugin/css/colorbox]
+  javascripts: [/opSkinBasicPlugin/js/jquery/jquery-1.7.min.js,/opSkinBasicPlugin/js/jquery/jquery.colorbox.js,/opSkinBasicPlugin/js/jquery/jquery.cookies.js, /opSkinBasicPlugin/js/all]

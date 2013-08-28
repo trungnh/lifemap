@@ -1,0 +1,18 @@
+all:
+  stylesheets: [/opSkinBasicPlugin/css/maps,/opSkinBasicPlugin/css/community,/opSkinBasicPlugin/css/colorbox]
+  javascripts: [http://maps.googleapis.com/maps/api/js?sensor=true&v=3&libraries=geometry&language=vi]
+#  layout: layoutE
+
+homeSuccess:
+  javascripts: [/opSkinBasicPlugin/js/ejs/ejs_production,/opSkinBasicPlugin/js/pos_search,/opSkinBasicPlugin/js/ajaxupload.3.5.js,/opSkinBasicPlugin/js/jquery/jquery-ui-1.8.16.custom.min.js]
+  stylesheets: []
+  layout: layoutE
+  
+profileSuccess:
+  stylesheets: []
+  javascripts: [/opSkinBasicPlugin/js/ajaxupload.3.5.js,/opSkinBasicPlugin/js/loadAPos]
+
+rentHouseSuccess:
+  javascripts: [/opSkinBasicPlugin/js/ejs/ejs_production,/opSkinBasicPlugin/js/ajaxupload.3.5.js,/opSkinBasicPlugin/js/renthouse]
+  stylesheets: []
+  layout: layoutE

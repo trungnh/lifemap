@@ -1,0 +1,30 @@
+<h1><%=title%></h1>
+<ul>
+    <% for(var i=0; i<list.length; i++) { %>
+        <li class="location-item" id="location-item-<%=list[i].id%>">
+            <% if(list[i].image_checkin) { %>
+                <img class='img_40x40' src="<%='../web/cache/img/jpg/w40_h40/'+ list[i].image_checkin+ '_crop.jpg'%>" />
+            <% } else { %>
+                <img class='img_40x40' src="../web/images/no-image-yet.png" />
+            <% } %>
+            
+            <div class="right-block">
+                <div class="location-title">
+                    <%if(list[i].online_checkin){%>
+                    <a href="member/profile?id=<%=list[i].online_checkin_id%>" class="underline" target='_blank'><%=list[i].online_checkin %></a>
+                    <%}%>
+                </div>
+                <div class="location-note">
+                  Đang checkin tại:  <a href="pos/<%=list[i].id%>" target='_blank'><%=list[i].title%></a>
+                </div>
+                <div class="location-address">
+                  Địa chỉ: <%=list[i].address%>
+                </div>
+                <%latlng = list[i].lat + ',' + list[i].lng%>
+                <a href="<%='?address=' + list[i].address + '&latlng=' + latlng%>" class="start_way operation-link" >Từ đây</a>
+                <a href="<%='?address=' + list[i].address + '&latlng=' + latlng%>" class="end_way operation-link" >Đến đây</a>
+            </div>
+            <div class="clear"></div>
+        </li>
+    <% } %>
+</ul>

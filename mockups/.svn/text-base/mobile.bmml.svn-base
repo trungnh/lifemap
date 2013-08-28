@@ -1,0 +1,842 @@
+<mockup version="1.0" skin="sketch" measuredW="2081" measuredH="1178" mockupW="2026" mockupH="1158">
+  <controls>
+    <control controlID="21" controlTypeID="__group__" x="55" y="20" w="2026" h="1158" measuredW="2026" measuredH="1158" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="13" controlTypeID="__group__" x="0" y="0" w="2026" h="1158" measuredW="2026" measuredH="1158" zOrder="0" locked="false" isInGroup="21">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="51" y="8" w="311" h="556" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="13"/>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::PointyButton" x="86" y="116" w="-1" h="-1" measuredW="37" measuredH="27" zOrder="1" locked="false" isInGroup="13">
+              <controlProperties>
+                <direction>left</direction>
+                <icon>HLinesIcon%7Cxsmall</icon>
+                <size>11</size>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="__group__" x="80" y="422" w="250" h="50" measuredW="250" measuredH="50" zOrder="2" locked="false" isInGroup="13">
+              <groupChildrenDescriptors>
+                <control controlID="5" controlTypeID="__group__" x="0" y="0" w="250" h="50" measuredW="250" measuredH="50" zOrder="0" locked="false" isInGroup="2">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="com.balsamiq.mockups::IconLabel" x="0" y="0" w="48" h="-1" measuredW="38" measuredH="50" zOrder="0" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>10027263</color>
+                        <icon>UsersIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Ban%20be</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::IconLabel" x="43" y="0" w="59" h="-1" measuredW="48" measuredH="50" zOrder="1" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <icon>SearchIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Tim%20kiem</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::IconLabel" x="92" y="0" w="59" h="-1" measuredW="49" measuredH="50" zOrder="2" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>2848996</color>
+                        <icon>CheckMarkIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Check-in</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::IconLabel" x="142" y="0" w="59" h="-1" measuredW="41" measuredH="50" zOrder="3" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>14706278</color>
+                        <icon>ThumbsUpIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Follows</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="191" y="0" w="59" h="-1" measuredW="32" measuredH="50" zOrder="4" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>2575891</color>
+                        <icon>UserIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>thuclh</text>
+                        <underline>false</underline>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Map" x="85" y="147" w="238" h="269" measuredW="252" measuredH="222" zOrder="3" locked="false" isInGroup="13"/>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::SearchBox" x="137" y="116" w="178" h="-1" measuredW="174" measuredH="25" zOrder="4" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Tim%20kiem%20o%20khu%20vuc%20lan%20can</text>
+              </controlProperties>
+            </control>
+            <control controlID="5" controlTypeID="com.balsamiq.mockups::IconLabel" x="159" y="244" w="-1" h="-1" measuredW="75" measuredH="53" zOrder="5" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>10027008</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>Vi%20tri%20hien%20tai</text>
+              </controlProperties>
+            </control>
+            <control controlID="6" controlTypeID="com.balsamiq.mockups::Tooltip" x="298" y="469" w="110" h="67" measuredW="91" measuredH="67" zOrder="6" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Vao%20trang%20profile%20ca%20nhan</text>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::Tooltip" x="243" y="364" w="110" h="67" measuredW="107" measuredH="67" zOrder="7" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Danh%20sach%20cac%20dia%20diem%20follow</text>
+                <tooltipDirection>SW</tooltipDirection>
+              </controlProperties>
+            </control>
+            <control controlID="8" controlTypeID="com.balsamiq.mockups::Tooltip" x="180" y="470" w="110" h="67" measuredW="109" measuredH="67" zOrder="8" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Check-in%20vao%20dia%20diem</text>
+                <tooltipDirection>NW</tooltipDirection>
+              </controlProperties>
+            </control>
+            <control controlID="9" controlTypeID="com.balsamiq.mockups::Tooltip" x="49" y="355" w="110" h="67" measuredW="107" measuredH="67" zOrder="9" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Tim%20kiem%20dia%20diem</text>
+                <tooltipDirection>SE</tooltipDirection>
+              </controlProperties>
+            </control>
+            <control controlID="10" controlTypeID="com.balsamiq.mockups::Tooltip" x="0" y="468" w="110" h="67" measuredW="107" measuredH="67" zOrder="10" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Danh%20sach%20cac%20dia%20diem%20ban%20be</text>
+                <tooltipDirection>NE</tooltipDirection>
+              </controlProperties>
+            </control>
+            <control controlID="11" controlTypeID="com.balsamiq.mockups::Tooltip" x="0" y="143" w="110" h="86" measuredW="106" measuredH="86" zOrder="11" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Hien%20thi%20ket%20qua%20tim%20kiem%20theo%20danh%20sach</text>
+                <tooltipDirection>NE</tooltipDirection>
+              </controlProperties>
+            </control>
+            <control controlID="24" controlTypeID="com.balsamiq.mockups::iPhone" x="485" y="8" w="311" h="556" measuredW="282" measuredH="510" zOrder="12" locked="false" isInGroup="13"/>
+            <control controlID="25" controlTypeID="com.balsamiq.mockups::PointyButton" x="520" y="116" w="-1" h="-1" measuredW="37" measuredH="27" zOrder="13" locked="false" isInGroup="13">
+              <controlProperties>
+                <direction>left</direction>
+                <icon>HLinesIcon%7Cxsmall</icon>
+                <size>11</size>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="26" controlTypeID="__group__" x="514" y="422" w="250" h="50" measuredW="250" measuredH="50" zOrder="14" locked="false" isInGroup="13">
+              <groupChildrenDescriptors>
+                <control controlID="5" controlTypeID="__group__" x="0" y="0" w="250" h="50" measuredW="250" measuredH="50" zOrder="0" locked="false" isInGroup="26">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="com.balsamiq.mockups::IconLabel" x="0" y="0" w="48" h="-1" measuredW="38" measuredH="50" zOrder="0" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>10027263</color>
+                        <icon>UsersIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Ban%20be</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::IconLabel" x="43" y="0" w="59" h="-1" measuredW="48" measuredH="50" zOrder="1" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <icon>SearchIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Tim%20kiem</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::IconLabel" x="92" y="0" w="59" h="-1" measuredW="49" measuredH="50" zOrder="2" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>2848996</color>
+                        <icon>CheckMarkIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Check-in</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::IconLabel" x="142" y="0" w="59" h="-1" measuredW="41" measuredH="50" zOrder="3" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>14706278</color>
+                        <icon>ThumbsUpIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Follows</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="191" y="0" w="59" h="-1" measuredW="32" measuredH="50" zOrder="4" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>2575891</color>
+                        <icon>UserIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>thuclh</text>
+                        <underline>false</underline>
+                      </controlProperties>
+                    </control>
+                    <control controlID="5" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="59" h="50" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <backgroundAlpha>0.25</backgroundAlpha>
+                        <borderStyle>roundedSolid</borderStyle>
+                        <color>15658734</color>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="27" controlTypeID="com.balsamiq.mockups::Map" x="519" y="147" w="238" h="269" measuredW="252" measuredH="222" zOrder="15" locked="false" isInGroup="13"/>
+            <control controlID="28" controlTypeID="com.balsamiq.mockups::SearchBox" x="571" y="116" w="178" h="-1" measuredW="174" measuredH="25" zOrder="16" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Tim%20kiem%20o%20khu%20vuc%20lan%20can</text>
+              </controlProperties>
+            </control>
+            <control controlID="36" controlTypeID="com.balsamiq.mockups::IconLabel" x="624" y="243" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="17" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>10027008</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="37" controlTypeID="com.balsamiq.mockups::IconLabel" x="565" y="220" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="18" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="39" controlTypeID="com.balsamiq.mockups::IconLabel" x="597" y="185" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="19" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="40" controlTypeID="com.balsamiq.mockups::IconLabel" x="644" y="191" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="20" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="41" controlTypeID="com.balsamiq.mockups::IconLabel" x="586" y="273" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="21" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="42" controlTypeID="com.balsamiq.mockups::IconLabel" x="685" y="205" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="22" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="43" controlTypeID="com.balsamiq.mockups::IconLabel" x="656" y="288" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="23" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="44" controlTypeID="com.balsamiq.mockups::IconLabel" x="612" y="302" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="24" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="46" controlTypeID="com.balsamiq.mockups::Tooltip" x="597" y="238" w="88" h="41" measuredW="81" measuredH="41" zOrder="25" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>cuongnh</text>
+                <tooltipDirection>SW</tooltipDirection>
+              </controlProperties>
+            </control>
+            <control controlID="47" controlTypeID="com.balsamiq.mockups::Icon" x="664" y="246" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="26" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>RightFillTriangleIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="48" controlTypeID="com.balsamiq.mockups::Label" x="534" y="272" w="221" h="26" measuredW="221" measuredH="21" zOrder="27" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Chuyen%20sang%20trang%20profile%20cua%20cuongnh</text>
+              </controlProperties>
+            </control>
+            <control controlID="49" controlTypeID="com.balsamiq.mockups::iPhone" x="908" y="8" w="311" h="556" measuredW="282" measuredH="510" zOrder="28" locked="false" isInGroup="13"/>
+            <control controlID="50" controlTypeID="com.balsamiq.mockups::PointyButton" x="943" y="116" w="-1" h="-1" measuredW="37" measuredH="27" zOrder="29" locked="false" isInGroup="13">
+              <controlProperties>
+                <direction>left</direction>
+                <icon>HLinesIcon%7Cxsmall</icon>
+                <size>11</size>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="51" controlTypeID="__group__" x="937" y="422" w="250" h="50" measuredW="250" measuredH="50" zOrder="30" locked="false" isInGroup="13">
+              <groupChildrenDescriptors>
+                <control controlID="5" controlTypeID="__group__" x="0" y="0" w="250" h="50" measuredW="250" measuredH="50" zOrder="0" locked="false" isInGroup="51">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="com.balsamiq.mockups::IconLabel" x="0" y="0" w="48" h="-1" measuredW="38" measuredH="50" zOrder="0" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>10027263</color>
+                        <icon>UsersIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Ban%20be</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::IconLabel" x="43" y="0" w="59" h="-1" measuredW="48" measuredH="50" zOrder="1" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <icon>SearchIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Tim%20kiem</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::IconLabel" x="92" y="0" w="59" h="-1" measuredW="49" measuredH="50" zOrder="2" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>2848996</color>
+                        <icon>CheckMarkIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Check-in</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::IconLabel" x="142" y="0" w="59" h="-1" measuredW="41" measuredH="50" zOrder="3" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>14706278</color>
+                        <icon>ThumbsUpIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Follows</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="191" y="0" w="59" h="-1" measuredW="32" measuredH="50" zOrder="4" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>2575891</color>
+                        <icon>UserIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>thuclh</text>
+                        <underline>false</underline>
+                      </controlProperties>
+                    </control>
+                    <control controlID="5" controlTypeID="com.balsamiq.mockups::Canvas" x="42" y="0" w="59" h="50" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <backgroundAlpha>0.25</backgroundAlpha>
+                        <borderStyle>roundedSolid</borderStyle>
+                        <color>15658734</color>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="52" controlTypeID="com.balsamiq.mockups::Map" x="942" y="147" w="238" h="269" measuredW="252" measuredH="222" zOrder="31" locked="false" isInGroup="13"/>
+            <control controlID="53" controlTypeID="com.balsamiq.mockups::SearchBox" x="994" y="116" w="178" h="-1" measuredW="61" measuredH="25" zOrder="32" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>bia%20hoi</text>
+              </controlProperties>
+            </control>
+            <control controlID="54" controlTypeID="com.balsamiq.mockups::IconLabel" x="1047" y="243" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="33" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>10027008</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="55" controlTypeID="com.balsamiq.mockups::IconLabel" x="988" y="220" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="34" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="56" controlTypeID="com.balsamiq.mockups::IconLabel" x="1020" y="185" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="35" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="57" controlTypeID="com.balsamiq.mockups::IconLabel" x="1067" y="191" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="36" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="58" controlTypeID="com.balsamiq.mockups::IconLabel" x="1009" y="273" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="37" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="59" controlTypeID="com.balsamiq.mockups::IconLabel" x="1108" y="205" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="38" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="60" controlTypeID="com.balsamiq.mockups::IconLabel" x="1079" y="288" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="39" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="61" controlTypeID="com.balsamiq.mockups::IconLabel" x="1035" y="302" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="40" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="62" controlTypeID="com.balsamiq.mockups::Tooltip" x="1020" y="238" w="124" h="41" measuredW="122" measuredH="41" zOrder="41" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>bia%20hoi%20hieu%20beo</text>
+                <tooltipDirection>SW</tooltipDirection>
+              </controlProperties>
+            </control>
+            <control controlID="63" controlTypeID="com.balsamiq.mockups::Icon" x="1124" y="246" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="42" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>RightFillTriangleIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="64" controlTypeID="com.balsamiq.mockups::Label" x="957" y="272" w="245" h="26" measuredW="224" measuredH="21" zOrder="43" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Chuyen%20sang%20trang%20profile%20cua%20dia%20diem</text>
+              </controlProperties>
+            </control>
+            <control controlID="65" controlTypeID="com.balsamiq.mockups::iPhone" x="1314" y="8" w="311" h="556" measuredW="282" measuredH="510" zOrder="44" locked="false" isInGroup="13"/>
+            <control controlID="66" controlTypeID="com.balsamiq.mockups::PointyButton" x="1538" y="115" w="-1" h="-1" measuredW="37" measuredH="27" zOrder="45" locked="false" isInGroup="13">
+              <controlProperties>
+                <direction>right</direction>
+                <icon>WriteIcon%7Cxsmall</icon>
+                <size>11</size>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="67" controlTypeID="__group__" x="1343" y="422" w="250" h="50" measuredW="250" measuredH="50" zOrder="46" locked="false" isInGroup="13">
+              <groupChildrenDescriptors>
+                <control controlID="5" controlTypeID="__group__" x="0" y="0" w="250" h="50" measuredW="250" measuredH="50" zOrder="0" locked="false" isInGroup="67">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="com.balsamiq.mockups::IconLabel" x="0" y="0" w="48" h="-1" measuredW="38" measuredH="50" zOrder="0" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>10027263</color>
+                        <icon>UsersIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Ban%20be</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::IconLabel" x="43" y="0" w="59" h="-1" measuredW="48" measuredH="50" zOrder="1" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <icon>SearchIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Tim%20kiem</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::IconLabel" x="92" y="0" w="59" h="-1" measuredW="49" measuredH="50" zOrder="2" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>2848996</color>
+                        <icon>CheckMarkIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Check-in</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::IconLabel" x="142" y="0" w="59" h="-1" measuredW="41" measuredH="50" zOrder="3" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>14706278</color>
+                        <icon>ThumbsUpIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Follows</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="191" y="0" w="59" h="-1" measuredW="32" measuredH="50" zOrder="4" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>2575891</color>
+                        <icon>UserIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>thuclh</text>
+                        <underline>false</underline>
+                      </controlProperties>
+                    </control>
+                    <control controlID="5" controlTypeID="com.balsamiq.mockups::Canvas" x="92" y="0" w="59" h="50" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <backgroundAlpha>0.25</backgroundAlpha>
+                        <borderStyle>roundedSolid</borderStyle>
+                        <color>15658734</color>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="69" controlTypeID="com.balsamiq.mockups::SearchBox" x="1353" y="116" w="178" h="-1" measuredW="61" measuredH="25" zOrder="47" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>bia%20hoi</text>
+              </controlProperties>
+            </control>
+            <control controlID="81" controlTypeID="com.balsamiq.mockups::Canvas" x="1345" y="146" w="245" h="51" measuredW="100" measuredH="70" zOrder="48" locked="false" isInGroup="13">
+              <controlProperties>
+                <backgroundAlpha>0.5</backgroundAlpha>
+              </controlProperties>
+            </control>
+            <control controlID="82" controlTypeID="com.balsamiq.mockups::Label" x="1351" y="151" w="-1" h="-1" measuredW="147" measuredH="21" zOrder="49" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Bia%20hoi%20hieu%20beo%20%20%28100%20m%29</text>
+              </controlProperties>
+            </control>
+            <control controlID="83" controlTypeID="com.balsamiq.mockups::Label" x="1351" y="169" w="-1" h="-1" measuredW="199" measuredH="18" zOrder="50" locked="false" isInGroup="13">
+              <controlProperties>
+                <size>11</size>
+                <text>So%20195%2C%20duong%20Xa%20Dan%2C%20Dong%20Da%2C%20Ha%20noi</text>
+              </controlProperties>
+            </control>
+            <control controlID="84" controlTypeID="com.balsamiq.mockups::Icon" x="1565" y="153" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="51" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>RightFillTriangleIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="85" controlTypeID="com.balsamiq.mockups::Canvas" x="1345" y="196" w="245" h="51" measuredW="100" measuredH="70" zOrder="52" locked="false" isInGroup="13">
+              <controlProperties>
+                <backgroundAlpha>0.5</backgroundAlpha>
+              </controlProperties>
+            </control>
+            <control controlID="86" controlTypeID="com.balsamiq.mockups::Label" x="1351" y="201" w="-1" h="-1" measuredW="147" measuredH="21" zOrder="53" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Bia%20hoi%20hieu%20beo%20%20%28100%20m%29</text>
+              </controlProperties>
+            </control>
+            <control controlID="87" controlTypeID="com.balsamiq.mockups::Label" x="1351" y="219" w="-1" h="-1" measuredW="199" measuredH="18" zOrder="54" locked="false" isInGroup="13">
+              <controlProperties>
+                <size>11</size>
+                <text>So%20195%2C%20duong%20Xa%20Dan%2C%20Dong%20Da%2C%20Ha%20noi</text>
+              </controlProperties>
+            </control>
+            <control controlID="88" controlTypeID="com.balsamiq.mockups::Icon" x="1565" y="203" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="55" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>RightFillTriangleIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="89" controlTypeID="com.balsamiq.mockups::Canvas" x="1345" y="246" w="245" h="51" measuredW="100" measuredH="70" zOrder="56" locked="false" isInGroup="13">
+              <controlProperties>
+                <backgroundAlpha>0.5</backgroundAlpha>
+              </controlProperties>
+            </control>
+            <control controlID="90" controlTypeID="com.balsamiq.mockups::Label" x="1351" y="251" w="-1" h="-1" measuredW="147" measuredH="21" zOrder="57" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Bia%20hoi%20hieu%20beo%20%20%28100%20m%29</text>
+              </controlProperties>
+            </control>
+            <control controlID="91" controlTypeID="com.balsamiq.mockups::Label" x="1351" y="269" w="-1" h="-1" measuredW="199" measuredH="18" zOrder="58" locked="false" isInGroup="13">
+              <controlProperties>
+                <size>11</size>
+                <text>So%20195%2C%20duong%20Xa%20Dan%2C%20Dong%20Da%2C%20Ha%20noi</text>
+              </controlProperties>
+            </control>
+            <control controlID="92" controlTypeID="com.balsamiq.mockups::Icon" x="1565" y="253" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="59" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>RightFillTriangleIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="93" controlTypeID="com.balsamiq.mockups::Canvas" x="1345" y="296" w="245" h="51" measuredW="100" measuredH="70" zOrder="60" locked="false" isInGroup="13">
+              <controlProperties>
+                <backgroundAlpha>0.5</backgroundAlpha>
+              </controlProperties>
+            </control>
+            <control controlID="94" controlTypeID="com.balsamiq.mockups::Label" x="1351" y="301" w="-1" h="-1" measuredW="147" measuredH="21" zOrder="61" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Bia%20hoi%20hieu%20beo%20%20%28100%20m%29</text>
+              </controlProperties>
+            </control>
+            <control controlID="95" controlTypeID="com.balsamiq.mockups::Label" x="1351" y="319" w="-1" h="-1" measuredW="199" measuredH="18" zOrder="62" locked="false" isInGroup="13">
+              <controlProperties>
+                <size>11</size>
+                <text>So%20195%2C%20duong%20Xa%20Dan%2C%20Dong%20Da%2C%20Ha%20noi</text>
+              </controlProperties>
+            </control>
+            <control controlID="96" controlTypeID="com.balsamiq.mockups::Icon" x="1565" y="303" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="63" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>RightFillTriangleIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="97" controlTypeID="com.balsamiq.mockups::Canvas" x="1345" y="346" w="245" h="51" measuredW="100" measuredH="70" zOrder="64" locked="false" isInGroup="13">
+              <controlProperties>
+                <backgroundAlpha>0.5</backgroundAlpha>
+              </controlProperties>
+            </control>
+            <control controlID="98" controlTypeID="com.balsamiq.mockups::Label" x="1351" y="351" w="-1" h="-1" measuredW="147" measuredH="21" zOrder="65" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Bia%20hoi%20hieu%20beo%20%20%28100%20m%29</text>
+              </controlProperties>
+            </control>
+            <control controlID="99" controlTypeID="com.balsamiq.mockups::Label" x="1351" y="369" w="-1" h="-1" measuredW="199" measuredH="18" zOrder="66" locked="false" isInGroup="13">
+              <controlProperties>
+                <size>11</size>
+                <text>So%20195%2C%20duong%20Xa%20Dan%2C%20Dong%20Da%2C%20Ha%20noi</text>
+              </controlProperties>
+            </control>
+            <control controlID="100" controlTypeID="com.balsamiq.mockups::Icon" x="1565" y="353" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="67" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>RightFillTriangleIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="101" controlTypeID="com.balsamiq.mockups::Paragraph" x="345" y="48" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="68" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Bia%20hoi%20hieu%20beo%20%20%28100%20m%29</text>
+              </controlProperties>
+            </control>
+            <control controlID="102" controlTypeID="com.balsamiq.mockups::Paragraph" x="345" y="108" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="69" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Bia%20hoi%20hieu%20beo%20%20%28100%20m%29</text>
+              </controlProperties>
+            </control>
+            <control controlID="128" controlTypeID="com.balsamiq.mockups::iPhone" x="1715" y="0" w="311" h="556" measuredW="282" measuredH="510" zOrder="70" locked="false" isInGroup="13"/>
+            <control controlID="129" controlTypeID="com.balsamiq.mockups::PointyButton" x="1750" y="108" w="-1" h="-1" measuredW="37" measuredH="27" zOrder="71" locked="false" isInGroup="13">
+              <controlProperties>
+                <direction>left</direction>
+                <icon>HLinesIcon%7Cxsmall</icon>
+                <size>11</size>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="130" controlTypeID="__group__" x="1744" y="414" w="250" h="50" measuredW="250" measuredH="50" zOrder="72" locked="false" isInGroup="13">
+              <groupChildrenDescriptors>
+                <control controlID="5" controlTypeID="__group__" x="0" y="0" w="250" h="50" measuredW="250" measuredH="50" zOrder="0" locked="false" isInGroup="130">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="com.balsamiq.mockups::IconLabel" x="0" y="0" w="48" h="-1" measuredW="38" measuredH="50" zOrder="0" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>10027263</color>
+                        <icon>UsersIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Ban%20be</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::IconLabel" x="43" y="0" w="59" h="-1" measuredW="48" measuredH="50" zOrder="1" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <icon>SearchIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Tim%20kiem</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::IconLabel" x="92" y="0" w="59" h="-1" measuredW="49" measuredH="50" zOrder="2" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>2848996</color>
+                        <icon>CheckMarkIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Check-in</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::IconLabel" x="142" y="0" w="59" h="-1" measuredW="41" measuredH="50" zOrder="3" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>14706278</color>
+                        <icon>ThumbsUpIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Follows</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="191" y="0" w="59" h="-1" measuredW="32" measuredH="50" zOrder="4" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>2575891</color>
+                        <icon>UserIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>thuclh</text>
+                        <underline>false</underline>
+                      </controlProperties>
+                    </control>
+                    <control controlID="5" controlTypeID="com.balsamiq.mockups::Canvas" x="142" y="0" w="59" h="50" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <backgroundAlpha>0.25</backgroundAlpha>
+                        <borderStyle>roundedSolid</borderStyle>
+                        <color>15658734</color>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="131" controlTypeID="com.balsamiq.mockups::Map" x="1749" y="139" w="238" h="269" measuredW="252" measuredH="222" zOrder="73" locked="false" isInGroup="13"/>
+            <control controlID="132" controlTypeID="com.balsamiq.mockups::SearchBox" x="1801" y="108" w="178" h="-1" measuredW="61" measuredH="25" zOrder="74" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>bia%20hoi</text>
+              </controlProperties>
+            </control>
+            <control controlID="133" controlTypeID="com.balsamiq.mockups::IconLabel" x="1854" y="235" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="75" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>10027008</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="134" controlTypeID="com.balsamiq.mockups::IconLabel" x="1795" y="212" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="76" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="135" controlTypeID="com.balsamiq.mockups::IconLabel" x="1827" y="177" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="77" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="136" controlTypeID="com.balsamiq.mockups::IconLabel" x="1874" y="183" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="78" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="137" controlTypeID="com.balsamiq.mockups::IconLabel" x="1816" y="265" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="79" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="138" controlTypeID="com.balsamiq.mockups::IconLabel" x="1915" y="197" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="80" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="139" controlTypeID="com.balsamiq.mockups::IconLabel" x="1886" y="280" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="81" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="140" controlTypeID="com.balsamiq.mockups::IconLabel" x="1842" y="294" w="-1" h="-1" measuredW="32" measuredH="53" zOrder="82" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>FlagIcon%7Cmedium</icon>
+                <text>%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="141" controlTypeID="com.balsamiq.mockups::Tooltip" x="1827" y="230" w="124" h="41" measuredW="122" measuredH="41" zOrder="83" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>bia%20hoi%20hieu%20beo</text>
+                <tooltipDirection>SW</tooltipDirection>
+              </controlProperties>
+            </control>
+            <control controlID="142" controlTypeID="com.balsamiq.mockups::Icon" x="1931" y="238" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="84" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>RightFillTriangleIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="143" controlTypeID="com.balsamiq.mockups::Label" x="1764" y="264" w="245" h="26" measuredW="224" measuredH="21" zOrder="85" locked="false" isInGroup="13">
+              <controlProperties>
+                <text>Chuyen%20sang%20trang%20profile%20cua%20dia%20diem</text>
+              </controlProperties>
+            </control>
+            <control controlID="144" controlTypeID="com.balsamiq.mockups::iPhone" x="51" y="602" w="311" h="556" measuredW="282" measuredH="510" zOrder="86" locked="false" isInGroup="13"/>
+            <control controlID="145" controlTypeID="com.balsamiq.mockups::PointyButton" x="88" y="713" w="-1" h="-1" measuredW="37" measuredH="27" zOrder="87" locked="false" isInGroup="13">
+              <controlProperties>
+                <direction>left</direction>
+                <icon>WriteIcon%7Cxsmall</icon>
+                <size>11</size>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="146" controlTypeID="__group__" x="75" y="844" w="255" h="222" measuredW="255" measuredH="222" zOrder="88" locked="false" isInGroup="13">
+              <groupChildrenDescriptors>
+                <control controlID="5" controlTypeID="__group__" x="0" y="172" w="255" h="50" measuredW="255" measuredH="50" zOrder="0" locked="false" isInGroup="146">
+                  <groupChildrenDescriptors>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::IconLabel" x="0" y="0" w="59" h="-1" measuredW="41" measuredH="50" zOrder="0" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <icon>SearchIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Chia%20se</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::IconLabel" x="63" y="0" w="59" h="-1" measuredW="49" measuredH="50" zOrder="1" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>2848996</color>
+                        <icon>CheckMarkIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Check-in</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::IconLabel" x="137" y="0" w="59" h="-1" measuredW="41" measuredH="50" zOrder="2" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>14706278</color>
+                        <icon>ThumbsUpIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>Follows</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="196" y="0" w="59" h="-1" measuredW="32" measuredH="50" zOrder="3" locked="false" isInGroup="5">
+                      <controlProperties>
+                        <color>2575891</color>
+                        <icon>UserIcon%7Cmedium</icon>
+                        <size>11</size>
+                        <text>thuclh</text>
+                        <underline>false</underline>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+                <control controlID="6" controlTypeID="com.balsamiq.mockups::Canvas" x="7" y="19" w="247" h="42" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="146"/>
+                <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="10" y="0" w="-1" h="-1" measuredW="110" measuredH="21" zOrder="2" locked="false" isInGroup="146">
+                  <controlProperties>
+                    <text>3%20thanh%20vien%2C%201%20ban</text>
+                  </controlProperties>
+                </control>
+                <control controlID="8" controlTypeID="com.balsamiq.mockups::Canvas" x="7" y="80" w="247" h="42" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="146"/>
+                <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="10" y="61" w="-1" h="-1" measuredW="71" measuredH="21" zOrder="4" locked="false" isInGroup="146">
+                  <controlProperties>
+                    <text>7%20comment</text>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="169" controlTypeID="com.balsamiq.mockups::SubTitle" x="130" y="713" w="-1" h="-1" measuredW="142" measuredH="28" zOrder="89" locked="false" isInGroup="13">
+              <controlProperties>
+                <size>20</size>
+                <text>Bia%20hoi%20hieu%20beo</text>
+              </controlProperties>
+            </control>
+            <control controlID="170" controlTypeID="com.balsamiq.mockups::Image" x="92" y="749" w="61" h="63" measuredW="77" measuredH="79" zOrder="90" locked="false" isInGroup="13"/>
+            <control controlID="171" controlTypeID="com.balsamiq.mockups::Icon" x="307" y="878" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="91" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>RightFillTriangleIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="172" controlTypeID="com.balsamiq.mockups::Icon" x="303" y="938" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="92" locked="false" isInGroup="13">
+              <controlProperties>
+                <color>2575891</color>
+                <icon>RightFillTriangleIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="14" controlTypeID="com.balsamiq.mockups::Label" x="153" y="749" w="169" h="37" measuredW="224" measuredH="21" zOrder="1" locked="false" isInGroup="21">
+          <controlProperties>
+            <text>So%20193%20duong%20Xa%20Dan%2C%20Dong%20Da%2C%20Ha%20noi</text>
+          </controlProperties>
+        </control>
+        <control controlID="15" controlTypeID="com.balsamiq.mockups::SubTitle" x="153" y="788" w="123" h="-1" measuredW="101" measuredH="22" zOrder="2" locked="false" isInGroup="21">
+          <controlProperties>
+            <size>14</size>
+            <text>04387647837</text>
+          </controlProperties>
+        </control>
+        <control controlID="16" controlTypeID="com.balsamiq.mockups::Icon" x="251" y="789" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="21">
+          <controlProperties>
+            <icon>TelephoneIcon%7Cxsmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="26" controlTypeID="com.balsamiq.mockups::Canvas" x="81" y="963" w="248" h="46" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="21"/>
+        <control controlID="28" controlTypeID="com.balsamiq.mockups::Image" x="138" y="867" w="34" h="33" measuredW="77" measuredH="79" zOrder="5" locked="false" isInGroup="21"/>
+        <control controlID="29" controlTypeID="com.balsamiq.mockups::Image" x="96" y="868" w="34" h="33" measuredW="77" measuredH="79" zOrder="6" locked="false" isInGroup="21"/>
+        <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="178" y="866" w="34" h="33" measuredW="77" measuredH="79" zOrder="7" locked="false" isInGroup="21"/>
+        <control controlID="31" controlTypeID="com.balsamiq.mockups::Image" x="220" y="866" w="34" h="33" measuredW="77" measuredH="79" zOrder="8" locked="false" isInGroup="21"/>
+        <control controlID="32" controlTypeID="com.balsamiq.mockups::Image" x="267" y="866" w="34" h="33" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="21"/>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+      <source>Favorite</source>
+      <target>Yêu thích</target>
+      </trans-unit>
+
+      <trans-unit id="2">
+      <source>Favorite list</source>
+      <target>Danh sách yêu thích</target>
+      </trans-unit>
+
+      <trans-unit id="3">
+      <source>Show all</source>
+      <target>Xem tất cả</target>
+      </trans-unit>
+
+      <trans-unit id="4">
+      <source>The favorite newest information</source>
+      <target>Thông tin yêu thích mới nhất</target>
+      </trans-unit>
+
+      <trans-unit id="5">
+      <source>Do you add member to the favorite?</source>
+      <target>Bạn thêm người dùng vào danh sách yêu thích?</target>
+      </trans-unit>
+
+      <trans-unit id="6">
+      <source>Show detail</source>
+      <target>Xem chi tiết</target>
+      </trans-unit>
+
+      <trans-unit id="7">
+      <source>Delete</source>
+      <target>Xóa</target>
+      </trans-unit>
+
+      <trans-unit id="8">
+      <source>Nickname</source>
+      <target>Biệt danh</target>
+      </trans-unit>
+
+      <trans-unit id="9">
+      <source>The last login</source>
+      <target>Lần đăng nhập gần nhất</target>
+      </trans-unit>
+
+      <trans-unit id="10">
+      <source>yes</source>
+      <target>Có</target>
+      </trans-unit>
+
+      <trans-unit id="11">
+      <source>No</source>
+      <target>Không</target>
+      </trans-unit>
+
+      <trans-unit id="12">
+      <source>There is not registration of the favorite yet.</source>
+      <target>Chưa có thông tin yêu thích</target>
+      </trans-unit>
+
+      <trans-unit id="13">
+      <source>The favorite newest diary</source>
+      <target>Nhật ký yêu thích mới nhất</target>
+      </trans-unit>
+
+      <trans-unit id="14">
+      <source>The favorite newest blog</source>
+      <target>Blog yêu thích mới nhất</target>
+      </trans-unit>
+
+      <trans-unit id="15">
+      <source>The diary is none</source>
+      <target>Không có nhật ký</target>
+      </trans-unit>
+
+      <trans-unit id="16">
+      <source>The blog is none</source>
+      <target>Không có blog</target>
+      </trans-unit>
+
+      <trans-unit id="17">
+      <source>Add to favorite</source>
+      <target>Thêm vào yêu thích</target>
+      </trans-unit>
+
+      <trans-unit id="18">
+      <source>%s is already registered to a favorite.</source>
+      <target>%s đã được yêu thích</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

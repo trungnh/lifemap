@@ -1,0 +1,443 @@
+PosCategory:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies category"}
+    name: {type: string(255), notnull: true, comment: "name is of category"}
+    description: {type: string, comment: "desc is of category"}
+    name_table: {type: string(255), comment: "Tên bảng thuộc tính tương ứng với Category"}
+    code: {type: string(100), unique: true, notnull: true, comment: "code of pos category"}
+    parent_id: {type: integer(4),comment: "id identifies category"}
+    type: {type: integer(1),comment: ""}
+    file_id: {type: integer(4), comment: "File id"}
+    order: {type: integer(1), default: 10, comment: "File id"}
+    detail_name: {type: string(255), notnull: true, comment: "sub name is of category"}
+    view_flag: {type: integer(1), default: 1, comment: "File id"}
+  relations:
+    PosCategory: {local: parent_id, foreign: id, onDelete: cascade}
+    File: { local: file_id, foreign: id, onDelete: cascade }
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+Pos:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos"}
+    title: {type: string(255), notnull: true, comment: "title is of pos"}
+    description: {type: string, comment: "desc is of pos"}
+    address: {type: string, comment: "address is of pos"}
+    tel: {type: string(20), comment: "tel is of pos"}
+    website: {type: string(255), comment: "website is of pos"}
+    lat: {type: float(), comment: "latitude theo google map"}
+    lng: {type: float(), comment: "longitude theo google map"}
+    tags: {type: string(255), comment: "tags is of pos"}
+    file_id : {type: integer(4), comment: "File id" }
+    member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    ower_id: {type: integer(4), comment: "id is of location" }
+    pos_category_id: {type: integer(4), comment: "id identifies category"}
+    pos_sub_category_id: {type: integer(4), comment: "id identifies sub_category"}
+    is_public: {type: integer(1), notnull: true, default: '1', comment: "trang thai of pos_checkin"}
+    editer: {type: string(255), comment: "danh sach member_id duoc phep edit pos,moi member_id cach nhau bang dau phay "}
+    type: {type: integer(1),default: '1', comment: "Loại địa điểm cho thường, hay địa điểm đặc biệt"}
+    meta: {type: string, comment: "Chứa các thông tin về title, description, address, tel, website của địa điểm"}
+    del_flag: {type: integer(1),default: 0, comment: "Xóa : = 1"}
+    rank: {type: integer(4),default: 0, comment: "Xếp hạng địa điểm"}
+  relations:
+    File: { local: file_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade }
+    Member: {local: ower_id, foreign: id, onDelete: cascade }
+    PosCategory: {local: pos_category_id, foreign: id, onDelete: cascade}
+#    PosCategory: {local: pos_sub_category_id, foreign: id, onDelete: cascade}
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosRentHouse:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies posCategoryAtribute"}
+    pos_id: {type: integer(4), notnull: true, comment: " "}
+    price: {type: string(50), comment: "Giá cho thuê nhà"}
+    unit_price: {type: string(100), comment: "đơn vị giá"}
+    const_price_ranges: {type: int(1), comment: "Khoảng giá trị của giá nhà cho thuê "}
+    status: {type: integer(1), comment: "Trạng thái còn\ hết phòng"}
+    area: {type: string(50), comment: "diện tích phòng "}
+    unit_area: {type: string(100), comment: "đơn vị diện tích"}
+    num_room: {type: integer(1), comment: "Số phòng "}
+    direction: {type: string(100), comment: "hướng nhà "}
+    contact_name: {type: string(50), comment: "Tên người liên hệ"}
+    contact_email: {type: string(50), comment: "Email liên hệ"}
+    contact_tel: {type: string(20), comment: "Điện thoại liên hệ"}
+  relations:
+    Pos: { local: pos_id, foreign: id, onDelete: cascade }
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosCheckin:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_checkin"}
+    pos_id: {type: integer(4),notnull: true,comment: "id identifies pos"}
+    member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    status: {type: integer(1), notnull: true, default: '0', comment: "status is of pos_checkin"}
+    is_public: {type: integer(1), notnull: true, default: '1', comment: "trang thai of pos_checkin"}
+    pos_category_id: {type: integer(4), comment: "id identifies category"}
+  relations:
+    Pos: {local: pos_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade}
+    PosCategory: {local: pos_category_id, foreign: id, onDelete: cascade}
+
+PosComment:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_comment"}
+    pos_id: {type: integer(4),notnull: true,comment: "id identifies pos"}
+    content: {type: string, notnull: true, comment: "content is of pos_comment"}
+    member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    file_id : {type: integer(4), comment: "File id" }
+    website: {type: string(255), comment: "website is of pos"}
+    claim_status: {type: integer(1),comment: "claim_status is of pos_comment"}
+    status: {type: integer(1), notnull: true, default: '0', comment: "status is of pos_comment"}
+    pos_category_id: {type: integer(4), comment: "id identifies category"}
+  relations:
+    Pos: {local: pos_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade}
+    File: { local: file_id, foreign: id, onDelete: cascade }
+    PosCategory: {local: pos_category_id, foreign: id, onDelete: cascade}
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosFollow:
+   actAs: [Timestampable]
+   columns:
+     id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_follow"}
+     pos_id: {type: integer(4),notnull: true,comment: "id identifies pos"}
+     member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+     status: {type: integer(1), notnull: true, default: '0', comment: "status is of pos_follow"}
+     is_public: {type: integer(1), notnull: true, default: '1', comment: "trang thai of pos_checkin"}
+     pos_category_id: {type: integer(4), comment: "id identifies category"}
+   relations:
+     Pos: { local: pos_id, foreign: id, onDelete: cascade }
+     Member: {local: member_id, foreign: id, onDelete: cascade}
+     PosCategory: {local: pos_category_id, foreign: id, onDelete: cascade}
+
+PosLog:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_log"}
+    pos_id: {type: integer(4),comment: "id identifies pos"}
+    member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    object_id: {type: integer(4), comment: "id của tác động" }
+    action_name: {type: varchar(100),comment: "tên các tác động lên địa điểm"}
+    is_public: {type: integer(1), notnull: true, default: '1', comment: ""}
+  relations:
+    Pos: { local: pos_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade}
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+    
+PosPhoto:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_photo"}
+    member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    pos_id: {type: integer(4),notnull: true,comment: "id identifies pos"}
+    file_id : {type: integer(4), notnull: true, comment: "File id"}
+    claim_status: {type: integer(1),comment: "claim_status is of pos_photo"}
+    status: {type: integer(1), notnull: true, default: '0', comment: "status is of pos_photo"}
+    is_public: {type: integer(1), notnull: true, default: '1', comment: "trang thai of pos_checkin"}
+    description: {type: string, comment: "desc is of pos photo"}
+    pos_category_id: {type: integer(4), comment: "id identifies category"}
+  relations:
+    Pos: {local: pos_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade}
+    File: {local: file_id, foreign: id, onDelete: cascade }
+    PosCategory: {local: pos_category_id, foreign: id, onDelete: cascade}
+
+PosWarn:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_warn"}
+    pos_id: {type: integer(4),notnull: true,comment: "id identifies pos"}
+    member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    content: {type: string, notnull: true, comment: "content is of pos_warn"}
+  relations:
+    Pos: { local: pos_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade}
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+    
+PosSponsor:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_sponsor" }
+    pos_id: {type: integer(4), notnull: true, comment: "id identifies pos"}
+    member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    expire_date: {type: timestamp, notnull: true, comment: "ngày hết hạn tài trợ"}
+    position: {type: string(255)}
+    sort_order: {type: integer(4)}
+  relations:
+    Pos: { local: pos_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade}
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosEventCategory:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies event category"}
+    name: {type: string(100), notnull: true, comment: "name of event category" }
+    description: {type: string(300), notnull: true, comment: "des of event category " }
+    file_id : {type: integer(4), comment: "File id" }
+    sort_order: {type: integer(1), default: 10, comment: ""}
+    code: {type: string(100), unique: true, notnull: true, comment: "code of pos event category"}
+  relations:
+    File: {local: file_id, foreign: id, onDelete: cascade }
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+    
+PosEvent:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies event"}
+    pos_id: {type: integer(4), notnull: true, comment: "id is of pos" }
+    lat: {type: float(), comment: "latitude theo google map"}
+    lng: {type: float(), comment: "longitude theo google map"}
+    member_id: {type: integer(4), notnull: true, comment: "id is member" }
+    pos_event_category_id: {type: integer(4), notnull: true, comment: "id is pos event category " }
+    title: {type: string(255), notnull: true, comment: "title is of event"}
+    description: {type: string, comment: "desc is of event"}
+    website: {type: string(255), notnull: true, comment: "website of event"}
+    file_id : {type: integer(4), comment: "File id" }
+    start_time: {type: timestamp, notnull: true, comment: "Ngày bắt đầu sự kiện"}
+    end_time: {type: timestamp, notnull: true, comment: "Ngày kết thúc sự kiện"}
+    is_public: {type: integer(1), notnull: true, default: '1', comment: ""}
+    meta: {type: string, comment: "Chứa các thông tin về title, description, address, tel, website của địa điểm"}
+    del_flag: {type: integer(1),default: 0, comment: "Xóa : = 1"}
+    rank: {type: integer(4),default: 0, comment: "Xếp hạng sự kiện"}
+  relations:
+    Pos: {local: pos_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade}
+    File: {local: file_id, foreign: id, onDelete: cascade }
+    PosEventCategory: {local: pos_event_category_id, foreign: id, onDelete: cascade}
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosEventPhoto:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_photo"}
+    member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    pos_event_id: {type: integer(4),notnull: true,comment: ""}
+    file_id : {type: integer(4), notnull: true, comment: "File id"}
+    claim_status: {type: integer(1),comment: "claim_status is of pos_photo"}
+    status: {type: integer(1), notnull: true, default: '0', comment: ""}
+    is_public: {type: integer(1), notnull: true, default: '1', comment: ""}
+    description: {type: string, comment: "desc is of pos photo"}
+  relations:
+    PosEvent: {local: pos_event_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade}
+    File: {local: file_id, foreign: id, onDelete: cascade }
+
+PosEventFollow:
+   actAs: [Timestampable]
+   columns:
+     id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_follow"}
+     pos_event_id: {type: integer(4),notnull: true,comment: ""}
+     member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+     status: {type: integer(1), notnull: true, default: '0', comment: "status is of pos_follow"}
+     is_public: {type: integer(1), notnull: true, default: '1', comment: "trang thai of pos_checkin"}
+   relations:
+     PosEvent: { local: pos_event_id, foreign: id, onDelete: cascade }
+     Member: {local: member_id, foreign: id, onDelete: cascade}
+
+PosEventCheckin:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_checkin"}
+    pos_event_id: {type: integer(4),notnull: true,comment: "id identifies pos"}
+    member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    status: {type: integer(1), notnull: true, default: '0', comment: "status is of pos_checkin"}
+    is_public: {type: integer(1), notnull: true, default: '1', comment: "trang thai of pos_checkin"}
+  relations:
+    PosEvent: {local: pos_event_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade}
+
+PosEventComment:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos_comment"}
+    pos_event_id: {type: integer(4),notnull: true,comment: "id identifies pos"}
+    content: {type: string, notnull: true, comment: "content is of pos_comment"}
+    member_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    file_id : {type: integer(4), comment: "File id" }
+    website: {type: string(255), comment: "website is of pos"}
+    claim_status: {type: integer(1),comment: "claim_status is of pos_comment"}
+    status: {type: integer(1), notnull: true, default: '0', comment: "status is of pos_comment"}
+  relations:
+    PosEvent: {local: pos_event_id, foreign: id, onDelete: cascade }
+    Member: {local: member_id, foreign: id, onDelete: cascade}
+    File: {local: file_id, foreign: id, onDelete: cascade }
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosGoogle:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos"}
+    cid: {type: string(25), notnull: true, comment: "id of pos google"}
+    title: {type: string(255), notnull: true, comment: "title is of pos"}
+    description: {type: string, comment: "desc is of pos"}
+    address: {type: string, comment: "address is of pos"}
+    tel: {type: string(20), comment: "tel is of pos"}
+    website: {type: string(255), comment: "website is of pos"}
+    lat: {type: double(), comment: "latitude theo google map"}
+    lng: {type: double(), comment: "longitude theo google map"}
+    tags: {type: string(255), comment: "tags is of pos"}
+    place_url: {type: string(255), notnull: true, comment: "Place url" }
+    image_url: {type: string(255), notnull: true, comment: "File image url" }
+    category: {type: string(255), comment: "id identifies category"}
+    status: {type: integer(2), notnull: true, default: 0, comment: "trang thai xu ly of dia diem"}
+    keyword: {type: string(50), comment: "id identifies category"}
+    url_search: {type: string(255), comment: "url lay thong tin"}
+    content: {type: text, notnull: true, comment: "File url" }
+    flow_id: {type: integer(4), notnull: true, comment: "id identifies pos"}
+  relations:
+    PosGoogleFlow: { local: flow_id, foreign: id, onDelete: cascade }
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosGoogleFlow:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos"}
+    category: {type: string(255), comment: "id identifies category"}
+    status: {type: integer(2), notnull: true, default: 0, comment: "trang thai of dia diem"}
+    keyword: {type: string(50), comment: "id identifies category"}
+    url: {type: string(500), comment: "url lay thong tin"}
+    area: {type: string(50), comment: "id identifies category"}
+    stop: {type: integer(4), notnull: true, default: 0, comment: "trang thai of dia diem"}
+    size_area: {type: integer(4), notnull: true, default: 0, comment: "So area quet 1 lan"}
+    max_content: {type: integer(4), notnull: true, default: 0, comment: "so content lay tren 1 cell"}
+    size_content: {type: integer(4), notnull: true, default: 0, comment: "So area quet 1 lan"}
+    timeout_content: {type: integer(4), notnull: true, default: 0, comment: "So ms cho lan sau lay content"}
+    timeout_pos: {type: integer(4), notnull: true, default: 0, comment: "So ms cho lan sau lay pos"}
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosGoogleFlowContent:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos"}
+    status: {type: integer(2), notnull: true, default: 0, comment: "trang thai of dia diem"}
+    url: {type: string(500), comment: "url lay thong tin"}
+    area_id: {type: integer(4),notnull: true,comment: "id identifies area"}
+    start: {type: integer(4), notnull: true, default: 0, comment: "trang thai of dia diem"}
+    flow_id: {type: integer(4),notnull: true,comment: "id identifies area"}
+    content: {type: text, notnull: true, comment: "File url" }
+  relations:
+    PosGoogleFlow: { local: flow_id, foreign: id, onDelete: cascade }
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosGoogleArea:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos"}
+    lat: {type: double(), comment: "latitude theo google map"}
+    lng: {type: double(), comment: "longitude theo google map"}
+    radius: {type: float(), notnull: true, default: 0, comment: "ban kinh luoi"}
+    url: {type: string(500), comment: "url lay thong tin"}
+    area: {type: string(50), comment: "id identifies category"}
+    radius_area: {type: integer(2), notnull: true, default: 0, comment: "ban kinh vung quet"}
+    min_radius_area: {type: integer(2), notnull: true, default: 0, comment: "ban kinh vung quet"}
+    status: {type: integer(2), notnull: true, default: 0, comment: "trang thai of dia diem"}
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosRentHouseCrawlSource:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos"}
+    area: {type: string(50), comment: "id identifies category"}
+    source: {type: string(50), comment: "id identifies category"}
+    url: {type: string(255), comment: "url lay thong tin"}
+    status: {type: integer(2), notnull: true, default: 0, comment: "trang thai of dia diem"}
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""
+
+PosRentHouseCrawlPos:
+  actAs: [Timestampable]
+  columns:
+    id: {type: integer(4), primary: true, autoincrement: true, comment: "id identifies pos"}
+    source_id: {type: integer(4), notnull: true, comment: "id is of poster" }
+    cid: {type: string(50), comment: "url lay thong tin"}
+    url: {type: string(255), comment: "url lay thong tin"}
+    title: {type: string(255), notnull: true, comment: "title is of pos"}
+    description: {type: string, comment: "desc is of pos"}
+    address: {type: string, comment: "address is of pos"}
+    tel: {type: string(20), comment: "tel is of pos"}
+    website: {type: string(255), comment: "website is of pos"}
+    lat: {type: float(), comment: "latitude theo google map"}
+    lng: {type: float(), comment: "longitude theo google map"}
+    tags: {type: string(255), comment: "tags is of pos"}
+    file_id : {type: integer(4), comment: "File id" }
+    pos_sub_category_id: {type: integer(4), comment: "id identifies sub_category"}
+    price: {type: string(50), comment: "Giá cho thuê nhà"}
+    unit_price: {type: string(100), comment: "đơn vị giá"}
+    area: {type: string(50), comment: "diện tích phòng "}
+    unit_area: {type: string(100), comment: "đơn vị diện tích"}
+    num_room: {type: integer(1), comment: "Số phòng "}
+    direction: {type: string(100), comment: "hướng nhà "}
+    contact_name: {type: string(50), comment: "Tên người liên hệ"}
+    contact_email: {type: string(50), comment: "Email liên hệ"}
+    contact_tel: {type: string(20), comment: "Điện thoại liên hệ"}
+    status: {type: integer(2), notnull: true, default: 0, comment: "trang thai of dia diem"}
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+    comment: ""

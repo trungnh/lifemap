@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Life map</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/community.css" />
+	
+		<!--[if IE 6]>
+		<script src="js/DD_belatedPNG.js"></script>
+		<script>
+		DD_belatedPNG.fix('img, span, a, div, p,button, input, ul,li');
+		</script>
+		<![endif]-->
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+	<div id="page">
+		<!--begin header-->
+		<div id="header_container">
+			
+			<div class="header_nav clearfix">
+				<div class="logo"><a title="Life map" href="#"><img alt="Life map" src="images/logo.png"></a></div><!-- /#logo -->
+				<div class="main_nav"> 
+					<div class="cart_links">
+						<ul><li><a href="#">Hi, ThucLH</a></li>
+							<li><a>&nbsp;|&nbsp;</a></li>
+							<li><a href="#">Cài đặt</a></li>
+							<li><a>&nbsp;|&nbsp;</a></li>
+							<li><a href="#">Thoát</a></li>
+						</ul>
+					</div>
+					<div class="navigation">
+						<ul>
+							<li><a href="#">Trang chủ</a></li>							
+							<li><a href="#">Trang cá nhân</a></li>						
+							<li><a href="#">Bản đồ</a></li>						
+							<li><a href="#">Ứng dụng</a></li>						
+										
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+			
+		</div>
+		<!--header end-->
+		
+		<!--begin main-->
+		<div id="main_container">			
+			<div class="content_wrap clearfix" >
+				<div class="sub_wrap">
+					<div class="home_sidebar">
+						<img class="padded_large" src="images/avatar.jpg" width="150" height="200" alt="avatar">
+						<div class="space10"></div>
+						<ul class="home_navi clearfix">
+							<li><a class="home" href="#">Trang chủ</a></li>
+							<li><a class="friend" href="#">Bạn bè</a></li>
+							<li><a class="message" href="#">Tin nhắn</a></li>
+							<li><a class="album" href="#">Hình ảnh</a></li>
+							<li><a class="diary" href="#">Nhật ký</a></li>
+							<li><a class="community" href="#">DS hội nhóm</a></li>
+							<li><a class="invite" href="#">Lời mời</a></li>
+							
+							
+						</ul>
+					</div>
+					
+					<div class="grpstat" id="moderator">
+						<h3 class="head">Nhóm của tôi</h3>
+						<div class="grpmembers">
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<br class="clear">                                                                     
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<br class="clear">                                                                     
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<br class="clear">                                                                      
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<div class="cont02"><a href="#"><img class="bor_img" height="40" width="40" src="images/comm.jpg"></a></div>
+							<br class="clear">
+																					
+																					
+							<div class="mView">
+								<span class="fr">
+									<a href="#" >Xem thêm >> </a>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="friend_sidebar side_padded_large ">
+						<h3>Friends</h3>
+						<div class="friendsList clearfix">
+							<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_40.jpg" width="40" height="40" ></a></div>
+							<div class="friends_name"><a href="#">Nguyễn Thắng</a></div>
+						</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main_wrap clearfix">
+					<div class="left_main">
+						<div class="padded_large">
+							<div id="comm_content">
+								<div class="heading_top">Tìm kiếm hội nhóm<span class="fr"><a class="create_comm" href="#">Tạo hội nhóm</a></span></div>
+								<h4><span>Có tất cả: 9000 hội/ nhóm  </span></h4>
+								<div id="comm_search">
+									<div>
+										<label>Tu khoa</label><br/>
+										<input type="text" size=50/><br/><br/>
+										<label>Danh sách hội nhóm</label><br/>
+										<select>
+											<option selected="selected" value="">other</option>
+											<option value="2">the thao</option>
+											<option value="3">am nhac </option>
+											<option value="4">nghe thuat</option>
+											<option value="5">truyen tranh</option>
+											
+										</select>
+									</div>
+								</div>
+								
+								
+								
+								
+								<div class="heading_top">Kết quả tìm kiếm hội nhóm	</div>
+									<ul>
+										<!-- Album avatar -->
+										<li>
+											<div class="comm_block01 bg_le clearfix">
+												<div class="photo_frame_05 fl"><a href="#" title="Ảnh đại diện"><img height="94" width="106" src="images/image_2.jpg"></a></div>
+												<div class="comm_description">
+													<h4><a href="#" title="Ảnh đại diện">Photography</a></h4>
+													<span class="small_text">14/07/2011    <a href="#">2 members</a>&nbsp;&nbsp; <a href="#">2topics</a>&nbsp;&nbsp; <a href="#"> 2 events</a>&nbsp;&nbsp; </span><br/>
+													<span>Nơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuật...
+</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="comm_block01 bg_chan clearfix">
+												<div class="photo_frame_05 fl"><a href="#" title="Ảnh đại diện"><img height="94" width="106" src="images/image_2.jpg"></a></div>
+												<div class="comm_description">
+													<h4><a href="#" title="Ảnh đại diện">Photography</a></h4>
+													<span class="small_text">14/07/2011    <a href="#">2 members</a>&nbsp;&nbsp; <a href="#">2topics</a>&nbsp;&nbsp; <a href="#"> 2 events</a>&nbsp;&nbsp; </span><br/>
+													<span>Nơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuật...
+</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="comm_block01 bg_le clearfix">
+												<div class="photo_frame_05 fl"><a href="#" title="Ảnh đại diện"><img height="94" width="106" src="images/image_2.jpg"></a></div>
+												<div class="comm_description">
+													<h4><a href="#" title="Ảnh đại diện">Photography</a></h4>
+													<span class="small_text">14/07/2011    <a href="#">2 members</a>&nbsp;&nbsp; <a href="#">2topics</a>&nbsp;&nbsp; <a href="#"> 2 events</a>&nbsp;&nbsp; </span><br/>
+													<span>Nơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuật...
+</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="comm_block01 bg_chan clearfix">
+												<div class="photo_frame_05 fl"><a href="#" title="Ảnh đại diện"><img height="94" width="106" src="images/image_2.jpg"></a></div>
+												<div class="comm_description">
+													<h4><a href="#" title="Ảnh đại diện">Photography</a></h4>
+													<span class="small_text">14/07/2011    <a href="#">2 members</a>&nbsp;&nbsp; <a href="#">2topics</a>&nbsp;&nbsp; <a href="#"> 2 events</a>&nbsp;&nbsp; </span><br/>
+													<span>Nơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuậtNơi trao đổi về Nhiếp Ảnh nghệ thuật...
+</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								
+								
+							</div>
+							
+							
+						</div>
+					</div>
+					<div class="right_main">
+						<div class="padded_large">
+							<div class="r_new_notice">
+								<h3>new notice</h3>
+								<ul>
+									<li>You have <a href="#"><span class="orange"><strong>5</strong> message</span></a> in box</li>
+									<li>You have <a href="#"><span class="orange"><strong>5</strong> message</span></a> in box</li>
+									<li>You have <a href="#"><span class="orange"><strong>5</strong> message</span></a> in box</li>
+									<li>You have <a href="#"><span class="orange"><strong>5</strong> message</span></a> in box</li>
+									<li>You have <a href="#"><span class="orange"><strong>5</strong> message</span></a> in box</li>
+									
+								</ul>
+							</div>
+							<div class="r_community">
+								<h3>community</h3>
+								<div class="communitylist clearfix">
+									<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_60.jpg" width="60" height="60" ></a></div>
+									<div class="friends_name">
+										<a href="#">Hai Lúa Nông Trại Vui Vẻ </a>
+										<span>Danh sách những vật phẩm không tiếp tục nhập hàng về Nông Trại 2 sẽ được....</span>
+									</div>
+								</div>
+								<div class="communitylist clearfix">
+									<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_60.jpg" width="60" height="60" ></a></div>
+									<div class="friends_name">
+										<a href="#">Hai Lúa Nông Trại Vui Vẻ </a>
+										<span>Danh sách những vật phẩm không tiếp tục nhập hàng về Nông Trại 2 sẽ được....</span>
+									</div>
+								</div>
+								<div class="communitylist clearfix">
+									<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_60.jpg" width="60" height="60" ></a></div>
+									<div class="friends_name">
+										<a href="#">Hai Lúa Nông Trại Vui Vẻ </a>
+										<span>Danh sách những vật phẩm không tiếp tục nhập hàng về Nông  Trại 2 sẽ đượcTrại 2 sẽ được Trại 2 sẽ được Trại 2 sẽ được....</span>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--main end-->
+		
+		
+		
+		<!--begin footer-->
+		<div id="footer-container" class="clearfix">
+			<div id="footer_nav">  
+					<ul>
+						<li><a href="/gear/">Giới Thiệu</a></li>
+						<li><a>.</a></li>
+						<li><a href="/blog/">Quảng Cáo</a></li>
+						<li><a>.</a></li>
+						<li><a href="/support/">Quyền Riêng Tư</a></li>
+						<li><a>.</a></li>
+						<li><a href="/company/">Điều Khoản Sử Dụng</a></li>
+						<li><a>.</a></li>
+						<li><a href="/find-a-store/">Trợ Giúp</a></li>
+						
+										
+					</ul>
+			</div>
+			<p class="a_center">Copyright © lifemap.vn 2011. All right reserved.</p>
+		</div>
+		<!--footer end-->
+		
+		
+		
+		
+		
+	</div><!--end page-->
+</body>
+</html>

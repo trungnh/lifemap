@@ -1,0 +1,190 @@
+<mockup version="1.0" skin="sketch" measuredW="1332" measuredH="723" mockupW="1309" mockupH="714">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="23" y="9" w="1309" h="714" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <markup>true</markup>
+        <text>Nh%E0%20cho%20thu%EA%0Ahttp%3A//lifemap.vn</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::HRule" x="23" y="150" w="1303" h="-1" measuredW="100" measuredH="5" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::VRule" x="431" y="168" w="-1" h="500" measuredW="5" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::HRule" x="23" y="162" w="1309" h="-1" measuredW="100" measuredH="5" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Map" x="438" y="169" w="879" h="498" measuredW="252" measuredH="222" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::LinkBar" x="28" y="173" w="-1" h="-1" measuredW="156" measuredH="18" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>1</selectedIndex>
+        <size>11</size>
+        <text>Tim%20kiem%2C%20Toi%20%2C%20Bang%20tin</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::HRule" x="25" y="192" w="371" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="__group__" x="24" y="80" w="1305" h="336" measuredW="1305" measuredH="336" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <markup>true</markup>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::ButtonBar" x="0" y="0" w="531" h="29" measuredW="378" measuredH="28" zOrder="2" locked="false" isInGroup="34">
+          <controlProperties>
+            <selectedIndex>2</selectedIndex>
+            <size>12</size>
+            <text>Trang%20chu%2C%20Dia%20diem%2C%20Nha%20cho%20thue%2C%20Trang%20ca%20nhan</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="31" y="33" w="158" h="42" measuredW="77" measuredH="79" zOrder="3" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Logo</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="1014" y="1" w="-1" h="-1" measuredW="64" measuredH="21" zOrder="4" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Dang%20nhap</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="1097" y="1" w="-1" h="-1" measuredW="51" measuredH="21" zOrder="5" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Dang%20ky</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="1175" y="1" w="-1" h="-1" measuredW="92" measuredH="21" zOrder="6" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Quen%20mat%20khau</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="531" y="0" w="774" h="27" measuredW="24" measuredH="27" zOrder="1" locked="false" isInGroup="34">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::SearchBox" x="222" y="41" w="302" h="-1" measuredW="152" measuredH="25" zOrder="7" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Tim%20kiem%20nha%20cho%20thue</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Button" x="0" y="22" w="1305" h="64" measuredW="24" measuredH="27" zOrder="0" locked="false" isInGroup="34">
+          <controlProperties>
+            <color>545684</color>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="10" controlTypeID="com.balsamiq.mockups::Icon" x="13" y="198" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="8" locked="false" isInGroup="34">
+          <controlProperties>
+            <borderStyle>square</borderStyle>
+            <color>0</color>
+            <icon>ThumbsUpIcon%7Clarge</icon>
+          </controlProperties>
+        </control>
+        <control controlID="11" controlTypeID="com.balsamiq.mockups::Icon" x="11" y="267" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="9" locked="false" isInGroup="34">
+          <controlProperties>
+            <borderStyle>square</borderStyle>
+            <color>0</color>
+            <icon>AddCommentIcon%7Clarge</icon>
+          </controlProperties>
+        </control>
+        <control controlID="12" controlTypeID="com.balsamiq.mockups::Icon" x="13" y="124" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="10" locked="false" isInGroup="34">
+          <controlProperties>
+            <borderStyle>square</borderStyle>
+            <color>0</color>
+            <icon>AddPageIcon%7Clarge</icon>
+          </controlProperties>
+        </control>
+        <control controlID="13" controlTypeID="com.balsamiq.mockups::Link" x="0" y="315" w="-1" h="-1" measuredW="85" measuredH="21" zOrder="11" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Viet%20cam%20nhan</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::VRule" x="91" y="198" w="-1" h="500" measuredW="5" measuredH="100" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::ComboBox" x="1210" y="135" w="98" h="-1" measuredW="69" measuredH="23" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ha%20Noi</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::RoundButton" x="449" y="187" w="52" h="49" measuredW="32" measuredH="32" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="470" y="237" w="-1" h="129" measuredW="16" measuredH="100" zOrder="11" locked="false" isInGroup="-1"/>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Tooltip" x="537" y="319" w="213" h="145" measuredW="178" measuredH="145" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>11</size>
+        <text>Trang%20tim%20kiem%20nha%20cho%20thue</text>
+        <tooltipDirection>SE</tooltipDirection>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Tooltip" x="1097" y="150" w="130" h="48" measuredW="99" measuredH="48" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>11</size>
+        <text>Chon%20khu%20vuc</text>
+        <tooltipDirection>NE</tooltipDirection>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::Label" x="100" y="206" w="301" h="21" measuredW="289" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ban%20can%20can%20dang%20nhap%20de%20thuc%20hien%20chuc%20nang%20nay</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::Label" x="100" y="230" w="224" h="55" measuredW="435" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Neu%20chua%20co%20tai%20khoan%20tren%20LifeMap%2C%20ban%20co%20the%20dang%20ky%20nhanh%20chong%20tai%20day%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Label" x="98" y="284" w="164" h="21" measuredW="157" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Khi%20dang%20nhap%2C%20ban%20co%20the%20%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Label" x="113" y="308" w="284" h="21" measuredW="363" measuredH="21" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20Tao%20moi%20nha%20cho%20thue%20ban%20biet%20va%20chia%20se%20tren%20ban%20do%20LifeMap</text>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Label" x="110" y="328" w="414" h="21" measuredW="412" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20Quan%20tam%20toi%20nha%20cho%20thue%20va%20nhan%20thong%20tin%20moi%20nhat%20tu%20cac%20nha%20do%20do</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Label" x="113" y="348" w="317" h="21" measuredW="314" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20Viet%20chia%20se%20cam%20nhan%20toi%20nha%20cho%20thue%20ma%20ban%20tung%20o</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::Label" x="113" y="369" w="373" h="21" measuredW="347" measuredH="21" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20Nhan%20thong%20tin%20moi%20nhat%20ve%20cac%20nha%20cho%20thue%20moi%20tu%20LifeMap</text>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::Link" x="38" y="248" w="-1" h="-1" measuredW="55" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Toi%20dang</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Link" x="32" y="325" w="-1" h="-1" measuredW="63" measuredH="21" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Quan%20tam</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

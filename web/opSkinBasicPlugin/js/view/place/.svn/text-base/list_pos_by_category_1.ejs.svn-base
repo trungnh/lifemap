@@ -1,0 +1,58 @@
+<h1><%=title%></h1>
+<ul>
+    <% for(var i=0; i<list.length; i++) { %>
+        <li class="location-item" id="location-item-<%=list[i].id%>">
+            <div class="location-item-left">
+                <div class="content_item">
+                        <img class='img_40x40' src="<%=list[i].file_category%>" />
+                    <div class="right-block">
+                        <div class="location-title">
+                            <%=list[i].pos_url %>
+                        </div>
+
+                        <div class="location-address">
+                          <%=list[i].address%>
+                        </div>
+                        <div class="location-note">
+                          <%=list[i].count_checkin%> Đã đến | <%=list[i].count_comment%> cảm nhận | <%=list[i].count_follow%> quan tâm
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <%if(list[i].event_title){%>
+                    <div class="content_event">
+                        <img class='img_40x40' src="<%=list[i].event_image%>" />
+                        <div class="content_event_details">
+                            <div class="location-title">
+                                <a href='# '><%=list[i].event_title %></a>
+                            </div>
+                            <div class="location-event"><%=list[i].category_event%></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="icon_new"></div>
+                    </div>
+                <%}%>
+                <%if(list[i].newest_comment){%>
+                    <div class="content_event">
+                        <img class='img_40x40' src="<%=list[i].member_comment_image%>"/>
+                        <div class="content_event_details">
+                            <div class="location-address">
+                                <%=list[i].newest_comment+' '%>
+                            </div>
+                            <div class="location-address">Bởi: <%=list[i].member_comment %></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="icon_comment"></div>
+                    </div>
+                <%}%>
+            </div>
+            <div class="location-item-bottom">
+                <%latlng = list[i].lat + ',' + list[i].lng%>
+                <a href="<%='?address=' + list[i].address + '&latlng=' + latlng%>" class="start_way operation-link" title="Tìm đường đi từ điểm này">Từ đây</a>
+                <a href="<%='?address=' + list[i].address + '&latlng=' + latlng%>" class="end_way operation-link" title="Tìm đường đi tới điểm này">Đến đây</a>
+                <a href="pos/sendMailForm?id=<%=list[i].id%>" id="pos_send_mail" title="Gửi mail đặt lịch hẹn với bạn bè" class="ajax operation-link">Gửi mail</a>
+            </div>
+            <div class="clear"></div>
+        </li>
+    <% } %>
+</ul>

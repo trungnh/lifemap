@@ -1,0 +1,497 @@
+<mockup version="1.0" skin="sketch" measuredW="1332" measuredH="723" mockupW="1309" mockupH="714">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="23" y="9" w="1309" h="714" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//lifemap.vn</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::HRule" x="23" y="150" w="1303" h="-1" measuredW="100" measuredH="5" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::VRule" x="324" y="167" w="-1" h="500" measuredW="5" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::HRule" x="23" y="162" w="1309" h="-1" measuredW="100" measuredH="5" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Map" x="332" y="169" w="985" h="498" measuredW="252" measuredH="222" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::LinkBar" x="30" y="173" w="-1" h="-1" measuredW="270" measuredH="18" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>11</size>
+        <text>Dia%20diem%20cua%20toi%2C%20Check-ins%2C%20Follow%2C%20Ban%20be</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::HRule" x="25" y="192" w="301" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="__group__" x="27" y="170" w="1297" h="497" measuredW="1297" measuredH="497" zOrder="7" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="294" y="29" w="-1" h="468" measuredW="16" measuredH="100" zOrder="2" locked="false" isInGroup="28"/>
+        <control controlID="8" controlTypeID="__group__" x="0" y="29" w="294" h="61" measuredW="294" measuredH="61" zOrder="1" locked="false" isInGroup="28">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="8">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="294" h="61" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+                        <control controlID="1" controlTypeID="__group__" x="235" y="7" w="43" h="48" measuredW="43" measuredH="48" zOrder="1" locked="false" isInGroup="0">
+                          <groupChildrenDescriptors>
+                            <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="43" h="48" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="1">
+                              <controlProperties>
+                                <text>Anh</text>
+                              </controlProperties>
+                            </control>
+                          </groupChildrenDescriptors>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="12" y="1" w="-1" h="-1" measuredW="97" measuredH="21" zOrder="1" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Bia%20hoi%20Hieu%20beo</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="11" y="19" w="211" h="23" measuredW="212" measuredH="21" zOrder="2" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>So%20187%20duong%20Xa%20Dan%2C%20quan%20Dong%20Da</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="12" y="36" w="213" h="23" measuredW="214" measuredH="21" zOrder="3" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Note%20%3A%20xxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="9" controlTypeID="__group__" x="0" y="97" w="294" h="61" measuredW="294" measuredH="61" zOrder="3" locked="false" isInGroup="28">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="9">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="294" h="61" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+                        <control controlID="1" controlTypeID="__group__" x="235" y="7" w="43" h="48" measuredW="43" measuredH="48" zOrder="1" locked="false" isInGroup="0">
+                          <groupChildrenDescriptors>
+                            <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="43" h="48" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="1">
+                              <controlProperties>
+                                <text>Anh</text>
+                              </controlProperties>
+                            </control>
+                          </groupChildrenDescriptors>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="12" y="1" w="-1" h="-1" measuredW="97" measuredH="21" zOrder="1" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Bia%20hoi%20Hieu%20beo</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="11" y="19" w="211" h="23" measuredW="212" measuredH="21" zOrder="2" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>So%20187%20duong%20Xa%20Dan%2C%20quan%20Dong%20Da</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="12" y="36" w="213" h="23" measuredW="214" measuredH="21" zOrder="3" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Note%20%3A%20xxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="10" controlTypeID="__group__" x="0" y="165" w="294" h="61" measuredW="294" measuredH="61" zOrder="4" locked="false" isInGroup="28">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="10">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="294" h="61" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+                        <control controlID="1" controlTypeID="__group__" x="235" y="7" w="43" h="48" measuredW="43" measuredH="48" zOrder="1" locked="false" isInGroup="0">
+                          <groupChildrenDescriptors>
+                            <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="43" h="48" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="1">
+                              <controlProperties>
+                                <text>Anh</text>
+                              </controlProperties>
+                            </control>
+                          </groupChildrenDescriptors>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="12" y="1" w="-1" h="-1" measuredW="97" measuredH="21" zOrder="1" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Bia%20hoi%20Hieu%20beo</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="11" y="19" w="211" h="23" measuredW="212" measuredH="21" zOrder="2" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>So%20187%20duong%20Xa%20Dan%2C%20quan%20Dong%20Da</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="12" y="36" w="213" h="23" measuredW="214" measuredH="21" zOrder="3" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Note%20%3A%20xxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="11" controlTypeID="__group__" x="0" y="232" w="294" h="61" measuredW="294" measuredH="61" zOrder="5" locked="false" isInGroup="28">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="11">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="294" h="61" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+                        <control controlID="1" controlTypeID="__group__" x="235" y="7" w="43" h="48" measuredW="43" measuredH="48" zOrder="1" locked="false" isInGroup="0">
+                          <groupChildrenDescriptors>
+                            <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="43" h="48" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="1">
+                              <controlProperties>
+                                <text>Anh</text>
+                              </controlProperties>
+                            </control>
+                          </groupChildrenDescriptors>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="12" y="1" w="-1" h="-1" measuredW="97" measuredH="21" zOrder="1" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Bia%20hoi%20Hieu%20beo</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="11" y="19" w="211" h="23" measuredW="212" measuredH="21" zOrder="2" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>So%20187%20duong%20Xa%20Dan%2C%20quan%20Dong%20Da</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="12" y="36" w="213" h="23" measuredW="214" measuredH="21" zOrder="3" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Note%20%3A%20xxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="12" controlTypeID="__group__" x="0" y="300" w="294" h="61" measuredW="294" measuredH="61" zOrder="6" locked="false" isInGroup="28">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="12">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="294" h="61" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+                        <control controlID="1" controlTypeID="__group__" x="235" y="7" w="43" h="48" measuredW="43" measuredH="48" zOrder="1" locked="false" isInGroup="0">
+                          <groupChildrenDescriptors>
+                            <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="43" h="48" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="1">
+                              <controlProperties>
+                                <text>Anh</text>
+                              </controlProperties>
+                            </control>
+                          </groupChildrenDescriptors>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="12" y="1" w="-1" h="-1" measuredW="97" measuredH="21" zOrder="1" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Bia%20hoi%20Hieu%20beo</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="11" y="19" w="211" h="23" measuredW="212" measuredH="21" zOrder="2" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>So%20187%20duong%20Xa%20Dan%2C%20quan%20Dong%20Da</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="12" y="36" w="213" h="23" measuredW="214" measuredH="21" zOrder="3" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Note%20%3A%20xxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="13" controlTypeID="__group__" x="0" y="368" w="294" h="61" measuredW="294" measuredH="61" zOrder="7" locked="false" isInGroup="28">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="13">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="294" h="61" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+                        <control controlID="1" controlTypeID="__group__" x="235" y="7" w="43" h="48" measuredW="43" measuredH="48" zOrder="1" locked="false" isInGroup="0">
+                          <groupChildrenDescriptors>
+                            <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="43" h="48" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="1">
+                              <controlProperties>
+                                <text>Anh</text>
+                              </controlProperties>
+                            </control>
+                          </groupChildrenDescriptors>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="12" y="1" w="-1" h="-1" measuredW="97" measuredH="21" zOrder="1" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Bia%20hoi%20Hieu%20beo</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="11" y="19" w="211" h="23" measuredW="212" measuredH="21" zOrder="2" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>So%20187%20duong%20Xa%20Dan%2C%20quan%20Dong%20Da</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="12" y="36" w="213" h="23" measuredW="214" measuredH="21" zOrder="3" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Note%20%3A%20xxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="14" controlTypeID="__group__" x="0" y="436" w="294" h="61" measuredW="294" measuredH="61" zOrder="8" locked="false" isInGroup="28">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="14">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="294" h="61" measuredW="294" measuredH="61" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="294" h="61" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+                        <control controlID="1" controlTypeID="__group__" x="235" y="7" w="43" h="48" measuredW="43" measuredH="48" zOrder="1" locked="false" isInGroup="0">
+                          <groupChildrenDescriptors>
+                            <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="43" h="48" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="1">
+                              <controlProperties>
+                                <text>Anh</text>
+                              </controlProperties>
+                            </control>
+                          </groupChildrenDescriptors>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="12" y="1" w="-1" h="-1" measuredW="97" measuredH="21" zOrder="1" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Bia%20hoi%20Hieu%20beo</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="11" y="19" w="211" h="23" measuredW="212" measuredH="21" zOrder="2" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>So%20187%20duong%20Xa%20Dan%2C%20quan%20Dong%20Da</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="12" y="36" w="213" h="23" measuredW="214" measuredH="21" zOrder="3" locked="false" isInGroup="0">
+                      <controlProperties>
+                        <text>Note%20%3A%20xxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="15" controlTypeID="com.balsamiq.mockups::ColorPicker" x="976" y="65" w="-1" h="-1" measuredW="26" measuredH="28" zOrder="9" locked="false" isInGroup="28"/>
+        <control controlID="16" controlTypeID="com.balsamiq.mockups::ColorPicker" x="894" y="93" w="-1" h="-1" measuredW="26" measuredH="28" zOrder="10" locked="false" isInGroup="28"/>
+        <control controlID="17" controlTypeID="com.balsamiq.mockups::ColorPicker" x="853" y="181" w="-1" h="-1" measuredW="26" measuredH="28" zOrder="11" locked="false" isInGroup="28"/>
+        <control controlID="18" controlTypeID="com.balsamiq.mockups::ColorPicker" x="976" y="209" w="-1" h="-1" measuredW="26" measuredH="28" zOrder="12" locked="false" isInGroup="28"/>
+        <control controlID="19" controlTypeID="com.balsamiq.mockups::ColorPicker" x="715" y="257" w="-1" h="-1" measuredW="26" measuredH="28" zOrder="13" locked="false" isInGroup="28"/>
+        <control controlID="20" controlTypeID="com.balsamiq.mockups::ColorPicker" x="868" y="376" w="-1" h="-1" measuredW="26" measuredH="28" zOrder="14" locked="false" isInGroup="28"/>
+        <control controlID="21" controlTypeID="com.balsamiq.mockups::ColorPicker" x="584" y="121" w="-1" h="-1" measuredW="26" measuredH="28" zOrder="15" locked="false" isInGroup="28"/>
+        <control controlID="22" controlTypeID="com.balsamiq.mockups::ColorPicker" x="1109" y="404" w="-1" h="-1" measuredW="26" measuredH="28" zOrder="16" locked="false" isInGroup="28"/>
+        <control controlID="23" controlTypeID="com.balsamiq.mockups::ColorPicker" x="560" y="348" w="-1" h="-1" measuredW="26" measuredH="28" zOrder="17" locked="false" isInGroup="28"/>
+        <control controlID="25" controlTypeID="com.balsamiq.mockups::Canvas" x="569" y="129" w="333" h="203" measuredW="100" measuredH="70" zOrder="18" locked="false" isInGroup="28">
+          <controlProperties>
+            <borderStyle>roundedSolid</borderStyle>
+          </controlProperties>
+        </control>
+        <control controlID="35" controlTypeID="com.balsamiq.mockups::Canvas" x="755" y="1" w="129" h="27" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="28">
+          <controlProperties>
+            <borderStyle>roundedSolid</borderStyle>
+          </controlProperties>
+        </control>
+        <control controlID="37" controlTypeID="com.balsamiq.mockups::Label" x="580" y="137" w="129" h="24" measuredW="129" measuredH="24" zOrder="20" locked="false" isInGroup="28">
+          <controlProperties>
+            <bold>true</bold>
+            <color>2848996</color>
+            <size>16</size>
+            <text>Bia%20hoi%20Hieu%20Beo</text>
+          </controlProperties>
+        </control>
+        <control controlID="38" controlTypeID="com.balsamiq.mockups::Image" x="581" y="165" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="21" locked="false" isInGroup="28">
+          <controlProperties>
+            <text>Anh</text>
+          </controlProperties>
+        </control>
+        <control controlID="39" controlTypeID="com.balsamiq.mockups::Label" x="669" y="165" w="-1" h="-1" measuredW="223" measuredH="21" zOrder="22" locked="false" isInGroup="28">
+          <controlProperties>
+            <text>So187%20duong%20Xa%20Dan%2C%20Dong%20Da%2C%20Ha%20Noi</text>
+          </controlProperties>
+        </control>
+        <control controlID="40" controlTypeID="__group__" x="761" y="1" w="118" h="22" measuredW="118" measuredH="22" zOrder="19" locked="false" isInGroup="28">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="30" y="1" w="-1" h="-1" measuredW="60" measuredH="21" zOrder="0" locked="false" isInGroup="40">
+              <controlProperties>
+                <bold>true</bold>
+                <text>1/7%20trang</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="0" y="0" w="-1" h="-1" measuredW="24" measuredH="21" zOrder="1" locked="false" isInGroup="40">
+              <controlProperties>
+                <text>%3C%3C</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="94" y="1" w="-1" h="-1" measuredW="24" measuredH="21" zOrder="2" locked="false" isInGroup="40">
+              <controlProperties>
+                <text>%3E%3E</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="41" controlTypeID="com.balsamiq.mockups::Button" x="1166" y="0" w="-1" h="-1" measuredW="65" measuredH="27" zOrder="23" locked="false" isInGroup="28">
+          <controlProperties>
+            <text>Ban%20do</text>
+          </controlProperties>
+        </control>
+        <control controlID="42" controlTypeID="com.balsamiq.mockups::Button" x="1233" y="0" w="-1" h="-1" measuredW="64" measuredH="27" zOrder="24" locked="false" isInGroup="28">
+          <controlProperties>
+            <text>Ve%20tinh</text>
+          </controlProperties>
+        </control>
+        <control controlID="43" controlTypeID="com.balsamiq.mockups::Label" x="669" y="189" w="-1" h="-1" measuredW="81" measuredH="21" zOrder="25" locked="false" isInGroup="28">
+          <controlProperties>
+            <text>0983962301</text>
+          </controlProperties>
+        </control>
+        <control controlID="51" controlTypeID="__group__" x="585" y="247" w="295" h="77" measuredW="295" measuredH="77" zOrder="26" locked="false" isInGroup="28">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="103" y="54" w="192" h="23" measuredW="192" measuredH="23" zOrder="0" locked="false" isInGroup="51">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Link" x="73" y="1" w="-1" h="-1" measuredW="41" measuredH="21" zOrder="0" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <text>Follow</text>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="0" y="2" w="-1" h="-1" measuredW="56" measuredH="21" zOrder="1" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <text>Check-in</text>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="143" y="0" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="2" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <text>Gui%20mail</text>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="0" y="0" w="-1" h="-1" measuredW="75" measuredH="21" zOrder="1" locked="false" isInGroup="51">
+              <controlProperties>
+                <text>Xem%20chi%20tiet</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="0" y="21" w="-1" h="-1" measuredW="85" measuredH="21" zOrder="2" locked="false" isInGroup="51">
+              <controlProperties>
+                <text>Co%203%20nhan%20xet</text>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="93" y="21" w="-1" h="-1" measuredW="77" measuredH="21" zOrder="3" locked="false" isInGroup="51">
+              <controlProperties>
+                <text>10%20check-ins</text>
+              </controlProperties>
+            </control>
+            <control controlID="8" controlTypeID="com.balsamiq.mockups::Link" x="175" y="21" w="-1" h="-1" measuredW="54" measuredH="21" zOrder="4" locked="false" isInGroup="51">
+              <controlProperties>
+                <text>1%20ban%20be</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="52" controlTypeID="com.balsamiq.mockups::Label" x="669" y="231" w="225" h="25" measuredW="224" measuredH="21" zOrder="27" locked="false" isInGroup="28">
+          <controlProperties>
+            <text>Tag%3A%20cua%20hang%20bia%20hoi%2C%20hieu%20beo%2C%20bia%20hoi</text>
+          </controlProperties>
+        </control>
+        <control controlID="53" controlTypeID="com.balsamiq.mockups::Label" x="669" y="211" w="225" h="25" measuredW="87" measuredH="21" zOrder="28" locked="false" isInGroup="28">
+          <controlProperties>
+            <text>Loai%20%3A%20Quan%20an</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="34" controlTypeID="__group__" x="26" y="83" w="1300" h="71" measuredW="1300" measuredH="71" zOrder="8" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::ButtonBar" x="131" y="42" w="531" h="29" measuredW="372" measuredH="29" zOrder="0" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Trang%20chu%2C%20Trang%20ca%20nhan%2C%20Ban%20do%2C%20Ung%20dung</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="131" y="0" w="158" h="42" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Logo</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="1007" y="11" w="-1" h="-1" measuredW="64" measuredH="21" zOrder="2" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Dang%20nhap</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="1086" y="11" w="-1" h="-1" measuredW="51" measuredH="21" zOrder="3" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Dang%20ky</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Button" x="0" y="43" w="140" h="27" measuredW="24" measuredH="27" zOrder="4" locked="false" isInGroup="34">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="1152" y="11" w="-1" h="-1" measuredW="58" measuredH="21" zOrder="5" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>Gioi%20thieu</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="662" y="42" w="638" h="27" measuredW="24" measuredH="27" zOrder="6" locked="false" isInGroup="34">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::SearchBox" x="798" y="42" w="302" h="-1" measuredW="61" measuredH="25" zOrder="7" locked="false" isInGroup="34">
+          <controlProperties>
+            <text>bia%20hoi</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>

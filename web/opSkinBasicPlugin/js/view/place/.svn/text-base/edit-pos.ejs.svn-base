@@ -1,0 +1,53 @@
+
+<div id="edit-pos-info">
+    <form id="edit-pos-form">
+        <div class="grouper">
+            <p class="rightcol-title">Tiêu đề</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-title" name="edit-pos-title" value="<%= pos.title %>"/>
+
+            <p class="rightcol-title">Địa chỉ</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-address" name="edit-pos-address" value="<%= pos.address %>"/>
+
+            <p class="rightcol-title">Điện thoại</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-tel" name="edit-pos-tel" value="<%= pos.tel %>"/>
+            
+            <p class="rightcol-title">Website</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-site" name="edit-pos-site" value="<%= pos.website %>"/>
+        </div>
+
+        <div class="grouper">
+            <p class="rightcol-title">Tags</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-tags" name="edit-pos-tags" value="<%= pos.tags %>"/>
+            
+            <p class="rightcol-title">Phân loại</p>
+            <select class="rightcol-wide-input-select" name="edit-pos-type">
+            <% for(var i in pos.all_categories) { %>
+                <option value="<%=pos.all_categories[i].id %>">
+                    <%=pos.all_categories[i].name %>
+                </option>
+            <% } %>
+            </select>
+
+            <p class="rightcol-title">Công khai hay ẩn địa điểm</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="edit-pos-ispublic" value=1 <% if(pos.is_public == 1){%> <%= 'checked="checked"' %> <%}%> />Công khai
+                    </td>
+                    <td>
+                        <input type="radio" name="edit-pos-ispublic" value=0 <%if(pos.is_public == 0){%> <%= 'checked="checked"' %> <%}%> />Ẩn
+                    </td>
+                </tr>
+            </table>
+
+             <div class="right-col-padding-bottom">
+                <p class="rightcol-title">Mô tả</p>
+                <textarea name="edit-pos-description" value="<%= pos.description %>"><%= pos.description %></textarea>
+            </div>  
+        </div>
+            
+  
+        <a id="update-pos" class="ok-button" >Cập nhật</a>
+        <input id="pos-id-to-update" type="hidden" value="<%= pos.pos_id %>" />
+    </form>
+</div>

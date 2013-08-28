@@ -1,0 +1,303 @@
+<?php
+
+/**
+ * This file is part of the Life Search package
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file and the NOTICE file that were distributed with this source code.
+ */
+
+/**
+ * base actions class for the lfGpsPlugin.
+ *
+ * @package    Life Search
+ * @subpackage Map search
+ * @author     thuclh <thuc.lehuy@gmail.com>
+ */
+class lfPosPluginActions extends sfActions {
+    const checkinAgainTime = '+1 day';
+    const rent_house_code = "pos_rent_house";
+    public function preExecute() {
+
+    }
+    public function returnFalse($description = ""){
+        $return = array(
+            "status" => false,
+            "description" => $description
+         );
+         return json_encode($return);
+    }
+    /**
+     * Hàm trả về json từ một pager để response request
+     *
+     * @author thuclh
+     */
+    public function returnPosListPagerJson(sfDoctrinePager $pager,$type=null,$isFriend=null){
+        $list_pos_array = $this->convertListPos2Array($pager->getResults(),$type,$isFriend);
+        $title ='';
+        if(isset($type)){
+            switch($type){
+                case "member_checking":
+                  $title = 'Địa điểm nhiều người đang ghé thăm ';
+                  break;
+                case "member_new_comment":
+                  $title = 'Địa điểm có cảm nhận mới ';
+                  break;
+                case "many_member_follow":
+                  $title = 'Địa điểm có nhiều người quan tâm ';
+                  break;
+                case "member_checkin":
+                  $title = 'Địa điểm nhiều người đã ghé thăm ';
+                  break;
+                case "many_member_comment":
+                  $title = 'Địa điểm có nhiều cảm nhận ';
+                  break;
+                case "myplace":
+                  $title='Địa điểm của tôi';
+                  break;
+                case "myfriend":
+                  $title='Vị trí bạn bè của tôi';
+                  break;
+                case "mycheckin":
+                  $title='Địa điểm tôi checkin';
+                  break;
+                case "myfollow":
+                  $title='Địa điểm tôi quan tâm';
+                  break;
+                case "mycomment":
+                  $title='Địa điểm tôi quan tâm';
+                  break;
+            }
+        }
+        $return = array(
+            "status" => true,
+            "page" => $pager->getPage(),
+            "size" => $pager->getMaxPerPage(),
+            "total" => $pager->getCountQuery()->count(),
+            "last" => $pager->getLastPage(),
+            "list" => $list_pos_array,
+            "title" => $title
+         );
+       return json_encode($return);
+    }
+    
+    /**
+     * Hàm trả về json từ một pager để response request theo category
+     *
+     * @author tuent
+     */
+    public function returnPosListPagerJsonByCategory(sfDoctrinePager $pager){
+        $list_pos_array = $this->convertListPos2Array($pager->getResults(),$type,$isFriend);
+        
+        $return = array(
+            "status" => true,
+            "page" => $pager->getPage(),
+            "size" => $pager->getMaxPerPage(),
+            "total" => $pager->getCountQuery()->count(),
+            "last" => $pager->getLastPage(),
+            "list" => $list_pos_array
+         );
+       return json_encode($return);
+    }
+    
+    /**
+     * Hàm convert 1 pos object thành 1 mảng
+     * với các thuộc tính là key và giá trị thuộc tính là value
+     *
+     * @author thuclh
+     */
+    public function convertPos2Array($pos,$type = null,$isFriend = null) {
+        $output = array();
+        if(isset($type)){
+            switch($type){
+                case "member_checking":
+                  $numOfMember = $pos->getNumOfMember();
+                  $output['numOfMember'] = $numOfMember .' người đang ở đây';
+                  $pos = $pos->getPos();
+                  break;
+                case "member_new_comment":
+                  $output['comment'] = $pos->getContent();
+                  $pos = $pos->getPos();
+                  break;
+                case "many_member_follow":
+                  $numOfMember = $pos->getNumOfMember();
+                  $output['numOfMember'] = $numOfMember .' người quan tâm';
+                  $pos = $pos->getPos();
+                  break;
+                case "member_checkin":
+                  $numOfMember = $pos->getNumOfMember();
+                  $output['numOfMember'] = $numOfMember .' người đã ở đây';
+                  $pos = $pos->getPos();
+                  break;
+                case "many_member_comment":
+                  $numOfMember = $pos->getNumOfMember();
+                  $output['numOfMember'] = $numOfMember .' cảm nhận';
+                  $pos = $pos->getPos();
+                  break;
+            }
+        }
+        foreach ($pos as $key => $value){            
+             if($key == 'file_id'){
+               $output[$key] = $pos->getImageFileName();
+               continue;
+             }
+             if($key == 'member_id'){
+               $member = Doctrine::getTable('Member')->find($value);
+               $output['member_post'] = $member->getName();
+               continue;
+             }
+             $output[$key] = $value;
+        }
+        /* danh cho myFriendPlace*/
+        if($isFriend){
+          foreach($pos->getPosCheckin() as $posCheckIn){
+            if($posCheckIn->getStatus() == 1){
+                $output['online_checkin_id'] = $posCheckIn->getMemberId();
+                if($posCheckIn->getMember()){
+                  $output['online_checkin'] = $posCheckIn->getMember()->getName();
+                  if($posCheckIn->getMember()->getImageFileName())
+                    $output['image_checkin']  = $posCheckIn->getMember()->getImageFileName()->getName();
+                }
+            }
+          }
+        }
+        if($type){
+          if($type == self::rent_house_code){
+            foreach ($pos->getPosRentHouse() as $rentHouse){
+              $output['price']        = $rentHouse->getPrice();
+              $output['unit_price']    = $rentHouse->getUnitPrice();
+              $output['status']       = $rentHouse->getStatus();
+              $output['contact_name']  = $rentHouse->getContactName();
+              $output['contact_email'] = $rentHouse->getContactEmail();
+              $output['contact_tel']   = $rentHouse->getContactTel();
+            }
+          }
+        }
+        
+        /* count comment*/
+        $count = Doctrine::getTable('PosComment')->getCountComment($pos->getId());
+        $output['count_comment'] = $count;
+        $output['count_follow'] = Doctrine::getTable('PosFollow')->followMemberCount($pos->getId());
+
+        /* Bỏ check-in đối với nhà cho thuê */
+        if(!isset($type) || $type != self::rent_house_code){
+            $output['count_checkin'] = Doctrine::getTable('PosCheckin')->checkinMemberCount($pos->getId());
+        /* check-in Status */
+            $posCheckIn = Doctrine::getTable('PosCheckin')->getCheckInStatus($pos->getId(),$this->getUser()->getMemberId());
+            if($posCheckIn){
+              $output['time_of_checkin'] = $posCheckIn->getCreatedAt();
+              $output['checkin_status'] = $posCheckIn->getStatus();
+              $checkInTime = strtotime($posCheckIn->getCreatedAt());
+              $date = strtotime(PluginPosCheckinTable::checkinAgainTime,$checkInTime);
+              if($date<= time())
+                $output['checkin_again'] =  true;
+              else
+                $output['checkin_again'] =  false;
+            }
+        }
+        /* follow Status */
+        $posFollow = Doctrine::getTable('PosFollow')->getFollowStatus($pos->getId(),$this->getUser()->getMemberId());
+        if($posFollow)
+          $output['follow_status'] = $posFollow->getStatus();
+        return $output;
+    }
+    /**
+     * Hàm convert một list các Pos thành một mảng
+     * để convert được thành json
+     *
+     * @author thuclh
+     */
+    public function convertListPos2Array($pos_list,$type,$isFriend) {
+        $output = array();
+        foreach ($pos_list as $pos){
+           $output[] = $this->convertPos2Array($pos,$type,$isFriend);
+        }
+        return $output;
+    }
+    /**
+     * Hàm convert một Pos thành một json
+     *
+     * @author thuclh
+     */
+    public function convertPos2Json(Pos $pos) {
+        return json_encode($this->convertPos2Array($pos));
+    }
+    /**
+     * Hàm convert một list các Pos thành 1 json
+     *
+     * @author thuclh
+     */
+    public function convertListPos2Json($pos_list) {
+        return json_encode($this->convertListPos2Array($pos_list));
+    }
+    /**
+     * hàm convert tọa độ của GPS thành tọa độ bản đồ
+     *
+     * @author thuclh
+     */
+    public function convertGpsCoor2MapCoor($coor) {
+    //    doubleval($var)
+        $a = intval($coor / 100);
+        $b = $coor - $a * 100;
+        $b = $b / 60;
+        return $a + $b;
+    }
+    public function getCodeOfCategory($codeBase){
+      $codeBase = explode('_',$codeBase);
+      $code = '';
+      for($i=0;$i<count($codeBase);$i++){
+        if($i == 0)
+          $code= $code.$codeBase[$i];
+        else
+          $code = $code.ucfirst($codeBase[$i]);
+      }
+      return $code;
+    }
+    
+    /*
+     * tuent
+     */
+    
+    public function isAuthoritative($pos) {
+        if ($pos->getOwer_id()) {
+            if ($this->getUser()->getMemberId() == $pos->getOwer_id())
+                return true;
+        }
+        if ($this->getUser()->getMemberId() == $pos->getMember_id())
+            return true;
+        if ($pos->getEditer()) {
+            $editers = explode(',', $pos->getEditer());
+            foreach ($editers as $editer) {
+                if ($this->getUser()->getMemberId() == $editer) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
+    /*
+     * tuent
+     * kiểm tra check-in
+     */ 
+    public function executeCheckinPermission(sfWebRequest $request) {
+        $output = array();
+        $pos_id = $request->getParameter('pos_id');
+        $pos = Doctrine_Core::getTable('Pos')->find($pos_id);
+        $pos_lat = $pos->getLat();
+        $pos_lng = $pos->getLng();
+        $user_lat = $request->getParameter('user_lat');
+        $user_lng = $request->getParameter('user_lng');
+        
+        $distance = opToolkit::distance_haversine($pos_lat, $pos_lng, $user_lat, $user_lng);
+        
+        if($distance < 0.2) {
+            $output['is_ok'] = true;
+        } else {
+            $output['is_ok'] = false;
+        }
+        
+        echo json_encode($output);
+        return sfView::NONE;
+    }
+}

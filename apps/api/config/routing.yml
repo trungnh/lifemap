@@ -1,0 +1,48 @@
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+member_check_login:
+  url: /member/checkLogin
+  param: { module: member, action: checkLogin}
+
+member_get_statistic:
+  url: /member/getStatistic
+  param: {module: member,  action: getStatistic}
+
+member_ get_checkin:
+  url: /member/getCheckin
+  param: {module: member, action: getCheckin}
+
+member_get_friends:
+  url: /member/getFriends
+  param: {module: member, action: getFriends}
+
+member_get_list_checkin:
+  url: /member/getListCheckin
+  param: {module: member, action: getListCheckin}
+
+member_get_list_follow:
+  url: /member/getListFollow
+  param: {module: member, action: getListFollow}
+
+member_get_list_comment:
+  url: /member/getListComment
+  param: {module: member, action: getListComment}
+  
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
+
+
+aaa:
+  url: /pos/getPosInfo/*
+  param: { module: pos, action: getPosInfo }
+  
+bbb:
+  url: /pos/getPosCheckin/*
+  param: { module: pos, action: getPosCheckin }

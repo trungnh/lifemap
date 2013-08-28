@@ -1,0 +1,126 @@
+.mf_item_name span{
+	color: #838383;
+  font-weight: normal;
+}
+.mf_list_friend li  {padding: 10px 5px;}
+.mf_item_name2 {    color: #838383;    float: left;    overflow: hidden;    padding-left: 10px;    width: 480px;	font-weight: normal;}
+.mf_item_name2 a{font-weight: bold;}
+.tab_product {
+    float: left;
+    height: 26px;
+    width: 100%;
+	
+}
+.bottom_line {border-bottom: 1px solid #D7E0E9; }
+ .tab_product li {
+    background: none repeat scroll 0 0 #EDEDED;
+    border-color: #D7E0E9 #D7E0E9 -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    display: inline;
+    float: left;
+    height: 25px;
+    margin: 0 5px 0 0;
+    width: 97px;
+}
+.tab_product li a {
+    display: block;
+    font: 700 11px/25px tahoma;
+    height: 25px;
+    text-align: center;
+    width: 97px;
+}
+
+.tab_product li.active {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #B7C5CE #B7C5CE -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    height: 26px;
+}
+/*mesage*/
+
+.tb-composebox-label {
+    color: #777777;
+    font-weight: bold;
+    padding-right: 3px;
+    text-align: right !important;
+}
+td, td.label {
+    color: #777777;
+    font-size: 11px;
+    text-align: left;
+}
+ul.holder {
+    width: 400px;
+}
+ul.holder {
+    border: 1px solid #b7c5ce;
+    height: auto !important;
+    margin: 0;
+    overflow: hidden;
+    padding: 2px 5px 0;
+}
+ul.holder li {
+    float: left;
+    list-style-type: none;
+    margin: 0 5px 4px 0;
+    white-space: nowrap;
+	border: none !important;
+}
+ul.holder li.bit-input input {
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+   
+    padding: 3px 0 2px;
+    width: auto;
+}
+.tb-composebox-title {
+    border: 1px solid #b7c5ce;
+    height: auto !important;
+    padding: 5px;
+    width: 400px;
+}
+.notice {
+    color: #777777;
+    font-size: 9px;
+    text-align: left;
+}
+.tb-composebox-textcontent {
+    border: 1px solid #b7c5ce;
+    height: 56px;
+    padding: 5px;
+    width: 400px;
+}
+.lm-boxy-footer {
+    
+    padding: 8px 10px;
+    text-align: center;
+}
+.lm-boxy button {
+    cursor: pointer;
+    font-weight: bold;
+    height: 24px;
+    margin: 0 0 0 6px;
+    width: 90px;
+}
+.lm-boxy-cancel {
+    background-color: #EEEEEE;
+    border: 1px solid #999999;
+    color: #333333;
+}
+.lm-boxy-ok {
+    background-color: #80A3D3;
+    border: 1px solid #29447E;
+    color: #FFFFFF;
+}
+.tb-composebox {
+    
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 485px;
+}
+.bit-input .maininput{
+	width: 390px !important;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Introductory essay</source>
+        <target>Lời giới thiệu</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>photo</source>
+        <target>Ảnh</target>
+      </trans-unit>
+     </body>
+  </file>
+</xliff>

@@ -1,0 +1,71 @@
+<div class="infowindow">
+    <h3><a href="pos/<%=pos.id%>" target='_blank' title='Xem chi tiết thông tin của địa điểm'><%=pos.title %></a></h3>
+    <div class="pos-img">
+       <img class='img_40x40' src="<%=pos.file_img%>" />
+    </div>
+    <div class="pos-info">
+        <span><%= pos.address%></span>
+        <br/>
+        <span>Loại: <%= pos.category%></span>
+        <br/>
+        <span>Tag: <%=pos.tags%></span>
+    </div>
+    <div class="clear"></div>
+    <div>
+        <div id="pos_statistic">
+            <ul>
+              <li class="first-list-item"><a href="pos/<%=pos.id%>" target='_blank' title="Xem chi tiết thông tin của địa điểm">Xem chi tiết</a></li>
+              <li>|</li>
+              <li><a href="pos/<%=pos.id%>#comment_box" id="pos_statistic_comment" title="Số cảm nhận về địa điểm"><%=pos.count_comment%> cảm nhận</a></li>
+              <li>|</li>
+              <% if(pos.count_checkin>0){%>
+                <li><a href="pos/checkinList?id=<%=pos.id%>&type=member" id="pos_statistic_checkin" title="Số người check-in" class="ajax">
+                <span id='checkin_number'><%=pos.count_checkin%></span> check-in</a></li>
+              <% }else{%>
+                <li><a href="#" id="pos_statistic_checkin" title="Số người check-in">
+                <span id='checkin_number'><%=pos.count_checkin%></span> check-in</a></li>
+              <% }%>
+              <li>|</li>
+              <%if(pos.count_follow){%>
+                  <li><a href="pos/followList/<%=pos.id%>?type=member" id="pos_statistic_follow" title="Số người theo dõi" class="ajax"><span id='follow_number'><%=pos.count_follow%></span> theo dõi</a></li>
+              <%}else{%>
+                  <li><a href="#" id="pos_statistic_follow" title="Số người theo dõi">
+                  <span id='follow_number'><%=pos.count_follow%></span> theo dõi</a></li>
+              <%}%>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div id="pos_actions">
+            <input type='hidden' id="pos_id" value="<%=pos.id%>"/>
+            <ul>
+            <% if(!pos.checkin_status){ %>
+              <li><div id='pos_checkin_box'><a href="#" id="pos_checkin" title="Đánh dấu bạn đang ở đây">Check-in</a></div></li>
+            <%}else{
+                if(pos.checkin_status==1){%>
+                  <li><a href="#" title="Bạn đang ở đây từ lúc <%=pos.time_of_checkin%>"> Đang check-in </a></li>
+                <%}else{%>
+                  <%if(pos.checkin_again){%>
+                      <li><div id='pos_checkin_box'><a href="#" id="pos_checkin" title="Bạn đã ở đây vào lúc <%=pos.time_of_checkin%>">Check-in</a></div></li>
+                  <%}else{%>
+                      <li><a href="#"  title="Bạn đã ở đây vào lúc <%=pos.time_of_checkin%>">Check-in</a></li>
+                  <%}%>
+                  <%}
+                }%>
+              <li>|</li>
+            <% if(!pos.follow_status){%>
+             <li><div id='pos_follow_box'><a href="#" id="pos_follow" title="Đăng ký theo dõi địa điểm này">Theo dõi</a></div></li>
+            <%}else{
+                if(pos.follow_status==1){%>
+                  <li><a href="#" title="Bạn đang theo dõi địa điểm này"> Theo dõi</a></li>
+                <%}else{%>
+                  <li><a href="#" title="Bạn đang theo dõi địa điểm này"> Theo dõi</a></li>
+                  <%}
+                }%>
+              <li>|</li>
+              <li><a href="pos/sendMailForm?id=<%=pos.id%>" id="pos_send_mail" title="Gửi mail đặt lịch hẹn với bạn bè" class="ajax">Gửi mail</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

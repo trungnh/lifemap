@@ -1,0 +1,3046 @@
+$(document).ready(function () {
+    var viewHeight = $(window).height();
+    var root = "opSkinBasicPlugin/js";
+    var map;
+    var markersArray = [];
+    var infowindowsArray = [];
+    var page = 1;
+    var prev_page = false;
+    var next_page = true;
+    var keyword = '';
+    var new_pos_id = null;
+    var menu_flag = 1; // 1: Tìm kiếm, 2: Đăng tin, 3: Địa điểm của tôi, 4: Địa điểm tôi check-in, 5: Địa điểm tôi follow, 6: Địa điểm tôi comment, 7: Bạn bè
+    var directionsDisplay;
+    var directionsService = new google.maps.DirectionsService();
+    var geocoder;
+    // an right col va cac buttons lien quan
+    hideRightColAndButtons();
+    
+    var edit_lat;
+    var edit_lng;
+    
+    $('.ajax').live('click',function(e){
+        e.preventDefault();
+        $.fn.colorbox({
+            href:$(this).attr('href'),
+            open:true
+        })
+    });
+    function addActived(element){
+        element.addClass('actived');
+    }
+    
+    /* Load Map */
+    function initialize() {
+        directionsDisplay = new google.maps.DirectionsRenderer();
+        geocoder = new google.maps.Geocoder();
+        // config window
+        $("#map").css('height', viewHeight - 85+"px");
+        $("#leftCol").css({
+            'height': viewHeight - 105 +"px"
+        });
+        
+        $("#left-container").css({
+            'height': viewHeight - 125 +"px"
+        });
+        
+        var latlng = new google.maps.LatLng(21.022502, 105.846062);
+        // get position of member from cookie
+        var cookiepositionMember = getPositionMember();
+        var positionMember = cookiepositionMember?cookiepositionMember.split(/,/):null;
+        if(positionMember == null){
+            /**Geolocation - Xac dinh vị trí người dùng*/
+            navigator.geolocation.getCurrentPosition(function(position){
+                // reverse geocoding
+                latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+                setMapCenter(latlng);
+                setPositionMember([position.coords.latitude,position.coords.longitude]);
+                viewMarkerPositionMember(latlng);
+
+            });
+            // get center map to cookie
+            var cookieCenter = getMapCenterCookie();
+            if(cookieCenter == null){
+                setMap(latlng);
+            }else{
+                var center = cookieCenter?cookieCenter.split(/,/):null;
+                latlng = new google.maps.LatLng(center[0],center[1]);
+                setMap(latlng);
+            }
+        }else{
+            // set center map to cookie
+            setMapCenterCookie(positionMember);
+            latlng = new google.maps.LatLng(positionMember[0],positionMember[1]);
+            setMap(latlng);
+            viewMarkerPositionMember(latlng);
+        }
+    }
+    /** Thiet lap ban do*/
+    function setMap(latlng){
+        var myOptions = {
+            zoom: 15,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById("map"),myOptions);
+        directionsDisplay.setMap(map);
+        directionsDisplay.setPanel(document.getElementById("directionsPanel"));
+        
+        google.maps.event.addListenerOnce(map, 'idle', function(){
+            visitedLeftNav($('#a-find-place'));
+        //loadFindPos();
+        });
+    }
+    /**Thay doi tâm bản đồ*/
+    function setMapCenter(latlng){
+        map.setCenter(latlng);
+        setMapCenterCookie([latlng.lat(),latlng.lng()]);
+    }
+    /**Hiển thị marker tại vị trí người dùng*/
+    function viewMarkerPositionMember(latlng){
+        var marker = new google.maps.Marker({
+            position: latlng,
+            title: "Vị trí hiện tại của bạn!",
+            draggable: false,
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        var infowindow = new google.maps.InfoWindow(
+        {
+            content: "Vị trí hiện tại của bạn!"
+        });
+        infowindow.open(map, marker);
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+    }
+    initialize();
+    /* huent
+     * Tìm đường
+     */
+    function calcRoute() {
+        var start = document.getElementById("start").value;
+        var end = document.getElementById("end").value;
+        var request = {
+            origin:start,
+            destination:end,
+            travelMode: google.maps.TravelMode.DRIVING
+        };
+        directionsService.route(request, function(result, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+                directionsDisplay.setDirections(result);
+            }
+        });
+    }
+    /* Lấy vị trí của tôi */
+    $('.my_position_start').live('click',function(event){
+        event.preventDefault();
+        var member_position = getPositionMember();
+        getAddressFromCoordinate(member_position,0);
+    })
+    $('.my_position_end').live('click',function(event){
+        event.preventDefault();
+        var member_position = getPositionMember();
+        getAddressFromCoordinate(member_position,1);
+    })
+    $('#direction_button').live('click',function(event){
+        event.preventDefault();
+        calcRoute();
+    })
+    $('.start_way').live('click',function(event){
+        event.preventDefault();
+        if($('#direction_box').hasClass('show')){
+            $('#start').val($(this).attr('href'));
+        }else{
+            var  direction = new EJS({
+                url: root+'/view/direction'
+            }).render({
+                start:$(this).attr('href'),
+                end:$(this).attr('href')
+            });
+            $("#direction-form").html(direction);
+            $('#direction_box').addClass('show');
+        }
+    })
+    $('.end_way').live('click',function(event){
+        event.preventDefault();
+        if($('#direction_box').hasClass('show')){
+            $('#end').val($(this).attr('href'));
+        }else{
+            var  direction = new EJS({
+                url: root+'/view/direction'
+            }).render({
+                start:$(this).attr('href'),
+                end:$(this).attr('href')
+            });
+            $("#direction-form").html(direction);
+            $('#direction_box').addClass('show');
+        }
+    })
+    /* End Tìm đường */
+
+    /**Chọn tỉnh thành*/
+    $(".select-city").change(function(){
+        var value = $(this).val();
+        var position = value?value.split(/,/):null;
+        setMapCenter(new google.maps.LatLng(position[0],position[1]));
+    });
+
+    /*
+     * Bắt sự kiện khi click vào tôi
+     * @muoidv
+     */
+    $("#a-manage-my-place").click(function(event){
+        $('.left-icon').html('');
+        $('.content-pos-icon').html('');
+        menu_flag = 3;
+        event.preventDefault();
+        visitedLeftNav($(this));
+        
+        // hiển thị menu item
+        var add_map = new EJS({
+            url: root+'/view/menu-left-icon'
+        }).render({});
+        $('.left-icon').html(add_map);
+        
+        visitedLeftNavItem($('#a-my-place'));
+        page = 1;
+        /*
+         *ajax gửi lên server kiểm tra xem đã đăng nhập hay chưa
+         *
+         **/
+        $.ajax({
+            url:'pos/validateLogin',
+            type:'get',
+            dataType: 'json',
+            beforeSend:function(){},
+            success:function(data){
+                if(data.status ==true){
+                    /*
+                     *Nếu mà đã đăng nhập thì hiển thị dánh sách vị trí của bạn bè
+                     **/
+                    loadFriendPlace(page);
+                }
+                else{
+                    $(".content-pos-icon").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+            }
+        });
+
+    })
+    /* Danh sách địa điểm tôi đăng */
+    $(".a-my-place").live("click",function(event){
+        menu_flag = 3;
+        event.preventDefault();
+        visitedLeftNavItem($(this));
+        page = 1;
+        loadMyPlace(page);
+    });
+    
+    $(".a-my-checkin").live("click",function(event){
+        $('.content-pos-icon').html('');
+        menu_flag = 4;
+        event.preventDefault();
+        visitedLeftNavItem($(this));
+        page = 1;
+        loadMyCheckin(page);
+    });
+    $(".a-my-follow").live("click",function(event){
+        $('.content-pos-icon').html('');
+        menu_flag = 5;
+        event.preventDefault();
+        visitedLeftNavItem($(this));
+        page = 1;
+        loadMyFollow(page);
+    });
+    $(".a-my-comment").live("click",function(event){
+        $('.content-pos-icon').html('');
+        menu_flag = 6;
+        event.preventDefault();
+        visitedLeftNavItem($(this));
+        page = 1;
+        loadMyComment(page);
+    });
+    $(".a-my-friends").live("click",function(event){
+        //        $('#add-my-new-place').html('');
+        menu_flag = 7;
+        event.preventDefault();
+        visitedLeftNav($(this));
+        page = 1;
+        loadFriendPlace(page);
+    });
+    
+    $("#searchForm").submit(function(event){
+        event.preventDefault();
+        //visitedLeftNav($(this));
+        page = 1;
+       
+        keyword = $('#txtData').val();
+        $('#add-my-new-place').html('');
+        /* active menu Tìm kiếm */
+        visitedLeftNav($('#a-find-place'));
+        menu_flag = 1;
+        loadSearchByText(page, keyword);
+    });
+
+    /* check-in: infoWindow*/
+    $('#pos_checkin').live("click",function(event){
+        event.preventDefault();
+        // gọi hàm kiểm tra vị trí 300m
+        navigator.geolocation.getCurrentPosition(function(position){
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            // latlng trong db của địa điểm
+            $.ajax({
+                type: "get",
+                url: "pos/checkinPermission",
+                dataType: 'json',
+                cache: false,
+                beforeSend: function() {
+                    showLoading();
+                },
+                data: 'pos_id=' + $('#pos_id').val() + '&user_lat=' +lat + '&user_lng=' + lng,
+                success: function(data){
+                    if(data.is_ok){
+                        $.get('pos/checkin/'+$('#pos_id').val()+'?'+Math.random(),
+                            function(data){
+                                if(data =='success'){
+                                    $('#pos_checkin_box').html('<p>Đang check-in</p>');
+                                    $('#checkin_number').text(parseInt($('#checkin_number').text())+1);
+                                }
+                                if(data =='un_login'){
+                                    alert('Bạn vui lòng đăng nhập để check-in địa điểm này!');
+                                }
+                            });
+                        $("#pos_checkin").attr('id','pos_checkin_1');
+                    } else {
+                        alert(' Bạn không thể check-in tại đây \n Bạn chỉ được check-in trong bán kính 200m');
+                    }
+                    hideLoading();
+                }
+            });
+        });
+    });
+
+    /* follow: infoWindow */
+    $('#pos_follow').live("click",function(event){
+        event.preventDefault();
+        $.get('pos/follow/'+$('#pos_id').val()+'?'+Math.random(),
+            function(data){
+                if(data =='success'){
+                    $('#pos_follow_box').html('<p>Đang theo dõi</p>');
+                    $('#follow_number').text(parseInt($('#follow_number').text())+1);
+                }
+                if(data =='un_login'){
+                    alert('Bạn vui lòng đăng nhập để theo dõi địa điểm này !');
+                }
+            });
+        $("#pos_follow").attr('id','pos_follow_1');
+    });
+
+    function visitedLeftNav(element){
+        $('#left-col-nav').find('a').removeAttr('style');
+        element.attr("style", "color: #da7a26 !important");
+    }
+    function visitedLeftNavItem(element){
+        $('#left-col-nav-item').find('a').removeAttr('style');
+        element.attr("style", "color: #da7a26 !important");
+    }
+    //$('.ajax').live(colorbox());
+    $('.ajax').live('click',function(e){
+        e.preventDefault();
+        $.fn.colorbox({
+            href:$(this).attr('href'),
+            open:true
+        })
+    });
+
+
+    /*
+     * @author: tuent
+     * nghe click vào pager và load menu, sidebar ứng với menu flag
+     */
+    
+    // next
+     
+    // load menu by menu_flag
+    function loadMenuByFlag(menu_flag,current_page){
+        switch(menu_flag){
+            case 1:
+                loadSearchByText(current_page,keyword);
+                break;
+            case 2:
+                loadMyCheckin(current_page);
+                break;
+            case 3:
+                loadMyPlace(current_page);
+                break;
+            case 4:
+                loadMyCheckin(current_page);
+                break;
+            case 5:
+                loadMyFollow(current_page);
+                break;
+            case 6:
+                loadMyComment(current_page);
+            case 7:
+                loadMyFriend(current_page);
+        }
+    }
+    
+    /**
+     * Hàm lấy danh sách các địa điểm member tạo ra trong khu vực bản đồ
+     *
+     * @thuclh (thuc.lehuy@gmail.com)
+     **/
+    function loadSendPosMail(current_page){
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+        var valid = '';
+        var isr = ' is required.';
+        var name = $("#name").val();
+        var mail = $("#mail").val();
+        var subject = $("#subject").val();
+        var text = $("#text").val();
+        if (name.length<1) {
+            valid += '<br />Name'+isr;
+        }
+        if (!mail.match(/^([a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,4}$)/i)) {
+            valid += '<br />A valid Email'+isr;
+        }
+        if (subject.length<1) {
+            valid += '<br />Subject'+isr;
+        }
+        if (text.length<1) {
+            valid += '<br />Text'+isr;
+        }
+        if (valid!='') {
+            $("#response").fadeIn("slow");
+            $("#response").html("Error:"+valid);
+        }
+        else {
+            var datastr ='name=' + name + '&mail=' + mail + '&subject=' + subject + '&text=' + text;
+            $("#response").css("display", "block");
+            $("#response").html("Sending message .... ");
+            $("#response").fadeIn("slow");
+            setTimeout("send('"+datastr+"')",2000);
+        }
+        $.ajax({
+            type: "get",
+            url: "pos/sendposmail",
+            dataType: 'json',
+            cache: false,
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            success: function(data){
+                var pos = data;
+                var html = new EJS({
+                    url: root+'/view/content_pos'
+                }).render({
+                    pos: pos
+                });
+                infowindow.setContent(html);
+
+                var sidebar_html = new EJS({
+                    url: root + '/view/sendmail_ok'
+                }).render({
+
+                    });
+            }
+        });
+    }
+    function loadSearchByText(current_page, keyword){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+        
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+        $.ajax({
+            url: 'pos/searchbytext',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random()+'&keyword='+keyword,
+            success: function(data){
+                if(data.status){
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = current_page+1;
+                    }
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = current_page -1;
+                    }
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        last:data.last
+                    });
+                    $("#pagingmap_main").html(paging_html);
+                    //display list
+                    var html = new EJS({
+                        url: root+'/view/list_pos'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list
+                    });
+                    
+                    $("#left-col-display").html(html);
+                    //display marker
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title: pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker,
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos: pos
+                            }),
+                            [$("#location-item-"+ pos.id)]);
+                    }
+                }else{
+                    $("#left-col-display").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        })
+    }
+    function loadMyPlace(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+        
+        // hiển thị danh sách các địa điểm của tôi
+        $.ajax({
+            url: 'pos/myplace',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            // data: 'page='+current_page+'&random='+Math.random(),
+            success: function(data){
+                if(data.status){
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = true;
+                    }
+                    
+                    //cant prev
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = true;
+                    }
+                    
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page: data.page,
+                        size: data.size,
+                        last: data.last
+                    });
+                    
+                    // display the pager
+                    $("#pagingmap_main").html(paging_html);
+                    
+                    //display list on sidebar
+                    var html = new EJS({
+                        url: root+'/view/my-place'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list
+                    });
+                    
+                    $(".content-pos-icon").html(html);
+                    //display marker
+                    
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title:pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker, 
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos: pos
+                            }),
+                            [$("#location-item-"+pos.id), $("#location-edit-"+pos.id)]);
+                    }
+                }else{
+                    $(".content-pos-icon").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+    /**
+     * Hàm lấy danh sách các địa điểm member check-in trong khu vực bản đồ
+     *
+     * @thuclh (thuc.lehuy@gmail.com)
+     **/
+    function loadMyCheckin(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+        
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+        
+        $.ajax({
+            url: 'pos/mycheckin',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            
+            success: function(data){
+                if(data.status){
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = current_page+1;
+                    }
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = current_page -1;
+                    }
+                    
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        last:data.last
+                    });
+                    $("#pagingmap_main").html(paging_html);
+                    //display list
+                    var html = new EJS({
+                        url: root+'/view/list_pos'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list
+                    });
+                    $(".content-pos-icon").html(html);
+                    //display marker
+                    deleteOverlays();
+                    
+                    for(i in data.list){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title: pos.title,
+                            draggable: true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker, 
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos:pos
+                            }),
+                            [$("#location-item-"+pos.id)]);
+                    }
+                }else{
+                    $(".content-pos-icon").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+    /**
+     * Hàm lấy danh sách các địa điểm member follow trong khu vực bản đồ
+     *
+     * @thuclh (thuc.lehuy@gmail.com)
+     **/
+    function loadMyFollow(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+        
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+        
+        $.ajax({
+            url: 'pos/myfollow',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+      
+            success: function(data){
+                if(data.status){
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = current_page+1;
+                    }
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = current_page -1;
+                    }
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        last:data.last
+                    });
+                    $("#pagingmap_main").html(paging_html);
+                    //display list
+                    var html = new EJS({
+                        url: root+'/view/list_pos'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list
+                    });
+                    $(".content-pos-icon").html(html);
+                    //display marker
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title:pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker, 
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos:pos
+                            }),
+                            [$("#location-item-"+pos.id)]);
+                    }
+                }else{
+                    $(".content-pos-icon").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+
+    function loadMyComment(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+
+        $.ajax({
+            url: 'pos/myComment',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+
+            success: function(data){
+                if(data.status){
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = current_page+1;
+                    }
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = current_page -1;
+                    }
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        last:data.last
+                    });
+                    $("#pagingmap_main").html(paging_html);
+                    //display list
+                    var html = new EJS({
+                        url: root+'/view/list_pos'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list
+                    });
+                    $(".content-pos-icon").html(html);
+                    //display marker
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title:pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker,
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos:pos
+                            }),
+                            [$("#location-item-"+pos.id)]);
+                    }
+                }else{
+                    $(".content-pos-icon").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+
+    function loadFriendPlace(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+        
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+        
+        $.ajax({
+            url: 'pos/friendplace',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            success: function(data){
+                if(data.status){
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = current_page+1;
+                    }
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = current_page -1;
+                    }
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        last:data.last
+                    });
+                    $("#pagingmap_main").html(paging_html);
+                    //display list
+                    var html = new EJS({
+                        url: root+'/view/list_my_friend'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list
+                    });
+                    $(".content-pos-icon").html(html);
+                    //display marker
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title:pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker,
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos:pos
+                            }),
+                            [$("#location-item-"+pos.id)]);
+                    }
+                }else{
+                    $(".content-pos-icon").html(new EJS({
+                        url: root+'/view/error_no_friend'
+                    }).render({
+                        description:data.description                        
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+    //ham hien thi anh loading
+    function showLoading() {
+        $(".wait_load").show();
+    }
+    //ham an anh loading
+    function hideLoading() {
+        $(".wait_load").hide();
+    }
+    $(".location-item").live("mouseover",function(){
+        $(this).addClass("location-item_hover");
+    });
+    $(".location-item").live("mouseout",function(){
+        $(this).removeClass("location-item_hover");
+    });
+
+    function addMarker(marker) {
+        markersArray.push(marker);
+    }
+    // Removes the overlays from the map, but keeps them in the array
+    function clearOverlays() {
+        if (markersArray) {
+            for (i in markersArray) {
+                markersArray[i].setMap(null);
+            }
+        }
+    }
+    // Shows any overlays currently in the array
+    function showOverlays() {
+        if (markersArray) {
+            for (i in markersArray) {
+                markersArray[i].setMap(map);
+            }
+        }
+    }
+    // Deletes all markers in the array by removing references to them
+    function deleteOverlays() {
+        if (markersArray) {
+            for (i in markersArray) {
+                markersArray[i].setMap(null);
+            }
+            markersArray.length = 0;
+        }
+    }
+    
+    /**
+     *Hàm tạo infowindow cho marker
+     *@param marker marker co infowindow
+     *@param content nội dung html hiển thị trên infowindow
+     *@param elements danh sách các element mà khi click vào sẽ hiển thị infowindow
+     *@author thuclh
+     **/
+    function addInfoWindow(marker, content, elements){
+        // lưu latlng cũ
+        var latlng = marker.getPosition();
+        edit_lat = latlng.lat();
+        edit_lng = latlng.lng();
+                    
+        var infowindow = new google.maps.InfoWindow(
+        {
+            content: content
+        });
+        
+        infowindowsArray.push(infowindow);
+        google.maps.event.addListener(marker, 'click', function() {
+            clearInfowindows();
+            infowindow.open(map, marker);
+            //boi den
+            if(elements){
+                var element;
+                for(var i = 0; i<elements.length; i++){
+                    element = elements[i];
+                    $('.li-active').removeClass('li-active');
+                    element.addClass('li-active');
+                }
+            }
+            
+        });
+        
+        if(elements){
+            if(elements[0]) {
+                var element1 = elements[0];
+                element1.live("click", function(){
+                    clearInfowindows();
+                    infowindow.open(map,marker);
+                    $('.li-active').removeClass('li-active');
+                    element1.addClass('li-active');
+                });
+            }
+            
+            if(elements[1]) {
+                var element2 = elements[1];
+                element2.live('click', function() {
+                    marker.setDraggable(true);
+                    google.maps.event.addListener(marker, "dragend", function(event) {
+                        var latlng = marker.getPosition();
+                        edit_lat = latlng.lat();
+                        edit_lng = latlng.lng();
+                    });
+                });
+            }
+        }
+    }
+    
+    /*Ẩn các Infowindows*/
+    function clearInfowindows(){
+        if (infowindowsArray) {
+            for (i in infowindowsArray) {
+                infowindowsArray[i].close();
+            }
+        }
+    }
+    /*Xóa các Infowindows*/
+    function deleteInfowindows(){
+        if (infowindowsArray) {
+            for (i in infowindowsArray) {
+                infowindowsArray[i].close();
+            }
+            infowindowsArray.length = 0;
+        }
+    }
+   
+    /**************************************************************************
+     *                                                                        *
+     *  tuent                                                                 *
+     *                                                                        *
+     *************************************************************************/
+    
+    /* part: creat a new map */
+    
+    // display a position
+    function displayPosInfo(marker, infowindow, id) {
+        $.ajax({
+            url: 'pos/getAPosition',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'id='+id,
+            success: function(data){
+                //                var pos = data;
+                //                var html = new EJS({
+                //                    url: root+'/view/content_pos'
+                //                }).render({
+                //                    pos: pos
+                //                });
+                //
+                //                infowindow.setContent(html);
+                infowindow.open(map, marker);
+                page = 1;
+                loadMyPlace(page);
+                //                var sidebar_html = new EJS({
+                //                    url: root + '/view/new-pos-ok'
+                //                }).render({
+                //
+                //                    });
+                //
+                //                $("#left-col-display").html(sidebar_html);
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+
+
+    // load infowindow
+    function loadInfowindow(marker){
+        
+        // creat infowindow content
+        var infowindow_content = new EJS({
+            url: root + '/view/new_pos_instruction'
+        }).render({
+            });
+        // creat infowindow
+        var infowindow = new google.maps.InfoWindow({
+            content: infowindow_content
+        });
+
+        infowindow.open(map, marker)
+        $('.infowindow-submit').live('click', function(){
+            $('.infowindow-submit').live('click', function(){
+                saveInfowindowData(marker, infowindow);
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+            });
+
+            google.maps.event.addListener(marker, 'dragend', function() {
+                infowindow.open(map, marker);
+            });
+        });
+    }
+    // function save infowindow data to server
+    function saveInfowindowData(marker, infowindow){
+        var latlng = marker.getPosition();
+        var info = $('.new-pos-infowindow-form').serialize();
+        info += '&lat='+ latlng.lat() + '&lng=' + latlng.lng();
+        var valid ='';
+        var title = $(".pos-title").val();
+        var address = $(".pos-address-abc").val();
+
+        if (title.length<1) {
+            valid += 'Bạn không được để trống tiêu đề !';
+        }
+
+        if (address.length<1) {
+            valid += '<br />Bạn không được để trống địa chỉ !';
+        }
+
+        if (valid!='') {
+            $(".div-show-error").html(valid);
+        }
+        if(valid==''){
+            $.ajax({
+                url: 'pos/newPos',
+                type: 'get',
+                dataType: 'json',
+                data: info,
+                beforeSend: function() {
+                    showLoading();
+                },
+                success: function(data){
+                    var id = data.posId;
+                    displayPosInfo(marker, infowindow, id);
+                    hideLoading();
+                },
+                error: function(){
+                    hideLoading();
+                }
+            });
+        }
+    }
+    // creat new map
+    $('.a-post-place').live('click', function(event){
+
+        // delete all markers
+        $("#pagingmap_main").html('');
+        $('.content-pos-icon').html('');
+        
+        $.ajax({
+            url: 'pos/loadAllCategories',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+            },
+            success: function(data){
+                if(data.status == true){
+                    // creat infowindow content
+                    var html= new EJS({
+                        url: root + '/view/marker-info-window-input'
+                    }).render({
+                        categories: data
+                    });
+                    $(".content-pos-icon").html(html);
+
+                }else
+                    $(".content-pos-icon").append("<div class='instruction-title'style='text-align:right'>"+data.description+'</div>');
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+        deleteOverlays();
+        visitedLeftNav($(this));
+        event.preventDefault();
+
+        var geocoder = new google.maps.Geocoder();
+        
+        navigator.geolocation.getCurrentPosition(function(position){
+            var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            
+            map.setCenter(latlng);
+            
+            // reverse geocoding 
+            geocoder.geocode({
+                'latLng': latlng
+            }, function(results, status) {
+                if(status == google.maps.GeocoderStatus.OK){
+                    if(results[0]){
+                        // make and show the marker for current position
+                        var marker = new google.maps.Marker({
+                            position: latlng,
+                            draggable: true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        
+                        markersArray.push(marker);
+                        loadInfowindow(marker);
+                    }  
+                }else{
+                    alert('Error');
+                }
+            });
+        });        
+    });
+    
+    /*
+     * tuent
+     * show rightcol
+     */
+    
+    function showRightCol(){
+        $('#detail-info').animate({
+            width: 'show' 
+        }, 100);
+    }
+    
+    /*
+     * tuent
+     * hide rightcol
+     */
+    function hideRightCol(){
+        $('#detail-info').animate({
+            width: 'hide' 
+        }, 100);
+    }
+    
+    function hideRightColAndButtons() {
+        hideRightCol();
+        $('#show-button-container').hide();
+    }
+    
+    /* tuent
+     * nghe click để show/hide right col (house info)
+     */
+    
+    $('#hide-button').live('click', function(){
+        hideRightCol();
+    });
+    
+    $('#show-button').live('click', function(){
+        showRightCol();
+    });
+
+    /*
+     *load về các địa điểm mới đăng nhất
+     *auth: muoidv
+     **/
+    function loadNewPlace(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+
+        // hiển thị danh sách các địa điểm mới đăng
+        $.ajax({
+            url: 'pos/newplace',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            // data: 'page='+current_page+'&random='+Math.random(),
+            success: function(data){
+                if(data.status){
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = true;
+                    }
+
+                    //cant prev
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = true;
+                    }
+
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page: data.page,
+                        size: data.size,
+                        last: data.last
+                    });
+
+                    // display the pager
+                    $("#pagingmap_main").html(paging_html);
+
+                    //display list on sidebar
+                    var html = new EJS({
+                        url: root+'/view/my-place'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list
+                    });
+
+                    $("#left-col-display").html(html);
+                    //display marker
+
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title:pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker,
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos: pos
+                            }),
+                            [$("#location-item-"+pos.id)]);
+                    }
+                }else{
+                    $("#left-col-display").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+    function loadNewPage(){
+        menu_flag = 5;
+        visitedLeftNav($(this));
+        page = 1;
+
+        // hiển thị nút tạo mới bản đồ
+        var add_map = new EJS({
+            url: root+'/view/add-new-place'
+        }).render({});
+
+        $("#add-my-new-place").html(add_map);
+
+        loadNewPlace(page);
+    }
+    
+    $("#refresh-map-button").live('click',function(event){
+        menu_flag = 5;
+        event.preventDefault();
+        
+        page = 1;
+        loadNewPlace(page);
+    });
+    /* huent
+     * Tìm địa điểm
+     */
+    $('#a-find-place').live('click',function(event){
+        event.preventDefault();
+        $("#pagingmap_main").html('');
+        $('#add-my-new-place').html('');
+        deleteOverlays();
+        // Hiện thị dòng hướng dẫn tìm kiếm địa điểm
+        visitedLeftNav($(this));
+        loadFindPos();
+    });
+    
+    function loadFindPos(){
+        menu_flag = 1
+        var html = new EJS({
+            url: root+'/view/note_find_pos'
+        }).render({});
+        $("#left-col-display").html(html);
+    }
+    
+    /* 
+     * tuent
+     * chỉnh sửa địa điểm
+     */
+    $('.a-edit-pos').live('click', function(e) {
+        $('#show-button-container').show();
+        $('#info-nav-content').show();
+        $('#photo-nav-content').hide();
+        $('#notification').hide();
+        e.preventDefault();
+        /* active nav thông tin nhà */
+        addActived($(this));
+        
+        // gắn nav cho righ col
+        var nav = new EJS({
+            url: root+'/view/edit-pos-nav'
+        }).render({});
+        
+        $('#rightcol-nav').html(nav)
+        
+        // lấy pos_id
+        var pos_id = $(this).attr('href');
+        
+        // thiết lập nội dung cho div#info-nav-content và div#photo-nav-content
+        $.ajax({
+            url: 'pos/editPos/' + pos_id,
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            
+            success: function(data){
+                // sinh nội dung cho div#info-nav-content
+                var html = new EJS({
+                    url: root+'/view/edit-pos'
+                }).render({
+                    pos: data
+                }); 
+                
+                $('#info-nav-content').html(html);
+                
+                // sinh nội dung cho div#info-nav-content
+                var html_image = new EJS({
+                    url: root+'/view/edit_pos_photo_tab'
+                }).render({
+                    images:data.images
+                });
+
+                // sinh nội dung cho div#info-nav-content
+                $('#photo-nav-content').html(html_image);
+                new_pos_id = pos_id;
+                loadAjaxUpload();
+                // ẩn sửa ảnh
+                $('#photo-nav-content').hide();
+                
+                // active nav sửa nhà
+                addActived($('#a-house-edit-info'));
+        
+                // hiển thị cột  sửa thông tin
+                $('#info-nav-content').show();
+        
+                /* hiển thị nút show right col */
+                $('#show-button-container').show();
+        
+                // hiển thị right col
+                showRightCol();
+                        
+                hideLoading();
+                
+                // lang nghe update nha
+                $('#update-pos').live('click', function() {
+                    updatePos(pos_id);
+                });
+            },
+            error: function(){
+                hideLoading();
+            }
+        });  
+    });
+    
+    /* 
+     * tuent
+     * cap nhat dang nha
+     */
+    function updatePos(pos_id) {
+        var info = $('#edit-pos-form').serialize();
+        info += '&pos_id=' + pos_id + '&lat=' + edit_lat + '&lng=' + edit_lng;
+        
+        $.ajax({
+            url: 'pos/updatePos',
+            type: 'get',
+            dataType: 'json',
+            data: info,
+            beforeSend: function() {
+                showLoading();
+            },
+            
+            success: function(data){
+                $('#a-house-edit-info').removeClass('actived');
+                $('#info-nav-content').hide();
+                $('#notification').html('<p>Bạn đã cập nhật thành công thông tin địa điểm.</p>');
+                $('#notification').show();
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });  
+    }
+    
+    /*
+     * tuent
+     * nghe click vao cac tab cua sua dia diem (tab: sua thong tin va sua anh)
+     */
+    $('#a-house-edit-info').live('click', function() {
+        $('#notification').hide();
+        $('#photo-nav-content').hide();
+        
+        $('#a-house-edit-photo').removeClass('actived');
+        $(this).addClass('actived');
+        $('#info-nav-content').show();
+    }); 
+    
+    $('#a-house-edit-photo').live('click', function() {
+        $('#notification').hide();
+        $('#info-nav-content').hide();
+        
+        $('#a-house-edit-info').removeClass('actived');
+        $(this).addClass('actived');
+        $('#photo-nav-content').show();
+    });
+
+    /* Upload Image Pos */
+
+    function loadAjaxUpload(){
+        var file_desc = $('#photo-name').val();
+        var btnUpload = $('#upload');
+        var status = $('#status');
+        new AjaxUpload(btnUpload, {
+            action: 'pos/uploadImage/'+new_pos_id+"?"+Math.random()+'&file_desc='+file_desc,
+            name: 'uploadfile',
+            onSubmit: function(file, ext){
+                if (! (ext && /^(jpg|png|jpeg|gif)$/.test(ext))){
+                    // extension is not allowed
+                    status.text('Only JPG, PNG or GIF files are allowed');
+                    return false;
+                }
+                status.text('Đang tải...');
+            },
+            onComplete: function(file, data){
+                //On completion clear the status
+                status.text('');
+                //Add uploaded file to list
+                if(data){
+                    var obj = jQuery.parseJSON(data);
+                    var html = new EJS({
+                        url: root+'/view/list_photo_post'
+                    }).render({
+                        photo_id:obj.id,
+                        pos_id:obj.pos_id,
+                        file_id:obj.file_id,
+                        desc:file_desc,
+                        file_name:obj.file_name
+                    });
+                    $('#list-photo-rent-house').append(html);
+                    $('#photo-name').val('');
+                }else{
+                    $('#status').html("<p style='color:red;'>Không đăng được ảnh</p>");
+                }
+                hideLoading();
+            }
+        });
+    }
+    /* huent
+     * Xóa ảnh đã đăng
+     */
+    $('.delete_photo_pos').live("click",function(event){
+        event.preventDefault();
+        var url ='pos/' + $(this).attr('href');
+        $(this).parent('.photo-new').addClass('del');
+        $.ajax({
+            url: url,
+            type:'get',
+            beforeSend: function(){
+                showLoading();
+            },
+            success: function(data){
+                if(data == true)
+                    $('.del').html('');
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    });
+    /* huent
+     * thay thế ảnh đại diện
+     */
+    $('.avatar-post').live("click",function(event){
+        event.preventDefault();
+        if(!$(this).hasClass('avatar-now')){
+            var url = 'pos/' + $(this).attr('href');
+            $(this).parent('.photo-new').addClass('avatar');
+            $.ajax({
+                url: url,
+                type:'get',
+                data:'posId='+new_pos_id,
+                beforeSend: function(){
+                    showLoading();
+                },
+                success: function(){
+                    /* xóa ảnh đại diện cũ */
+                    if($('.avatar-post').hasClass('avatar-now')){
+                        $('.avatar-now').text('Chọn làm ảnh đại diện');
+                        $('.avatar-post').removeClass('avatar-now');
+                    }
+                    /* Thay ảnh đại diện mới */
+                    $('.avatar').children('.avatar-post').text('Ảnh đại diện');
+                    $('.avatar').children('.avatar-post').addClass('avatar-now');
+                    $('.photo-new').removeClass('avatar');
+                    hideLoading();
+                },
+                error: function(){
+                    hideLoading();
+                }
+            });
+        }
+    });
+
+    /* Bảng tin */
+    $('#a-dashboard-pos').live("click",function(event){
+        $('.left-icon').html('');
+        $('#add-my-new-place').html('');
+        $('#direction-form').html('');
+        $('#left-col-display').html('');
+        menu_flag = 10;
+        event.preventDefault();
+        visitedLeftNav($(this));
+        /* load left-icon */
+        var paging_html = new EJS({
+            url: root+'/view/icon_dashboard'
+        }).render({});
+        
+        $(".left-icon").html(paging_html);
+        page = 1;
+
+        loadPosManyMemberChecking(page);
+    });
+    /* Địa điểm nhiều người đang check-in */
+    $('.db_member_checking').live("click",function(event){
+        menu_flag = 10;
+        event.preventDefault();
+        visitedLeftNav($(this));
+        page = 1;
+        loadPosManyMemberChecking(page);
+    })
+    /* Địa điểm có cảm nhận mới */
+    $('.db_member_new_comment').live("click",function(event){
+        menu_flag = 9;
+        event.preventDefault();
+        visitedLeftNav($(this));
+        page = 1;
+        loadPosMemberNewComment(page);
+    })
+    /* Địa điểm nhiều người quan tâm */
+    $('.db_member_follow').live("click",function(event){
+        menu_flag = 8;
+        event.preventDefault();
+        visitedLeftNav($(this));
+        page = 1;
+        loadPosMemberFollow(page);
+    })
+    /* Địa điểm có nhiều người đã check-in */
+    $('.db_member_checkin').live("click",function(event){
+        menu_flag = 7;
+        event.preventDefault();
+        visitedLeftNav($(this));
+        page = 1;
+        loadPosManyMemberCheckin(page);
+    })
+    /* Địa điểm nhiều người cảm nhận */
+    $('.db_member_comment').live("click",function(event){
+        menu_flag = 6;
+        event.preventDefault();
+        visitedLeftNav($(this));
+        page = 1;
+        loadPosManyMemberComment(page);
+    })
+
+
+
+    /******************* DANH SÁCH CÁC HÀM *********************/
+    function loadPosManyMemberChecking(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+
+        $.ajax({
+            url: 'pos/posManyMemberChecking',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            success: function(data){
+                if(data.status){
+                    /* Kéo bản đồ tới vị trí có tâm là địa điểm tìm thấy đầu tiên */
+                    var lat = data.list[0].lat;
+                    var lng = data.list[0].lng;
+                    var center = new google.maps.LatLng(lat, lng);
+                    map.setCenter(center);
+
+                    var zoomlevel = map.getZoom() - 1;
+                    map.setZoom(zoomlevel);
+
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = current_page+1;
+                    }
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = current_page -1;
+                    }
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        last:data.last
+                    });
+                    $("#pagingmap_main").html(paging_html);
+                    //display list
+                    var html = new EJS({
+                        url: root+'/view/list_pos'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list,
+                        title:data.title
+                    });
+                    $("#left-col-display").html(html);
+                    //display marker
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title:pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker,
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos:pos
+                            }),
+                            [$("#location-item-"+pos.id)]);
+                    }
+                }else{
+                    $("#left-col-display").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+    function loadPosMemberNewComment(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+
+        $.ajax({
+            url: 'pos/posMemberNewComment',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            success: function(data){
+                if(data.status){
+                    /* Kéo bản đồ tới vị trí có tâm là địa điểm tìm thấy đầu tiên */
+                    var lat = data.list[0].lat;
+                    var lng = data.list[0].lng;
+                    var center = new google.maps.LatLng(lat, lng);
+                    map.setCenter(center);
+
+                    var zoomlevel = map.getZoom() - 1;
+                    map.setZoom(zoomlevel);
+
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = current_page+1;
+                    }
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = current_page -1;
+                    }
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        last:data.last
+                    });
+                    $("#pagingmap_main").html(paging_html);
+                    //display list
+                    var html = new EJS({
+                        url: root+'/view/list_pos'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list,
+                        title:data.title
+                    });
+                    $("#left-col-display").html(html);
+                    //display marker
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title:pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker,
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos:pos
+                            }),
+                            [$("#location-item-"+pos.id)]);
+                    }
+                }else{
+                    $("#left-col-display").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+    function loadPosMemberFollow(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+
+        $.ajax({
+            url: 'pos/posManyMemberFollow',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            success: function(data){
+                if(data.status){
+                    /* Kéo bản đồ tới vị trí có tâm là địa điểm tìm thấy đầu tiên */
+                    var lat = data.list[0].lat;
+                    var lng = data.list[0].lng;
+                    var center = new google.maps.LatLng(lat, lng);
+                    map.setCenter(center);
+
+                    var zoomlevel = map.getZoom() - 1;
+                    map.setZoom(zoomlevel);
+
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = current_page+1;
+                    }
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = current_page -1;
+                    }
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        last:data.last
+                    });
+                    $("#pagingmap_main").html(paging_html);
+                    //display list
+                    var html = new EJS({
+                        url: root+'/view/list_pos'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list,
+                        title:data.title
+                    });
+                    $("#left-col-display").html(html);
+                    //display marker
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title:pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker,
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos:pos
+                            }),
+                            [$("#location-item-"+pos.id)]);
+                    }
+                }else{
+                    $("#left-col-display").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+    function loadPosManyMemberCheckin(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+
+        $.ajax({
+            url: 'pos/posManyMemberCheckin',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            success: function(data){
+                if(data.status){
+                    /* Kéo bản đồ tới vị trí có tâm là địa điểm tìm thấy đầu tiên */
+                    var lat = data.list[0].lat;
+                    var lng = data.list[0].lng;
+                    var center = new google.maps.LatLng(lat, lng);
+                    map.setCenter(center);
+
+                    var zoomlevel = map.getZoom() - 1;
+                    map.setZoom(zoomlevel);
+
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = current_page+1;
+                    }
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = current_page -1;
+                    }
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        last:data.last
+                    });
+                    $("#pagingmap_main").html(paging_html);
+                    //display list
+                    var html = new EJS({
+                        url: root+'/view/list_pos'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list,
+                        title:data.title
+                    });
+                    $("#left-col-display").html(html);
+                    //display marker
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title:pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker,
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos:pos
+                            }),
+                            [$("#location-item-"+pos.id)]);
+                    }
+                }else{
+                    $("#left-col-display").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+    function loadPosManyMemberComment(current_page){
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+
+        $.ajax({
+            url: 'pos/posManyMemberComment',
+            type: 'get',
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            data: 'page='+current_page+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            success: function(data){
+                if(data.status){
+                    /* Kéo bản đồ tới vị trí có tâm là địa điểm tìm thấy đầu tiên */
+                    var lat = data.list[0].lat;
+                    var lng = data.list[0].lng;
+                    var center = new google.maps.LatLng(lat, lng);
+                    map.setCenter(center);
+
+                    var zoomlevel = map.getZoom() - 1;
+                    map.setZoom(zoomlevel);
+
+                    page = current_page;
+                    if(current_page == data.last){
+                        next_page = false;
+                    }else{
+                        next_page = current_page+1;
+                    }
+                    if(current_page == 1){
+                        prev_page = false;
+                    }else{
+                        prev_page = current_page -1;
+                    }
+                    //display paging
+                    var paging_html = new EJS({
+                        url: root+'/view/pagingmap'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        last:data.last
+                    });
+                    $("#pagingmap_main").html(paging_html);
+                    //display list
+                    var html = new EJS({
+                        url: root+'/view/list_pos'
+                    }).render({
+                        page:data.page,
+                        size:data.size,
+                        list:data.list,
+                        title:data.title
+                    });
+                    $("#left-col-display").html(html);
+                    //display marker
+                    deleteOverlays();
+                    for(var i = 0; i < data.list.length; i++){
+                        var pos = data.list[i];
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(pos.lat, pos.lng),
+                            title:pos.title,
+                            draggable:true,
+                            animation: google.maps.Animation.DROP,
+                            map: map
+                        });
+                        addMarker(marker);
+                        addInfoWindow(
+                            marker,
+                            new EJS({
+                                url: root+'/view/content_pos'
+                            }).render({
+                                pos:pos
+                            }),
+                            [$("#location-item-"+pos.id)]);
+                    }
+                }else{
+                    $("#left-col-display").html(new EJS({
+                        url: root+'/view/error_display'
+                    }).render({
+                        description:data.description
+                    }));
+                }
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+    /* huent
+     * get address from latlng
+     */
+    function getAddressFromCoordinate(latlng,nute){
+        var latlngStr = latlng.split(",",2);
+        var lat = parseFloat(latlngStr[0]);
+        var lng = parseFloat(latlngStr[1]);
+        var address;
+        var latlng1 = new google.maps.LatLng(lat,lng);
+        // reverse geocoding
+        geocoder.geocode({
+            'latLng': latlng1
+        }, function(results, status) {
+            if(status == google.maps.GeocoderStatus.OK){
+                if(results[0]){
+                    address = results[0].formatted_address;
+                    if(nute == 0)
+                        $('#start').val(address);
+                    if(nute == 1)
+                        $('#end').val(address);
+                }
+            }
+        });
+    }
+    //    var navitems = [
+    //        {
+    //            rel:"searchPlace",
+    //            name:"Tìm kiếm",
+    //            href:"search-place",
+    //            title:"Tìm kiếm thông tin địa điểm"
+    //        },
+    //
+    //        {
+    //            rel:"me",
+    //            name:"Tôi",
+    //            href:"me",
+    //            title:"Các địa điểm của Tôi"
+    //        },
+    //
+    //        {
+    //            rel:"newsBoard",
+    //            name:"Bảng tin",
+    //            href:"news-board",
+    //            title:"Bảng thông tin cập nhật về các địa điểm"
+    //        }
+    //        ];
+    /*********************************************************************************************
+     * tuent
+     * trang địa điểm
+     */
+    // hàm gọi ajax
+    function ajaxCall(url, param, callback) {
+        $.ajax({
+            url: url,
+            type: 'get',
+            data: param,
+            dataType: 'json',
+            beforeSend: function() {
+                showLoading();
+            },
+            success: function(data) {
+                callback(data);
+                hideLoading();
+            },
+            error: function(){
+                hideLoading();
+            }
+        });
+    }
+    $(".next_map").live("click",function(){
+        if(next_page){
+            var rel = $('div.CTabs ul.CTabNav a.CSelected').attr('rel');
+            switch (rel) {
+                case 'searchPlace':
+                    processGetBycategory(null,page+1);
+                    break;
+                case 'me':
+                    processGetMeList(null,page+1);
+                    break;
+                case 'test':
+
+                    break;
+                default:
+                    break;
+            }
+        }
+    });
+
+    // prev
+    $(".previous_map").live("click",function(){
+        if(prev_page){
+            var rel = $('div.CTabs ul.CTabNav a.CSelected').attr('rel');
+            switch (rel) {
+                case 'searchPlace':
+                    processGetBycategory(null,page-1);
+                    break;
+                case 'me':
+                    processGetMeList(null,page-1);
+                    break;
+                case 'test':
+
+                    break;
+                default:
+                    break;
+            }
+        }
+    });
+    /**
+     * tuent
+     * hiệu ứng tabs cho left col navigation
+     */
+    
+    var tabContainers = $('div.CTabs > div.tabContainer');
+    var navItems = $('div.CTabs ul.CTabNav a');
+    
+    // ẩn các tab containers
+    tabContainers.hide();
+    
+    
+    // nghe click vào một nav item nào đó
+    navItems.click(function(){
+        tabContainers.hide();
+        tabContainers.filter(this.hash).show();
+        navItems.removeClass('CSelected');
+        $(this).addClass('CSelected');
+        var rel = $(this).attr('rel');
+        
+        var url = 'pos/' + rel;
+        var param = '';
+        
+        // kiểm tra tab nào được click để set query string
+        if(rel == 'searchPlace') {
+            param = '';
+            ajaxCall(url, param, searchPlace);
+        }
+        if (rel == 'me') {
+            param = '';
+            ajaxCall(url, param, searchInMe);
+        } else {
+            param = 'param=test';
+            ajaxCall(url, param, searchPlace);
+        }
+        return false;
+    }).filter(':first').click();
+    /*
+     * Search by Category - Start
+     * Viết các xử lý phần tìm kiếm theo loại địa điểm ở đây
+     **/
+    /**
+     * tuent
+     * hàm xử lý khi nhấn nav tìm kiếm
+     */
+    function searchPlace(data) {
+        // tạo view
+        var view = new EJS({
+            url: root+'/view/place/search-place'
+        }).render({
+            data: data
+        });
+        
+        // insert view này vào div #search-place
+        $('#search-place').html(view);
+        
+        // set height cho right board
+        $(".right-board").css({
+            'height': viewHeight - 120+"px"
+        });
+        
+        /*
+         * bắt sự kiện khi click vào các icon trong search-place
+         */
+        var iconItems = $('div#search-place-category ul li');
+        var iconContainers = $('div#search-info-board > div');
+    
+        // ẩn các icon containers
+        iconContainers.hide();
+        
+        // hiện hướng dẫn
+        $('#intro').show();
+        
+        // nghe click vào một nav item nào đó
+        iconItems.live('click', function(){
+            iconContainers.hide();
+            iconContainers.filter($(this).attr('href')).show();
+            iconItems.removeClass('iconSelected');
+            $(this).addClass('iconSelected');
+            var rel = $(this).attr('rel');
+            
+            processGetBycategory(rel);
+            return false;
+        });
+    }
+    function processGetBycategory(category_code, current_page){
+        if(category_code == null){
+            category_code = $("li.iconSelected").attr("rel");
+        }
+        if(current_page == null) current_page = 1;
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+        
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+            
+        // tìm theo category
+        var url = 'pos/searchByCategory';
+        var param = 'category_code=' + category_code +
+        '&min_lat='+min_lat+
+        '&max_lat='+max_lat+
+        '&min_lng='+min_lng+
+        '&max_lng='+max_lng+
+        '&random='+Math.random()+
+        '&keyword='+keyword+
+        '&page='+current_page;
+        ajaxCall(url, param, displayList);
+    }
+    /* tuent
+     * hiển thị list các địa điểm theo category
+     */ 
+    
+    function displayList(data)
+    {
+        if(data || data.status){
+            /* Kéo bản đồ tới vị trí có tâm là địa điểm tìm thấy đầu tiên */
+            var lat = data.list[0].lat;
+            var lng = data.list[0].lng;
+
+            var current_page = data.page;
+            page = current_page;
+            if(current_page == data.last){
+                next_page = false;
+            }else{
+                next_page = true;
+            }
+            if(current_page == 1){
+                prev_page = false;
+            }else{
+                prev_page = true;
+            }
+            //display paging
+            var paging_html = new EJS({
+                url: root+'/view/pagingmap'
+            }).render({
+                page:data.page,
+                size:data.size,
+                last:data.last
+            });
+            $("#pagingmap_main").html(paging_html);
+            //display list
+            var html = new EJS({
+                url: root+'/view/list_pos'
+            }).render({
+                page:data.page,
+                size:data.size,
+                list:data.list,
+                title:data.title
+            });
+            $("#left-col-display").show();
+            $("#left-col-display").html(html);
+            //display marker
+            deleteOverlays();
+            for(var i = 0; i < data.list.length; i++){
+                var pos = data.list[i];
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(pos.lat, pos.lng),
+                    title:pos.title,
+                    draggable:true,
+                    animation: google.maps.Animation.DROP,
+                    map: map
+                });
+                addMarker(marker);
+                addInfoWindow(
+                    marker,
+                    new EJS({
+                        url: root+'/view/content_pos'
+                    }).render({
+                        pos:pos
+                    }),
+                    [$("#location-item-"+pos.id)]);
+            }
+        }else{
+            $("#left-col-display").html(new EJS({
+                url: root+'/view/error_display'
+            }).render({
+                description:data.description
+            }));
+        }
+    }
+    /*
+     * Search by Category - Finish
+     **/
+    /*
+     * Search in Me - Start
+     * Viết các xử lý phần của tôi ở đây
+     **/
+    /**
+     * tuent
+     * hàm xử lý khi nhấn nav tìm kiếm
+     */
+    function searchInMe(data) {
+        // hiển thị menu item
+        // tạo view
+        var listme = [
+        {
+            code:"a-my-friends",
+            name:"Bạn bè",
+            title:"Bạn bè đang ở đâu"
+        },
+
+        {
+            code:"a-post-place",
+            name:"Đăng tin",
+            title:"Đăng địa điểm mới"
+        },
+
+        {
+            code:"a-my-place",
+            name:"Tôi đăng",
+            title:"Những địa điểm tôi đã đăng"
+        },
+
+        {
+            code:"a-my-comment",
+            name:"Cảm nhận",
+            title:"Những địa điểm tôi đã viết cảm nhận"
+        },
+
+        {
+            code:"a-my-checkin",
+            name:"Đã đến",
+            title:"Những địa điểm tôi đã đến"
+        },
+
+        {
+            code:"a-my-follow",
+            name:"Quan tâm",
+            title:"Những địa điểm tôi quan tâm"
+        },
+        ];
+        var view = new EJS({
+            url: root+'/view/place/menu-me-left-icon'
+        }).render({
+            data:listme
+        });
+
+        // insert view này vào div #search-place
+        $('#me').html(view);
+
+        if(data.status ==false){
+            $(".content-pos-icon").html(new EJS({
+                url: root+'/view/place/error_me_login_display'
+            }).render({
+                description:data.description
+            }));
+        }
+        /*
+         * bắt sự kiện khi click vào các icon trong search-place
+         */
+        var iconItems = $('div#left-menu-me ul li');
+        // nghe click vào một nav item nào đó
+        iconItems.live('click', function(){
+            iconItems.removeClass('iconSelected');
+            $(this).addClass('iconSelected');
+            var rel = $(this).attr('rel');
+            if(data.status == true){
+                processGetMeList(rel);
+            }
+            //            processGetBycategory(rel);
+            return false;
+        });
+    }
+    function processGetMeList(me_code, current_page){
+        if(me_code == null){
+            me_code = $("li.iconSelected").attr("rel");
+        }
+        if(current_page == null) current_page = 1;
+        var bound = map.getBounds();
+        var sw = bound.getSouthWest();
+        var ne = bound.getNorthEast();
+
+<<<<<<< .mine
+    // prev
+    $(".previous_map").live("click",function(){
+        if(prev_page)
+            processGetBycategory(null,page-1);
+    });
+
+    function myPlace(data) {
+        // tạo view
+        var view = new EJS({
+            url: root+'/view/menu-left-icon'
+        }).render({
+            data: data
+        });
+
+        // insert view này vào div me
+        $('#me').html("hello");
+    }
+});
+=======
+        var min_lat = sw.lat();
+        var min_lng = sw.lng();
+        var max_lat = ne.lat();
+        var max_lng = ne.lng();
+        var url;
+        var param;
+        // tìm theo category
+        switch (me_code) {
+            case "a-my-friends":
+                url = 'pos/friendplace';
+                param = 'page='+current_page +
+                '&min_lat='+min_lat+
+                '&max_lat='+max_lat+
+                '&min_lng='+min_lng+
+                '&max_lng='+max_lng+
+                '&random='+Math.random();
+                ajaxCall(url, param, displayFriendList);
+                break;
+            case "a-post-place":
+                url = 'pos/loadAllCategories';
+                param = '';
+                ajaxCall(url, param, displayPostPlace);
+                break;
+            case "a-my-place":
+                url = 'pos/myplace';
+                param = 'page='+current_page +
+                '&min_lat='+min_lat+
+                '&max_lat='+max_lat+
+                '&min_lng='+min_lng+
+                '&max_lng='+max_lng+
+                '&random='+Math.random();
+                ajaxCall(url, param, displayMyPlace);
+                break;
+            case "a-my-comment":
+                url = 'pos/myComment';
+                param = 'page='+current_page +
+                '&min_lat='+min_lat+
+                '&max_lat='+max_lat+
+                '&min_lng='+min_lng+
+                '&max_lng='+max_lng+
+                '&random='+Math.random();
+                ajaxCall(url, param, displayMyComment);
+                break;
+            case "a-my-checkin":
+                url = 'pos/mycheckin';
+                param = 'page='+current_page +
+                '&min_lat='+min_lat+
+                '&max_lat='+max_lat+
+                '&min_lng='+min_lng+
+                '&max_lng='+max_lng+
+                '&random='+Math.random();
+                ajaxCall(url, param, displayMyCheckin);
+                break;
+            case "a-my-follow":
+                url = 'pos/myplace';
+                param = 'page='+current_page +
+                '&min_lat='+min_lat+
+                '&max_lat='+max_lat+
+                '&min_lng='+min_lng+
+                '&max_lng='+max_lng+
+                '&random='+Math.random();
+                ajaxCall(url, param, displayMyPlace);
+                break;
+            default:
+                break;
+        }
+
+    }
+    /**
+     * Hiển thị danh sách và vị trí bạn bè
+     *
+     * thuclh
+     **/
+    function displayFriendList(data){
+        if(data.status){
+            var current_page = data.page;
+            page = current_page;
+            if(current_page == data.last){
+                next_page = false;
+            }else{
+                next_page = current_page+1;
+            }
+            if(current_page == 1){
+                prev_page = false;
+            }else{
+                prev_page = current_page -1;
+            }
+            //display paging
+            if(data.last > 1){
+                //display paging
+                var paging_html = new EJS({
+                    url: root+'/view/pagingmap'
+                }).render({
+                    page:data.page,
+                    size:data.size,
+                    last:data.last
+                });
+                $("#pagingmap_main").html(paging_html);
+            }
+            //display list
+            var html = new EJS({
+                url: root+'/view/place/list_my_friend'
+            }).render({
+                title:"Bạn bè Tôi đang ở đâu?",
+                page:data.page,
+                size:data.size,
+                list:data.list
+            });
+            $(".content-pos-icon").html(html);
+            //display marker
+            deleteOverlays();
+            for(var i = 0; i < data.list.length; i++){
+                var pos = data.list[i];
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(pos.lat, pos.lng),
+                    title:pos.title,
+                    draggable:true,
+                    animation: google.maps.Animation.DROP,
+                    map: map
+                });
+                addMarker(marker);
+                addInfoWindow(
+                    marker,
+                    new EJS({
+                        url: root+'/view/place/content_pos'
+                    }).render({
+                        pos:pos
+                    }),
+                    [$("#location-item-"+pos.id)]);
+            }
+        }else{
+            $(".content-pos-icon").html(new EJS({
+                url: root+'/view/place/show_error'
+            }).render({
+                description:data.description
+            }));
+        }
+        hideLoading();
+    }
+    /**
+     *Tạo địa điểm mới
+     **/
+    function displayPostPlace(data){
+        // delete all markers
+        $("#pagingmap_main").html('');
+        $('.content-pos-icon').html('');
+        deleteOverlays();
+        if(data.status == true){
+            // creat infowindow content
+            var html= new EJS({
+                url: root + '/view/marker-info-window-input'
+            }).render({
+                categories: data
+            });
+            $(".content-pos-icon").html(html);
+
+        }else{
+            $(".content-pos-icon").append("<div class='instruction-title'style='text-align:right'>"+data.description+'</div>');
+        }
+        var latlng = new google.maps.LatLng(21.022502, 105.846062);
+        // get position of member from cookie
+        var cookiepositionMember = getPositionMember();
+        var positionMember = cookiepositionMember?cookiepositionMember.split(/,/):null;
+        if(positionMember == null){
+            /**Geolocation - Xac dinh vị trí người dùng*/
+            // get center map to cookie
+            var cookieCenter = getMapCenterCookie();
+            if(cookieCenter != null){
+                var center = cookieCenter?cookieCenter.split(/,/):null;
+                latlng = new google.maps.LatLng(center[0],center[1]);
+            }
+        }else{
+            // set center map to cookie
+            latlng = new google.maps.LatLng(positionMember[0],positionMember[1]);
+        }
+        var marker = new google.maps.Marker({
+            position: latlng,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        loadInfowindow(marker);
+    }
+    /**
+     * Hiển thị danh sách địa điểm tôi đăng
+     **/
+    function displayMyPlace(data){
+        if(data.status){
+            var current_page = data.page;
+            page = current_page;
+            if(current_page == data.last){
+                next_page = false;
+            }else{
+                next_page = true;
+            }
+
+            //cant prev
+            if(current_page == 1){
+                prev_page = false;
+            }else{
+                prev_page = true;
+            }
+
+            //display paging
+            if(data.last > 1){
+                //display paging
+                var paging_html = new EJS({
+                    url: root+'/view/pagingmap'
+                }).render({
+                    page:data.page,
+                    size:data.size,
+                    last:data.last
+                });
+                $("#pagingmap_main").html(paging_html);
+            }
+
+            //display list on sidebar
+            var html = new EJS({
+                url: root+'/view/place/my-place'
+            }).render({
+                title:"Những địa điểm Tôi đã đăng",
+                page:data.page,
+                size:data.size,
+                list:data.list
+            });
+
+            $(".content-pos-icon").html(html);
+            //display marker
+
+            deleteOverlays();
+            for(var i = 0; i < data.list.length; i++){
+                var pos = data.list[i];
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(pos.lat, pos.lng),
+                    title:pos.title,
+                    draggable:true,
+                    animation: google.maps.Animation.DROP,
+                    map: map
+                });
+                addMarker(marker);
+                addInfoWindow(
+                    marker,
+                    new EJS({
+                        url: root+'/view/place/content_pos'
+                    }).render({
+                        pos: pos
+                    }),
+                    [$("#location-item-"+pos.id), $("#location-edit-"+pos.id)]);
+            }
+        }else{
+            $(".content-pos-icon").html(new EJS({
+                url: root+'/view/place/show_error'
+            }).render({
+                description:data.description
+            }));
+        }
+        hideLoading();
+    }
+    /**
+     * Load list địa điểm comment
+     **/
+    function displayMyComment(data){
+        if(data.status){
+            var current_page = data.page;
+            page = current_page;
+            if(current_page == data.last){
+                next_page = false;
+            }else{
+                next_page = current_page+1;
+            }
+            if(current_page == 1){
+                prev_page = false;
+            }else{
+                prev_page = current_page -1;
+            }
+            if(data.last > 1){
+                //display paging
+                var paging_html = new EJS({
+                    url: root+'/view/pagingmap'
+                }).render({
+                    page:data.page,
+                    size:data.size,
+                    last:data.last
+                });
+                $("#pagingmap_main").html(paging_html);
+            }
+            //display list
+            var html = new EJS({
+                url: root+'/view/list_pos'
+            }).render({
+                title:"Những địa điểm Tôi đang quan tâm",
+                page:data.page,
+                size:data.size,
+                list:data.list
+            });
+            $(".content-pos-icon").html(html);
+            //display marker
+            deleteOverlays();
+            for(var i = 0; i < data.list.length; i++){
+                var pos = data.list[i];
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(pos.lat, pos.lng),
+                    title:pos.title,
+                    draggable:true,
+                    animation: google.maps.Animation.DROP,
+                    map: map
+                });
+                addMarker(marker);
+                addInfoWindow(
+                    marker,
+                    new EJS({
+                        url: root+'/view/content_pos'
+                    }).render({
+                        pos:pos
+                    }),
+                    [$("#location-item-"+pos.id)]);
+            }
+        }else{
+            $(".content-pos-icon").html(new EJS({
+                url: root+'/view/show_error'
+            }).render({
+                description:data.description
+            }));
+        }
+        hideLoading();
+    }
+    /**
+     * Hàm lấy danh sách các địa điểm member check-in trong khu vực bản đồ
+     *
+     * @thuclh (thuc.lehuy@gmail.com)
+     **/
+    function displayMyCheckin(data){
+        if(data.status){
+            var current_page = data.page;
+            page = current_page;
+            if(current_page == data.last){
+                next_page = false;
+            }else{
+                next_page = current_page+1;
+            }
+            if(current_page == 1){
+                prev_page = false;
+            }else{
+                prev_page = current_page -1;
+            }
+
+            //display paging
+            if(data.last > 1){
+                //display paging
+                var paging_html = new EJS({
+                    url: root+'/view/pagingmap'
+                }).render({
+                    page:data.page,
+                    size:data.size,
+                    last:data.last
+                });
+                $("#pagingmap_main").html(paging_html);
+            }
+            //display list
+            var html = new EJS({
+                url: root+'/view/list_pos'
+            }).render({
+                title:"Những địa điểm Tôi đã đến",
+                page:data.page,
+                size:data.size,
+                list:data.list
+            });
+            $(".content-pos-icon").html(html);
+            //display marker
+            deleteOverlays();
+
+            for(i in data.list){
+                var pos = data.list[i];
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(pos.lat, pos.lng),
+                    title: pos.title,
+                    draggable: true,
+                    animation: google.maps.Animation.DROP,
+                    map: map
+                });
+                addMarker(marker);
+                addInfoWindow(
+                    marker,
+                    new EJS({
+                        url: root+'/view/content_pos'
+                    }).render({
+                        pos:pos
+                    }),
+                    [$("#location-item-"+pos.id)]);
+            }
+        }else{
+            $(".content-pos-icon").html(new EJS({
+                url: root+'/view/show_error'
+            }).render({
+                description:data.description
+            }));
+        }
+        hideLoading();
+    }
+/*
+     * Search in Me - Finish
+     **/
+
+/*
+     * Search in Dashboard - Start
+     * Viết các xử lý phần dashboard ở đây
+     **/
+//huent
+
+    
+/*
+     * Search in Dashboard - Finish
+     **/
+>>>>>>> .r276

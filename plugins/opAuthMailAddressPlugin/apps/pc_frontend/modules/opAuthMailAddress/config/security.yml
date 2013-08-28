@@ -1,0 +1,4 @@
+registerEnd:
+  is_secure: false
+requestRegisterURL:
+  is_secure: false

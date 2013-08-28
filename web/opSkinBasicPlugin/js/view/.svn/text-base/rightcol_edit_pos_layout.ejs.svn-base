@@ -1,0 +1,10 @@
+<div id="edit-pos-nav">
+    <ul>
+        <li><a id="a-edit-post-info">Sửa thông tin</a></li>
+        <li><a id="a-edit-post-photo">Sửa ảnh</a></li>
+    </ul>
+</div>
+
+<div id="main-right-col">
+    
+</div>

@@ -1,0 +1,49 @@
+updateStatusRentHouseList:
+  caption:
+    vi_VN: "Danh sách nhà cho thuê mới cập nhật trạng thái có "
+  description:
+    vi_VN: "Danh sách nhà cho thuê mới cập nhật trạng thái có "
+  viewable_privilege: 4
+  component: [dashboard, updateStatusRentHouseList]
+
+newCommentRentHouseList:
+  caption:
+    vi_VN: "Nhà cho thuê có comment mới "
+  description:
+    vi_VN: "Nhà cho thuê có comment mới "
+  viewable_privilege: 4
+  component: [dashboard, newCommentRentHouseList]
+  
+manyFollowRentHouseList:
+  caption:
+    vi_VN: "Nhà cho thuê được nhiều member follow"
+  description:
+    vi_VN: "Nhà cho thuê được nhiều member follow"
+  viewable_privilege: 4
+  component: [dashboard, manyFollowRentHouseList]
+
+manyCommentRentHouseList:
+  caption:
+    vi_VN: "Nhà cho thuê được nhiều member comment"
+  description:
+    vi_VN: "Nhà cho thuê được nhiều member comment"
+  viewable_privilege: 4
+  component: [dashboard, manyCommentRentHouseList]
+
+newPhotoRentHouseList:
+  caption:
+    vi_VN: "Nhà cho thuê có ảnh mới"
+  description:
+    vi_VN: "Nhà cho thuê có ảnh mới"
+  viewable_privilege: 4
+  component: [dashboard, newPhotoRentHouseList]
+  
+listSponsorSuggest:
+  caption:
+    vi_VN: "Suggest địa điểm được tài trợ"
+  description:
+    vi_VN: "Suggest địa điểm được tài trợ"
+  viewable_privilege: 4
+  component: [pos, listSponsorSuggest]
+
+

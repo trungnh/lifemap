@@ -1,0 +1,243 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Title</source>
+        <target>Chủ đề</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Body</source>
+        <target>Nội dung</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Created at</source>
+        <target>Ngày tạo</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Public</source>
+        <target>Mọi người</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Post a diary</source>
+        <target>Viết nhật ký</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Edit the diary</source>
+        <target>Sửa nhật ký</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Edit this diary</source>
+        <target>Sửa nhật ký này</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Delete this diary</source>
+        <target>Xóa nhật ký này</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Recently Posted Diaries</source>
+        <target>Nhật ký mới viết</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Recently Posted Diaries of %my_friend%</source>
+        <target>Nhật ký mới viết bởi %my_friend%</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Diaries of %my_friend%</source>
+        <target>Nhật ký của %my_friend%</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Diaries of %1%</source>
+        <target>Nhật ký của %1%</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Diary of %1%</source>
+        <target>Nhật ký của %1%</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>There are no diaries.</source>
+        <target>Không có nhật ký</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>View this diary</source>
+        <target>Xem nhật ký này</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>More</source>
+        <target>Xem thêm</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Save</source>
+        <target>Ghi lại</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Photo 1</source>
+        <target>Ảnh 1</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Photo 2</source>
+        <target>Ảnh 2</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Photo 3</source>
+        <target>Ảnh 3</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Required.</source>
+        <target>Yêu cầu</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Comments</source>
+        <target>Các cảm nhận</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Post a diary comment</source>
+        <target>Viết cảm nhận cho nhật ký</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Public flag</source>
+        <target>Mọi người</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>The diary was deleted successfully.</source>
+        <target>Nhật ký đã xóa thành công</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>[1]1 diary has new comments!|(1,Inf]%1% diaries have new comments!</source>
+        <target>Có cảm nhận mới về nhật ký của [1,Inf]%1%</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>View %1% per page</source>
+        <target>Hiển thị %1% trên trang</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>View Latest</source>
+        <target>Hiển thị mới nhất</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>View Oldest First</source>
+        <target>Hiển thị cũ nhất trước</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Older</source>
+        <target>Cũ hơn</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>Newer</source>
+        <target>Mới hơn</target>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>No. %1% - %2%</source>
+        <target>Hiển thị %1% số～ %2%</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Profile of %1%</source>
+        <target>Thông tin cá nhân%1%</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Recently Posted Diaries of All</source>
+        <target>Các nhật ký mới viết </target>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>My Diaries</source>
+        <target>Nhật ký của tôi</target>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>Previous Diary</source>
+        <target>Nhật ký trước</target>
+      </trans-unit>
+      <trans-unit id="42">
+        <source>Next Diary</source>
+        <target>Nhật ký tiếp theo</target>
+      </trans-unit>
+      <trans-unit id="43">
+        <source>Delete the comment</source>
+        <target>Xóa cảm nhận</target>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>Do you really delete this comment?</source>
+        <target>Bạn có thật sự muốn xóa cảm nhận này không?</target>
+      </trans-unit>
+      <trans-unit id="45">
+        <source>Go back to the diary page</source>
+        <target>Trở về trang nhật ký</target>
+      </trans-unit>
+      <trans-unit id="46">
+        <source>The comment was deleted successfully.</source>
+        <target>Cảm nhận đã được xóa thành công.</target>
+      </trans-unit>
+      <trans-unit id="47">
+        <source>Delete the diary</source>
+        <target>Xóa nhật ký</target>
+      </trans-unit>
+      <trans-unit id="48">
+        <source>Do you really delete this diary?</source>
+        <target>Bạn có thật sự muốn xóa nhật ký này?</target>
+      </trans-unit>
+      <trans-unit id="49">
+        <source>Diary Search</source>
+        <target>Tìm kiếm nhật ký</target>
+      </trans-unit>
+      <trans-unit id="50">
+        <source>Search Results</source>
+        <target>Kết quả tìm kiếm</target>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>Your search "%1%" did not match any diaries.</source>
+        <target>Nhật ký không được tìm thấy「%1%」</target>
+      </trans-unit>
+      <trans-unit id="52">
+        <source>Diary Comment History</source>
+        <target>Các cảm nhận nhật ký</target>
+      </trans-unit>
+      <trans-unit id="53">
+        <source>remove the current photo</source>
+        <target>Xóa ảnh đang hiển thị</target>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>Diary List</source>
+        <target>Danh sách nhật ký</target>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>Diary Comment List</source>
+        <target>Danh sách cảm nhận Nhật ký</target>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>Diary</source>
+        <target>Nhật ký</target>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>There are no diary comments.</source>
+        <target>Không có cảm nhận nào về nhật ký</target>
+      </trans-unit>
+      <trans-unit id="58">
+        <source>Diary Configuration</source>
+        <target>Thiết lập Nhật ký</target>
+      </trans-unit>
+      <trans-unit id="59">
+        <source>Default public flag for your new diaries. Past diaries are not changed.</source>
+        <target>Mặc định mọi người đều xem được nhật ký của bạn. Các nhật ký không được thay đổi.</target>
+      </trans-unit>
+      <trans-unit id="60">
+        <source>Body is required.</source>
+        <target>Nội dung là bắt buôcj</target>
+      </trans-unit>
+      <trans-unit id="61">
+        <source>Diary ID</source>
+        <target>ID của nhật ký</target>
+      </trans-unit>
+      <trans-unit id="62">
+        <source>Your search "%1%" did not match any diary comments.</source>
+        <target>Kết quả tìm kiếm cảm nhận 「%1%」không có kết quả</target>
+      </trans-unit>
+      <trans-unit id="63">
+        <source>Your comment is visible to all users on the Web.</source>
+        <target>Các cảm nhận nhật ký của bạn hiển thị cho tất cả thành viên trên web.</target>
+      </trans-unit>
+      <trans-unit id="64">
+        <source>[Diary] %1%</source>
+        <target>[Nhật ký] %1%</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

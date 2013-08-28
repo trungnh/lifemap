@@ -1,0 +1,191 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Inbox</source>
+        <target>Tin đã nhận</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Sent Message</source>
+        <target>Đã gửi</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Drafts</source>
+        <target>Tin nháp</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Trash</source>
+        <target>Thùng rác</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>From</source>
+        <target>Từ</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>To</source>
+        <target>Đến</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>From/To</source>
+        <target>Từ/Đến</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Delete</source>
+        <target>Xóa</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Restore</source>
+        <target>Khôi phục</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Reply</source>
+        <target>Trả lời</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Subject</source>
+        <target>Chủ đề</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Created At</source>
+        <target>Ngày</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Replied</source>
+        <target>Đã trả lời</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Open</source>
+        <target>Mở</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Unopened</source>
+        <target>Khóa</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Check All</source>
+        <target>Chọn hết</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Clear All</source>
+        <target>Xóa hết</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>There are no messages</source>
+        <target>Không có tin nhắn đến</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>There are new %d messages!</source>
+        <target>Có %d tin nhắn mới</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Read messages</source>
+        <target>Đọc tin nhắn</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Message</source>
+        <target>Tin nhắn</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Compose Message</source>
+        <target>Soạn tin nhắn</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Image1</source>
+        <target>Ảnh 1</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Image2</source>
+        <target>Ảnh 2</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Image3</source>
+        <target>Ảnh 3</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Send</source>
+        <target>Gửi</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Draft</source>
+        <target>Bỏ qua</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Required.</source>
+        <target>Yêu cầu</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>remove the current file</source>
+        <target>Xóa file</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>The message was sent successfully.</source>
+        <target>Tin nhắn gửi thành công.</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>The message was saved successfully.</source>
+        <target>Tin nhắn lưu thành công.</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Body</source>
+        <target>Nội dung</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Cannot send the message.</source>
+        <target>Không thể gửi tin nhắn.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Send message</source>
+        <target>Gửi tin nhắn</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>There are %1% message unread and %2% message read</source>
+        <target>Hòm thư của bạn có %1% thư chưa đọc và %2% thư đã đọc</target>
+      </trans-unit>
+       <trans-unit id="35">
+        <source>View unread messages</source>
+        <target>Xem thư chưa đọc</target>
+      </trans-unit>
+        <trans-unit id="36">
+        <source>There are %1% message sent</source>
+        <target>Bạn đã gửi đi %1% thư</target>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>The names separated by commas</source>
+        <target>Các tên cách nhau bởi dấu phảy</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Max %1% characters</source>
+        <target>Tối đa %1% ký tự</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>There are %1% message draft</source>
+        <target>Bạn có %1% thư nháp</target>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>Trash is empty</source>
+        <target>Bạn không có thư rác nào</target>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>There are %1% message dust</source>
+        <target>Bạn có %1% thư rác</target>
+      </trans-unit>
+       <trans-unit id="42">
+        <source>The message was written at %1% </source>
+        <target>Tin nhắn được viết lúc %1%</target>
+      </trans-unit>
+       <trans-unit id="43">
+        <source>Search member</source>
+        <target>Tìm kiếm thành viên</target>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>There are all %1% members</source>
+        <target>Có tất cả: %1% thành viên</target>
+      </trans-unit>
+      <trans-unit id="45">
+        <source>Member search result</source>
+        <target>Kết quả tìm kiếm thành viên</target>
+      </trans-unit>      
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,15 @@
+<div id="div-me-content">
+    <div id="left-menu-me" class="categories">
+        <ul>
+        <% for(var i = 0; i < data.length; i++) { %>
+            <li rel="<%=data[i].code%>" href="#<%=data[i].code%>" title="<%=data[i].title%>">
+                <span><img width="40" src="images/category/<%=data[i].code%>.png" /></span>
+                <h5><%=data[i].name%></h5>
+            </li>
+        <%}%>
+        </ul>
+    </div>
+    <div class="content_container">
+        <div class="content-pos-icon"></div>
+    </div>
+</div>

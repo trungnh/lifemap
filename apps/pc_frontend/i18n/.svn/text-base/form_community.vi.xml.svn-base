@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>%community% Name</source>
+        <target>Tên hội nhóm</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>%community% Category</source>
+        <target>Loại hội nhóm</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Register policy</source>
+        <target>Chính sách tham gia</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>%community% Description</source>
+        <target>Mô tả %community%</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Invalid.</source>
+        <target>Không chính xác.</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Required.</source>
+        <target>Bắt buộc.</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>All categories</source>
+        <target>Tất cả hội nhóm</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>An object with the same "name" already exist in other %community%.</source>
+        <target>Một %community% cùng tên đã tồn tại</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

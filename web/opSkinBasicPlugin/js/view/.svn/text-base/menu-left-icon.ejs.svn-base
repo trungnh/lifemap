@@ -1,0 +1,66 @@
+<div class="lett-menu-icon">
+    <ul>
+        <li class="li-icon-position">
+            <div>
+            <a href="#" class="a-my-friends" title="Bạn bè">
+            <img class="img_40x40 bor_img" width="40" height="40" src="../web/images/education.png" alt="">
+            </a>
+            </div>
+            <div >
+                <a href="" style="color: #1122CC;text-decoration: none;">
+                    Bạn bè
+                </a>
+            </div
+        </li>
+        <li class="li-icon-position">
+            <div>
+            <a href="" class="a-post-place" title="Đăng địa điểm" >
+            <img class="img_40x40 bor_img" width="40" height="40" src="../web/images/nhahang.png" alt="">
+            </a>
+            </div>
+            <div>
+                Đăng
+            </div
+        </li>      
+        <li class="li-icon-position">
+            <div>
+            <a href="" class="a-my-place" title="Địa điểm tôi đăng" >
+            <img class="img_40x40 bor_img" width="40" height="40" src="../web/images/nhahang.png" alt="">
+            </a>
+            </div>
+            <div>
+                Tôi đăng
+            </div
+        </li>
+        <li class="li-icon-position">
+            <div>
+            <a href="" class="a-my-comment" title="Địa điểm tôi cảm nhận" >
+            <img class="img_40x40 bor_img" width="40" height="40" src="../web/images/shop.png" alt="">
+            </a>
+            </div>
+            <div>
+                Cảm nhận
+            </div>
+        </li>
+        <li>
+            <div>
+            <a href="" class="a-my-checkin" title="Địa điểm tôi checkin" >
+            <img class="img_40x40 bor_img" width="40" height="40" src="../web/images/education.png" alt="">
+            </a>
+            </div>
+            <div>
+                Tôi checkin
+            </div>
+        </li>
+            <div>
+            <a href="" class="a-my-follow" title="Địa điểm tôi Theo dõi" >
+            <img class="img_40x40 bor_img" width="40" height="40" src="../web/images/shop.png" alt="">
+            </a>
+            </div>
+            <div>Theo dõi</div>
+        </li>
+   </ul>
+</div>
+<div class="content-pos-icon">
+
+</div>

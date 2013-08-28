@@ -1,0 +1,188 @@
+10
+
+dir
+378
+svn://svn@server.lifemap.vn/sns/branches/dev.lifemap.vn/plugins/opOpenSocialPlugin/lib/vendor/Shindig/features
+svn://svn@server.lifemap.vn/sns
+
+
+
+2011-12-26T06:27:03.409291Z
+2
+thuclh
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+5e9f5a41-994a-4848-aa8c-f8b918b99710
+
+rpc
+dir
+
+skins
+dir
+
+opensocial-templates
+dir
+
+opensocial-reference
+dir
+
+core
+dir
+
+content-rewrite
+dir
+
+core.legacy
+dir
+
+setprefs
+dir
+
+core.config
+dir
+
+features.txt
+file
+
+
+
+
+2012-02-21T06:38:22.989764Z
+31e8db435705e76a2606018943a3db46
+2011-12-26T06:27:03.409291Z
+2
+thuclh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2228
+
+auth-refresh
+dir
+
+core.io
+dir
+
+opensocial-base
+dir
+
+oauthpopup
+dir
+
+core.util
+dir
+
+locked-domain
+dir
+
+core.prefs
+dir
+
+core.log
+dir
+
+i18n
+dir
+
+opensocial-data-context
+dir
+
+security-token
+dir
+
+swfobject
+dir
+
+analytics
+dir
+
+core.auth
+dir
+
+tabs
+dir
+
+dynamic-height
+dir
+
+opensocial-0.6
+dir
+
+flash
+dir
+
+settitle
+dir
+
+views
+dir
+
+opensocial-0.7
+dir
+
+caja
+dir
+
+xmlutil
+dir
+
+opensocial-0.8
+dir
+
+opensocial-0.9
+dir
+
+core.json
+dir
+
+pubsub
+dir
+
+minimessage
+dir
+
+opensocial-data
+dir
+
+dynamic-height.util
+dir
+
+opensocial-jsonrpc
+dir
+
+osapi
+dir
+
+opensocial-current
+dir
+

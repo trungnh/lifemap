@@ -1,0 +1,280 @@
+general:
+  _attributes:
+    Caption: "General Configuration"
+
+  sns_name:
+    Name:     "sns_name"
+    Caption:  "Mạng xã hội LifeMap"
+    FormType: "input"
+    ValueType: "text"
+    Default:   "LifeMap"
+    IsRequired: true
+
+  sns_title:
+    Name:      "sns_title"
+    Caption:   "Tên trang"
+    Help:      "Nội dung trang html"
+    FormType:  "input"
+    ValueType: "text"
+    Default:   ""
+    IsRequired: false
+
+  admin_mail_address:
+    Name:      "admin_mail_address"
+    Caption:   "Địa chỉ email người quản trị"
+    FormType:  "input"
+    ValueType:  "email"
+    Default:    "noreply@lifemap.vn"
+    IsRequired: true
+
+  enable_pc:
+    Name:      "enable_pc"
+    Caption:   "Thiết lập phiên bản PC"
+    FormType:  "radio"
+    ValueType: "text"
+    IsRequired: true
+    Default:    1
+    Choices:
+      - "Không sử dụng"
+      - "Sử dụng"
+
+  enable_mobile:
+    Name:      "enable_mobile"
+    Caption:   "Thiết lập phiên bản Mobile"
+    FormType:  "radio"
+    ValueType: "text"
+    IsRequired: true
+    Default:    1
+    Choices:
+      - "Không sử dụng"
+      - "Sử dụng"
+
+  enable_friend_link:
+    Name:       "enable_friend_link"
+    Caption:    "Thiết lập kết nối bạn bè"
+    FormType:   "radio"
+    ValueType:  "text"
+    IsRequired: true
+    Default:    1
+    Choices:
+      - "Không sử dụng"
+      - "Sử dụng"
+
+  image_max_filesize:
+    Name:        "image_max_filesize"
+    Caption:     "Kích thước giới hạn tập tin tải lên(bytes)"
+    FormType:    "input"
+    ValueType:   "regexp"
+    ValueRegexp: "/^[1-9]\d*[K|M]?$/"
+    IsRequired:  true
+    Default:     "3000K"
+
+  daily_news_day:
+    Name:       "daily_news_day"
+    Caption:    "Thiết lập gửi tin tức hàng ngày"
+    Help:       "Thiết lập nhận email tin tức hàng ngày hay không nhận tin"
+    FormType:   "checkbox"
+    ValueType:  "text"
+    IsRequired: true
+    Default:    [0, 3]
+    Choices:
+      - "Mon"
+      - "Tue"
+      - "Wed"
+      - "Thu"
+      - "Fri"
+      - "Sat"
+      - "Sun"
+
+  is_use_captcha:
+    Name:       "is_use_captcha"
+    Caption:    "Sử dụng CAPTCHA"
+    Help:       "Thiết lập sử dụng CAPTCHA (Phương án xác thực nhập ký tự theo hình ảnh cho thành viên)"
+    FormType:   "radio"
+    ValueType:  "text"
+    IsRequired: true
+    Default:    0
+    Choices:
+      - "Không sử dụng"
+      - "Sử dụng"
+
+  is_allow_post_activity:
+    Name:       "is_allow_post_activity"
+    Caption:    "Thiết lập cho phép post"
+    Help:       "Thiết lập cho các hoạt động của thành viên"
+    FormType:   "radio"
+    ValueType:  "text"
+    IsRequired: true
+    Default:    1
+    Choices:
+      - "Không sử dụng"
+      - "Sử dụng"
+
+  is_allow_config_public_flag_profile_page:
+    Name:       "is_allow_config_public_flag_profile_page"
+    Caption:    "Cho phép cấu hình trạng thái profile page"
+    Help:       ""
+    FormType:   "radio"
+    ValueType:  "text"
+    IsRequired: true
+    Default:    1
+    Choices:
+      0: "Sử dụng"
+      1: "Không sử dụng(hiển thị cho các thành viên)"
+      4: "Không sử dụng（Cho tất người dùng web）"
+
+  is_allow_web_public_flag_age:
+    Name:       "is_allow_web_public_flag_age"
+    Caption:    "Cho phép cấu hình hiển thị tuổi"
+    Help:       ""
+    FormType:   "radio"
+    ValueType:  "text"
+    IsRequired: true
+    Default:    0
+    Choices:
+      0: "Không sử dụng"
+      1: "Sử dụng"
+
+  nickname_of_member_who_does_not_have_credentials:
+    Name:       "nickname_of_member_who_does_not_have_credentials"
+    Caption:    "Thiết lập hiển thị tên"
+    Help:       ""
+    FormType:   "text"
+    ValueType:  "string"
+    IsRequired: false
+    Default:    "-"
+
+external_login_page:
+  _attributes:
+    Caption: "External Login Page Configuration"
+
+  external_pc_login_url:
+    Name:     "external_pc_login_url"
+    Caption:  "PC版外部ログインページURL"
+    Help:     "PC版でログアウトした場合やログインに失敗した場合、ここで指定したURLに遷移します<br />※ここで指定するページにはログインフォームを置いておく必要があります<br />※通常のログインページを使用する場合は空欄にしておきます"
+    FormType: "input"
+    ValueType: "text"
+    Default:   ""
+    IsRequired: false
+
+  external_mobile_login_url:
+    Name:     "external_mobile_login_url"
+    Caption:  "携帯版外部ログインページURL"
+    Help:     "携帯版でログアウトした場合やログインに失敗した場合、ここで指定したURLに遷移します<br />※ここで指定するページにはログインフォームを置いておく必要があります<br />※通常のログインページを使用する場合は空欄にしておきます"
+    FormType: "input"
+    ValueType: "text"
+    Default:   ""
+    IsRequired: false
+
+authentication:
+  _attributes:
+    Caption: "Authentication Configuration"
+
+  enable_registration:
+    Name:      "enable_registration"
+    Caption:   "Cho phép đăng ký"
+    FormType:  "radio"
+    ValueType: "integer"
+    IsRequired: true
+    Default:    3
+    Choices:
+      3: "PC・携帯両方から登録可"
+      2: "PCからのみ登録可"
+      1: "携帯からのみ登録可"
+      0: "登録一時停止"
+
+mobile:
+  _attributes:
+    Caption: "Mobile Configuration"
+
+  retrieve_uid:
+    Name:      "retrieve_uid"
+    Caption:   "メンバー登録時の携帯個体識別番号取得設定"
+    FormType:  "radio"
+    ValueType: "integer"
+    IsRequired: true
+    Default:    1
+    Choices:
+      3: "PC・携帯登録時に携帯個体識別番号の登録を必須にする"
+      2: "携帯登録時に携帯個体識別番号の登録を必須にする"
+      1: "携帯登録時に携帯個体識別番号を取得する（任意）"
+      0: "携帯登録時には携帯個体識別番号を取得しない"
+  font_size:
+    Name:    "font_size"
+    Caption: "携帯版フォントサイズ指定設定"
+    FormType:  "radio"
+    ValueType: "integer"
+    IsRequired: true
+    Default:    0
+    Choices:
+      1: "フォントサイズを指定する"
+      0: "フォントサイズを指定しない"
+  is_check_mobile_ip:
+    Name:    "is_check_mobile_ip"
+    Caption: "携帯電話のIP帯域設定"
+    FormType:  "radio"
+    ValueType: "integer"
+    IsRequired: true
+    Default:    1
+    Choices:
+      1: "携帯電話のIP帯域をチェックする"
+      0: "携帯電話のIP帯域をチェックしない"
+
+policy:
+  _attributes:
+    Caption: "Site Policy Configuration"
+
+  user_agreement:
+    Name:       "user_agreement"
+    Caption:    "Điều khoản sử dụng"
+    FormType:   "textarea"
+    ValueType:  "string"
+    IsRequired: true
+    Default:    "Điều khoản sử dụng dịch vụ\nThe User Agreement is under construction"
+  privacy_policy:
+    Name:       "privacy_policy"
+    Caption:    "Điều khoản bảo mật"
+    FormType:   "textarea"
+    ValueType:  "string"
+    IsRequired: true
+    Default:    "Điều khoản bảo mật\nThe Privacy Policy is under construction."
+
+footer:
+  _attributes:
+    Hidden: true
+
+  footer_before:
+    Name:       "footer_before"
+    Caption:    "Thông tin trước đăng nhập"
+    FormType:   "textarea"
+    ValueType:  "string"
+    IsRequired: false
+    Default:    "Copyright &copy; <a href=\"http://lifemap.vn/\" target=\"_blank\">lifemap.vn</a> 2011."
+  footer_after:
+    Name:       "footer_after"
+    Caption:    "Thông tin sau đăng nhập"
+    FormType:   "textarea"
+    ValueType:  "string"
+    IsRequired: false
+    Default:    "Copyright &copy; <a href=\"http://lifemap.vn/\" target=\"_blank\">lifemap.vn</a> 2011."
+
+permit_member_config:
+
+api_keys:
+  _attributes:
+    Caption: "Thiết lập API"
+
+  google_maps_api_key:
+    Name:       "google maps api key"
+    Caption:    "google maps api key"
+    FormType:   "text"
+    ValueType:  "string"
+    IsRequired: false
+    Default:    ""
+  google_AJAX_search_api_key:
+    Name:       "google AJAX search api key"
+    Caption:    "google AJAX search api key"
+    FormType:   "text"
+    ValueType:  "string"
+    IsRequired: false
+    Default:    ""

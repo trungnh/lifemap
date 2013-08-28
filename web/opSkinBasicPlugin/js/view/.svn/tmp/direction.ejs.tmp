@@ -1,0 +1,46 @@
+<div id="direction_box">
+  <form action="searchRentHouse" class="form-search-rent-house" method="post">
+    <%if(start){%>
+          <div class="nute_way_box">
+          <p class="nute_title">Từ đây</p>
+          <input id="start" class ='direction_nute' type ='text' value="<%=start%> "/>
+<<<<<<< .mine
+=======
+          <a href='#' class='my_position_start'>Lấy vị trí của tôi</a>
+          </div>
+>>>>>>> .r283
+    <%}else{%>
+          <div class="nute_way_box">
+          <p class="nute_title">Từ đây</p>
+          <input id="start" class ='direction_nute' type = 'text' value=""/>
+<<<<<<< .mine
+=======
+          <a href='#' class='my_position_start'>Lấy vị trí của tôi</a>
+          </div>
+>>>>>>> .r283
+    <%}%>
+    <%if(end){%>
+            <div class="nute_way_box">
+            <p class="nute_title">Đến đây</p>
+             <input id="end" class ='direction_nute' type = 'text' value="<%=end%>"/>
+<<<<<<< .mine
+=======
+             <a href='#' class='my_position_end'>Lấy vị trí của tôi</a>
+             </div>
+>>>>>>> .r283
+    <%}else{%>
+            <div class="nute_way_box">
+            <p class="nute_title">Đến đây</p>
+            <input id="end" class ='direction_nute' type = 'text' value=""/>
+<<<<<<< .mine
+=======
+            <a href='#' class='my_position_end'>Lấy vị trí của tôi</a>
+            </div>
+>>>>>>> .r283
+    <%}%>
+    <input type="submit" id="direction_button" value=" Tìm đường "  class="ok-button" />
+    <br/>
+    <a href='#' class='close'><img width="20" height="20" src="../web/images/close.gif" /></a>
+    <br/>
+  </form>
+</div>

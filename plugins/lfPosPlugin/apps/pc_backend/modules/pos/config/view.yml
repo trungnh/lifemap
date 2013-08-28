@@ -1,0 +1,12 @@
+listGoogleFlowSuccess:
+  javascripts: [/sfProtoculousPlugin/js/jquery-1.7.min.js,/sfProtoculousPlugin/js/autocrawl.js]
+
+listRenthouseSourceSuccess:
+  javascripts: [/sfProtoculousPlugin/js/jquery-1.7.min.js,/sfProtoculousPlugin/js/jquery.ui.core.js,/sfProtoculousPlugin/js/jquery.ui.datepicker.js,/sfProtoculousPlugin/js/autocrawl_house.js]
+listRenthousePosSuccess:
+  javascripts: [/sfProtoculousPlugin/js/jquery-1.7.min.js,/sfProtoculousPlugin/js/jquery.ui.core.js,/sfProtoculousPlugin/js/jquery.ui.datepicker.js,/sfProtoculousPlugin/js/autocrawl_house.js]
+  stylesheets: [/sfProtoculousPlugin/css/jquery.ui.css]
+
+newDealSuccess:
+  javascripts: [/sfProtoculousPlugin/js/jquery-1.7.min.js,/sfProtoculousPlugin/js/jquery-ui.min.js,/sfProtoculousPlugin/js/jquery-ui-timepicker-addon.js,http://maps.googleapis.com/maps/api/js?sensor=true&v=3&libraries=geometry,/sfProtoculousPlugin/js/deal.js]
+  stylesheets: [/sfProtoculousPlugin/css/jquery.ui.css]

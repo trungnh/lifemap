@@ -1,0 +1,36 @@
+invite_mode:
+  Default: 2
+
+enable_mobile:
+  Default: 1
+
+enable_pc:
+  Default: 1
+
+self_invite_action:
+  Default: "opAuthMailAddress/requestRegisterURL"
+
+help_login_error_action:
+  Name: "self_invite_action"
+  Caption:   ""
+  FormType:  ""
+  ValueType: ""
+  IsConfig:   false
+  IsRequired: false
+  Default: "opAuthMailAddress/passwordRecovery"
+
+is_check_multiple_address:
+  Name:      "is_check_multiple_address"
+  Caption:   "Đăng nhập thiết lập địa chỉ email"
+  FormType:  "radio"
+  ValueType: "text"
+  IsConfig:   true
+  IsRequired: true
+  Default:    0
+  Choices:
+    1: "Chấp nhận đăng nhập bằng e-mail PC và e-mail di động"
+    0: "Chấp nhận đăng nhập chỉ bằng e-mail PC hoặc e-mail di động"
+
+auth_mode_caption:
+  IsConfig: 0
+  Default: "E-mail Address Login"

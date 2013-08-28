@@ -1,0 +1,70 @@
+<form id="house-info-form">
+    <div id="house-info-tab">
+        <div id="house-info-fields">
+            <div class="grouper">
+
+                <p class="house-info-form-title">Tiêu đề</p>
+                <input name="renthouse-title"  id="renthouse-title" />
+                <p class="house-info-form-title">Mô tả</p>
+                <textarea name="renthouse-description"  id="renthouse-description"></textarea>
+
+                <p class="house-info-form-title">Địa chỉ</p>
+                <input name="renthouse-address"  id="renthouse-address" />
+
+                <br />
+                <span class="house-info-form-title">Giá</span>
+                <input id="renthouse-price" name="renthouse-price" />
+
+                triệu/tháng
+                
+            </div>
+
+            <div class="grouper">
+                <a id="get-my-info" class="ok-button">Dùng thông tin của tôi</a>
+
+                <p class="house-info-form-title">Điện thoại</p>
+                <input name="renthouse-tel"  id="renthouse-tel" />
+
+                <p class="house-info-form-title">Email</p>
+                <input name="renthouse-email"  id="renthouse-email" />
+
+                <p class="house-info-form-title">Tên chủ hộ</p>
+                <input name="renthouse-owner-name"  id="renthouse-owner-name" />
+          
+
+            </div>
+
+            <div class="grouper">
+                <p class="house-info-form-title">Trạng thái nhà</p>
+                <table id="status-checkbox">
+                    <tr>
+                        <td>
+                            <input type="radio" name="renthouse-status"  class="renthouse-status" value=1 checked /> Đang rảnh
+                        </td>
+                        <td>
+                            <input type="radio" name="renthouse-status"  class="renthouse-status" value=0 /> Đang bận
+                        </td>
+                    </tr>
+                </table>
+
+                
+        </div>
+    </div>
+
+    <div id="more-house-info">
+
+    </div>
+
+    <div id=more-or-not>
+        <a id="more-info" class="show-more">Nhập thêm thông tin</a>
+    </div>
+
+    <div class="clear"></div>
+    <div>
+        <a id="post-house-ok" class="ok-button">Đăng tin</a>
+    </div>
+</form>
+    <div class="clear"></div>
+    <div class="div-show-error">
+       
+    </div>

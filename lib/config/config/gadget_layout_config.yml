@@ -1,0 +1,5 @@
+layoutA: [top, sideMenu, contents, bottom, sideRightMenu,configMember]
+layoutB: [sideMenu, sideRightMenu, contents, bottom]
+layoutC: [contents, bottom]
+layoutD: [contents]
+layoutE: [top, contents, bottom]

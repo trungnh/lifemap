@@ -1,0 +1,56 @@
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 25px; /*--Set height of tabs--*/
+	
+	width: 100%;
+	padding-left: 200px;
+	background-color: #c6d7e6;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 25px; /*--Subtract 1px from the height of the unordered list--*/
+	line-height: 25px; /*--Vertically aligns the text within the tab--*/
+	
+	
+	
+	overflow: hidden;
+	position: relative;
+	background: #C6D7E6;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #4489c0;
+	display: block;
+	font-size: 0.95em;
+	padding: 0 30px;
+	 /*border: 1px solid #fff;--Gives the bevel look with a 1px white border inside the list item--*/
+	outline: none;
+	border-right: 1px solid #eee;
+	font-weight: bold;
+}
+ul.tabs li a:hover {
+	background: #a3d2fc;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Makes sure that the active tab does not listen to the hover properties--*/
+	background: #e9eef2;
+	
+}
+.tab_container {
+	
+	overflow: hidden;
+	clear: both;
+	float: left; width: 100%;
+	background: #fff;
+}
+.tab_content {
+
+	
+	border-bottom: 1px solid #e1e1e1;
+}
+
+

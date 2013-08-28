@@ -1,0 +1,19 @@
+<div class="comment-event-item">
+    <img class='img_40x40' src="<%=comment.member_img%>" />
+    <div class="comment-event-item-right">
+      <p><%=comment.member_name%> - <%=comment.date%></p>
+      <div class="content-image-box">
+         <div class="content-box">
+            <%=comment.content%>
+            <%if(comment.website){%>
+                <a href="<%=comment.website%>">Xem thêm</a>
+            <%}%>
+         </div>
+            <%if(comment.file){%>
+                <img class='img_40x40' src="<%=comment.file%>" />
+            <%}%>
+         <div class="clear"></div>
+       </div>
+    </div>
+    <div class="clear"></div>
+</div>

@@ -1,0 +1,4 @@
+<div id="new-place">
+    <a id="add-map-button" class="new-button">Tạo địa điểm mới</a>
+    <a id="refresh-map-button" class="refresh-button">Refresh</a>
+</div>

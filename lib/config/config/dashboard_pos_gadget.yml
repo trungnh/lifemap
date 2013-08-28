@@ -1,0 +1,56 @@
+memberCheckinNewPosList:
+  caption:
+    vi_VN: "Danh sách địa điểm mới nhiều member đang check-in"
+  description:
+    vi_VN: "Danh sách địa điểm mới nhiều member đang check-in"
+  viewable_privilege: 4
+  component: [dashboard, memberCheckinNewPosList]
+
+newCommentPosList:
+  caption:
+    vi_VN: "Comment mới của địa điểm "
+  description:
+    vi_VN: "Comment mới của địa điểm "
+  viewable_privilege: 4
+  component: [dashboard, newCommentPosList]
+  
+memberFollowPosList:
+  caption:
+    vi_VN: "Địa điểm được nhiều member follow"
+  description:
+    vi_VN: "Địa điểm được nhiều member follow"
+  viewable_privilege: 4
+  component: [dashboard, memberFollowPosList]
+
+memberCommentPosList:
+  caption:
+    vi_VN: "Địa điểm được nhiều member comment"
+  description:
+    vi_VN: "Địa điểm được nhiều member comment"
+  viewable_privilege: 4
+  component: [dashboard, memberCommentPosList]
+
+memberCheckinPosList:
+  caption:
+    vi_VN: "Địa điểm nhiều member check-in"
+  description:
+    vi_VN: "Địa điểm nhiều member check-in"
+  viewable_privilege: 4
+  component: [dashboard, memberCheckinPosList]
+  
+newPhotoPosList:
+  caption:
+    vi_VN: "Hình ảnh mới của địa điểm"
+  description:
+    vi_VN: "Hình ảnh mới của địa điểm"
+  viewable_privilege: 4
+  component: [dashboard, newPhotoPosList]
+  
+listSponsorSuggest:
+  caption:
+    vi_VN: "Suggest địa điểm được tài trợ"
+  description:
+    vi_VN: "Suggest địa điểm được tài trợ"
+  viewable_privilege: 4
+  component: [pos, listSponsorSuggest]
+

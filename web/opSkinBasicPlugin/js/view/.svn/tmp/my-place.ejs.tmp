@@ -1,0 +1,30 @@
+
+<h5 style="text-align: center">Địa điểm của tôi</h5>
+    <ul>
+    <% for(var i=0; i<list.length; i++) { %>
+        <li class="location-item clearfix" id="location-item-<%=list[i].id%>">
+            <% if(list[i].file_id) { %>
+                <img class='img_40x40' src="<%='../web/cache/img/jpg/w40_h40/'+ list[i].file_id + '_crop.jpg'%>" />
+            <% } else { %>
+                <img class='img_40x40' src="../web/images/no-image-yet.png" />
+            <% } %>
+            
+            <div class="right-block">
+                <div class="location-title">
+                    <a href="pos/<%=list[i].id%>/<%=list[i].title%>" class="" target='_blank'><%=list[i].title %></a>
+                </div>
+
+                <div class="location-address">
+                  <%=list[i].address%>
+                </div>
+                <div class="location-note">
+                </div>
+                <div>
+                  <a href="<%=list[i].id%>" id="location-edit-<%=list[i].id%>" class="a-edit-pos" title="Chỉnh sửa địa điểm">Chỉnh sửa</a></li>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </li>
+    <% } %>
+    </ul>

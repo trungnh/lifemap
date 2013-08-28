@@ -1,0 +1,47 @@
+slideShow:
+  caption:
+    vi_VN: "slide show ảnh quảng cáo"
+  description:
+    vi_VN: "slide show ảnh quảng cáo"
+  viewable_privilege: 4
+  component: [dashboard, slideShow]
+
+newPosList:
+  caption:
+    vi_VN: "Danh sách địa điểm mới"
+  description:
+    vi_VN: "Danh sách địa điểm mới"
+  viewable_privilege: 4
+  component: [dashboard, newPosList]
+
+newRentHouseList:
+  caption:
+    vi_VN: "Danh sách nhà cho thuê mới"
+  description:
+    vi_VN: "Danh sách nhà cho thuê mới"
+  viewable_privilege: 4
+  component: [dashboard, newRentHouseList]
+
+newMemberList:
+  caption:
+    vi_VN: "Danh sách thành viên mới"
+  description:
+    vi_VN: "Danh sách thành viên mới"
+  viewable_privilege: 4
+  component: [dashboard, newMemberList]
+
+listSponsorSuggest:
+  caption:
+    vi_VN: "Suggest địa điểm được tài trợ"
+  description:
+    vi_VN: "Suggest địa điểm được tài trợ"
+  viewable_privilege: 4
+  component: [pos, listSponsorSuggest]
+
+listTags:
+  caption:
+    vi_VN: "Tags link cac tu khoa tim kiem"
+  description:
+    vi_VN: "Tags link cac tu khoa tim kiem"
+  viewable_privilege: 4
+  component: [pos, listTags]

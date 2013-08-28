@@ -1,0 +1,9 @@
+<div id="left-col-nav-item">
+    <ul class="clearfix">
+      <li id="my-place"><a href="" id="a-my-place">Tôi đăng</a></li>
+      <li id="my-checkin"><a href="" id="a-my-checkin">Checkin</a></li>
+      <li id="my-follow"><a href="" id="a-my-follow">Theo dõi</a></li>
+      <li id="my-commment"><a href="" id="a-my-comment">Cảm nhận</a></li>
+    </ul>
+<div class="clear"></div>
+  </div>

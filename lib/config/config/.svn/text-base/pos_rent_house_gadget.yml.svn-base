@@ -1,0 +1,57 @@
+posImageBox:
+  caption:
+    vi_VN: "Ảnh đại diện của địa điểm"
+  description:
+    vi_VN: "Hiển thị ảnh đại diện của địa điểm"
+    #cho phep load page khi chua login
+  viewable_privilege: 4
+  component: [pos, posImageBox]
+
+imagePosListBox:
+  caption:
+    vi_VN: "Danh sách ảnh của địa điểm"
+  description:
+    vi_VN: "Hiển thị danh sách ảnh đại diện của địa điểm"
+  viewable_privilege: 4
+  component: [pos, imagePosListBox]
+  
+informationPosRentHouseBox:
+  caption:
+    vi_VN: "Thông tin của địa điểm nhà cho thuê"
+  description:
+    vi_VN: "Hiển thị thông tin tiêu đề, địa chỉ, tọa độ,...của địa điểm"
+  viewable_privilege: 4
+  component: [renthouse, informationPosRentHouseBox]
+  
+commentsPosListBox:
+  caption:
+    vi_VN: "Box hiển thị các comment của địa điểm"
+  description:
+    vi_VN: "Hiển thị comment và cho phép viết comment của địa điểm"
+  viewable_privilege: 4
+  component: [pos, commentsPosListBox]
+  
+posImageBox:
+  caption:
+    vi_VN: "Ảnh đại diện của địa điểm"
+  description:
+    vi_VN: "Hiển thị ảnh đại diện của địa điểm"
+    #cho phep load page khi chua login
+  viewable_privilege: 4
+  component: [pos, posImageBox]
+
+checkinListBox:
+  caption:
+    vi_VN: "Thống kê check-in của địa điểm"
+  description:
+    vi_VN: "Hiển thị thông tin thống kê check-in của địa điểm"
+  viewable_privilege: 4
+  component: [pos, checkinListBox]
+  
+listSponsorSuggest:
+  caption:
+    vi_VN: "Suggest địa điểm được tài trợ"
+  description:
+    vi_VN: "Suggest địa điểm được tài trợ"
+  viewable_privilege: 4
+  component: [pos, listSponsorSuggest]

@@ -1,0 +1,6 @@
+<div id="new-place">
+    <div id='title-new-rent-house' style="float:left;">
+        Nhà cho thuê mới đăng !
+    </div>
+    <a id="refresh-map-button-rent-house" class="refresh-button">Refresh</a>
+</div>

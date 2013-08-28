@@ -1,0 +1,39 @@
+profileListBox:
+  caption:
+    ja_JP: "Hồ Sơ"
+  description:
+    ja_JP: "Hiển thị một danh sách các thông tin hồ sơ"
+  viewable_privilege: 4
+  component: [member, profileListBox]
+
+listMemberComment:
+  caption:
+    vi_VN: "Danh sách địa điểm,sự kiện member đã comment"
+  description:
+    vi_VN: "Hiển thị danh sách địa điểm, sự kiện member đã comment"
+  viewable_privilege: 4
+  component: [member, listMemberComment]
+
+listMemberImage:
+  caption:
+    vi_VN: "Danh sách hình ảnh của member"
+  description:
+    vi_VN: "Hiển thị danh sách hình ảnh của member"
+  viewable_privilege: 4
+  component: [member, listMemberImage]
+  
+listMemberLog:
+  caption:
+    vi_VN: "Danh sách hoạt động của member"
+  description:
+    vi_VN: "Hiển thị danh sách các hoạt động của member"
+  viewable_privilege: 4
+  component: [member, listMemberLog]
+  
+listMemberFriend:
+  caption:
+    vi_VN: "Danh sách bạn bè của member"
+  description:
+    vi_VN: "Hiển thị danh sách bạn bè của member"
+  viewable_privilege: 4
+  component: [member, listMemberFriend]

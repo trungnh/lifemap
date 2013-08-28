@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="">
+        <source>Notification of Confirmation of Changing Your PC E-mail Address</source>
+        <target>Thông báo xác nhận thay đổi địa chỉ Email máy tính cá nhân của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Notification of Confirmation of Changing Your Mobile E-mail Address</source>
+        <target>Thông báo xác nhận thay đổi địa chỉ Email di động của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Notification of Confirmation of Changing Password</source>
+        <target>Thông báo xác nhận thay đổi mật khẩu</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Notification of Someone's Joining Your Community</source>
+        <target>Thông báo một thành viên đã tham gia vào hội nhóm của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Notification of Completion of Friend Link</source>
+        <target>Thông báo hoàn thành đường dẫn tới bạn bè</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Notification of Login URL</source>
+        <target>Thông báo địa chỉ đường dẫn đăng nhập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Notification of Completion of Your Registration</source>
+        <target>Thông báo hoàn thành việc đăng ký của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Notification of Completion of Leaving From the SNS</source>
+        <target>Thông báo hoàn thành việc rời khỏi SNS</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Notification of Registration URL</source>
+        <target>Thông báo địa chỉ đường dẫn đăng ký</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Signature</source>
+        <target>Chữ ký</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Daily News</source>
+        <target>Tin tức hàng ngày</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Notification of Friend Birthday</source>
+        <target>Thông báo sinh nhật bạn bè</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Login</source>
+        <target>Đăng nhập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Saved configuration successfully.</source>
+        <target>Lưu thông tin cấu hình thành công</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Sent a mail for your mail address. Please click URL in the mail for completing configuration.</source>
+        <target>Đã gửi thư xác nhận tới địa chỉ hòm thư của bạn. Vui lòng click vào đường dẫn trong thư để hoàn thành việc cấu hình</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The public_flag for your age can be configure at "Settings" page.</source>
+        <target>Hiển thị tuổi của bạn có thể được chỉnh sửa trên trang "Thiết lập"</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Age</source>
+        <target>Tuổi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%1% years old</source>
+        <target>%1% tuổi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Captcha</source>
+        <target>Captcha</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please input the below keyword.</source>
+        <target>Xin vui lòng nhập các từ khóa dưới đây</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Invalid mobile_address.</source>
+        <target>Số điện thoại không hợp lệ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Mon</source>
+        <target>Thứ 2</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Tue</source>
+        <target>Thứ 3</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Wed</source>
+        <target>Thứ 4</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Thu</source>
+        <target>Thứ 5</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Fri</source>
+        <target>Thứ 6</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Sat</source>
+        <target>Thứ 7</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Sun</source>
+        <target>Chủ nhật</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

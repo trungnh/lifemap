@@ -1,0 +1,22 @@
+<div class="dir-content">
+    <div id="direction_box" class="myform">
+    <form>
+    <div class="dir-input">
+        <label>Từ</label>
+        <input id="start" class ='direction_nute' type ='text' value="<%=start%>"/>
+        <input id="start_latlng" class ='direction_nute' type ='hidden' value="<%=latlng%>"/>
+        <span class="small"><a href='#' class='my_position_start'>Lấy vị trí của tôi</a></span>
+    </div>
+    <div class="dir-input">
+        <label>Đến</label>
+        <input id="end" class ='direction_nute' type = 'text' value="<%=start%>"/>
+        <input id="end_latlng" class ='direction_nute' type ='hidden' value="<%=latlng%>"/>
+        <span class="small"><a href='#' class='my_position_end'>Lấy vị trí của tôi</a></span>
+    </div>
+
+    <button type="submit" id="direction_button">Tìm đường</button><a href='#' class='direction_close'>Ẩn đi</a>
+    <div class="spacer"></div>
+    </form>
+    </div>
+    <div id="directionsPanel"></div>
+</div>

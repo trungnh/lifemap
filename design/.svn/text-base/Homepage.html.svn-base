@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Life map</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!--[if IE 6]>
+		<script src="js/DD_belatedPNG.js"></script>
+		<script>
+		DD_belatedPNG.fix('img, span, a, div, p,button, input, ul,li');
+		</script>
+		<![endif]-->
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+	<div id="page">
+		<!--begin header-->
+		<div id="header_container">
+		
+		
+			
+			<div class="header_nav clearfix">
+				<div class="fr" id="userMenu">
+					 <a href="#" title="Thăm trang cá nhân của tôi "><img src="http://s6.netlogstatic.com/vi/p/tt/169726775_5141555_484796.jpg" class="avatar fr"></a>
+					 <p class="fl textAlignRight"><a href="/hanh_nguyen_197">hanh_nguyen_197</a>
+					  <br>
+					 <a class="userSettings" href="/go/settings" id="menuPrimarySettings">thiết lập</a>&nbsp;-&nbsp;<a class="userLogout" href="/go/login/action=logout">đăng xuất</a>
+					 </p>
+				</div>
+				<div class="fr" id="shortcuts">
+					<ul class="clearfix" id="shortcutsContent">
+						<li class="shortcutsPhoto"><a href="#" title="Thêm một ảnh" class="shortcut"> Thêm một ảnh </a> </li>
+						<li class="shortcutsBlog"><a href="#" title="Viết một thông điệp blog" class="shortcut">Viết một thông điệp blog</a></li>
+						<li class="shortcutsVideo"><a href="#" title="Tải lên một đoạn video" class="shortcut">Tải lên một đoạn video</a></li>
+						<li class="shortcutsShout"><a id="shortcutsShout"  href="#" title="Hét!" class="shortcut"> Hét!</a></li>
+					</ul>
+				</div>
+			
+			
+				<div class="logo"><a title="Life map" href="#"><img alt="Life map" src="images/logo.png"></a></div><!-- /#logo -->
+				<div class="main_nav"> 
+					<div class="navigation">
+						<ul>
+							<li><a href="#">Trang chủ</a></li>							
+							<li><a href="#">Trang cá nhân</a></li>						
+							<li><a href="#">Bản đồ</a></li>						
+							<li><a href="#">Ứng dụng</a></li>						
+							<li>
+							
+							
+								<div class="searchbox" id="searchbox">
+									<div class="clearfix">
+										<input type="text" id="txtData" name="q" onkeypress="return BBEnterPress();">
+										<input type="submit" onsubmit="BBSearch(); return false;" onclick="BBSearch(); return false;" class="btn" value="">
+									</div>
+								</div>
+							
+							</li>			
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+			
+		</div>
+		<!--header end-->
+		
+		<!--begin main-->
+		<div id="main_container">			
+			<div class="content_wrap clearfix" >
+				<div class="sub_wrap">
+					<div class="home_sidebar">
+						<img class="padded_large" src="images/avatar.jpg" width="150" height="200" alt="avatar">
+						<div class="space10"></div>
+						<ul class="home_navi clearfix">
+							<li><a class="home" href="#">Trang chủ</a></li>
+							<li><a class="friend" href="#">Bạn bè</a></li>
+							<li><a class="message" href="#">Tin nhắn</a></li>
+							<li><a class="album" href="#">Hình Ảnh</a></li>
+							<li><a class="diary" href="#">Nhật ký</a></li>
+							<li><a class="community" href="#">Cộng đồng</a></li>
+							<li><a class="invite" href="#">Lời mời</a></li>
+							
+							
+						</ul>
+					</div>
+					<div class="friend_sidebar side_padded_large ">
+						<h3>Friends</h3>
+						<div class="friendsList clearfix">
+							<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_40.jpg" width="40" height="40" ></a></div>
+							<div class="friends_name"><a href="#">Nguyễn Thắng</a></div>
+						</div>
+						<div class="friendsList clearfix">
+							<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_40.jpg" width="40" height="40" ></a></div>
+							<div class="friends_name"><a href="#">Nguyễn Thắng</a></div>
+						</div>
+						<div class="friendsList clearfix">
+							<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_40.jpg" width="40" height="40" ></a></div>
+							<div class="friends_name"><a href="#">Nguyễn Thắng</a></div>
+						</div>
+						<div class="friendsList clearfix">
+							<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_40.jpg" width="40" height="40" ></a></div>
+							<div class="friends_name"><a href="#">Đào Quang Huy</a></div>
+						</div>
+						<div class="friendsList clearfix">
+							<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_40.jpg" width="40" height="40" ></a></div>
+							<div class="friends_name"><a href="#">Đào Quang Huy</a></div>
+						</div>
+						<div class="friendsList clearfix">
+							<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_40.jpg" width="40" height="40" ></a></div>
+							<div class="friends_name"><a href="#">Nguyễn Thắng</a></div>
+						</div>
+						<div class="friendsList clearfix">
+							<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_40.jpg" width="40" height="40" ></a></div>
+							<div class="friends_name"><a href="#">Nguyễn Thắng</a></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="main_wrap clearfix">
+					<div class="left_main">
+						<div class="padded_large">
+							<div class="wall_status">
+								<div class="ctn_status">
+									<textarea onblur="(this.value=='')?this.value='Nhập lời bình':'';" onclick="(this.value=='Nhập lời bình')?this.value='':'';" >Nhập lời bình</textarea>
+									<input type="button" class="btn_share" value="Bình luận">
+									<span class="share_txt"> Share: &nbsp;&nbsp;<a href="#">Image</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Link</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Video</a> </span>
+								</div>
+							</div>
+							
+							
+							
+							<div class="rwComment clearfix">
+								<div class="avatar01"><a href="#"><img class="bor_img" height="60" width="60" src="images/avatar_60.jpg"></a></div>
+								<div class="avatar01desc">
+									<div class="mComttxt">
+										<a href="#"><strong>oo0SkyGClub0oo MClub DCVN Sunny Cún</strong></a><br/>
+										<span>Đa số mẫu đàn ông có tính tình thẳng băng lại là người hay nói dối => nghịch lý nằm ở đây: Ng đàn ông cương trực, 
+										ít nói và khó tính lại thường như vậy, đa số thành phần này lại có học thức cao. 
+										Thế là nhiều chị em lầm tin và lỡ trao phân gởi thận cho họ. 
+										Mình và các bạn nam ở đây đều nói nhiều và tính tình cong vòng thì chị em phụ nữ lại chê là trẻ con, 
+										thiếu chính chắn</span>													
+									</div>
+									<span class="fs1">lúc 3 tiếng trước</span><span id="wallreply"><img src="images/ico_wall_reply.gif"> <a href="#">Bình luận</a></span>
+									<div class="listComment ">
+										<div class="CommentType clearfix">
+											<div class="small_avatar"><img  class="bor_img" height="40" width="40" src="images/avatar_40.jpg"></div>
+											<div class="infoComment">
+												<p><a href="#"><strong>o DCVN Sunny Cún</strong></a><span class="clr1">vào lúc 2 tiếng trước</span></p>
+												<span class="wallcommentcontent">Thế là nhiều chị em lầm tin và lỡ trao phân gởi thận cho họ. Mình và các bạn nam ở đây đều nói nhiều </span>
+											</div>
+										</div>
+										<div class="CommentType clearfix">
+											<div class="small_avatar"><img class="bor_img" height="40" width="40"  src="images/avatar_40.jpg"></div>
+											<div class="frmwall2">
+												<div class="bg_inputComment">
+													<textarea onblur="(this.value=='')?this.value='Nhập lời bình':'';" onclick="(this.value=='Nhập lời bình')?this.value='':'';"  >Nhập lời bình</textarea>
+													<input type="button" class="btn_poll" value="Bình luận">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="rwComment clearfix">
+								<div class="avatar01"><a href="#"><img class="bor_img" height="60" width="60" src="images/avatar_60.jpg"></a></div>
+								<div class="avatar01desc">
+									<div class="mComttxt">
+										<a href="#"><strong>oo0SkyGClub0oo MClub DCVN Sunny Cún</strong></a><br/>
+										<span>Đa số mẫu đàn ông có tính tình thẳng băng lại là người hay nói dối => nghịch lý nằm ở đây: Ng đàn ông cương trực, 
+										ít nói và khó tính lại thường như vậy, đa số thành phần này lại có học thức cao. 
+										Thế là nhiều chị em lầm tin và lỡ trao phân gởi thận cho họ. 
+										Mình và các bạn nam ở đây đều nói nhiều và tính tình cong vòng thì chị em phụ nữ lại chê là trẻ con, 
+										thiếu chính chắn</span>													
+									</div>
+									<span class="fs1">lúc 3 tiếng trước</span><span id="wallreply"><img src="images/ico_wall_reply.gif"> <a href="#">Bình luận</a></span>
+									<div class="listComment ">
+										<div class="CommentType clearfix">
+											<div class="small_avatar"><img  class="bor_img" height="40" width="40" src="images/avatar_40.jpg"></div>
+											<div class="infoComment">
+												<p><a href="#"><strong>o DCVN Sunny Cún</strong></a><span class="clr1">vào lúc 2 tiếng trước</span></p>
+												<span class="wallcommentcontent">Thế là nhiều chị em lầm tin và lỡ trao phân gởi thận cho họ. Mình và các bạn nam ở đây đều nói nhiều </span>
+											</div>
+										</div>
+										<div class="CommentType clearfix">
+											<div class="small_avatar"><img class="bor_img" height="40" width="40"  src="images/avatar_40.jpg"></div>
+											<div class="frmwall2">
+												<div class="bg_inputComment">
+													<textarea onblur="(this.value=='')?this.value='Nhập lời bình':'';" onclick="(this.value=='Nhập lời bình')?this.value='':'';"  >Nhập lời bình</textarea>
+													<input type="button" class="btn_poll" value="Bình luận">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+					<div class="right_main">
+						<div class="padded_large">
+							<div class="r_new_notice">
+								<h3>new notice</h3>
+								<ul>
+									<li>You have <a href="#"><span class="orange"><strong>5</strong> message</span></a> in box</li>
+									<li>You have <a href="#"><span class="orange"><strong>5</strong> message</span></a> in box</li>
+									<li>You have <a href="#"><span class="orange"><strong>5</strong> message</span></a> in box</li>
+									<li>You have <a href="#"><span class="orange"><strong>5</strong> message</span></a> in box</li>
+									<li>You have <a href="#"><span class="orange"><strong>5</strong> message</span></a> in box</li>
+									
+								</ul>
+							</div>
+							<div class="r_community">
+								<h3>community</h3>
+								<div class="communitylist clearfix">
+									<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_60.jpg" width="60" height="60" ></a></div>
+									<div class="friends_name">
+										<a href="#">Hai Lúa Nông Trại Vui Vẻ </a>
+										<span>Danh sách những vật phẩm không tiếp tục nhập hàng về Nông Trại 2 sẽ được....</span>
+									</div>
+								</div>
+								<div class="communitylist clearfix">
+									<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_60.jpg" width="60" height="60" ></a></div>
+									<div class="friends_name">
+										<a href="#">Hai Lúa Nông Trại Vui Vẻ </a>
+										<span>Danh sách những vật phẩm không tiếp tục nhập hàng về Nông Trại 2 sẽ được....</span>
+									</div>
+								</div>
+								<div class="communitylist clearfix">
+									<div class="margin_avatar"><a href="#"><img class="bor_img" src="images/avatar_60.jpg" width="60" height="60" ></a></div>
+									<div class="friends_name">
+										<a href="#">Hai Lúa Nông Trại Vui Vẻ </a>
+										<span>Danh sách những vật phẩm không tiếp tục nhập hàng về Nông  Trại 2 sẽ đượcTrại 2 sẽ được Trại 2 sẽ được Trại 2 sẽ được....</span>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--main end-->
+		
+		
+		
+		<!--begin footer-->
+		<div id="footer-container" class="clearfix">
+			<div id="footer_nav">  
+					<ul>
+						<li><a href="/gear/">Giới Thiệu</a></li>
+						<li><a>.</a></li>
+						<li><a href="/blog/">Quảng Cáo</a></li>
+						<li><a>.</a></li>
+						<li><a href="/support/">Quyền Riêng Tư</a></li>
+						<li><a>.</a></li>
+						<li><a href="/company/">Điều Khoản Sử Dụng</a></li>
+						<li><a>.</a></li>
+						<li><a href="/find-a-store/">Trợ Giúp</a></li>
+						
+										
+					</ul>
+			</div>
+			<p class="a_center">Copyright © lifemap.vn 2011. All right reserved.</p>
+		</div>
+		<!--footer end-->
+		
+		
+		
+		
+		
+	</div><!--end page-->
+</body>
+</html>

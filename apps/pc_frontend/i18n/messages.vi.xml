@@ -1,0 +1,1388 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="">
+        <source>%community% List</source>
+        <target>%community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%community% Members</source>
+        <target>Những thành viên %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Show all</source>
+        <target>Hiển thị hết</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Create a new %community%</source>
+        <target>Tạo một %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit the %community%</source>
+        <target>Sửa thông tin %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Management member</source>
+        <target>Quản lý thành viên</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%community% Name</source>
+        <target>Tên hội nhóm</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Date Created</source>
+        <target>Ngày tạo</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Administrator</source>
+        <target>Người quản lý</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Sub Administrator</source>
+        <target>Phó quản lý</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Count of Members</source>
+        <target>Số lượng thành viên</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Description</source>
+        <target>Mô tả</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%community%</source>
+        <target>%community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit this %community%</source>
+        <target>Sửa thông tin %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Leave this %community%</source>
+        <target>Rời khỏi %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Join this %community%</source>
+        <target>Tham gia %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You are already joined to this %community%.</source>
+        <target>Bạn đã tham gia %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have already sent the participation request to this %community%.</source>
+        <target>Bạn đã được gửi lời mời tham gia %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You are waiting for the participation approval by %community%'s administrator.</source>
+        <target>Bạn đang chờ đợi sự chấp thuận tham gia từ người quản trị %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Errors</source>
+        <target>Lỗi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Joined %community%</source>
+        <target>Đã tham gia %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You don't have any joined %community%.</source>
+        <target>Bạn chưa tham gia %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Drop this member</source>
+        <target>Loại bỏ thành viên này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The administrator doesn't leave the %community%.</source>
+        <target>Người quản trị không được rời %community%.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You haven't joined this %community% yet.</source>
+        <target>Bạn chưa được tham gia %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Search %community%</source>
+        <target>Tìm kiếm %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Search Communities</source>
+        <target>Tìm kiếm hội nhóm</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Total</source>
+        <target>Có tất cả</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Communities</source>
+        <target>hội nhóm</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Search</source>
+        <target>Tìm kiếm</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Search Results</source>
+        <target>Kết quả tìm kiếm</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Other member can not view the mail address that was input here.</source>
+        <target>Các thành viên khách không thể xem địa chỉ mail đã được đưa vào đây.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Your search queries did not match any %community%.</source>
+        <target>Truy vấn tìm kiếm của bạn không phù hợp với bất kỳ %community% nào</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have received the request to take over administrator of "%1%".</source>
+        <target>Bạn đã nhận được yêu cầu để tiếp nhận quyền quản trị của「%1%」</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Take over this %community%'s administrator to this member</source>
+        <target>Mời quyền quản trị %community% tới thành viên này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You are taking over this %community%'s administrator to this member now.</source>
+        <target>Bạn đang tiếp quản quyền quản trị %community% từ thành viên này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Take over the administrator of "%1%"</source>
+        <target>Tiếp quản quyền quản trị của「%1%」</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Request this %community%'s sub-administrator to this member</source>
+        <target>Mời trở thành phó quản lý của %community% tới thành viên này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You are requesting this %community%'s sub-administrator to this member now.</source>
+        <target>Bạn đang mời phó quản lý %community% tới thành viên này.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Demotion from this %community%'s sub-administrator</source>
+        <target>Giáng cấp từ phó quản lý %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Request the sub-administrator of "%1%"</source>
+        <target>Yêu cầu trở thành phó quản lý của 「%1%」</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you demotion %0% from this %community%'s sub-administrator?</source>
+        <target>Bạn giáng cấp %0% từ phó quản lý %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Member</source>
+        <target>Thành viên</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You can't access this page.</source>
+        <target>Bạn không được quyền truy nhập trang này.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%1% sent %friend% request to you!</source>
+        <target>%1% gửi lời mời %friend% bạn bè tới bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>There are all %1% friends</source>
+        <target>Có tất cả %1% bạn bè</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%1% send request for participation to %2%.</source>
+        <target>%1% gửi lời mời tham gia %2%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Permits</source>
+        <target>Chấp nhận</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Refuses</source>
+        <target>Từ chối</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%my_friend% Setting</source>
+        <target>Chỉnh sửa bạn bè</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>This member already belongs to %my_friend%.</source>
+        <target>Thành viên này đang là %my_friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%Friend% request is already sent.</source>
+        <target>Lời mời %Friend% đã được gửi đi.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have requested %friend% link.</source>
+        <target>Bạn đã yêu cầu kết nối %friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You don't have any %friend%.</source>
+        <target>Bạn không có %friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete from %my_friend%.</source>
+        <target>Xóa từ %my_friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you delete %0% from %my_friend%?</source>
+        <target>Bạn có xóa %0% từ %my_friend% không?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Add %my_friend%</source>
+        <target>Thêm %my_friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>This member is not your %friend%.</source>
+        <target>Thành viên này không là %friend% của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Register Mobile phone</source>
+        <target>Đăng ký số di động</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>When mobile information registration is done from following URL, the member registration is completed.</source>
+        <target>Khi thông tin đăng ký di động hoàn thành, thông tin đăng ký thành viên sẽ hoàn tất.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Settings</source>
+        <target>Thiết lập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Change Settings</source>
+        <target>Thay đổi thiết lập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Send</source>
+        <target>Gửi đi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Photo</source>
+        <target>Ảnh</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit Photo</source>
+        <target>Sửa ảnh đại diện</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Show more Photos</source>
+        <target>Xem thêm ảnh</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%1%'s Photos</source>
+        <target>Những ảnh của %1%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please select the item that wants to be set from the menu.</source>
+        <target>Hãy chọn các mục muốn thiết lập từ danh sách</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit profile</source>
+        <target>Sửa thông tin cá nhân</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit Profile</source>
+        <target>Sửa thông tin cá nhân</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Profile</source>
+        <target>Thông tin cá nhân</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Public Flag for Profile Page</source>
+        <target>Quyền riêng tư cho trang thông tin cá nhân</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>All Users on the Web</source>
+        <target>Tất cả mọi người trên web</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>All Members</source>
+        <target>Tất cả thành viên</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%my_friend%</source>
+        <target>Chỉ %my_friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Only Open to %my_friend%</source>
+        <target>Chỉ mở cho %my_friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Private</source>
+        <target>Riêng tư</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Invite a friend to %1%</source>
+        <target>Mời bạn bè tới %1%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The invitation has not been permitted.</source>
+        <target>Lời mời không được chấp nhận.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Sent.</source>
+        <target>Đã gửi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Failed in login.</source>
+        <target>Đăng nhập lỗi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Last Login</source>
+        <target>Lần đăng nhập gần đây nhất</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%friend% List</source>
+        <target>%friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Other members look your page like this.</source>
+        <target>Những người khác thấy trang của bạn giống như thế này.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>If you teach your page to other members, please use following URL.</source>
+        <target>Nếu bạn dẫn trang của bạn tới thành viên khác, hãy sử dụng đường dẫn này.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>If you edit this page, please visit %1%.</source>
+        <target>Nếu bạn sửa trang này, hãy vào 「%1%」</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>It is necessary to register the mobile-phone information to entry in %1%.</source>
+        <target>Cần thiết đăng ký thông tin di động để nhập vào trong %1%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Register the mobile-phone</source>
+        <target>Đăng ký số di động</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>URL for mobile registration is send to the mobile mail address appropriating input here.</source>
+        <target>Đường dẫn cho đăng ký di động sẽ được gửi tới địa chị email di động bạn nhập vào đây. </target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please set your mobile phone to receive a mail from %1%.</source>
+        <target>Hãy thiết lập số điện thoại để nhận 1 email từ「%1%」</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%nickname%</source>
+        <target>%nickname%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Your search queries did not match any members.</source>
+        <target>Truy vấn tìm kiếm của bạn không phù hợp với bất kỳ thành viên nào.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>When the mail address is registered, it is changed to a new mail address.</source>
+        <target>Khi địa chỉ mail được đăng ký, nó được thay đổi đến một địa chỉ thư mới.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Click following URL, please. You can register in %1%.</source>
+        <target>Nhấp vào URL sau đây, xin vui lòng. Bạn có thể đăng ký %1%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Main Photo</source>
+        <target>Ảnh chính</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Upload</source>
+        <target>Tải lên</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Register</source>
+        <target>Đăng ký</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete</source>
+        <target>Xóa</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You can upload 3 photos.</source>
+        <target>Bạn có thể tải lên 3 ảnh</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please make it to GIF･JPEG･PNG within %max_size% bytes.</source>
+        <target>Hãy tạo nó từ những ảnh  GIF･JPEG･PNG trong dung lượng %max_size% bytes</target>
+      </trans-unit>
+      <trans-unit id="">
+            <source>Photograph that hits violation of copyright and portrait right and violence and obscene photograph and other members are seen and revolted a press ban. Please publish by the self-responsibility.</source>
+        <target>Bạn chịu trách nhiệm trước những ảnh bạn đưa lên.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Details</source>
+        <target>Chi tiết</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please beginning register from %1% to following URL.</source>
+        <target>Hãy bắt đầu đăng ký từ %1% tới đường dẫn sau</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please input a mail address.</source>
+        <target>Hãy nhập địa chỉ mail</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You can not delete your account.</source>
+        <target>Bạn không thể xóa tài khoản của bạn.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you delete your %1% account?</source>
+        <target>Bạn muốn xóa tài khoản %1% của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please input your password if you want to delete your account.</source>
+        <target>Hãy nhập mật khẩu của bạn nếu bạ muốn xóa tài khoản.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete your %1% account</source>
+        <target>Xóa tài khoản %1% của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Back to previous page</source>
+        <target>Quay lại trang trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Show Profile</source>
+        <target>Hiển thị thông tin cá nhân</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>General Configuration</source>
+        <target>Cấu hình chung</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Public Flag Configuration</source>
+        <target>Thiết lập quyền riêng tư</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>PC E-mail Address Configuration</source>
+        <target>Thiết lập địa chỉ email</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>PC E-mail Address</source>
+        <target>Địa chỉ E-mail</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>PC E-mail Address (Confirm)</source>
+        <target>Địa chỉ E-mail (Nhập lại)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Mobile E-mail Address Configuration</source>
+        <target>Thiết lập địa chỉ E-mail di động</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Mobile E-mail Address</source>
+        <target>Địa chỉ E-mail di động</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Mobile E-mail Address (Confirm)</source>
+        <target>Địa chỉ E-mail di động (Nhập lại)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password Configuration</source>
+        <target>Thiết lập mật khẩu</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password</source>
+        <target>Mật khẩu</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password (Confirm)</source>
+        <target>Mật khẩu(Nhập lại)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password must be 6-12 characters.</source>
+        <target>Mật khẩu phải có 6-12 ký tự</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Access Block Configuration</source>
+        <target>Thiết lập chặn truy nhập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Access Block</source>
+        <target>Chặn truy nhập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Your current password</source>
+        <target>Mật khẩu hiện tại</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>not login yet</source>
+        <target>Chưa đăng nhập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>less than 5 seconds ago</source>
+        <target>Trước đó 5 giây</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>less than 10 seconds ago</source>
+        <target>Trước đó 10 giây</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>less than 20 seconds ago</source>
+        <target>Trước đó 20 giây</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>half a minute ago</source>
+        <target>Trước đó nửa phút</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>less than a minute ago</source>
+        <target>Trước đó 1 phút</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>1 minute ago</source>
+        <target>1 phút trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%minutes% minutes ago</source>
+        <target>%minutes% phút trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>about 1 hour ago</source>
+        <target>Khoảng 1 giờ trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>about %hours% hours ago</source>
+        <target>%hours% giờ trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>1 day ago</source>
+        <target>1 ngày trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%days% days ago</source>
+        <target>%days% ngày trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>about 1 month ago</source>
+        <target>Khoảng 1 tháng trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%months% months ago</source>
+        <target>%months% tháng trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>about 1 year ago</source>
+        <target>Khoảng 1 năm trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>over %years% years ago</source>
+        <target>Nhiều hơn %years% năm trước</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>If %1% is your friend, let us add to %my_friend% it!</source>
+        <target>Nếu %1% là bạn của bạn, hãy để chúng tôi thêm vào %my_friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Mail address</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Languages</source>
+        <target>Ngôn ngữ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Member Registration</source>
+        <target>Đăng ký thành viên</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Cannot add an image any more.</source>
+        <target>Không thể thêm nhiều ảnh hơn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Message(Arbitrary)</source>
+        <target>Tin nhắn (Tùy chọn)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Mail address list during invitation</source>
+        <target>Danh sách các địa chỉ mail đang mời</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Y/m/d</source>
+        <target>Y/m/d</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Information About the Withdrawal Member</source>
+        <target>Thông tin về các thành viên thu hồi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Remove the current photo</source>
+        <target>Xóa ảnh đang xem</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Everyone can join</source>
+        <target>Tất các mọi người đều có thể tham gia</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%Community%'s admin authorization needed</source>
+        <target>Cần sự chấp nhận từ người quản trị %Community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%community% Category</source>
+        <target>Loại %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>All categories</source>
+        <target>Tất cả các loại</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>delete this %community%.if you delete this %community% please to report in advance for all this %community% members.</source>
+        <target>Xóa %community% này. Nếu bạn xóa %community% này hãy báo trước cho tất cả thành viên %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete</source>
+        <target>Xóa</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete this %community%</source>
+        <target>Xóa %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you delete this %community%?</source>
+        <target>Bạn muốn xóa %community% này?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Do you drop %0% from this %community%?</source>
+        <target>Bạn loại %0% từ %community% này?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Yes</source>
+        <target>Đồng ý</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>No</source>
+        <target>Không</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%0% is required field.</source>
+        <target>%0% là trường bắt buộc.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please Select</source>
+        <target>Chọn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Text Mode</source>
+        <target>Chế độ soạn thảo</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Preview Mode</source>
+        <target>Chế độ xem trước</target>
+      </trans-unit>
+
+      <trans-unit id="">
+        <source>Invalid.</source>
+        <target>Không hợp lệ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Required.</source>
+        <target>Bắt buộc</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>CSRF attack detected.</source>
+        <target>Quay lại màn hình trước đó và thực hiện lại.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>"%value%" does not match the date format (%date_format%).</source>
+        <target>"%value%" không đúng mẫu định dạng ngày (%date_format%)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The date must be before %max%.</source>
+        <target>Ngày phải trước %max%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The date must be after %min%.</source>
+        <target>Ngày phải sau %min%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The begin date must be before the end date.</source>
+        <target>Ngày bắt đầu phải trước ngày kết thúc.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>File is too large (maximum is %max_size% bytes).</source>
+        <target>Tập tin quá lớn(Lớn nhất là %max_size% bytes)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Invalid mime type (%mime_type%).</source>
+        <target>Định dang không chính xác (%mime_type%).</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The uploaded file was only partially uploaded.</source>
+        <target>Tập tin tải lên chỉ được một phần</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Missing a temporary folder.</source>
+        <target>Tập tin tải lên không thành công.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Failed to write file to disk.</source>
+        <target>Tập tin tải lên không thành công.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>File upload stopped by extension.</source>
+        <target>Loại tập tin không được hỗ trợ.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Unexpected extra form field named "%field%".</source>
+        <target>Trường dữ liệu Không chính xác</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The form submission cannot be processed. It probably means that you have uploaded a file that is too big.</source>
+        <target>Gửi không thành công.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>"%value%" is not an integer.</source>
+        <target>"%value%" không là số nguyên.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>"%value%" is not a number.</source>
+        <target>"%value%" is not số。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>"%value%" must be less than %max%.</source>
+        <target>"%value%" phải bé hơn %max%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>"%value%" must be greater than %min%.</source>
+        <target>"%value%" phải lớn hơn %min%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>"%value%" is too long (%max_length% characters max).</source>
+        <target>"%value%" quá dài (Lớn nhất là %max_length% ký tự).</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>"%value%" is too short (%min_length% characters min).</source>
+        <target>"%value%" quá ngắn (Nhỏ nhất là %min_length% ký tự).</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>password is too long (%max_length% characters max).</source>
+        <target>Mật khẩu quá dài (Nhiều nhất %max_length% ký tự) </target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>password is too short (%min_length% characters min).</source>
+        <target>Mật khẩu quá ngắn (Ít nhất %min_length% ký tự)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>"%value%" does not match the time format (%time_format%).</source>
+        <target>"%value%" không đúng định dạng thời gian (%time_format%)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>invalid e-mail address</source>
+        <target>Địa chỉ e-mail không chính xác</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>An object with the same "%column%" already exist.</source>
+        <target>Một mục cùng %column% đã tồn tại.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Language and Time Zone Configuration</source>
+        <target>Thiết lập ngôn ngữ và múi giờ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Language</source>
+        <target>Ngôn ngữ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Time Zone</source>
+        <target>Múi giờ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Man</source>
+        <target>Nam</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Female</source>
+        <target>Nữ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Hokkaido</source>
+        <target>Hokkaido</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Aomori</source>
+        <target>Aomori</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Iwate</source>
+        <target>Iwate</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Miyagi</source>
+        <target>Miyagi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Akita</source>
+        <target>Akita</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Yamagata</source>
+        <target>Yamagata</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Fukushima</source>
+        <target>Fukushima</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Ibaraki</source>
+        <target>Ibaraki</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Tochigi</source>
+        <target>Tochigi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Gunma</source>
+        <target>Gunma</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Saitama</source>
+        <target>Saitama</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Chiba</source>
+        <target>Chiba</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Tokyo</source>
+        <target>Tokyo</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Kanagawa</source>
+        <target>Kanagawa</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Niigata</source>
+        <target>Niigata</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Toyama</source>
+        <target>Toyama</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Ishikawa</source>
+        <target>Ishikawa</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Fukui</source>
+        <target>Fukui</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Yamanashi</source>
+        <target>Yamanashi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Nagano</source>
+        <target>Nagano</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Gifu</source>
+        <target>Gifu</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Shizuoka</source>
+        <target>Shizuoka</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Aichi</source>
+        <target>Aichi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Mie</source>
+        <target>Mie</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Shiga</source>
+        <target>Shiga</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Kyoto</source>
+        <target>Kyoto</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Osaka</source>
+        <target>Osaka</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Hyogo</source>
+        <target>Hyogo</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Nara</source>
+        <target>Nara</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Wakayama</source>
+        <target>Wakayama</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Tottori</source>
+        <target>Tottori</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Shimane</source>
+        <target>Shimane</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Okayama</source>
+        <target>Okayama</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Hiroshima</source>
+        <target>Hiroshima</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Yamaguchi</source>
+        <target>Yamaguchi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Tokushima</source>
+        <target>Tokushima</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Kagawa</source>
+        <target>Kagawa</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Ehime</source>
+        <target>Ehime</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Kochi</source>
+        <target>Kochi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Fukuoka</source>
+        <target>Fukuoka</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Saga</source>
+        <target>Saga</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Nagasaki</source>
+        <target>Nagasaki</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Kumamoto</source>
+        <target>Kumamoto</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Oita</source>
+        <target>Oita</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Miyazaki</source>
+        <target>Miyazaki</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Kagoshima</source>
+        <target>Kagoshima</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Okinawa</source>
+        <target>Okinawa</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Sex</source>
+        <target>Giới tính</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Birthday</source>
+        <target>Ngày sinh</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Country</source>
+        <target>Quốc giá</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Region</source>
+        <target>Thành phố (tỉnh)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Region in Japan</source>
+        <target>Thành phố</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Postal Code</source>
+        <target>Mã bưu điện</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Telephone Number</source>
+        <target>Số điện thoại</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Self Introduction</source>
+        <target>Tự giới thiệu</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Login to %1% using your %2% ID</source>
+        <target>Đăng nhập %1% sử dung ID %2% của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You are login to %1% as:</source>
+        <target>Bạn đã đăng nhập vào %1% như là:</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you wish to login to the following site using your %1% ID?</source>
+        <target>Bạn muốn đăng nhập vào trang sau sử dụng ID %1% của bạn?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Automatically login to %1% from now on</source>
+        <target>Tự động đăng nhập vào %1% từ bây giờ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>This page will automatically redirect soon.</source>
+        <target>Trang này sẽ tự động chuyển tiếp ngay.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>If this does not work for any reason use the button below:</source>
+        <target>Nếu vì một lý do không được chuyển đi, xin vui lòng bấm vào nút bên dưới.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Click this button to continue</source>
+        <target>Click vào nút này để tiếp tục</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please login to visit this page</source>
+        <target>Để xem trang này Bạn phải đăng nhập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Add new application</source>
+        <target>Thêm ứng dụng mới</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you revoke the access authority from this application?</source>
+        <target>Bỏ truy cập ứng dụng này?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Revoke</source>
+        <target>Bỏ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Revoke Access</source>
+        <target>Bỏ truy cập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The access authority was revoked successfully.</source>
+        <target>Bỏ cho phép truy cập đã được thực hiện thành công.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The application was deleted successfully.</source>
+        <target>Ứng dụng này đã xóa thành công.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you really delete this application?</source>
+        <target>Bạn có muốn loại bỏ ứng dụng này?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>External Service</source>
+        <target>Dịch vụ mở rộng</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Policy of Permission</source>
+        <target>Chính sách cho phép</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Always Permit</source>
+        <target>Luôn cho phép</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Unset Permission</source>
+        <target>Bỏ cho phép</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Ask Each Time</source>
+        <target>Hỏi qua mỗi lần</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>List of Service that You Use</source>
+        <target>Danh sách các dịch vụ đang được sử dụng</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Your OpenID</source>
+        <target>OpenID của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Connecting with External Application</source>
+        <target>Thiết lập các kết nối với dịch vụ mở rộng</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>OpenID Configuration</source>
+        <target>Thiết lập OpenID</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you unset the permission of this service?</source>
+        <target>Bạn có muốn bỏ cho phép cho dịch vụ này?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Unset</source>
+        <target>Bỏ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>And, this site wants to use your following informations.</source>
+        <target>Ngoài ra, trang web này muốn sử dụng các thông tin sau của bạn.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The shared information may save in this site permanently.</source>
+        <target>Các thông tin được chia sẻ có thể lưu trữ tại trang web này.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please uncheck these informations that you don't want to share with the site.</source>
+        <target>Xin hãy bỏ chọn nếu bạn không muốn thông tin được cung cấp.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>&lt;strong&gt;An emphatic item&lt;/strong&gt; is an information that you need to use the site. If you uncheck that item, that action is recognized as clicking "No".</source>
+        <target>&lt;strong&gt;Một mục nhấn mạnh &lt;/strong&gt; là một thông tin mà bạn cần để sử dụng trang này. Nếu bạn không chọn mục đó, "Không" sẽ được coi là lựa chọn.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Notify of Your Registering</source>
+        <target>Hoàn thành đăng ký</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Mail Configuration</source>
+        <target>Thiết lập nhận Mail</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Daily News</source>
+        <target>Tin tức hàng ngày</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Don't Send</source>
+        <target>Không gửi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>[1]Send once a week (%2%)|[2]Send twice a week (%2%)|(2,+Inf]Send %1% times a week (%2%)</source>
+        <target>[1]Gửi một lần trong tuần (%2%)|[2]Gửi 2 lần trong tuần (%2%)|(2,+Inf]Gửi %1% lần trong tuần (%2%)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Send Everyday</source>
+        <target>Gửi hàng ngày</target>
+      </trans-unit>
+     <trans-unit id="">
+       <source>You have %1% the following pending requests. Select "Accept" or "Reject".</source>
+       <target>Bạn có %1% yêu cầu đang đợi trả lời. Hãy chọn chấp nhận hoặc từ chối.</target>
+     </trans-unit>
+     <trans-unit id="">
+       <source>You don't have any pending requests</source>
+       <target>Bạn không có yêu cầu đang chờ</target>
+     </trans-unit>
+     <trans-unit id="">
+       <source>Accept</source>
+       <target>Chấp nhận</target>
+     </trans-unit>
+     <trans-unit id="">
+       <source>Reject</source>
+       <target>Từ chối</target>
+     </trans-unit>
+      <trans-unit id="">
+        <source>You have just accepted %friend% link request.</source>
+        <target>Bạn đã chấp nhận lời mời kết nối %friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have just rejected %friend% link request.</source>
+        <target>Bạn đã từ chối lời mời kết nối %friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Go to Confirmation Page</source>
+        <target>Tới trang xác nhận</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You've gotten %1% %friend% requests</source>
+        <target>Bạn đã nhận được lời mời từ %1% %friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Pending %friend% link requests</source>
+        <target>Các yêu cầu kết nối %friend% đang chờ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You've gotten %1% one's %community% joining requests</source>
+        <target>Bạn đã nhận được %1% lời mời tham gia từ %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You've gotten %1% %community% administrator taking over requests</source>
+        <target>Bạn đã nhận được %1% lời mời quản trị %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You've gotten %1% %community% sub-administrator requests</source>
+        <target>Bạn đã nhận được %1% lời mời thành phó quản trị %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have just accepted joining to %1%</source>
+        <target>Bạn đã được chấp nhận tham gia %1%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have just rejected joining to %1%</source>
+        <target>Bạn đã bị từ chối tham gia %1% </target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Pending %community% joining requests</source>
+        <target>Đang chờ lời mời tham gia %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have just accepted taking over %community%</source>
+        <target>Bạn đã được chấp nhận tham gia %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have just rejected taking over %community%</source>
+        <target>>Bạn đã bị từ chối tham gia %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Pending %community% administrator taking over requests</source>
+        <target>Đang chờ lời mời tham gia quản trị %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have just accepted request of %community% sub-administrator</source>
+        <target>Bạn đã đồng ý lời mời làm phó quản trị %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have just rejected request of %community% sub-administrator</source>
+        <target>Bạn đã từ chối lời mời làm phó quản trị %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Pending %community% sub-administrator requests</source>
+        <target>Đang chờ lời mời phó quản trị %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Join to "%1%"</source>
+        <target>Tham gia 「%1%」</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you really join to the following %community%?</source>
+        <target>Bạn thật sự tham gia để theo dõi %community%?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have just joined to this %community%.</source>
+        <target>Bạn chỉ cần tham gia %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Quit "%1%"</source>
+        <target>Rời bỏ「%1%」</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you really quit the following %community%?</source>
+        <target>Bạn có muốn rời bỏ %community% dưới đây không?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You have just quitted this %community%.</source>
+        <target>Bạn đã rời bỏ %community% này</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Can not access your account?</source>
+        <target>Quên mật khẩu?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Public Flag for Age</source>
+        <target>Hiển thị tuổi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>My %activity%</source>
+        <target>%activity% của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%activity% of %my_friend%</source>
+        <target>%activity% của %my_friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%activity% of %0%</source>
+        <target>%activity% của %0%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>There is no %activity%.</source>
+        <target>Không có %activity% nào</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you delete this %activity%?</source>
+        <target>Bạn xóa %activity% này?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>An %activity% was deleted.</source>
+        <target>Một %activity% đã bị xóa</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Failed to post %activity%.</source>
+        <target>Đăng %activity% thất bại</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete this %activity% of %time%</source>
+        <target>Xóa %activity% này (%time%)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>SNS Member's %activity%</source>
+        <target>%activity% của thành viên LifeMap</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Remember me</source>
+        <target>Tự động đăng nhập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Privacy policy</source>
+        <target>Chính sách bảo mật</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Terms of service</source>
+        <target>Điều khoản dịch vụ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Contact to</source>
+        <target>Liên hệ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Help</source>
+        <target>Hướng dẫn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Advertise</source>
+        <target>Quảng cáo</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Mobile E-mail Address Registration Completed</source>
+        <target>Đăng ký thành công địa chỉ e-mail cho di động</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>When mobile information registration is done, the member registration is completed.</source>
+        <target>Khi đăng ký thông tin di động hoàn thành, thông tin đăng ký thành viên cũng được hoàn tất</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Sent a mail for your mobile e-mail address. Begin your registration from a URL in the mail.</source>
+        <target>Chúng tôi đã gửi một email đến địa chỉ email điện thoại. Bắt đầu đăng ký từ địa chỉ URL trong email.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Search Members</source>
+        <target>Tìm kiếm thành viên</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Login</source>
+        <target>Đăng nhập</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Logout</source>
+        <target>Đăng xuất</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit Friend</source>
+        <target>Chỉnh sửa</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete From List</source>
+        <target>Xóa khỏi danh sách</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Friend Of Both</source>
+        <target>Bạn chung</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Add Friend</source>
+        <target>Kết bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Yourself</source>
+        <target> </target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit my profile</source>
+        <target>Sửa thông tin</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Login Error</source>
+        <target>Tài khoản bạn cung cấp không đúng. Yêu cầu bạn nhập lại !</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="">
+        <source>%Friend% link request message</source>
+        <target>Tin nhắn đường dẫn yêu cầu %Friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%Community% joining request message</source>
+        <target>Tin nhắn mời tham gia %Community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%Community% taking over request message</source>
+        <target>Tin nhắn mời %Community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%1% sent you %friend% link request message.</source>
+        <target>%1% gửi cho bạn tin nhắn mời kết nối %friend%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Message</source>
+        <target>Tin nhắn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please allow or reject this request in the confirmation list page.</source>
+        <target>Hãy cho phép hoặc từ chối yêu cầu này trong danh sách xác nhận</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%1% sent you %2% %community% joining request message.</source>
+        <target>%1% đã gửi cho bạn %2% tin nhắn mời tham gia %community%</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%1% sent you %2% %community% taking over request message.</source>
+        <target>%1% đã gửi cho bạn %2% tin nhắn mời tiếp nhận %community%</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

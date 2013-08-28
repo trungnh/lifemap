@@ -1,0 +1,7 @@
+<div id="house-info-nav">
+    <ul id="creat-renthouse-rightcol-nav">
+        <li><a id="a-house-info" class="creat-renthouse-rightcol-nav-item">Thông tin</a></li>
+        <li>|</li>
+        <li><a id="a-house-photo" class="creat-renthouse-rightcol-nav-item">Đăng ảnh</a></li>
+    </ul>
+</div>

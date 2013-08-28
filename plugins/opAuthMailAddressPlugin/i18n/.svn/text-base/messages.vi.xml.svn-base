@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="">
+        <source>Do you forget your password?</source>
+        <target>Bạn quên mật khẩu?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please click the following button to start the password recovery process.</source>
+        <target>Hãy click vào nút dưới để lấy lại mật khẩu</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Go to Password Recovery Page</source>
+        <target>Vào trang lấy lại mật khẩu</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password Recovery</source>
+        <target>Lấy lại thông tin tài khoản</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>What is your father's / mother's former name?</source>
+        <target>Tên của bố hay mẹ bạn là gì?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>What is last 5 digits of your driving license number?</source>
+        <target>5 số cuối trong mã số giấy phép lái xe của bạn là gì?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>What is your first crush's name?</source>
+        <target>Tên người yêu đầu tiên của bạn là gì?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>What is your finished elementary school?</source>
+        <target>Tên trường tiểu học của bạn là gì?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>What is region name of your domicile of origin?</source>
+        <target>Tên nơi bạn sinh ra là gì?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Your Secret Question</source>
+        <target>Câu hỏi bí mật</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Your Answer for the Question</source>
+        <target>Câu trả lời của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Sent you a mail for completing your password recovery. If you cannot receive the mail, please retry a password recovery process.</source>
+        <target>Một email đã được gửi tới bạn để hoàn tất lấy lại mật khẩu. Nếu bạn không nhận được email, hãy thử lại quá trình lấy lại mật khẩu!</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Secret Question Configuration</source>
+        <target>Thiết lập câu hỏi bí mật</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Secret Question</source>
+        <target>Câu hỏi bí mật</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Answer for Secret Question</source>
+        <target>Trả lời cho câu hỏi bí mật</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please input your e-mail address. Invitation for %1% will be sent to your e-mail address.</source>
+        <target>Hãy điền địa chỉ e-mail của bạn vào đây. Lời mời tham gia %1% sẽ được gửi tới địa chỉ e-mail của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Sent you an invitation for %1%.</source>
+        <target>Một lời mời tham gia %1% đã được gửi tới bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Begin your registration from a URL in the mail.</source>
+        <target>Bắt đầu đăng ký từ đường dẫn trong mail của bạn.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>We accepted your recovering password request.</source>
+        <target>Chúng tôi chấp nhận yêu cầu phục hồi mật khẩu của bạn.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please click the following URL and complete password recovery process.</source>
+        <target>Hãy click vào đường dẫn sau để hoàn thành quá trình khôi phục mật khẩu.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Please input your new password.</source>
+        <target>Hãy nhập mật khẩu mới của bạn</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Your password is now changed.</source>
+        <target>Mật khẩu của bạn đã thay đổi</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Hello! This is information from %1%.</source>
+        <target>Xin chào! Đây là thông tin từ %1%.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>If you register(free) of member by the following URL,%br%you can participate in %1%.</source>
+        <target>Nếu bạn đăng ký(miễn phí) thành viên bằng đường dẫn sau,%br% bạn có thể tham gia %1%.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>* Participate in %1%</source>
+        <target>* Tham gia vào %1%</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

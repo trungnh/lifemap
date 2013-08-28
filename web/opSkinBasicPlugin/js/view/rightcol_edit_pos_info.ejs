@@ -1,0 +1,95 @@
+<%
+  var dirs = new Array('Đông', 'Tây', 'Nam', 'Bắc', 'Đông Nam', 'Đông Bắc', 'Tây Nam', 'Tây Bắc');
+%>
+
+<div id="edit-pos-info">
+    <form id="edit-pos-form">
+        <div class="grouper">
+            <p class="rightcol-title">Tiêu đề</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-title" name="edit-pos-title" value="<%= pos.title %>"/>
+
+            <p class="rightcol-title">Địa chỉ</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-address" name="edit-pos-address" value="<%= pos.address %>"/>
+
+            <p class="rightcol-title">Điện thoại</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-tel" name="edit-pos-tel" value="<%= pos.tel %>"/>
+
+            <p class="rightcol-title">Tên người liên hệ</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-site" name="edit-pos-site" value="<%= pos.site %>"/>
+            
+            <p class="rightcol-title">Email</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-email" name="edit-pos-email" value="<%= pos.email %>"/>
+            
+            <p class="rightcol-title">Website</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-site" name="edit-pos-site" value="<%= pos.website %>"/>
+        </div>
+
+        <div class="grouper">
+            <span class="rightcol-title">Giá</span>
+            <input id="edit-pos-price" type="text" name="edit-pos-price" value="<%= pos.price %>" />
+                    triệu/tháng
+
+            <p class="rightcol-title">Sửa trạng thái nhà</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="edit-pos-status" value=1 <%if(pos.status == 1){%> <%= 'checked' %> <%}%> />Đang rảnh
+                    </td>
+                    <td>
+                        <input type="radio" name="edit-pos-status" value=0 <%if(pos.status == 0){%> <%= 'checked' %> <%}%> />Đang bận
+                    </td>
+                </tr>
+            </table>
+
+            <p class="rightcol-title">Tags</p>
+            <input class="rightcol-wide-input" type="text" id="edit-pos-tags" name="edit-pos-tags" value="<%= pos.tags %>"/>
+            
+
+            <p class="rightcol-title">Công khai hay ẩn địa điểm</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="edit-pos-ispublic" value=1 <%if(pos.is_public){%> <%= 'checked' %> <%}%> />Công khai
+                    </td>
+                    <td>
+                        <input type="radio" name="edit-pos-ispublic" value=0 <%if(!pos.is_public){%> <%= 'checked' %> <%}%> />Ẩn
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="grouper">
+            <div class="right-col-padding-bottom">
+                <p class="rightcol-title">Mô tả</p>
+                <textarea name="edit-pos-description" value="<%= pos.description %>"></textarea>
+            </div>
+            
+            
+            <div class="right-col-padding-bottom">
+                <span class="rightcol-title">Hướng nhà</span>
+                <select id="direction-select" name="edit-pos-direction">
+                    <% for(var i in dirs) { %>
+                        <option value="<%=dirs[i] %>" <% if(dirs[i]){%> <%='selected'%><%}%> >
+                            <%=dirs[i]%>
+                        </option>
+                    <%}%>
+                </select>
+            </div>
+
+            <div class="right-col-padding-bottom">
+                <span class="rightcol-title">Diện tích</span>
+                <input type="text" id="edit-pos-area" name="edit-pos-area" value="<%pos.area%>" />
+                  m2
+            </div>
+
+            
+            <div class="right-col-padding-bottom">
+                <span class="rightcol-title">Số phòng</span>
+                <input id="edit-pos-num-room" name="edit-pos-num-room" /> phòng
+            </div>            
+        </div>
+        
+        <a id="update-rent-house" class="ok-button">Cập nhật</a>
+        <input id="pos-id-to-update" type="hidden" value="<%= pos.pos_id %>" />
+    </form>
+</div>

@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Life map</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/tab.css" />
+	<link rel="stylesheet" type="text/css" href="css/search.css" />
+	
+	
+		<!--[if IE 6]>
+		<script src="js/DD_belatedPNG.js"></script>
+		<script>
+		DD_belatedPNG.fix('img, span, a, div, p,button, input, ul,li');
+		</script>
+		<![endif]-->
+		<script src="js/jquery-1.6.2.min.js"></script>
+	<script>
+	$(document).ready(function() {
+
+	//When page loads...
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+
+	//On Click Event
+	$("ul.tabs li").click(function() {
+
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active ID content
+		return false;
+	});
+
+});
+	
+	</script>
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+
+	<div id="page">
+		<!--begin header-->
+		<div id="header_container">
+			
+			<div class="header_nav clearfix">
+				<div class="logo"><a title="Life map" href="#"><img alt="Life map" src="images/logo.png"></a></div><!-- /#logo -->
+				<div class="main_nav"> 
+					<div class="cart_links">
+						<ul><li><a href="#">Hi, ThucLH</a></li>
+							<li><a>&nbsp;|&nbsp;</a></li>
+							<li><a href="#">Setting</a></li>
+							<li><a>&nbsp;|&nbsp;</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+					<div class="navigation">
+						<ul>
+							<li><a href="#">Home</a></li>							
+							<li><a href="#">My profile</a></li>						
+							<li><a href="#">Map</a></li>						
+							<li><a href="#">Apps</a></li>						
+										
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+			
+		</div>
+		<!--header end-->
+		
+		<!--begin main-->
+		<div id="main_container" class="clearfix">
+				<div class="header_map">
+					<div class="ctn_h_map clearfix">
+						<ul class="tabs">
+							<li><a href="#tab1">Bản đồ cửa hàng</a></li>
+							<li><a href="#tab2">Bản đồ nhà cho thuê</a></li>
+							<li><a href="#tab3">Bản đồ cửa hàng</a></li>
+							
+						</ul>
+
+						<div class="tab_container">
+							<div id="tab1" class="tab_content">
+							<div class="gg_search">
+								<table cellspacing="0" cellpadding="0" border="0" class="cntrltable"> 
+								<tbody> 
+									<tr> 
+										<td width="100%"> 
+											<div class="q_d_container q_tia-triangle"> 
+												<input type="text" tabindex="1" name="q" id="q_d" title="Search the map" class="q_d_skunk skunkworks-input" value="" > 
+											</div> 
+										</td> 
+										<td> 
+											<div class="q-outer"> 
+												<div class="q-inner"> 
+													<button tabindex="2" name="btnG" id="q-sub" type="submit" title="Search Maps" class="kd-button kd-button-submit"> 
+														<img src="http://maps.gstatic.com/mapfiles/transparent.png" class="search-white"> 
+													</button> 
+												</div> 
+											</div> 
+											<div class="triangle-box"><a href="#"><img src="http://maps.gstatic.com/mapfiles/transparent.png" class="dropdown"></a></div>  
+										</td>
+									</tr> 
+								</tbody> 
+								</table>
+							</div>
+							<div class="sub_wrap_map">
+								<div class="content_map_left">
+									
+									<div class="top_bar">
+										<a href="#" class="get_d">Get direction</a>
+										<a href="#" class="my_p">My places</a>
+									</div>
+									
+									
+									
+									<div class="block_sear">  
+										<div class="fl"> 
+											<div class="icon "><img class="mp iconA" src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png" ></div> 
+											<span><img height="14" width="21" id="pp-starred-item-star" src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png"  class="unstarred "></span> 
+										</div> 
+										<div class="indent" style="position: relative"> 
+											<div>
+												<div class="name lname">
+													<a href="#"><span>Quán Cơm Bia</span></a>
+													<img src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png"><br/>    
+												</div>
+												<div><span>29, Âu Triệu, Q.Hoàn Kiếm, Vietnam</span>  </div>
+												<div><span dir="ltr" class="telephone"> +84 4 3934 8617</span></div>
+												<span>the mississippi river · overnight · the mansion · antebellum · oak alley</span>
+											</div>
+											<div id="photo_stack"> 
+												<img src="http://t0.gstatic.com/images?q=tbn:ANd9GcTyAcfUi7bxu679Ewf4SLSrzUOgOfBdxSjeD4bpXX0HAvna3HqCalulEUjd" width="50px" class="bor_img" title="Photo" alt="Photo">
+											</div>
+										</div>
+									</div>
+									<div class="block_sear">  
+										<div class="fl"> 
+											<div class="icon "><img class="mp iconA" src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png" ></div> 
+											<span><img height="14" width="21" id="pp-starred-item-star" src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png"  class="unstarred "></span> 
+										</div> 
+										<div class="indent" style="position: relative"> 
+											<div>
+												<div class="name lname">
+													<a href="#"><span>Quán Cơm Bia</span></a>
+													<img src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png"><br/>    
+												</div>
+												<div><span>29, Âu Triệu, Q.Hoàn Kiếm, Vietnam</span>  </div>
+												<div><span dir="ltr" class="telephone"> +84 4 3934 8617</span></div>
+												<span>the mississippi river · overnight · the mansion · antebellum · oak alley</span>
+											</div>
+											<div id="photo_stack"> 
+												<img src="http://t0.gstatic.com/images?q=tbn:ANd9GcTyAcfUi7bxu679Ewf4SLSrzUOgOfBdxSjeD4bpXX0HAvna3HqCalulEUjd" width="50px" class="bor_img" title="Photo" alt="Photo">
+											</div>
+										</div>
+									</div>
+									<div class="block_sear">  
+										<div class="fl"> 
+											<div class="icon "><img class="mp iconA" src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png" ></div> 
+											<span><img height="14" width="21" id="pp-starred-item-star" src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png"  class="unstarred "></span> 
+										</div> 
+										<div class="indent" style="position: relative"> 
+											<div>
+												<div class="name lname">
+													<a href="#"><span>Quán Cơm Bia</span></a>
+													<img src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png"><br/>    
+												</div>
+												<div><span>29, Âu Triệu, Q.Hoàn Kiếm, Vietnam</span>  </div>
+												<div><span dir="ltr" class="telephone"> +84 4 3934 8617</span></div>
+												<span>the mississippi river · overnight · the mansion · antebellum · oak alley</span>
+											</div>
+											<div id="photo_stack"> 
+												<img src="http://t0.gstatic.com/images?q=tbn:ANd9GcTyAcfUi7bxu679Ewf4SLSrzUOgOfBdxSjeD4bpXX0HAvna3HqCalulEUjd" width="50px" class="bor_img" title="Photo" alt="Photo">
+											</div>
+										</div>
+									</div>
+									<div class="block_sear">  
+										<div class="fl"> 
+											<div class="icon "><img class="mp iconA" src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png" ></div> 
+											<span><img height="14" width="21" id="pp-starred-item-star" src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png"  class="unstarred "></span> 
+										</div> 
+										<div class="indent" style="position: relative"> 
+											<div>
+												<div class="name lname">
+													<a href="#"><span>Quán Cơm Bia</span></a>
+													<img src="http://maps.gstatic.com/intl/en_ALL/mapfiles/transparent.png"><br/>    
+												</div>
+												<div><span>29, Âu Triệu, Q.Hoàn Kiếm, Vietnam</span>  </div>
+												<div><span dir="ltr" class="telephone"> +84 4 3934 8617</span></div>
+												<span>Những “giáo viên tương lai”. Click ngay để tìm hiểu thông tin Tiếp sức mùa thi tại ĐH Sư phạm nhé!</span>
+											</div>
+											
+										</div>
+									</div>
+									
+									
+									
+								</div>
+							</div>
+							<div class="main_wrap_map clearfix">
+								<div class="content_map_right">
+									<img src="images/map.jpg" width="600px" height="400px">
+								</div>
+							</div>								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</div>
+							<div id="tab2" class="tab_content">
+							bum bum
+							   <!--Content-->
+							</div>
+							<div id="tab3" class="tab_content">
+							ban do cua hang vang bac
+							   <!--Content-->
+							</div>
+							
+						</div>					
+					
+						
+					</div>
+				</div>
+			
+				
+			
+		</div>
+		<!--main end-->
+		
+		
+		
+		<!--begin footer-->
+		<div id="footer-container" class="clearfix">
+			<div id="footer_nav">  
+					<ul>
+						<li><a href="/gear/">Giới Thiệu</a></li>
+						<li><a>.</a></li>
+						<li><a href="/blog/">Quảng Cáo</a></li>
+						<li><a>.</a></li>
+						<li><a href="/support/">Quyền Riêng Tư</a></li>
+						<li><a>.</a></li>
+						<li><a href="/company/">Điều Khoản Sử Dụng</a></li>
+						<li><a>.</a></li>
+						<li><a href="/find-a-store/">Trợ Giúp</a></li>
+						
+										
+					</ul>
+			</div>
+			<p class="a_center">Copyright © lifemap.vn 2011. All right reserved.</p>
+		</div>
+		<!--footer end-->
+		
+		
+		
+		
+		
+	</div><!--end page-->
+</body>
+</html>

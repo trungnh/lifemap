@@ -1,0 +1,15 @@
+<div class="infowindow">
+    <h3><a href="pos/<%=pos.id%>" target='_blank' title='Xem chi tiết thông tin của địa điểm'><%=pos.title %></a></h3>
+    <div class="pos-img">
+       <img class='img_40x40' src="<%=pos.file_img%>" />
+    </div>
+    <div class="pos-info">
+        <span><%= pos.address%></span>
+        <br/>
+        <span>Loại: <%= pos.category%></span>
+        <br/>
+        <span>Tag: <%=pos.tags%></span>
+        <br/>
+    </div>
+    <div class="clear"></div>
+</div>

@@ -1,0 +1,9 @@
+all:
+  stylesheets: [/opSkinBasicPlugin/css/maps,/opSkinBasicPlugin/css/community]
+  javascripts: [http://maps.googleapis.com/maps/api/js?sensor=true]
+#  layout: layoutE
+
+rentHouseSuccess:
+  javascripts: [/opSkinBasicPlugin/js/ejs/ejs_production,/opSkinBasicPlugin/js/ajaxupload.3.5.js,/opSkinBasicPlugin/js/renthouse]
+  stylesheets: []
+  layout: layoutE

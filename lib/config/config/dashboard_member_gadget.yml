@@ -1,0 +1,24 @@
+memberPositiveList:
+  caption:
+    vi_VN: "Danh sách thành viên tích cực"
+  description:
+    vi_VN: "Danh sách thành viên tích cực"
+  viewable_privilege: 4
+  component: [dashboard, memberPositiveList]
+  
+newPhotoMemberList:
+  caption:
+    vi_VN: "Hình ảnh mới của các thành viên"
+  description:
+    vi_VN: "Hình ảnh mới của các thành viên"
+  viewable_privilege: 4
+  component: [dashboard, newPhotoMemberList]
+
+listSponsorSuggest:
+  caption:
+    vi_VN: "Địa điểm được tài trợ"
+  description:
+    vi_VN: "Địa điểm được tài trợ"
+  viewable_privilege: 4
+  component: [pos, listSponsorSuggest]
+

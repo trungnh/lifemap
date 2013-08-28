@@ -1,0 +1,47 @@
+<div class="event-list">
+    <ul>
+        <% for(i=0; i <list.length; i++) {%>
+        <li class="event-item">
+            <div class="event-col1">
+                <div class="event-head">
+                    <img class="event-ico" width="40" height="40" src="<%= img_path %>" />
+                    <div class="event-head-info">
+                        <h3 class="title"><%= list[i].title %></h3>
+                        <p class="event-address"><%= list[i].address %></p>
+                        <div class="event-stats">
+                            <a href=""><%= list[i].followers %> quan tâm</a>
+                            <a href=""><%= list[i].checkins %> tham gia</a>
+                            <a class="no-border-right" href=""><%= list[i].comments %> cảm nhận</a>
+                        </div>
+                    </div> 
+                </div>
+                
+
+                <div class="event-main">
+                    <div class="event-body">
+                        <%= list[i].description %>
+                    </div>
+                        
+                    <div class="event-foot">
+                        <p class="event-time">
+                        Từ <span><%= list[i].start_time%></span> 
+                        đến <span><%= list[i].end_time%></span>
+                        </p>
+
+                        <a class="event-tag" href><%= list[i].category%></a> tại 
+                        <a href=""><%= list[i].place %></a>
+                    </div>
+                </div>
+            </div>
+            <div class="event-col2">
+                <div class="action-ico">
+                        <a href="">Follow</a>
+                        <a class="no-border-right" href="">Tham gia</a>
+                </div>
+                
+                <img class="event-avatar" src="<%=list[i].avatar%>" />                
+            </div>
+        </li>
+        <%}%>
+    </ul>
+</div>

@@ -1,0 +1,32 @@
+posList:
+  caption:
+    vi_VN: "Danh sách địa điểm "
+  description:
+    vi_VN: "Danh sách địa điểm "
+  viewable_privilege: 4
+  component: [dashboard, posList]
+
+posRentHouseList:
+  caption:
+    vi_VN: "Danh sách nhà cho thuê"
+  description:
+    vi_VN: "Danh sách nhà cho thuê"
+  viewable_privilege: 4
+  component: [dashboard, posRentHouseList]
+
+memberList:
+  caption:
+    vi_VN: "Danh sách thành viên"
+  description:
+    vi_VN: "Danh sách thành viên"
+  viewable_privilege: 4
+  component: [dashboard, memberList]
+
+listSponsorSuggest:
+  caption:
+    vi_VN: "Suggest địa điểm được tài trợ"
+  description:
+    vi_VN: "Suggest địa điểm được tài trợ"
+  viewable_privilege: 4
+  component: [pos, listSponsorSuggest]
+

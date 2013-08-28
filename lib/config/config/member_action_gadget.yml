@@ -1,0 +1,100 @@
+freeArea:
+  caption:
+    vi_VN: "Khu vực tự do"
+  description:
+    vi_VN: "Bạn có thể cài đặt các khu vực tự do"
+  component: [default, freeAreaBox]
+  config:
+    title:
+      Name:       "title"
+      Caption:    "Tiêu đề"
+      FormType:   "input"
+      ValueType:  "text"
+      IsRequired: false
+    value:
+      Name:       "value"
+      Caption:    "Nội dung"
+      FormType:   "rich_textarea"
+      ValueType:  "text"
+      IsRequired: false
+
+memberImageBox:
+  caption:
+    vi_VN: "Ảnh hồ sơ"
+  description:
+    vi_VN: "Những hình ảnh hiển thị trên thông tin đăng ký của thành viên"
+  component: [default, memberImageBox]
+
+localNav:
+  caption:
+    vi_VN: "Điều hướng trang cá nhân"
+  description:
+    vi_VN: "Điều hướng trang cá nhân"
+  component: [default, localNav]
+
+friendListBox:
+  caption:
+    vi_VN: "Danh sách bạn bè"
+  description:
+    vi_VN: "Hiển thị một danh sách thành viên bạn bè"
+  component: [friend, friendListBox]
+  config:
+    row:
+      Name:      "row"
+      Caption:   "Số dòng hiển thị"
+      FormType:  "select"
+      ValueType:  "int"
+      IsRequired: true
+      Default:    6
+      Choices:    {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6}
+    col:
+      Name:      "col"
+      Caption:   "Số cột hiển thị"
+      FormType:  "select"
+      ValueType:  "int"
+      IsRequired: true
+      Default:    1
+      Choices:    {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6}
+    type:
+      Name:      "type"
+      Caption:   "Cách hiển thị"
+      FormType:  "radio"
+      ValueType: "text"
+      IsRequired: true
+      Default:    "full"
+      Choices:
+        full:       "Hiển thị hình ảnh và tên"
+        only_image: "Chỉ ảnh"
+        only_name:  "Chỉ tên"
+
+listPosFollowBox:
+  caption:
+    vi_VN: "Danh sách địa điểm member đang follow"
+  description:
+    vi_VN: "Hiển thị danh sách địa điểm member đang follow"
+  viewable_privilege: 4
+  component: [member, listPosFollowBox]
+
+listPosCheckinBox:
+  caption:
+    vi_VN: "Danh sách địa điểm member checkin"
+  description:
+    vi_VN: "Hiển thị danh sách địa điểm member checkin"
+  viewable_privilege: 4
+  component: [member, listPosCheckinBox]
+  
+listPosCommentBox:
+  caption:
+    vi_VN: "Danh sách địa điểm member đã comment"
+  description:
+    vi_VN: "Hiển thị danh sách địa điểm member đã comment"
+  viewable_privilege: 4
+  component: [member, listPosCommentBox]
+  
+listCFCMemberPos:
+  caption:
+    vi_VN: "Danh sách địa điểm member đã check-in, follow, comment"
+  description:
+    vi_VN: "Danh sách địa điểm member đã check-in, follow, comment"
+  viewable_privilege: 4
+  component: [member, listCFCMemberPos]

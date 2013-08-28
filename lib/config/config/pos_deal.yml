@@ -1,0 +1,48 @@
+#thuclh 05/03/2011
+provinces:
+  hanoi:
+    name: Hà Nội
+    code: hanoi
+    latlng: 21.01112433754,105.83893784119
+  hochiminh:
+    name: Hồ Chí Minh
+    code: hochiminh
+    latlng: 10.8019599999,106.7117279999
+  danang:
+    name: Đà Nẵng
+    code: danang
+    latlng: 16.058237999999999,108.212639
+  haiphong:
+    name: Hải Phòng
+    code: haiphong
+    latlng: 20.849999999999998,106.6833333
+
+sources:
+  muachung.vn:
+    name: muachung.vn
+    website: muachung.vn
+    provinces: hanoi,hochiminh,danang,haiphong
+    addresses: 27 Mai Hắc Đế, Hai Bà Trưng, Hà Nội
+  vndoan.com: 
+    name: vndoan.com
+    website: vndoan.com
+    provinces: hanoi,hochiminh
+    addresses: Phòng 1007 Nhà 17T6 Khu Đô Thị Trung Hòa Nhân Chính, Phường Nhân Chính,  Quận Thanh Xuân, Hà Nội
+  nhommua.com:
+    name: nhommua.com
+    website: nhommua.com
+    provinces: hanoi,hochiminh
+    addresses: Tòa nhà Vincom, Tầng 14,72 Lê Thánh Tôn,P.Bến Nghé, Q.1, HCMC
+
+statuses:
+  1: Còn bán
+  0: Hết hạn
+  2: Cháy hàng
+
+orderes:
+  1: Bình thường
+  5: Mức 5
+  10: Mức 10
+  15: Mức 15
+  20: Mức 20
+

@@ -1,0 +1,24 @@
+<!-- thông tin thêm -->
+<%
+    var dirs = new Array('Đông', 'Tây', 'Nam', 'Bắc', 'Đông Nam', 'Đông Bắc', 'Tây Nam', 'Tây Bắc');
+%>
+<div class="grouper">
+    <div class="right-col-padding-bottom">
+        <span class="rightcol-title">Diện tích</span>
+        <input id="renthouse-area" name="renthouse-area" /> m2
+    </div>
+    <div class="right-col-padding-bottom">
+        <span class="rightcol-title">Số phòng</span>
+        <input id="edit-room-num" name="edit-room-num" /> phòng
+    </div>
+    <div class="right-col-padding-bottom">
+        <span class="rightcol-title">Hướng nhà</span>
+        <select id="house-direction" name="house-direction">
+            <% for(var i in dirs) { %>
+                <option value="<%=dirs[i] %>" <% if(dirs[i]){%> <%='selected'%><%}%> >
+                    <%=dirs[i]%>
+                </option>
+            <%}%>
+        </select>
+    </div>
+</div>

@@ -1,0 +1,354 @@
+@CHARSET "UTF-8";
+.mf_item_name span{
+	color: #838383;
+    font-weight: normal;
+}
+.mf_list_friend li  {padding: 10px 5px !important;}
+.mf_item_name2 {    color: #838383;    float: left;    overflow: hidden;    padding-left: 10px;    width: 480px;	font-weight: normal;}
+.mf_item_name2 a{font-weight: bold;}
+.tab_product {
+    float: left;
+    height: 26px;
+    width: 100%;
+
+}
+.bottom_line {border-bottom: 1px solid #D7E0E9; }
+ .tab_product li {
+    background: none repeat scroll 0 0 #EDEDED;
+    border-color: #D7E0E9 #D7E0E9 -moz-use-text-color;
+    border-style: solid solid none !important;
+    border-width: 1px 1px medium;
+    display: inline;
+    float: left;
+    height: 25px;
+    margin: 0 5px 0 0;
+    width: 97px;
+}
+.tab_product li a {
+    display: block;
+    font: 700 11px/25px tahoma;
+    height: 25px;
+    text-align: center;
+    width: 97px;
+}
+
+.tab_product li.active {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #B7C5CE #B7C5CE -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    height: 26px;
+}
+/*mesage*/
+
+.tb-composebox-label {
+    color: #777777;
+    font-weight: bold;
+    padding-right: 3px;
+    text-align: right !important;
+}
+td, td.label {
+    color: #777777;
+    font-size: 11px;
+    text-align: left;
+}
+ul.holder {
+    width: 400px;
+}
+ul.holder {
+    border: 1px solid #b7c5ce;
+    height: auto !important;
+    margin: 0;
+    overflow: hidden;
+    padding: 2px 5px 0;
+}
+ul.holder li {
+    float: left;
+    list-style-type: none;
+    margin: 0 5px 4px 0;
+    white-space: nowrap;
+	border: none !important;
+}
+ul.holder li.bit-input input {
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+
+    padding: 3px 0 2px;
+    width: auto;
+}
+.tb-composebox-title {
+    border: 1px solid #b7c5ce;
+    height: auto !important;
+    padding: 5px;
+    width: 400px !important;
+}
+.notice {
+    color: #777777;
+    font-size: 9px;
+    text-align: left;
+}
+.tb-composebox-textcontent {
+    border: 1px solid #b7c5ce !important;
+    height: 56px;
+    padding: 5px;
+    width: 400px;
+}
+.lm-boxy-footer {
+
+    padding: 8px 10px;
+    text-align: center;
+}
+.lm-boxy button {
+    cursor: pointer;
+    font-weight: bold;
+    height: 24px;
+    margin: 0 0 0 6px;
+    width: 90px;
+}
+.lm-boxy-cancel {
+    background-color: #EEEEEE;
+    border: 1px solid #999999;
+    color: #333333;
+}
+.lm-boxy input {
+    cursor: pointer;
+    font-weight: bold;
+    height: 24px;
+    margin: 0 0 0 0px;
+    width: 90px;
+}
+.lm-boxy-ok {
+    background-color: #80A3D3;
+    border: 1px solid #29447E;
+    color: #FFFFFF;
+}
+
+.tb-composebox {
+
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 485px;
+}
+.holder{
+	width: 410px !important;
+    border: 1px solid silver;
+    height: 24px;
+}
+.holder .maininput{
+	width: 100px ;
+    border: none;
+    height: 22px;
+}
+/*==============================================================================
+ * 14. messageDetailBox（メッセージ詳細ボックス）
+ *----------------------------------------------------------------------------*/
+#Body .messageDetailBox th:first-child,
+#Body .messageDetailBox th.first-child {
+  border-left-width: 1px;
+}
+.messageDetailBox th,
+.messageDetailBox td {
+  padding: 5px;
+}
+.messageDetailBox td.photo {
+  width: 120px;
+  text-align: center;
+}
+.messageDetailBox th {
+  width: 54px;
+  padding-left: 0;
+  padding-right: 16px;
+  text-align: right;
+}
+#Body .messageDetailBox td {
+  border-left: none;
+}
+#Body .messageDetailBox td.photo {
+  border-left: 1px solid #CCCCCC;
+}
+.messageDetailBox ul.photo {
+  margin: 10px;
+  text-align: center;
+}
+.messageDetailBox p.text {
+  margin: 10px 60px;;
+}
+.messageDetailBox ul.photo li {
+  display: inline;
+  margin-left: 6px;
+}
+.messageDetailBox div.operation {
+  zoom: 1;
+  overflow: hidden;
+  overflow: -moz-scrollbars-none;
+}
+.messageDetailBox form.delete {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.messageDetailBox form.send {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+.messageDetailBox form ul.moreInfo {
+  display: inline;
+}
+.messageDetailBox div.attachFile {
+  padding: 16px 5px;
+}
+/*==============================================================================
+ * 29. messageList（メッセージリスト）
+ *----------------------------------------------------------------------------*/
+.messageList .partsHeading p.date {
+  font-weight: bold;
+}
+.messageList .pagerRelativeMulti {
+  zoom: 1;
+  overflow: hidden;
+  overflow: -moz-scrollbars-none;
+}
+.messageList .pagerRelativeMulti .pager {
+  position: static;
+  float: right;
+  width: 350px;
+  margin-top: 1px;
+  text-align: right;
+}
+.messageList p.icons {
+  float: left;
+  width: 160px;
+}
+.messageList p.icons img {
+  padding-right: 16px;
+  vertical-align: text-bottom;
+}
+.messageList tr {
+  height: 20px;
+}
+.messageList tr.unread {
+}
+#Body .messageList th.delete {
+  font-weight: normal;
+}
+#Body .messageList th {
+  padding: 0 2px;
+  border-width: 1px 0 0;
+  font-weight: bold;
+}
+#Body .messageList td {
+  padding: 0 2px;
+  border-width: 1px 0 0;
+}
+#Body .messageList td .input_checkbox {
+  margin-left: 4px;
+}
+.messageList td.status {
+  text-align: center;
+}
+.messageList col.status {
+  width: 35px;
+}
+.messageList col.delete {
+  width: 35px;
+}
+.messageList col.target {
+  width: 130px;
+}
+.messageList col.title {
+  width: auto;
+}
+.messageList col.date {
+  width: 80px;
+}
+.messageList table span {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.messageList div.operation p {
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.messageList div.operation ul.moreInfo {
+  text-align: left;
+}
+
+/*==============================================================================
+ * 19. prevNextLinkLine
+ *----------------------------------------------------------------------------*/
+.prevNextLinkLine p.prev {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.prevNextLinkLine p.next {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.block.prevNextLinkLine {
+  padding: 4px 10px 20px 10px;
+}
+
+#message_selected{
+ float: left;
+}
+
+.suggestionsBox {
+	position: absolute;
+	width: 200px;
+	padding:0px;
+	background-color:#ededed;
+	border-top: 3px solid #d7e0e9;
+	color:blue;
+}
+.suggestionList {
+	margin: 0px;
+	padding: 0px;
+}
+.suggestionList ul li {
+	list-style:none;
+	margin: 0px;
+	padding: 6px;
+	border-bottom:1px dotted #d7e0e9;
+	cursor: pointer;
+}
+.suggestionList ul li:hover {
+	background-color: #2d6391;
+	color:#fff;
+}
+ul {
+	font-family: verdana, Helvetica, sans-serif;
+	font-size:12px;
+    font-weight: normal;    
+	color:#4487bc;
+	padding:0;
+	margin:0;
+}
+
+
+#suggest {
+	/*position:relative;*/
+}
+#message-input{
+  cursor:pointer;
+}
+
+#selected-members {
+  float:left;
+}
+.send_member{
+  border:1px silver solid;
+  padding:1px 3px 3px;
+  margin-right:5px;
+}
+#message_name {
+  float:left;
+}

@@ -1,0 +1,17 @@
+<mockup version="1.0" skin="sketch" measuredW="1199" measuredH="664" mockupW="1024" mockupH="648">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="175" y="16" w="1024" h="648" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//lifemap.vn</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::LinkBar" x="356" y="97" w="-1" h="-1" measuredW="301" measuredH="21" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Trang%20chu%2C%20Trang%20ca%20nha%2C%20Ban%20do%2C%20Ung%20dung</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Canvas" x="183" y="118" w="1007" h="506" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Canvas" x="198" y="160" w="189" h="447" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Map" x="405" y="162" w="770" h="447" measuredW="252" measuredH="222" zOrder="4" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>

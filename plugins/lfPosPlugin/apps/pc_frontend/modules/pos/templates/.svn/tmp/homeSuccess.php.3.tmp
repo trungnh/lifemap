@@ -1,0 +1,72 @@
+<div id="leftCol">
+    <!-- left col tabs -->
+    <div id="left-col-nav" class="clearfix CTabs">
+        <ul class="clearfix CTabNav">
+            <li><a rel="searchPlace" href="#search-place">Tìm kiếm</a></li>
+            <li><a rel="me" href="#me">Tôi</a></li>
+            <li><a rel="newsBoard" href="#news-board">Bảng tin</a></li>
+        </ul>
+
+        <div id="search-place" class="tabContainer"></div>
+        <div id="me" class="tabContainer">fdskfk</div>
+        <div id="news-board" class="tabContainer">fjdmfdm</div>            
+    </div><!-- end left col tabs -->
+
+    <!--
+    <div class="clear"></div>
+
+    <div id="add-my-new-place">
+
+    </div>
+
+    <div id="left-col-display">
+
+    </div>
+  
+  <div class="left-icon">
+      
+  </div>
+  <div class="right-leftCol">
+      
+  </div>
+    
+    -->
+  <div class="clear"></div>
+</div>
+<div id="pagingmap_main" class="paging_map">
+
+</div>
+<div class="wait_load"><?php echo image_tag('24.gif'); ?></div>
+
+<div id="show-button-container">
+    <span id="show-button" title="Hiện ra">&nbsp;</span>
+</div>
+<div class="div-select-city">
+    <select class="select-city">
+        <option value="21.01112433754,105.83893784119">Hà Nội</option>
+        <option value="10.8019599999,106.7117279999">Hồ Chí Minh</option>
+    </select>
+</div>
+<div id="map">
+
+    
+</div>
+
+<div id="detail-info">
+    <div id="detail-content">
+        <div class="clearfix">
+            <span id="hide-button" title="Ẩn đi">&nbsp;</span>
+            <div id="rightcol-nav">
+
+            </div>
+        </div>
+        <div id="main-right-col">
+            <div id="info-nav-content"></div>
+            <div id="photo-nav-content"></div>
+            <div id="notification">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>

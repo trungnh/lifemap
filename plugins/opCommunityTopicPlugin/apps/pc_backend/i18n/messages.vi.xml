@@ -1,0 +1,207 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="">
+        <source>Everyone can read</source>
+        <target>全員に公開</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Only community's members can read</source>
+        <target>Chỉ thành viên hội nhóm được đọc</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Community's members can create</source>
+        <target>Thành viên hội nhóm được tạo mới</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Only community's admin can create</source>
+        <target>Chỉ quản trị hội nhóm được tạo mới</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Manage Topic/Event</source>
+        <target>Quản trị Chủ đề/Sự kiên</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Topic List</source>
+        <target>Danh sách chủ đề</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Topic Comment List</source>
+        <target>Danh sách bình luận chủ đề</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>There are no topics matches search condition.</source>
+        <target>Không có chủ đề phù hợp</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Search</source>
+        <target>Tìm kiếm</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete</source>
+        <target>Xóa</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you really want to delete this topic?</source>
+        <target>Bạn thật sự muốn xóa chủ đề này?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Topic ID</source>
+        <target>ID chủ đề</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Topic Title</source>
+        <target>Tiêu đề</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Topic Description</source>
+        <target>Nội dung</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Topic Comment ID</source>
+        <target>ID bình luận</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Topic Comment Description</source>
+        <target>Nội dung bình luận</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Created Date</source>
+        <target>Ngày tạo</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Comment Number</source>
+        <target>Số bình luận</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event List</source>
+        <target>Danh sách sự kiện</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event ID</source>
+        <target>ID sự kiện</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event Title</source>
+        <target>Tiêu đề sự kiện</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event Description</source>
+        <target>Mô tả sự kiện</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Open Date</source>
+        <target>Ngày bắt đầu</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>There are no events matches search condition.</source>
+        <target>Không có sự kiện phù hợp</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you really want to delete this event?</source>
+        <target>Bạn thật sự muốn xóa sự kiện này?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Topic Deleted successfully.</source>
+        <target>Xóa chủ đề thành công.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event Deleted successfully.</source>
+        <target>Xóa sự kiện thành công.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Topic Comment Deleted successfully.</source>
+        <target>Xóa bình luận chủ đề thành công.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete Community Topic</source>
+        <target>Xóa chủ đề hội nhóm</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete Community Event</source>
+        <target>Xóa sự kiện hội nhóm</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Nickname</source>
+        <target>Mật danh</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event Member List</source>
+        <target>Danh sách thành viên sự kiện</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>There are no event members matches search condition.</source>
+        <target>Không có thành viên sự kiện phù hợp</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>There are no topic comments matches search condition.</source>
+        <target>Không có bình luận chủ đề phù hợp.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you really want to delete this topic comment?</source>
+        <target>Bạn thật sự muốn xóa bình luận chủ đề này?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete Community Topic Comment</source>
+        <target>Xóa bình luận</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event Comment Description</source>
+        <target>Nội dung bình luận sự kiện</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event Comment List</source>
+        <target>Danh sách bình luận sự kiện</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>There are no event comments matches search condition.</source>
+        <target>Không có bình luận sự kiện phù hợp</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete Community Event Comment</source>
+        <target>Xóa bình luận sự kiện hội nhóm</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you really want to delete this event comment?</source>
+        <target>Bạn thật sự muốn xóa bình luận sự kiện này?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event Comment Deleted successfully.</source>
+        <target>Xóa bình luận sự kiện thành công.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete Community Event Member</source>
+        <target>Xóa thành viên sự kiện hội nhóm thành công</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you really want to delete this event member?</source>
+        <target>Bạn thật sự muố xóa thành viên sự kiện này?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event Member Deleted successfully.</source>
+        <target>Xóa thành viên sự kiện thành công.</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Community Topic Plugin Configuration</source>
+        <target>Cấu hình chủ đề hội nhóm</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Use</source>
+        <target>Sử dụng</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Not use</source>
+        <target>Không sử dụng</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Update activity</source>
+        <target>Hoạt động cập nhật</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>If this is used, activity message is updated automatically by posting a topic. To show the activity list, see "Appearance" > "ガジェット設定".</source>
+        <target>Khi thiết lập để sử dụng, hoạt động được tự động cập nhật khi các chủ đề được đăng cộng đồng. Để hiển thị danh sách các hoạt động ,xem "Appearance"</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

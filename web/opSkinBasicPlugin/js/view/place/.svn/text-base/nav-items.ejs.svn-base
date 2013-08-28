@@ -1,0 +1,13 @@
+<!-- left col tabs -->
+<div id="left-col-nav" class="clearfix CTabs">
+    <ul class="clearfix CTabNav">
+        <% for(var i = 0; i < data.length; i++) { %>
+            <li><a rel="<%=data[i].rel%>" href="#<%=data[i].href%>" title="<%=data[i].title%>">
+                <%=data[i].name%>
+            </a></li>
+        <%}%>
+    </ul>
+    <% for(var i = 0; i < data.length; i++) { %>
+        <div id="<%=data[i].href%>" class="tabContainer"></div>
+    <%}%>
+</div><!-- end left col tabs -->

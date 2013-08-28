@@ -1,0 +1,14 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    description:  Bản đồ cuộc sống - LifeMap.vn. LifeMap là một tiện ích mang tính xã hội để kết nối các địa điểm với nhau.Xem bản đồ và tìm kiếm nhà cho thuê, cafe, nhà hàng, quán bia, trường học, cửa hàng, nhà nghỉ, khách sạn.
+    keywords: lifemap.vn, bản đồ, địa điểm, nhà cho thuê, tìm kiếm địa điểm, tìm kiếm nhà cho thuê, tìm kiếm theo bản đồ, chia sẻ địa điểm, kết nối người dùng  - địa điểm
+    language:     vi-VN
+    robots:       index, follow
+  has_layout:     true
+  layout: layoutC
+#  javascripts:    [http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js,/js/thickbox]
+#  stylesheets:    [,/css/thickbox]

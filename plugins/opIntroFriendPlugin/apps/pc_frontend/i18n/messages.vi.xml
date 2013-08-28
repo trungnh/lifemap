@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Show all</source>
+        <target>Hiển thị hết</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Introductory essay from my friend</source>
+        <target>Ý kiến từ bạn của tôi</target>
+      </trans-unit>i
+
+      <trans-unit id="3">
+        <source>Do you really delete it?</source>
+        <target>Bạn có thực sự muốn xóa nó?</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Yes</source>
+        <target>Đồng ý</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>No</source>
+        <target>Không</target>
+      </trans-unit>
+
+      <trans-unit id="6">
+        <source>Create introductory essay</source>
+        <target>Viết một lời giới thiệu</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Create</source>
+        <target>Viết</target>
+      </trans-unit>
+
+      <trans-unit id="8">
+        <source>It was created</source>
+        <target>Nó đã được tạo</target>
+      </trans-unit>
+ 
+      <trans-unit id="9">
+        <source>Edit introductory essay</source>
+        <target>Sửa lời giới thiệu</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Delete introductory essay</source>
+        <target>Xóa lời giới thiệu</target>
+      </trans-unit>
+ 
+      <trans-unit id="11">
+        <source>Write introductory essay</source>
+        <target>Viết lời giới thiệu</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Edit</source>
+        <target>Sửa</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Delete</source>
+        <target>Xóa</target>
+      </trans-unit>
+
+      <trans-unit id="14">
+        <source>Error</source>
+        <target>Lỗi</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Not your friend</source>
+        <target>Không là bạn bè</target>
+      </trans-unit>
+
+      <trans-unit id="16">
+        <source>A friend's introductory essay does not exists.</source>
+        <target>Người bạn của lời giới thiệu không tồn tại</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

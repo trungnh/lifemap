@@ -1,0 +1,149 @@
+ .q_d_skunk {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    float: left;
+    font-size: 138%;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 22px;
+    line-height: normal;
+   /* padding: 4px 28px 0 6px;*/
+   padding: 2px 28px 2px 6px;
+    vertical-align: top;
+    width: 100%;
+}
+maps.google.com #3 (line 1)
+#q_d {
+    width: 33em;
+}
+.q_tia-triangle {
+    padding-right: 63px;
+}
+.q_d_container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 25px;
+}
+.q-outer {
+    height: 30px;
+    padding-left: 16px;
+    padding-top: 1px;
+    z-index: 5;
+}
+#q-sub {
+    cursor: pointer;
+    height: 26px;
+    padding: 0 28px;
+}
+.kd-button-submit {
+    background-color: #4D90FE;
+    background-image: -moz-linear-gradient(center top , #4D90FE, #4787ED);
+    border: 1px solid #3079ED;
+    color: #FFFFFF;
+    line-height: normal;
+}
+.kd-button img {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+.search-white {
+    background: url("http://maps.gstatic.com/mapfiles/hpimgs19.png") no-repeat scroll -167px 0 transparent;
+    height: 15px;
+    width: 15px;
+}
+.triangle-box {
+    height: 0;
+    left: -24px;
+    position: relative;
+    top: -24px;
+}
+.dropdown {
+    background: url("http://maps.gstatic.com/mapfiles/hpimgs15.png") no-repeat scroll -67px -118px transparent;
+    height: 8px;
+    width: 15px;
+}
+.cntrltable {width: 700px; margin: 15px auto;}
+
+
+
+
+.block_sear {
+    clear: left;
+    padding: 10px 0 10px 10px ;
+	
+}
+.block_sear:hover{background-color: #e9eef2;}
+
+.icon {
+    cursor: pointer;
+    padding-right: 2px;
+    padding-top: 0.25em;
+    text-align: center;
+}
+.iconA {
+    background: url("http://maps.gstatic.com/mapfiles/red_transparent_icons_A_J.png") repeat scroll 0 0 transparent;
+}
+.mp {
+    cursor: pointer;
+    height: 38px;
+    width: 24px;
+}
+ .actbar,  .unstarred {
+    opacity: 0.5;
+}
+
+.unstarred, .unstarring {
+    background: url("http://maps.gstatic.com/mapfiles/lhp-misc3.png") no-repeat scroll -16px 0 transparent;
+}
+
+.starred, .unstarred, .starring, .unstarring {
+    cursor: pointer;
+}
+
+.starred, .unstarred, .starring, .unstarring, .blankstar {
+    height: 16px;
+    margin-bottom: -2px;
+    margin-left: 4px;
+    width: 16px;
+}
+.indent {
+    margin-left: 29px;
+}
+
+ .text {
+    padding: 9px 7px 9px 5px;
+}
+ .lname {
+    display: inline;
+    margin-bottom: 0.1em;
+}
+
+ .name {
+    padding-top: 3px;
+}
+#photo_stack {
+   
+    position: absolute;
+	top: 0;
+	right: 10px;
+}
+.gg_search {
+background-color: #e9eef2;
+
+}
+.top_bar {
+	line-height: 30px;
+	width: 100%;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	
+}
+a.get_d {padding-right: 30px; margin-left: 40px;}
+
+
+
+

@@ -1,0 +1,41 @@
+<div class="marker-info-window-input">
+    <form class="new-pos-infowindow-form">
+        <table>
+            <tr class="infowindow-title">
+                <th>Tiêu đề</th>
+                <td><input name="pos-title" type="text" class="pos-title" /></td>
+            </tr>
+            <tr class="infowindow-address">
+                <th>Địa chỉ</th>
+                <td>
+                     <input name="pos-address" type="text" class="pos-address-abc" ></input>
+                </td>
+            </tr>
+
+            <tr class="infowindow-classification">
+                <th>Phân loại</th>
+                <td>
+                    <select name="pos-type" class="pos-type">
+                        <% for(var i in categories) {%>
+                        <option value="<%= categories[i].id %>"><%= categories[i].name %></option>
+                        <% } %>
+                    </select>
+                </td>
+            </tr>
+            <tr class="infowindow-address">
+                <th>Mô tả</th>
+                <td>
+                     <textarea class="textarea-creat-new-pos"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <div class="marker-info-window-operation">
+            <div class="marker-info-window-create-pos-submit">
+                <span class="infowindow-operation infowindow-submit">Đăng địa điểm</span>
+            </div>
+        </div>
+    </form>
+<div class="div-show-error">
+</div>
+</div>

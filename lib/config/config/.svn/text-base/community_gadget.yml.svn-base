@@ -1,0 +1,33 @@
+freeArea:
+  caption:
+    vi_VN: "Khu vực tự do"
+  description:
+    vi_VN: "Bạn có thể cài đặt các khu vực tự do"
+  component: [default, freeAreaBox]
+  config:
+    title:
+      Name:       "title"
+      Caption:    "Tiêu đề"
+      FormType:   "input"
+      ValueType:  "text"
+      IsRequired: false
+    value:
+      Name:       "value"
+      Caption:    "Nội dung"
+      FormType:   "rich_textarea"
+      ValueType:  "text"
+      IsRequired: false
+
+memberImageBox:
+  caption:
+    vi_VN: "Ảnh hồ sơ"
+  description:
+    vi_VN: "Những hình ảnh hiển thị trên thông tin đăng ký của thành viên"
+  component: [default, memberImageBox]
+
+localNav:
+  caption:
+    vi_VN: "Điều hướng trang cá nhân"
+  description:
+    vi_VN: "Điều hướng trang cá nhân"
+  component: [default, localNav]

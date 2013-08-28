@@ -1,0 +1,11 @@
+_globalNav:
+  enabled: on
+
+_localNav:
+  enabled: on
+
+_dashboardNav:
+  enabled: on
+
+_loginFormHeader:
+  enabled: on

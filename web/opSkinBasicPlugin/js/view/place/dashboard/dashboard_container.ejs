@@ -1,0 +1,17 @@
+<div id="dashboard-container-content">
+    <div id="dashboard-menu" class="categories">
+        <ul>
+        <% for(var i = 0; i < data.length; i++) { %>
+            <li rel="<%=data[i].code%>" href="#<%=data[i].code%>" title="<%=data[i].title%>">
+                <span><img width="40" src="images/category/<%=data[i].code%>.png" /></span>
+                <h5><%=data[i].name%></h5>
+            </li>
+        <%}%>
+        </ul>
+    </div>
+    <div class="right-board">
+        <div class="content_container">
+            <div class='dashboard-pos'></div>
+        </div>
+    </div>
+</div>

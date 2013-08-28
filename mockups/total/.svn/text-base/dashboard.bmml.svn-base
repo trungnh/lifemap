@@ -1,0 +1,897 @@
+<mockup version="1.0" skin="sketch" measuredW="1334" measuredH="1983" mockupW="1309" mockupH="1887">
+  <controls>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="25" y="96" w="1309" h="1887" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//lifemap.vn</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::HelpButton" x="1301" y="223" w="-1" h="-1" measuredW="18" measuredH="18" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::VRule" x="165" y="210" w="-1" h="1037" measuredW="5" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::VRule" x="1148" y="234" w="-1" h="1013" measuredW="5" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="__group__" x="28" y="167" w="1300" h="71" measuredW="1300" measuredH="71" zOrder="4" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::ButtonBar" x="131" y="42" w="532" h="29" measuredW="500" measuredH="29" zOrder="0" locked="false" isInGroup="27">
+          <controlProperties>
+            <text>Trang%20chu%2C%20Dia%20diem%2C%20Nha%20cho%20thue%2CTrang%20ca%20nhan%2C%20Huong%20dan</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="131" y="0" w="158" h="42" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="27">
+          <controlProperties>
+            <text>Logo</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="905" y="11" w="-1" h="-1" measuredW="64" measuredH="21" zOrder="2" locked="false" isInGroup="27">
+          <controlProperties>
+            <text>Dang%20nhap</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="984" y="11" w="-1" h="-1" measuredW="51" measuredH="21" zOrder="3" locked="false" isInGroup="27">
+          <controlProperties>
+            <text>Dang%20ky</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Button" x="0" y="43" w="140" h="27" measuredW="24" measuredH="27" zOrder="4" locked="false" isInGroup="27">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Link" x="1050" y="11" w="-1" h="-1" measuredW="58" measuredH="21" zOrder="5" locked="false" isInGroup="27">
+          <controlProperties>
+            <text>Gioi%20thieu</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="662" y="42" w="638" h="27" measuredW="24" measuredH="27" zOrder="6" locked="false" isInGroup="27">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::SearchBox" x="798" y="42" w="326" h="-1" measuredW="61" measuredH="25" zOrder="7" locked="false" isInGroup="27">
+          <controlProperties>
+            <text>bia%20hoi</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::VRule" x="927" y="238" w="-1" h="1009" measuredW="5" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="121" controlTypeID="com.balsamiq.mockups::Canvas" x="171" y="265" w="345" h="79" measuredW="100" measuredH="70" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="122" controlTypeID="com.balsamiq.mockups::SubTitle" x="171" y="241" w="-1" h="-1" measuredW="137" measuredH="26" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Nha%20cho%20thue%20moi</text>
+      </controlProperties>
+    </control>
+    <control controlID="123" controlTypeID="com.balsamiq.mockups::Image" x="176" y="269" w="62" h="60" measuredW="77" measuredH="79" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="124" controlTypeID="com.balsamiq.mockups::Link" x="244" y="270" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="125" controlTypeID="com.balsamiq.mockups::Label" x="247" y="289" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="126" controlTypeID="com.balsamiq.mockups::Label" x="247" y="307" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="127" controlTypeID="com.balsamiq.mockups::Canvas" x="571" y="267" w="345" h="79" measuredW="100" measuredH="70" zOrder="12" locked="false" isInGroup="-1"/>
+    <control controlID="128" controlTypeID="com.balsamiq.mockups::Image" x="576" y="271" w="62" h="60" measuredW="77" measuredH="79" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="129" controlTypeID="com.balsamiq.mockups::Link" x="644" y="272" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="130" controlTypeID="com.balsamiq.mockups::Label" x="647" y="291" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="131" controlTypeID="com.balsamiq.mockups::Label" x="647" y="309" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="132" controlTypeID="com.balsamiq.mockups::Canvas" x="171" y="347" w="345" h="79" measuredW="100" measuredH="70" zOrder="17" locked="false" isInGroup="-1"/>
+    <control controlID="133" controlTypeID="com.balsamiq.mockups::Image" x="176" y="351" w="62" h="60" measuredW="77" measuredH="79" zOrder="18" locked="false" isInGroup="-1"/>
+    <control controlID="134" controlTypeID="com.balsamiq.mockups::Link" x="244" y="352" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="135" controlTypeID="com.balsamiq.mockups::Label" x="247" y="371" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="136" controlTypeID="com.balsamiq.mockups::Label" x="247" y="389" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="137" controlTypeID="com.balsamiq.mockups::Canvas" x="573" y="345" w="345" h="79" measuredW="100" measuredH="70" zOrder="22" locked="false" isInGroup="-1"/>
+    <control controlID="138" controlTypeID="com.balsamiq.mockups::Image" x="578" y="349" w="62" h="60" measuredW="77" measuredH="79" zOrder="23" locked="false" isInGroup="-1"/>
+    <control controlID="139" controlTypeID="com.balsamiq.mockups::Link" x="646" y="350" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="140" controlTypeID="com.balsamiq.mockups::Label" x="649" y="369" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="141" controlTypeID="com.balsamiq.mockups::Label" x="649" y="387" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="142" controlTypeID="com.balsamiq.mockups::Link" x="826" y="243" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20them</text>
+      </controlProperties>
+    </control>
+    <control controlID="143" controlTypeID="com.balsamiq.mockups::Canvas" x="169" y="461" w="345" h="79" measuredW="100" measuredH="70" zOrder="28" locked="false" isInGroup="-1"/>
+    <control controlID="144" controlTypeID="com.balsamiq.mockups::SubTitle" x="169" y="437" w="-1" h="-1" measuredW="208" measuredH="26" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Nha%20cho%20thue%20moi%20cap%20nhat</text>
+      </controlProperties>
+    </control>
+    <control controlID="145" controlTypeID="com.balsamiq.mockups::Image" x="174" y="465" w="62" h="60" measuredW="77" measuredH="79" zOrder="30" locked="false" isInGroup="-1"/>
+    <control controlID="146" controlTypeID="com.balsamiq.mockups::Link" x="242" y="466" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="147" controlTypeID="com.balsamiq.mockups::Label" x="245" y="485" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="148" controlTypeID="com.balsamiq.mockups::Label" x="245" y="503" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="149" controlTypeID="com.balsamiq.mockups::Canvas" x="569" y="463" w="345" h="79" measuredW="100" measuredH="70" zOrder="34" locked="false" isInGroup="-1"/>
+    <control controlID="150" controlTypeID="com.balsamiq.mockups::Image" x="574" y="467" w="62" h="60" measuredW="77" measuredH="79" zOrder="35" locked="false" isInGroup="-1"/>
+    <control controlID="151" controlTypeID="com.balsamiq.mockups::Link" x="642" y="468" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="152" controlTypeID="com.balsamiq.mockups::Label" x="645" y="487" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="153" controlTypeID="com.balsamiq.mockups::Label" x="645" y="505" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="154" controlTypeID="com.balsamiq.mockups::Canvas" x="169" y="543" w="345" h="79" measuredW="100" measuredH="70" zOrder="39" locked="false" isInGroup="-1"/>
+    <control controlID="155" controlTypeID="com.balsamiq.mockups::Image" x="174" y="547" w="62" h="60" measuredW="77" measuredH="79" zOrder="40" locked="false" isInGroup="-1"/>
+    <control controlID="156" controlTypeID="com.balsamiq.mockups::Link" x="242" y="548" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="157" controlTypeID="com.balsamiq.mockups::Label" x="245" y="567" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="158" controlTypeID="com.balsamiq.mockups::Label" x="245" y="585" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="159" controlTypeID="com.balsamiq.mockups::Canvas" x="571" y="541" w="345" h="79" measuredW="100" measuredH="70" zOrder="44" locked="false" isInGroup="-1"/>
+    <control controlID="160" controlTypeID="com.balsamiq.mockups::Image" x="576" y="545" w="62" h="60" measuredW="77" measuredH="79" zOrder="45" locked="false" isInGroup="-1"/>
+    <control controlID="161" controlTypeID="com.balsamiq.mockups::Link" x="644" y="546" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="162" controlTypeID="com.balsamiq.mockups::Label" x="647" y="565" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="47" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="163" controlTypeID="com.balsamiq.mockups::Label" x="647" y="583" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="48" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="164" controlTypeID="com.balsamiq.mockups::Link" x="824" y="439" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="49" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20them</text>
+      </controlProperties>
+    </control>
+    <control controlID="165" controlTypeID="com.balsamiq.mockups::Canvas" x="171" y="660" w="345" h="79" measuredW="100" measuredH="70" zOrder="50" locked="false" isInGroup="-1"/>
+    <control controlID="166" controlTypeID="com.balsamiq.mockups::SubTitle" x="171" y="636" w="-1" h="-1" measuredW="105" measuredH="26" zOrder="51" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Dia%20diem%20moi</text>
+      </controlProperties>
+    </control>
+    <control controlID="167" controlTypeID="com.balsamiq.mockups::Image" x="176" y="664" w="62" h="60" measuredW="77" measuredH="79" zOrder="52" locked="false" isInGroup="-1"/>
+    <control controlID="168" controlTypeID="com.balsamiq.mockups::Link" x="244" y="665" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="53" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="169" controlTypeID="com.balsamiq.mockups::Label" x="247" y="684" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="54" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="170" controlTypeID="com.balsamiq.mockups::Label" x="247" y="702" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="55" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="171" controlTypeID="com.balsamiq.mockups::Canvas" x="571" y="662" w="345" h="79" measuredW="100" measuredH="70" zOrder="56" locked="false" isInGroup="-1"/>
+    <control controlID="172" controlTypeID="com.balsamiq.mockups::Image" x="576" y="666" w="62" h="60" measuredW="77" measuredH="79" zOrder="57" locked="false" isInGroup="-1"/>
+    <control controlID="173" controlTypeID="com.balsamiq.mockups::Link" x="644" y="667" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="58" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="174" controlTypeID="com.balsamiq.mockups::Label" x="647" y="686" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="59" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="175" controlTypeID="com.balsamiq.mockups::Label" x="647" y="704" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="60" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="176" controlTypeID="com.balsamiq.mockups::Canvas" x="171" y="742" w="345" h="79" measuredW="100" measuredH="70" zOrder="61" locked="false" isInGroup="-1"/>
+    <control controlID="177" controlTypeID="com.balsamiq.mockups::Image" x="176" y="746" w="62" h="60" measuredW="77" measuredH="79" zOrder="62" locked="false" isInGroup="-1"/>
+    <control controlID="178" controlTypeID="com.balsamiq.mockups::Link" x="244" y="747" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="63" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="179" controlTypeID="com.balsamiq.mockups::Label" x="247" y="766" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="64" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="180" controlTypeID="com.balsamiq.mockups::Label" x="247" y="784" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="65" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="181" controlTypeID="com.balsamiq.mockups::Canvas" x="573" y="740" w="345" h="79" measuredW="100" measuredH="70" zOrder="66" locked="false" isInGroup="-1"/>
+    <control controlID="182" controlTypeID="com.balsamiq.mockups::Image" x="578" y="744" w="62" h="60" measuredW="77" measuredH="79" zOrder="67" locked="false" isInGroup="-1"/>
+    <control controlID="183" controlTypeID="com.balsamiq.mockups::Link" x="646" y="745" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="68" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="184" controlTypeID="com.balsamiq.mockups::Label" x="649" y="764" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="69" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="185" controlTypeID="com.balsamiq.mockups::Label" x="649" y="782" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="70" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="186" controlTypeID="com.balsamiq.mockups::Link" x="826" y="638" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="71" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20them</text>
+      </controlProperties>
+    </control>
+    <control controlID="187" controlTypeID="com.balsamiq.mockups::HRule" x="183" y="430" w="720" h="-1" measuredW="100" measuredH="5" zOrder="72" locked="false" isInGroup="-1"/>
+    <control controlID="188" controlTypeID="com.balsamiq.mockups::HRule" x="179" y="628" w="720" h="-1" measuredW="100" measuredH="5" zOrder="73" locked="false" isInGroup="-1"/>
+    <control controlID="189" controlTypeID="com.balsamiq.mockups::Label" x="377" y="505" w="-1" h="-1" measuredW="63" measuredH="21" zOrder="74" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Them%20anh</text>
+      </controlProperties>
+    </control>
+    <control controlID="190" controlTypeID="com.balsamiq.mockups::Label" x="775" y="506" w="-1" h="-1" measuredW="63" measuredH="21" zOrder="75" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Them%20anh</text>
+      </controlProperties>
+    </control>
+    <control controlID="191" controlTypeID="com.balsamiq.mockups::Label" x="775" y="589" w="-1" h="-1" measuredW="63" measuredH="21" zOrder="76" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Them%20anh</text>
+      </controlProperties>
+    </control>
+    <control controlID="192" controlTypeID="com.balsamiq.mockups::Label" x="377" y="589" w="-1" h="-1" measuredW="63" measuredH="21" zOrder="77" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Them%20anh</text>
+      </controlProperties>
+    </control>
+    <control controlID="193" controlTypeID="com.balsamiq.mockups::Link" x="692" y="242" w="-1" h="-1" measuredW="104" measuredH="21" zOrder="78" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20theo%20ban%20do</text>
+      </controlProperties>
+    </control>
+    <control controlID="194" controlTypeID="com.balsamiq.mockups::Link" x="708" y="438" w="-1" h="-1" measuredW="104" measuredH="21" zOrder="79" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20theo%20ban%20do</text>
+      </controlProperties>
+    </control>
+    <control controlID="195" controlTypeID="com.balsamiq.mockups::Link" x="708" y="638" w="-1" h="-1" measuredW="104" measuredH="21" zOrder="80" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20theo%20ban%20do</text>
+      </controlProperties>
+    </control>
+    <control controlID="196" controlTypeID="com.balsamiq.mockups::Canvas" x="171" y="860" w="345" h="79" measuredW="100" measuredH="70" zOrder="81" locked="false" isInGroup="-1"/>
+    <control controlID="197" controlTypeID="com.balsamiq.mockups::SubTitle" x="171" y="836" w="-1" h="-1" measuredW="176" measuredH="26" zOrder="82" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Dia%20diem%20moi%20cap%20nhat</text>
+      </controlProperties>
+    </control>
+    <control controlID="198" controlTypeID="com.balsamiq.mockups::Image" x="176" y="864" w="62" h="60" measuredW="77" measuredH="79" zOrder="83" locked="false" isInGroup="-1"/>
+    <control controlID="199" controlTypeID="com.balsamiq.mockups::Link" x="244" y="865" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="84" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="200" controlTypeID="com.balsamiq.mockups::Label" x="247" y="884" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="85" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="201" controlTypeID="com.balsamiq.mockups::Label" x="247" y="902" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="86" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="202" controlTypeID="com.balsamiq.mockups::Canvas" x="571" y="862" w="345" h="79" measuredW="100" measuredH="70" zOrder="87" locked="false" isInGroup="-1"/>
+    <control controlID="203" controlTypeID="com.balsamiq.mockups::Image" x="576" y="866" w="62" h="60" measuredW="77" measuredH="79" zOrder="88" locked="false" isInGroup="-1"/>
+    <control controlID="204" controlTypeID="com.balsamiq.mockups::Link" x="644" y="867" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="89" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="205" controlTypeID="com.balsamiq.mockups::Label" x="647" y="886" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="90" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="206" controlTypeID="com.balsamiq.mockups::Label" x="647" y="904" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="91" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="207" controlTypeID="com.balsamiq.mockups::Canvas" x="171" y="942" w="345" h="79" measuredW="100" measuredH="70" zOrder="92" locked="false" isInGroup="-1"/>
+    <control controlID="208" controlTypeID="com.balsamiq.mockups::Image" x="176" y="946" w="62" h="60" measuredW="77" measuredH="79" zOrder="93" locked="false" isInGroup="-1"/>
+    <control controlID="209" controlTypeID="com.balsamiq.mockups::Link" x="244" y="947" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="94" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="210" controlTypeID="com.balsamiq.mockups::Label" x="247" y="966" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="95" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="211" controlTypeID="com.balsamiq.mockups::Label" x="247" y="984" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="96" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="212" controlTypeID="com.balsamiq.mockups::Canvas" x="573" y="940" w="345" h="79" measuredW="100" measuredH="70" zOrder="97" locked="false" isInGroup="-1"/>
+    <control controlID="213" controlTypeID="com.balsamiq.mockups::Image" x="578" y="944" w="62" h="60" measuredW="77" measuredH="79" zOrder="98" locked="false" isInGroup="-1"/>
+    <control controlID="214" controlTypeID="com.balsamiq.mockups::Link" x="646" y="945" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="99" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="215" controlTypeID="com.balsamiq.mockups::Label" x="649" y="964" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="100" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="216" controlTypeID="com.balsamiq.mockups::Label" x="649" y="982" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="101" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="217" controlTypeID="com.balsamiq.mockups::Link" x="826" y="838" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="102" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20them</text>
+      </controlProperties>
+    </control>
+    <control controlID="218" controlTypeID="com.balsamiq.mockups::HRule" x="179" y="828" w="720" h="-1" measuredW="100" measuredH="5" zOrder="103" locked="false" isInGroup="-1"/>
+    <control controlID="219" controlTypeID="com.balsamiq.mockups::Link" x="708" y="838" w="-1" h="-1" measuredW="104" measuredH="21" zOrder="104" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20theo%20ban%20do</text>
+      </controlProperties>
+    </control>
+    <control controlID="220" controlTypeID="com.balsamiq.mockups::Canvas" x="169" y="1056" w="345" h="79" measuredW="100" measuredH="70" zOrder="105" locked="false" isInGroup="-1"/>
+    <control controlID="221" controlTypeID="com.balsamiq.mockups::SubTitle" x="169" y="1032" w="-1" h="-1" measuredW="276" measuredH="26" zOrder="106" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Dia%20diem%20nhieu%20nguoi%20dang%20check-in</text>
+      </controlProperties>
+    </control>
+    <control controlID="222" controlTypeID="com.balsamiq.mockups::Image" x="174" y="1060" w="62" h="60" measuredW="77" measuredH="79" zOrder="107" locked="false" isInGroup="-1"/>
+    <control controlID="223" controlTypeID="com.balsamiq.mockups::Link" x="242" y="1061" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="108" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="224" controlTypeID="com.balsamiq.mockups::Label" x="245" y="1080" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="109" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="225" controlTypeID="com.balsamiq.mockups::Label" x="245" y="1098" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="110" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="226" controlTypeID="com.balsamiq.mockups::Canvas" x="569" y="1058" w="345" h="79" measuredW="100" measuredH="70" zOrder="111" locked="false" isInGroup="-1"/>
+    <control controlID="227" controlTypeID="com.balsamiq.mockups::Image" x="574" y="1062" w="62" h="60" measuredW="77" measuredH="79" zOrder="112" locked="false" isInGroup="-1"/>
+    <control controlID="228" controlTypeID="com.balsamiq.mockups::Link" x="642" y="1063" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="113" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="229" controlTypeID="com.balsamiq.mockups::Label" x="645" y="1082" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="114" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="230" controlTypeID="com.balsamiq.mockups::Label" x="645" y="1100" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="115" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="231" controlTypeID="com.balsamiq.mockups::Canvas" x="169" y="1138" w="345" h="79" measuredW="100" measuredH="70" zOrder="116" locked="false" isInGroup="-1"/>
+    <control controlID="232" controlTypeID="com.balsamiq.mockups::Image" x="174" y="1142" w="62" h="60" measuredW="77" measuredH="79" zOrder="117" locked="false" isInGroup="-1"/>
+    <control controlID="233" controlTypeID="com.balsamiq.mockups::Link" x="242" y="1143" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="118" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="234" controlTypeID="com.balsamiq.mockups::Label" x="245" y="1162" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="119" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="235" controlTypeID="com.balsamiq.mockups::Label" x="245" y="1180" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="120" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="236" controlTypeID="com.balsamiq.mockups::Canvas" x="571" y="1136" w="345" h="79" measuredW="100" measuredH="70" zOrder="121" locked="false" isInGroup="-1"/>
+    <control controlID="237" controlTypeID="com.balsamiq.mockups::Image" x="576" y="1140" w="62" h="60" measuredW="77" measuredH="79" zOrder="122" locked="false" isInGroup="-1"/>
+    <control controlID="238" controlTypeID="com.balsamiq.mockups::Link" x="644" y="1141" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="123" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="239" controlTypeID="com.balsamiq.mockups::Label" x="647" y="1160" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="124" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="240" controlTypeID="com.balsamiq.mockups::Label" x="647" y="1178" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="125" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="241" controlTypeID="com.balsamiq.mockups::Link" x="824" y="1034" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="126" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20them</text>
+      </controlProperties>
+    </control>
+    <control controlID="242" controlTypeID="com.balsamiq.mockups::HRule" x="177" y="1024" w="720" h="-1" measuredW="100" measuredH="5" zOrder="127" locked="false" isInGroup="-1"/>
+    <control controlID="243" controlTypeID="com.balsamiq.mockups::Link" x="706" y="1034" w="-1" h="-1" measuredW="104" measuredH="21" zOrder="128" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20theo%20ban%20do</text>
+      </controlProperties>
+    </control>
+    <control controlID="244" controlTypeID="com.balsamiq.mockups::Canvas" x="170" y="1257" w="345" h="79" measuredW="100" measuredH="70" zOrder="129" locked="false" isInGroup="-1"/>
+    <control controlID="245" controlTypeID="com.balsamiq.mockups::SubTitle" x="170" y="1233" w="-1" h="-1" measuredW="169" measuredH="26" zOrder="130" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Dia%20diem%20nhieu%20follow</text>
+      </controlProperties>
+    </control>
+    <control controlID="246" controlTypeID="com.balsamiq.mockups::Image" x="175" y="1261" w="62" h="60" measuredW="77" measuredH="79" zOrder="131" locked="false" isInGroup="-1"/>
+    <control controlID="247" controlTypeID="com.balsamiq.mockups::Link" x="243" y="1262" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="132" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="248" controlTypeID="com.balsamiq.mockups::Label" x="246" y="1281" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="133" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="249" controlTypeID="com.balsamiq.mockups::Label" x="246" y="1299" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="134" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="250" controlTypeID="com.balsamiq.mockups::Canvas" x="570" y="1259" w="345" h="79" measuredW="100" measuredH="70" zOrder="135" locked="false" isInGroup="-1"/>
+    <control controlID="251" controlTypeID="com.balsamiq.mockups::Image" x="575" y="1263" w="62" h="60" measuredW="77" measuredH="79" zOrder="136" locked="false" isInGroup="-1"/>
+    <control controlID="252" controlTypeID="com.balsamiq.mockups::Link" x="643" y="1264" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="137" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="253" controlTypeID="com.balsamiq.mockups::Label" x="646" y="1283" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="138" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="254" controlTypeID="com.balsamiq.mockups::Label" x="646" y="1301" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="139" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="255" controlTypeID="com.balsamiq.mockups::Canvas" x="170" y="1339" w="345" h="79" measuredW="100" measuredH="70" zOrder="140" locked="false" isInGroup="-1"/>
+    <control controlID="256" controlTypeID="com.balsamiq.mockups::Image" x="175" y="1343" w="62" h="60" measuredW="77" measuredH="79" zOrder="141" locked="false" isInGroup="-1"/>
+    <control controlID="257" controlTypeID="com.balsamiq.mockups::Link" x="243" y="1344" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="142" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="258" controlTypeID="com.balsamiq.mockups::Label" x="246" y="1363" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="143" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="259" controlTypeID="com.balsamiq.mockups::Label" x="246" y="1381" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="144" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="260" controlTypeID="com.balsamiq.mockups::Canvas" x="572" y="1337" w="345" h="79" measuredW="100" measuredH="70" zOrder="145" locked="false" isInGroup="-1"/>
+    <control controlID="261" controlTypeID="com.balsamiq.mockups::Image" x="577" y="1341" w="62" h="60" measuredW="77" measuredH="79" zOrder="146" locked="false" isInGroup="-1"/>
+    <control controlID="262" controlTypeID="com.balsamiq.mockups::Link" x="645" y="1342" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="147" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="263" controlTypeID="com.balsamiq.mockups::Label" x="648" y="1361" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="148" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="264" controlTypeID="com.balsamiq.mockups::Label" x="648" y="1379" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="149" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="265" controlTypeID="com.balsamiq.mockups::Link" x="825" y="1235" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="150" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20them</text>
+      </controlProperties>
+    </control>
+    <control controlID="266" controlTypeID="com.balsamiq.mockups::HRule" x="178" y="1225" w="720" h="-1" measuredW="100" measuredH="5" zOrder="151" locked="false" isInGroup="-1"/>
+    <control controlID="267" controlTypeID="com.balsamiq.mockups::Link" x="707" y="1235" w="-1" h="-1" measuredW="104" measuredH="21" zOrder="152" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20theo%20ban%20do</text>
+      </controlProperties>
+    </control>
+    <control controlID="268" controlTypeID="com.balsamiq.mockups::Canvas" x="171" y="1454" w="345" h="79" measuredW="100" measuredH="70" zOrder="153" locked="false" isInGroup="-1"/>
+    <control controlID="269" controlTypeID="com.balsamiq.mockups::SubTitle" x="171" y="1430" w="-1" h="-1" measuredW="188" measuredH="26" zOrder="154" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Dia%20diem%20nhieu%20check-in</text>
+      </controlProperties>
+    </control>
+    <control controlID="270" controlTypeID="com.balsamiq.mockups::Image" x="176" y="1458" w="62" h="60" measuredW="77" measuredH="79" zOrder="155" locked="false" isInGroup="-1"/>
+    <control controlID="271" controlTypeID="com.balsamiq.mockups::Link" x="244" y="1459" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="156" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="272" controlTypeID="com.balsamiq.mockups::Label" x="247" y="1478" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="157" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="273" controlTypeID="com.balsamiq.mockups::Label" x="247" y="1496" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="158" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="274" controlTypeID="com.balsamiq.mockups::Canvas" x="571" y="1456" w="345" h="79" measuredW="100" measuredH="70" zOrder="159" locked="false" isInGroup="-1"/>
+    <control controlID="275" controlTypeID="com.balsamiq.mockups::Image" x="576" y="1460" w="62" h="60" measuredW="77" measuredH="79" zOrder="160" locked="false" isInGroup="-1"/>
+    <control controlID="276" controlTypeID="com.balsamiq.mockups::Link" x="644" y="1461" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="161" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="277" controlTypeID="com.balsamiq.mockups::Label" x="647" y="1480" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="162" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="278" controlTypeID="com.balsamiq.mockups::Label" x="647" y="1498" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="163" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="279" controlTypeID="com.balsamiq.mockups::Canvas" x="171" y="1536" w="345" h="79" measuredW="100" measuredH="70" zOrder="164" locked="false" isInGroup="-1"/>
+    <control controlID="280" controlTypeID="com.balsamiq.mockups::Image" x="176" y="1540" w="62" h="60" measuredW="77" measuredH="79" zOrder="165" locked="false" isInGroup="-1"/>
+    <control controlID="281" controlTypeID="com.balsamiq.mockups::Link" x="244" y="1541" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="166" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="282" controlTypeID="com.balsamiq.mockups::Label" x="247" y="1560" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="167" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="283" controlTypeID="com.balsamiq.mockups::Label" x="247" y="1578" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="168" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="284" controlTypeID="com.balsamiq.mockups::Canvas" x="573" y="1534" w="345" h="79" measuredW="100" measuredH="70" zOrder="169" locked="false" isInGroup="-1"/>
+    <control controlID="285" controlTypeID="com.balsamiq.mockups::Image" x="578" y="1538" w="62" h="60" measuredW="77" measuredH="79" zOrder="170" locked="false" isInGroup="-1"/>
+    <control controlID="286" controlTypeID="com.balsamiq.mockups::Link" x="646" y="1539" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="171" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="287" controlTypeID="com.balsamiq.mockups::Label" x="649" y="1558" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="172" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="288" controlTypeID="com.balsamiq.mockups::Label" x="649" y="1576" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="173" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="289" controlTypeID="com.balsamiq.mockups::Link" x="826" y="1432" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="174" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20them</text>
+      </controlProperties>
+    </control>
+    <control controlID="290" controlTypeID="com.balsamiq.mockups::HRule" x="179" y="1422" w="720" h="-1" measuredW="100" measuredH="5" zOrder="175" locked="false" isInGroup="-1"/>
+    <control controlID="291" controlTypeID="com.balsamiq.mockups::Link" x="708" y="1432" w="-1" h="-1" measuredW="104" measuredH="21" zOrder="176" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20theo%20ban%20do</text>
+      </controlProperties>
+    </control>
+    <control controlID="292" controlTypeID="com.balsamiq.mockups::Canvas" x="931" y="271" w="217" h="79" measuredW="100" measuredH="70" zOrder="177" locked="false" isInGroup="-1"/>
+    <control controlID="293" controlTypeID="com.balsamiq.mockups::SubTitle" x="933" y="241" w="-1" h="-1" measuredW="167" measuredH="26" zOrder="178" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>545684</color>
+        <size>18</size>
+        <text>Dia%20diem%20duoc%20tai%20tro</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="294" controlTypeID="com.balsamiq.mockups::Image" x="936" y="275" w="62" h="60" measuredW="77" measuredH="79" zOrder="179" locked="false" isInGroup="-1"/>
+    <control controlID="295" controlTypeID="com.balsamiq.mockups::Link" x="998" y="276" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="180" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de</text>
+      </controlProperties>
+    </control>
+    <control controlID="298" controlTypeID="com.balsamiq.mockups::Label" x="998" y="291" w="150" h="38" measuredW="244" measuredH="21" zOrder="181" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="299" controlTypeID="com.balsamiq.mockups::Link" x="1002" y="324" w="-1" h="-1" measuredW="119" measuredH="21" zOrder="182" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>http%3A//lifetek.com.vn</text>
+      </controlProperties>
+    </control>
+    <control controlID="304" controlTypeID="com.balsamiq.mockups::Canvas" x="931" y="353" w="217" h="79" measuredW="100" measuredH="70" zOrder="183" locked="false" isInGroup="-1"/>
+    <control controlID="305" controlTypeID="com.balsamiq.mockups::Image" x="936" y="357" w="62" h="60" measuredW="77" measuredH="79" zOrder="184" locked="false" isInGroup="-1"/>
+    <control controlID="306" controlTypeID="com.balsamiq.mockups::Link" x="998" y="358" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="185" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de</text>
+      </controlProperties>
+    </control>
+    <control controlID="307" controlTypeID="com.balsamiq.mockups::Label" x="998" y="373" w="150" h="38" measuredW="244" measuredH="21" zOrder="186" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="308" controlTypeID="com.balsamiq.mockups::Link" x="1002" y="406" w="-1" h="-1" measuredW="119" measuredH="21" zOrder="187" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>http%3A//lifetek.com.vn</text>
+      </controlProperties>
+    </control>
+    <control controlID="309" controlTypeID="com.balsamiq.mockups::Canvas" x="931" y="437" w="217" h="79" measuredW="100" measuredH="70" zOrder="188" locked="false" isInGroup="-1"/>
+    <control controlID="310" controlTypeID="com.balsamiq.mockups::Image" x="936" y="441" w="62" h="60" measuredW="77" measuredH="79" zOrder="189" locked="false" isInGroup="-1"/>
+    <control controlID="311" controlTypeID="com.balsamiq.mockups::Link" x="998" y="442" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="190" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de</text>
+      </controlProperties>
+    </control>
+    <control controlID="312" controlTypeID="com.balsamiq.mockups::Label" x="998" y="457" w="150" h="38" measuredW="244" measuredH="21" zOrder="191" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="313" controlTypeID="com.balsamiq.mockups::Link" x="1002" y="490" w="-1" h="-1" measuredW="119" measuredH="21" zOrder="192" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>http%3A//lifetek.com.vn</text>
+      </controlProperties>
+    </control>
+    <control controlID="314" controlTypeID="com.balsamiq.mockups::Canvas" x="931" y="522" w="217" h="79" measuredW="100" measuredH="70" zOrder="193" locked="false" isInGroup="-1"/>
+    <control controlID="315" controlTypeID="com.balsamiq.mockups::Image" x="936" y="526" w="62" h="60" measuredW="77" measuredH="79" zOrder="194" locked="false" isInGroup="-1"/>
+    <control controlID="316" controlTypeID="com.balsamiq.mockups::Link" x="998" y="527" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="195" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de</text>
+      </controlProperties>
+    </control>
+    <control controlID="317" controlTypeID="com.balsamiq.mockups::Label" x="998" y="542" w="150" h="38" measuredW="244" measuredH="21" zOrder="196" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="318" controlTypeID="com.balsamiq.mockups::Link" x="1002" y="575" w="-1" h="-1" measuredW="119" measuredH="21" zOrder="197" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>http%3A//lifetek.com.vn</text>
+      </controlProperties>
+    </control>
+    <control controlID="319" controlTypeID="com.balsamiq.mockups::Canvas" x="931" y="609" w="217" h="79" measuredW="100" measuredH="70" zOrder="198" locked="false" isInGroup="-1"/>
+    <control controlID="320" controlTypeID="com.balsamiq.mockups::Image" x="936" y="613" w="62" h="60" measuredW="77" measuredH="79" zOrder="199" locked="false" isInGroup="-1"/>
+    <control controlID="321" controlTypeID="com.balsamiq.mockups::Link" x="998" y="614" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="200" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de</text>
+      </controlProperties>
+    </control>
+    <control controlID="322" controlTypeID="com.balsamiq.mockups::Label" x="998" y="629" w="150" h="38" measuredW="244" measuredH="21" zOrder="201" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="323" controlTypeID="com.balsamiq.mockups::Link" x="1002" y="662" w="-1" h="-1" measuredW="119" measuredH="21" zOrder="202" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>http%3A//lifetek.com.vn</text>
+      </controlProperties>
+    </control>
+    <control controlID="324" controlTypeID="com.balsamiq.mockups::Link" x="1070" y="690" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="203" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20them</text>
+      </controlProperties>
+    </control>
+    <control controlID="325" controlTypeID="com.balsamiq.mockups::Link" x="951" y="690" w="-1" h="-1" measuredW="104" measuredH="21" zOrder="204" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20theo%20ban%20do</text>
+      </controlProperties>
+    </control>
+    <control controlID="326" controlTypeID="com.balsamiq.mockups::Canvas" x="169" y="1657" w="345" h="79" measuredW="100" measuredH="70" zOrder="205" locked="false" isInGroup="-1"/>
+    <control controlID="327" controlTypeID="com.balsamiq.mockups::SubTitle" x="169" y="1633" w="-1" h="-1" measuredW="195" measuredH="26" zOrder="206" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Dia%20diem%20nhieu%20comment</text>
+      </controlProperties>
+    </control>
+    <control controlID="328" controlTypeID="com.balsamiq.mockups::Image" x="174" y="1661" w="62" h="60" measuredW="77" measuredH="79" zOrder="207" locked="false" isInGroup="-1"/>
+    <control controlID="329" controlTypeID="com.balsamiq.mockups::Link" x="242" y="1662" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="208" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="330" controlTypeID="com.balsamiq.mockups::Label" x="245" y="1681" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="209" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="331" controlTypeID="com.balsamiq.mockups::Label" x="245" y="1699" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="210" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="332" controlTypeID="com.balsamiq.mockups::Canvas" x="569" y="1659" w="345" h="79" measuredW="100" measuredH="70" zOrder="211" locked="false" isInGroup="-1"/>
+    <control controlID="333" controlTypeID="com.balsamiq.mockups::Image" x="574" y="1663" w="62" h="60" measuredW="77" measuredH="79" zOrder="212" locked="false" isInGroup="-1"/>
+    <control controlID="334" controlTypeID="com.balsamiq.mockups::Link" x="642" y="1664" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="213" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="335" controlTypeID="com.balsamiq.mockups::Label" x="645" y="1683" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="214" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="336" controlTypeID="com.balsamiq.mockups::Label" x="645" y="1701" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="215" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="337" controlTypeID="com.balsamiq.mockups::Canvas" x="169" y="1739" w="345" h="79" measuredW="100" measuredH="70" zOrder="216" locked="false" isInGroup="-1"/>
+    <control controlID="338" controlTypeID="com.balsamiq.mockups::Image" x="174" y="1743" w="62" h="60" measuredW="77" measuredH="79" zOrder="217" locked="false" isInGroup="-1"/>
+    <control controlID="339" controlTypeID="com.balsamiq.mockups::Link" x="242" y="1744" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="218" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="340" controlTypeID="com.balsamiq.mockups::Label" x="245" y="1763" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="219" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="341" controlTypeID="com.balsamiq.mockups::Label" x="245" y="1781" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="220" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="342" controlTypeID="com.balsamiq.mockups::Canvas" x="571" y="1737" w="345" h="79" measuredW="100" measuredH="70" zOrder="221" locked="false" isInGroup="-1"/>
+    <control controlID="343" controlTypeID="com.balsamiq.mockups::Image" x="576" y="1741" w="62" h="60" measuredW="77" measuredH="79" zOrder="222" locked="false" isInGroup="-1"/>
+    <control controlID="344" controlTypeID="com.balsamiq.mockups::Link" x="644" y="1742" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="223" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tieu%20de%20-%20nha%20cho%20thue%20moi%20day%20...</text>
+      </controlProperties>
+    </control>
+    <control controlID="345" controlTypeID="com.balsamiq.mockups::Label" x="647" y="1761" w="-1" h="-1" measuredW="244" measuredH="21" zOrder="224" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>So%2012%20ngo%2016%20Vu%20Trong%20Phung%2C%20Dong%20Da%2C....</text>
+      </controlProperties>
+    </control>
+    <control controlID="346" controlTypeID="com.balsamiq.mockups::Label" x="647" y="1779" w="-1" h="-1" measuredW="112" measuredH="21" zOrder="225" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15h33%2012/01/2012</text>
+      </controlProperties>
+    </control>
+    <control controlID="347" controlTypeID="com.balsamiq.mockups::Link" x="824" y="1635" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="226" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20them</text>
+      </controlProperties>
+    </control>
+    <control controlID="348" controlTypeID="com.balsamiq.mockups::Link" x="706" y="1635" w="-1" h="-1" measuredW="104" measuredH="21" zOrder="227" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Xem%20theo%20ban%20do</text>
+      </controlProperties>
+    </control>
+    <control controlID="349" controlTypeID="com.balsamiq.mockups::HRule" x="181" y="1620" w="720" h="-1" measuredW="100" measuredH="5" zOrder="228" locked="false" isInGroup="-1"/>
+    <control controlID="350" controlTypeID="com.balsamiq.mockups::SubTitle" x="945" y="722" w="142" h="-1" measuredW="137" measuredH="26" zOrder="229" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>545684</color>
+        <size>18</size>
+        <text>Bang%20tin%20LifeMap</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="351" controlTypeID="com.balsamiq.mockups::Canvas" x="931" y="749" w="217" h="79" measuredW="100" measuredH="70" zOrder="230" locked="false" isInGroup="-1"/>
+    <control controlID="352" controlTypeID="com.balsamiq.mockups::Label" x="938" y="753" w="198" h="68" measuredW="620" measuredH="21" zOrder="231" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ngay%2015/03%2C%20LifeMap%20ho%20tro%20thong%20tin%20khuyen%20mai%21%20Kinh%20moi%20thanh%20vien%20Lifemap%20dang%20tin%20khuyen%20mai%20tren%20trang%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="353" controlTypeID="com.balsamiq.mockups::Canvas" x="931" y="835" w="217" h="79" measuredW="100" measuredH="70" zOrder="232" locked="false" isInGroup="-1"/>
+    <control controlID="354" controlTypeID="com.balsamiq.mockups::Label" x="938" y="839" w="198" h="68" measuredW="526" measuredH="21" zOrder="233" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ngay%2015/01%2C%20ra%20mat%20LifeMap%20ban%20chinh%20thuc.%20Chia%20se%20dia%20diem%20chung%20va%20thong%20tin%20nha%20cho%20thue</text>
+      </controlProperties>
+    </control>
+    <control controlID="355" controlTypeID="com.balsamiq.mockups::Canvas" x="933" y="921" w="217" h="79" measuredW="100" measuredH="70" zOrder="234" locked="false" isInGroup="-1"/>
+    <control controlID="356" controlTypeID="com.balsamiq.mockups::Label" x="940" y="925" w="198" h="68" measuredW="612" measuredH="21" zOrder="235" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ngay%2001/01%2C%20ra%20mat%20LifeMap%20ban%20thu%20nghiem%20Alpha%20voi%20cac%20thong%20tin%20dia%20diem%20chung%20va%20thong%20tin%20nha%20cho%20thue</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

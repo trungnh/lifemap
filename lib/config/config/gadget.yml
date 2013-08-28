@@ -1,0 +1,226 @@
+informationBox:
+  caption:
+    vi_VN: "Box Thông tin"
+  description:
+    vi_VN: "Bạn có thể thiết lập một hộp thông báo thông tin về màn hình chủ, chẳng hạn như News."
+  component: [default, informationBox]
+  config:
+    value:
+      Name:       "value"
+      Caption:    "Nội dung"
+      FormType:   "rich_textarea"
+      ValueType:  "text"
+      IsRequired: false
+
+freeArea:
+  caption:
+    vi_VN: "Khu vực tự do"
+  description:
+    vi_VN: "Bạn có thể cài đặt các khu vực tự do"
+  component: [default, freeAreaBox]
+  config:
+    title:
+      Name:       "title"
+      Caption:    "Tiêu đề"
+      FormType:   "input"
+      ValueType:  "text"
+      IsRequired: false
+    value:
+      Name:       "value"
+      Caption:    "Nội dung"
+      FormType:   "rich_textarea"
+      ValueType:  "text"
+      IsRequired: false
+
+memberImageBox:
+  caption:
+    vi_VN: "Ảnh hồ sơ"
+  description:
+    vi_VN: "Những hình ảnh hiển thị trên thông tin đăng ký của thành viên"
+  component: [default, memberImageBox]
+
+localNav:
+  caption:
+    vi_VN: "Điều hướng trang cá nhân"
+  description:
+    vi_VN: "Điều hướng trang cá nhân"
+  component: [default, localNav]
+
+friendListBox:
+  caption:
+    vi_VN: "Danh sách bạn bè"
+  description:
+    vi_VN: "Hiển thị một danh sách thành viên bạn bè"
+  component: [friend, friendListBox]
+  config:
+    row:
+      Name:      "row"
+      Caption:   "Số dòng hiển thị"
+      FormType:  "select"
+      ValueType:  "int"
+      IsRequired: true
+      Default:    6
+      Choices:    {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6}
+    col:
+      Name:      "col"
+      Caption:   "Số cột hiển thị"
+      FormType:  "select"
+      ValueType:  "int"
+      IsRequired: true
+      Default:    1
+      Choices:    {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6}
+    type:
+      Name:      "type"
+      Caption:   "Cách hiển thị"
+      FormType:  "radio"
+      ValueType: "text"
+      IsRequired: true
+      Default:    "full"
+      Choices:
+        full:       "Hiển thị hình ảnh và tên"
+        only_image: "Chỉ ảnh"
+        only_name:  "Chỉ tên"
+
+communityJoinListBox:
+  caption:
+    vi_VN: "Các cộng đồng đã tham gia"
+  description:
+    vi_VN: "Hiển thị một danh sách các đồng tham gia"
+  component: [community, joinListBox]
+  config:
+    row:
+      Name:      "row"
+      Caption:   "Số dòng hiển thị"
+      FormType:  "select"
+      ValueType:  "int"
+      IsRequired: true
+      Default:    10
+      Choices:    {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6}
+    col:
+      Name:      "col"
+      Caption:   "Số cột hiển thị"
+      FormType:  "select"
+      ValueType:  "int"
+      IsRequired: true
+      Default:    1
+      Choices:    {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6}
+    type:
+      Name:      "type"
+      Caption:   "Cách hiển thị"
+      FormType:  "radio"
+      ValueType: "text"
+      IsRequired: true
+      Default:    "full"
+      Choices:
+        full:       "Hiển thị hình ảnh và tên"
+        only_image: "Chỉ ảnh"
+        only_name:  "Chỉ tên"
+
+searchBox:
+  caption:
+    vi_VN: "Box tìm kiếm"
+  description:
+    vi_VN: "Hiển thị một hình thức tìm kiếm"
+  component: [default, searchBox]
+
+rssBox:
+  caption:
+    vi_VN: "Nguồn cấp dữ liệu RSS"
+  description:
+    vi_VN: "Hiển thị các URL được chỉ định cho các nguồn cấp dữ liệu RSS"
+  component: [default, rssBox]
+  config:
+    title:
+      Name:       "title"
+      Caption:    "Tiêu đề"
+      FormType:   "input"
+      ValueType:  "text"
+      IsRequired: false
+    url:
+      Name:       "url"
+      Caption:    "URL"
+      FormType:   "input"
+      ValueType:  "text"
+      IsRequired: false
+
+linkListBox:
+  caption:
+    vi_VN: "Liên kết"
+  description:
+    vi_VN: "Hiển thị một danh sách các liên kết quy định"
+  component: [default, linkListBox]
+  config:
+    title:
+      Name:       "title"
+      Caption:    "Tiêu đề"
+      FormType:   "input"
+      ValueType:  "text"
+      IsRequired: false
+<?php for ($i = 1; $i <= 10; $i++): ?>
+    url<?php echo $i ?>:
+      Name:       "url<?php echo $i ?>"
+      Caption:    "URL<?php echo $i ?>"
+      FormType:   "input"
+      ValueType:  "text"
+      IsRequired: false
+    text<?php echo $i ?>:
+      Name:       "text<?php echo $i ?>"
+      Caption:    "Tiêu đề Liên kết<?php echo $i ?>"
+      FormType:   "input"
+      ValueType:  "text"
+      IsRequired: false
+<?php endfor; ?>
+
+activityBox:
+  caption:
+    vi_VN: "Box hoạt động"
+  description:
+    vi_VN: "Xem hồ sơ của các hoạt động LifeMap trên danh tính người dùng và bạn bè của họ"
+  component: [friend, activityBox]
+  config:
+    row:
+      Name:     "row"
+      Caption:  "Số dòng hiển thị"
+      FormType: "select"
+      ValueType: "int"
+      IsRequired: true
+      Default:    5
+      Choices:    {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10}
+
+allMemberActivityBox:
+  caption:
+    vi_VN: "Các hoạt động của tất cả các thành viên"
+  description:
+    vi_VN: "Hiển thị một bản ghi của các hoạt động trên tất cả các LifeMap thành viên LifeMap"
+  component: [member, allMemberActivityBox]
+  config:
+    row:
+      Name:     "row"
+      Caption:  "Số dòng hiển thị"
+      FormType: "select"
+      ValueType: "int"
+      IsRequired: true
+      Default:    5
+      Choices:    {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10}
+    is_viewable_activity_form:
+      Name: "is_viewable_activity_form"
+      Caption: "Xem hoạt động Mẫu"
+      FormType: "radio"
+      ValueType: "int"
+      IsRequired: true
+      Default:    1
+      Choices:    {0: "No", 1: "Yes"}
+
+birthdayBox:
+  caption:
+    vi_VN: "Box Sinh nhật"
+  description:
+    vi_VN: "Bạn có thể thiết lập một hộp thông báo sinh nhật。"
+  component: [member, birthdayBox]
+  
+relatedActionMemberList:
+  caption:
+    vi_VN: "Danh sách những sự kiện liên quan tới member"
+  description:
+    vi_VN: "Danh sách những sự kiện liên quan tới member"
+  component: [member, relatedActionMemberList]

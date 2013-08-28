@@ -1,0 +1,48 @@
+#huent
+posEventContent:
+  caption:
+    vi_VN: "Nội dung của sự kiện"
+  description:
+    vi_VN: "Hiển thị nội dung của sự kiện"
+  viewable_privilege: 4
+  component: [event, eventContent]
+
+posEventPhotos:
+  caption:
+    vi_VN: "Danh sách ảnh của sự kiện"
+  description:
+    vi_VN: "Hiển thị danh sách ảnh của sự kiện"
+  viewable_privilege: 4
+  component: [event, eventPhotos]
+
+posEventComments:
+  caption:
+    vi_VN: "Cảm nhận về sự kiện"
+  description:
+    vi_VN: "Hiển thị các cảm nhận của thành viên về sự kiện"
+  viewable_privilege: 4
+  component: [event, eventComments]
+  
+posEventActions:
+  caption:
+    vi_VN: "Tác động của người dùng tới sự kiện"
+  description:
+    vi_VN: "Cho phép người dùng check-in, follow sự kiện"
+  viewable_privilege: 4
+  component: [event, posEventActions]
+
+listSimilarPosEvents:
+  caption:
+    vi_VN: "Danh sách các sự kiện cùng địa điểm"
+  description:
+    vi_VN: "Hiển thị danh sách các sự kiện cùng địa điểm với sự kiện đang xét"
+  viewable_privilege: 4
+  component: [event, listSimilarPosEvents]
+
+listNearEvents:
+  caption:
+    vi_VN: "Danh sách các sự kiện xung quanh sự kiện đang xét"
+  description:
+    vi_VN: "Danh sách các sự kiện xung quanh sự kiện đang xét"
+  viewable_privilege: 4
+  component: [event, listNearEvents]

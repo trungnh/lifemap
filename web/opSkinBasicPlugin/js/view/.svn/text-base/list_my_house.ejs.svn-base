@@ -1,0 +1,38 @@
+  <!-- template for my house list -->
+  <ul>
+      <% for(var i=0; i<list.length; i++) { %>
+          <li class="location-item" id="location-item-<%=list[i].id%>">
+              <% if(list[i].file_id) { %>
+                  <img class='img_40x40' src="<%='../../web/cache/img/jpg/w40_h40/'+ list[i].file_id + '_crop.jpg'%>" />
+              <% } else { %>
+                  <img class='img_40x40' src="../../web/images/no-image-yet.png" />
+              <% } %>
+
+              <div class="right-block">
+                  <div class="location-title">
+                      <a href="../pos/<%=list[i].id%>" target='_blank'><%=list[i].title %></a>
+                  </div>
+
+                  <div class="location-address">
+                    <%=list[i].address%>
+                  </div>
+                  <div class="location-note">
+                    <%=list[i].price+' '+list[i].unit_price %>
+                  </div>
+                  <div class="location-note">
+                    <%if(list[i].status == 0){%>
+                      <p class="unavailable">Hết phòng</p>
+                    <%}else{%>
+                      <p class="available">Còn phòng</p>
+                    <%}%>
+                  </div>
+                  <a class="location-edit edit-marker-listener" id="location-edit-<%= list[i].id %>">
+                      Chỉnh sửa
+                      <input type="hidden" value="<%= list[i].id %>" />
+                  </a>
+              </div>
+
+              <div class="clear"></div>
+          </li>
+      <% } %>
+  </ul>

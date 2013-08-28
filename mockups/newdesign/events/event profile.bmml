@@ -1,0 +1,601 @@
+<mockup version="1.0" skin="sketch" measuredW="1552" measuredH="1176" mockupW="1537" mockupH="1110">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="243" y="66" w="1309" h="1110" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <markup>true</markup>
+        <text>Ban%20do%20dia%20diem%0Ahttp%3A//lifemap.vn</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="243" y="113" w="1305" h="64" measuredW="24" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>545684</color>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::HRule" x="243" y="173" w="1309" h="-1" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::ButtonBar" x="244" y="91" w="397" h="29" measuredW="324" measuredH="29" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>1</selectedIndex>
+        <text>Trang%20dia%20diem%2C%20Bang%20tin%2CTrang%20ca%20nhan</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Image" x="276" y="124" w="157" h="42" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Link" x="1260" y="92" w="-1" h="-1" measuredW="64" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dang%20nhap</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Link" x="1340" y="92" w="-1" h="-1" measuredW="51" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dang%20ky</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="1421" y="92" w="-1" h="-1" measuredW="92" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Quen%20mat%20khau</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Button" x="641" y="91" w="908" h="27" measuredW="24" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::SearchBox" x="465" y="132" w="301" h="-1" measuredW="61" measuredH="25" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>bia%20hoi</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::VRule" x="382" y="179" w="-1" h="955" measuredW="5" measuredH="100" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::VRule" x="1388" y="178" w="-1" h="948" measuredW="5" measuredH="100" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::VRule" x="1042" y="178" w="-1" h="948" measuredW="5" measuredH="100" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::Label" x="459" y="189" w="-1" h="-1" measuredW="362" measuredH="26" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>18</size>
+        <text>Hi%20Fashion%20gia%u1EA3m%20gi%E1%20den%2040%25%20tu%20ng%E0y%2014/03</text>
+      </controlProperties>
+    </control>
+    <control controlID="80" controlTypeID="com.balsamiq.mockups::Label" x="551" y="216" w="278" h="20" measuredW="278" measuredH="20" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>So%204%2C%20Dien%20Bien%20Phu%2C%20phuong%20Phu%20Nhuan%2C%20Binh%20Thanh</text>
+      </controlProperties>
+    </control>
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::Label" x="553" y="252" w="176" h="21" measuredW="117" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>472931</color>
+        <text>Cua%20hang%20Hi%20Fashion</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="82" controlTypeID="com.balsamiq.mockups::Icon" x="395" y="192" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>BloggerIcon%7Clarge</icon>
+      </controlProperties>
+    </control>
+    <control controlID="84" controlTypeID="com.balsamiq.mockups::Button" x="1124" y="186" w="87" h="24" measuredW="68" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ThumbsUpIcon%7Cxsmall</icon>
+        <size>11</size>
+        <text>Thich</text>
+      </controlProperties>
+    </control>
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::Button" x="1227" y="185" w="98" h="23" measuredW="87" measuredH="27" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpdateIcon%7Cxsmall</icon>
+        <size>11</size>
+        <text>Tham%20gia</text>
+      </controlProperties>
+    </control>
+    <control controlID="118" controlTypeID="com.balsamiq.mockups::Accordion" x="1049" y="443" w="337" h="217" measuredW="158" measuredH="117" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>pos%20profile%26bm%3Bpos%20profile.bmml%26bm%3Bpos%20profile.bmml%26bm%3Bpos%20profile.bmml</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%221034%2C377%2C1371%2C407%22%20href%3D%22pos%2520profile.bmml%22%20alt%3D%22pos%20profile%22%20id%3D%22118_0%22/%3E%0A</map>
+        <text>C%E1c%20su%20kien%20cung%20dia%20diem</text>
+      </controlProperties>
+    </control>
+    <control controlID="119" controlTypeID="com.balsamiq.mockups::Paragraph" x="1111" y="479" w="278" h="19" measuredW="200" measuredH="140" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>799805</color>
+        <italic>false</italic>
+        <text>Hi%20Fashion%20gia%u1EA3m%20gi%E1%20den%2040%25%20tu%20ng%E0y%2014/03</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="120" controlTypeID="com.balsamiq.mockups::Image" x="1054" y="477" w="56" h="48" measuredW="77" measuredH="79" zOrder="21" locked="false" isInGroup="-1"/>
+    <control controlID="121" controlTypeID="com.balsamiq.mockups::Label" x="1114" y="498" w="112" h="20" measuredW="111" measuredH="20" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>14/03%20den%2024/03%20-%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="122" controlTypeID="com.balsamiq.mockups::Label" x="1226" y="498" w="112" h="20" measuredW="68" measuredH="20" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>Khuyen%20Mai</text>
+      </controlProperties>
+    </control>
+    <control controlID="123" controlTypeID="com.balsamiq.mockups::HRule" x="1055" y="529" w="322" h="-1" measuredW="100" measuredH="5" zOrder="24" locked="false" isInGroup="-1"/>
+    <control controlID="124" controlTypeID="com.balsamiq.mockups::Paragraph" x="1111" y="539" w="278" h="19" measuredW="200" measuredH="140" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>799805</color>
+        <italic>false</italic>
+        <text>Hi%20Fashion%20gia%u1EA3m%20gi%E1%20den%2040%25%20tu%20ng%E0y%2014/03</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="125" controlTypeID="com.balsamiq.mockups::Image" x="1054" y="537" w="56" h="48" measuredW="77" measuredH="79" zOrder="26" locked="false" isInGroup="-1"/>
+    <control controlID="126" controlTypeID="com.balsamiq.mockups::Label" x="1114" y="558" w="112" h="20" measuredW="111" measuredH="20" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>14/03%20den%2024/03%20-%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="127" controlTypeID="com.balsamiq.mockups::Label" x="1226" y="558" w="112" h="20" measuredW="68" measuredH="20" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>Khuyen%20Mai</text>
+      </controlProperties>
+    </control>
+    <control controlID="128" controlTypeID="com.balsamiq.mockups::HRule" x="1055" y="589" w="322" h="-1" measuredW="100" measuredH="5" zOrder="29" locked="false" isInGroup="-1"/>
+    <control controlID="129" controlTypeID="com.balsamiq.mockups::Paragraph" x="1109" y="599" w="278" h="19" measuredW="200" measuredH="140" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>799805</color>
+        <italic>false</italic>
+        <text>Hi%20Fashion%20gia%u1EA3m%20gi%E1%20den%2040%25%20tu%20ng%E0y%2014/03</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="130" controlTypeID="com.balsamiq.mockups::Image" x="1052" y="597" w="56" h="48" measuredW="77" measuredH="79" zOrder="31" locked="false" isInGroup="-1"/>
+    <control controlID="131" controlTypeID="com.balsamiq.mockups::Label" x="1112" y="618" w="112" h="20" measuredW="111" measuredH="20" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>14/03%20den%2024/03%20-%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="132" controlTypeID="com.balsamiq.mockups::Label" x="1224" y="618" w="112" h="20" measuredW="68" measuredH="20" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>Khuyen%20Mai</text>
+      </controlProperties>
+    </control>
+    <control controlID="160" controlTypeID="com.balsamiq.mockups::Label" x="1062" y="227" w="-1" h="-1" measuredW="88" measuredH="21" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>100%20thanh%20vien</text>
+      </controlProperties>
+    </control>
+    <control controlID="161" controlTypeID="com.balsamiq.mockups::Label" x="1211" y="226" w="-1" h="-1" measuredW="74" measuredH="21" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3%20thanh%20vien</text>
+      </controlProperties>
+    </control>
+    <control controlID="169" controlTypeID="com.balsamiq.mockups::Button" x="1150" y="225" w="34" h="24" measuredW="40" measuredH="27" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ThumbsUpIcon%7Cxsmall</icon>
+        <size>11</size>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="171" controlTypeID="com.balsamiq.mockups::Button" x="1291" y="225" w="33" h="23" measuredW="40" measuredH="27" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpdateIcon%7Cxsmall</icon>
+        <size>11</size>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="177" controlTypeID="com.balsamiq.mockups::HRule" x="396" y="385" w="641" h="-1" measuredW="100" measuredH="5" zOrder="38" locked="false" isInGroup="-1"/>
+    <control controlID="178" controlTypeID="com.balsamiq.mockups::Label" x="397" y="362" w="-1" h="-1" measuredW="57" measuredH="22" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Hinh%20Anh</text>
+      </controlProperties>
+    </control>
+    <control controlID="179" controlTypeID="com.balsamiq.mockups::Image" x="401" y="395" w="142" h="134" measuredW="77" measuredH="79" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="180" controlTypeID="com.balsamiq.mockups::Image" x="564" y="398" w="142" h="134" measuredW="77" measuredH="79" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="181" controlTypeID="com.balsamiq.mockups::Image" x="729" y="398" w="142" h="134" measuredW="77" measuredH="79" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="182" controlTypeID="com.balsamiq.mockups::Image" x="889" y="401" w="142" h="134" measuredW="77" measuredH="79" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="183" controlTypeID="com.balsamiq.mockups::HRule" x="392" y="585" w="641" h="-1" measuredW="100" measuredH="5" zOrder="44" locked="false" isInGroup="-1"/>
+    <control controlID="184" controlTypeID="com.balsamiq.mockups::Label" x="393" y="562" w="-1" h="-1" measuredW="68" measuredH="22" zOrder="45" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Cam%20nhan</text>
+      </controlProperties>
+    </control>
+    <control controlID="185" controlTypeID="com.balsamiq.mockups::Image" x="396" y="592" w="69" h="59" measuredW="77" measuredH="79" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="186" controlTypeID="com.balsamiq.mockups::Label" x="469" y="592" w="-1" h="-1" measuredW="504" measuredH="21" zOrder="47" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hi%20Thuclh%2C%20chia%20se%20cam%20nhan%20ve%20Khuyen%20mai%20%3A%20Hi%20Fashion%20gia%u1EA3m%20gi%E1%20den%2040%25%20tu%20ng%E0y%2014/03</text>
+      </controlProperties>
+    </control>
+    <control controlID="188" controlTypeID="com.balsamiq.mockups::TextArea" x="470" y="613" w="541" h="67" measuredW="200" measuredH="140" zOrder="48" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="190" controlTypeID="com.balsamiq.mockups::Icon" x="574" y="680" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="49" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CameraIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="191" controlTypeID="com.balsamiq.mockups::Icon" x="610" y="682" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="50" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>LinkIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="192" controlTypeID="com.balsamiq.mockups::Image" x="396" y="726" w="47" h="40" measuredW="77" measuredH="79" zOrder="51" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="193" controlTypeID="com.balsamiq.mockups::HRule" x="384" y="715" w="651" h="-1" measuredW="100" measuredH="5" zOrder="52" locked="false" isInGroup="-1"/>
+    <control controlID="194" controlTypeID="com.balsamiq.mockups::Label" x="454" y="722" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="53" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>799805</color>
+        <text>thuclh</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="195" controlTypeID="com.balsamiq.mockups::Label" x="497" y="722" w="-1" h="-1" measuredW="79" measuredH="21" zOrder="54" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%2015/12/2011</text>
+      </controlProperties>
+    </control>
+    <control controlID="196" controlTypeID="com.balsamiq.mockups::Label" x="454" y="743" w="-1" h="-1" measuredW="179" measuredH="21" zOrder="55" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Giam%20gia%20mot%20so%20mat%20hang%20thoi</text>
+      </controlProperties>
+    </control>
+    <control controlID="197" controlTypeID="com.balsamiq.mockups::HRule" x="400" y="773" w="637" h="-1" measuredW="100" measuredH="5" zOrder="56" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="198" controlTypeID="com.balsamiq.mockups::Image" x="396" y="784" w="47" h="40" measuredW="77" measuredH="79" zOrder="57" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="199" controlTypeID="com.balsamiq.mockups::Label" x="454" y="780" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="58" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>799805</color>
+        <text>thuclh</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="200" controlTypeID="com.balsamiq.mockups::Label" x="497" y="780" w="-1" h="-1" measuredW="79" measuredH="21" zOrder="59" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%2015/12/2011</text>
+      </controlProperties>
+    </control>
+    <control controlID="201" controlTypeID="com.balsamiq.mockups::Label" x="454" y="801" w="-1" h="-1" measuredW="71" measuredH="21" zOrder="60" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Khong%20co%20gi</text>
+      </controlProperties>
+    </control>
+    <control controlID="202" controlTypeID="com.balsamiq.mockups::HRule" x="400" y="831" w="637" h="-1" measuredW="100" measuredH="5" zOrder="61" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="203" controlTypeID="com.balsamiq.mockups::Image" x="396" y="844" w="47" h="40" measuredW="77" measuredH="79" zOrder="62" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="204" controlTypeID="com.balsamiq.mockups::Label" x="454" y="840" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="63" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>799805</color>
+        <text>thuclh</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="205" controlTypeID="com.balsamiq.mockups::Label" x="497" y="840" w="-1" h="-1" measuredW="79" measuredH="21" zOrder="64" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%2015/12/2011</text>
+      </controlProperties>
+    </control>
+    <control controlID="206" controlTypeID="com.balsamiq.mockups::Label" x="454" y="861" w="-1" h="-1" measuredW="270" measuredH="21" zOrder="65" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Shop%20da%20dang%20mau%20ma%2C%20mua%20tang%20ban%20gai%20tuyet%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="207" controlTypeID="com.balsamiq.mockups::HRule" x="400" y="891" w="637" h="-1" measuredW="100" measuredH="5" zOrder="66" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="208" controlTypeID="com.balsamiq.mockups::Image" x="396" y="902" w="47" h="40" measuredW="77" measuredH="79" zOrder="67" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="209" controlTypeID="com.balsamiq.mockups::Label" x="454" y="898" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="68" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>799805</color>
+        <text>thuclh</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="210" controlTypeID="com.balsamiq.mockups::Label" x="497" y="898" w="-1" h="-1" measuredW="79" measuredH="21" zOrder="69" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%2015/12/2011</text>
+      </controlProperties>
+    </control>
+    <control controlID="211" controlTypeID="com.balsamiq.mockups::Label" x="454" y="919" w="-1" h="-1" measuredW="270" measuredH="21" zOrder="70" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Shop%20da%20dang%20mau%20ma%2C%20mua%20tang%20ban%20gai%20tuyet%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="213" controlTypeID="com.balsamiq.mockups::Label" x="15" y="602" w="367" h="40" measuredW="788" measuredH="21" zOrder="71" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hi%20ban%2C%20ban%20co%20the%20chia%20se%20cam%20nhan%20ve%20Khuyen%20Mai%20%3A%20Hi%20Fashion%20gia%u1EA3m%20gi%E1%20den%2040%25%20tu%20ng%E0y%2014/03.%20Vui%20long%20dang%20nhap%20%28dang%20ky%29%20chia%20se%20nhe%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="214" controlTypeID="com.balsamiq.mockups::Icon" x="1065" y="915" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="72" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>FacebookIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="215" controlTypeID="com.balsamiq.mockups::HRule" x="1042" y="907" w="349" h="-1" measuredW="100" measuredH="5" zOrder="73" locked="false" isInGroup="-1"/>
+    <control controlID="216" controlTypeID="com.balsamiq.mockups::Label" x="1049" y="886" w="169" h="22" measuredW="152" measuredH="22" zOrder="74" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Chia%20se%20khuyen%20mai%20nay</text>
+      </controlProperties>
+    </control>
+    <control controlID="217" controlTypeID="com.balsamiq.mockups::Paragraph" x="1091" y="919" w="163" h="19" measuredW="200" measuredH="140" zOrder="75" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <color>2848996</color>
+        <italic>false</italic>
+        <text>Chia%20se%20qua%20Facebook</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="219" controlTypeID="com.balsamiq.mockups::Icon" x="1065" y="945" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="76" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>EmailIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="220" controlTypeID="com.balsamiq.mockups::Paragraph" x="1091" y="949" w="163" h="19" measuredW="200" measuredH="140" zOrder="77" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <color>2848996</color>
+        <italic>false</italic>
+        <text>Chia%20se%20voi%20ban%20be</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="221" controlTypeID="com.balsamiq.mockups::Icon" x="1065" y="975" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="78" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>DocWordIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="222" controlTypeID="com.balsamiq.mockups::Paragraph" x="1091" y="979" w="163" h="19" measuredW="200" measuredH="140" zOrder="79" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <color>2848996</color>
+        <italic>false</italic>
+        <text>Chia%20se%20qua%20Zing</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="235" controlTypeID="com.balsamiq.mockups::Paragraph" x="461" y="280" w="567" h="34" measuredW="200" measuredH="140" zOrder="80" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>Ba%u0323n%20se%u0303%20%u0111%u01B0%u01A1%u0323c%20gi%u1EA3am%20gi%E1%20t%u1EEB%2010%25%20%u0111%u1EBFen%2040%25%20va%u0300%20c%F3%20c%u01A1%20h%u1ED9oi%20mua%20m%u1ED9ot%20s%u1ED1%20m%u1EABua%20%E1o%20hoa%u1EB7c%20%u0111dam%20kh%E1c%20v%u1EDBoi%20gi%E1%20ch%u1EC9i%2083.000%20%u0111%u1ED3ong%20ho%u1EB7ac%20183.000%20%u0111%u1ED3ong.</text>
+      </controlProperties>
+    </control>
+    <control controlID="236" controlTypeID="com.balsamiq.mockups::Label" x="460" y="253" w="104" h="19" measuredW="69" measuredH="20" zOrder="81" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>472931</color>
+        <size>12</size>
+        <text>Khuyen%20mai</text>
+      </controlProperties>
+    </control>
+    <control controlID="237" controlTypeID="com.balsamiq.mockups::Label" x="458" y="233" w="-1" h="-1" measuredW="252" measuredH="20" zOrder="82" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13369344</color>
+        <size>12</size>
+        <text>Tu%3A%2010/03/2012%2012%3A00%20den%2015/03/2012%2012%3A00</text>
+      </controlProperties>
+    </control>
+    <control controlID="238" controlTypeID="com.balsamiq.mockups::Label" x="459" y="216" w="94" h="20" measuredW="87" measuredH="20" zOrder="83" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>0438726637%20-</text>
+      </controlProperties>
+    </control>
+    <control controlID="239" controlTypeID="com.balsamiq.mockups::Paragraph" x="661" y="293" w="96" h="19" measuredW="200" measuredH="140" zOrder="84" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>799805</color>
+        <italic>false</italic>
+        <text>Xem%20chi%20tiet</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="240" controlTypeID="com.balsamiq.mockups::Paragraph" x="529" y="255" w="31" h="18" measuredW="200" measuredH="140" zOrder="85" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>12</size>
+        <text>tai%20%3A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="241" controlTypeID="com.balsamiq.mockups::Label" x="1077" y="187" w="-1" h="-1" measuredW="27" measuredH="21" zOrder="86" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ban</text>
+      </controlProperties>
+    </control>
+    <control controlID="242" controlTypeID="com.balsamiq.mockups::Accordion" x="1048" y="673" w="337" h="217" measuredW="200" measuredH="117" zOrder="87" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>pos%20profile%26bm%3Bpos%20profile.bmml%26bm%3Bpos%20profile.bmml%26bm%3Bpos%20profile.bmml</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%221033%2C607%2C1370%2C637%22%20href%3D%22pos%2520profile.bmml%22%20alt%3D%22pos%20profile%22%20id%3D%22242_0%22/%3E%0A</map>
+        <text>Cac%20Khuyen%20mai%20tuong%20tu%20gan%20day</text>
+      </controlProperties>
+    </control>
+    <control controlID="243" controlTypeID="com.balsamiq.mockups::Paragraph" x="1110" y="709" w="278" h="19" measuredW="200" measuredH="140" zOrder="88" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>799805</color>
+        <italic>false</italic>
+        <text>Hi%20Fashion%20gia%u1EA3m%20gi%E1%20den%2040%25%20tu%20ng%E0y%2014/03</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="244" controlTypeID="com.balsamiq.mockups::Image" x="1053" y="707" w="56" h="48" measuredW="77" measuredH="79" zOrder="89" locked="false" isInGroup="-1"/>
+    <control controlID="245" controlTypeID="com.balsamiq.mockups::Label" x="1113" y="728" w="112" h="20" measuredW="111" measuredH="20" zOrder="90" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>14/03%20den%2024/03%20-%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="246" controlTypeID="com.balsamiq.mockups::Label" x="1225" y="728" w="112" h="20" measuredW="68" measuredH="20" zOrder="91" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>Khuyen%20Mai</text>
+      </controlProperties>
+    </control>
+    <control controlID="247" controlTypeID="com.balsamiq.mockups::HRule" x="1054" y="759" w="322" h="-1" measuredW="100" measuredH="5" zOrder="92" locked="false" isInGroup="-1"/>
+    <control controlID="248" controlTypeID="com.balsamiq.mockups::Paragraph" x="1110" y="769" w="278" h="19" measuredW="200" measuredH="140" zOrder="93" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>799805</color>
+        <italic>false</italic>
+        <text>Hi%20Fashion%20gia%u1EA3m%20gi%E1%20den%2040%25%20tu%20ng%E0y%2014/03</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="249" controlTypeID="com.balsamiq.mockups::Image" x="1053" y="767" w="56" h="48" measuredW="77" measuredH="79" zOrder="94" locked="false" isInGroup="-1"/>
+    <control controlID="250" controlTypeID="com.balsamiq.mockups::Label" x="1113" y="788" w="112" h="20" measuredW="111" measuredH="20" zOrder="95" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>14/03%20den%2024/03%20-%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="251" controlTypeID="com.balsamiq.mockups::Label" x="1225" y="788" w="112" h="20" measuredW="68" measuredH="20" zOrder="96" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>Khuyen%20Mai</text>
+      </controlProperties>
+    </control>
+    <control controlID="252" controlTypeID="com.balsamiq.mockups::HRule" x="1054" y="819" w="322" h="-1" measuredW="100" measuredH="5" zOrder="97" locked="false" isInGroup="-1"/>
+    <control controlID="253" controlTypeID="com.balsamiq.mockups::Paragraph" x="1108" y="829" w="278" h="19" measuredW="200" measuredH="140" zOrder="98" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>799805</color>
+        <italic>false</italic>
+        <text>Hi%20Fashion%20gia%u1EA3m%20gi%E1%20den%2040%25%20tu%20ng%E0y%2014/03</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="254" controlTypeID="com.balsamiq.mockups::Image" x="1051" y="827" w="56" h="48" measuredW="77" measuredH="79" zOrder="99" locked="false" isInGroup="-1"/>
+    <control controlID="255" controlTypeID="com.balsamiq.mockups::Label" x="1111" y="848" w="112" h="20" measuredW="111" measuredH="20" zOrder="100" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>14/03%20den%2024/03%20-%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="256" controlTypeID="com.balsamiq.mockups::Label" x="1223" y="848" w="112" h="20" measuredW="68" measuredH="20" zOrder="101" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>12</size>
+        <text>Khuyen%20Mai</text>
+      </controlProperties>
+    </control>
+    <control controlID="257" controlTypeID="com.balsamiq.mockups::Map" x="1050" y="258" w="335" h="168" measuredW="252" measuredH="222" zOrder="102" locked="false" isInGroup="-1"/>
+    <control controlID="258" controlTypeID="com.balsamiq.mockups::Label" x="1301" y="999" w="-1" h="-1" measuredW="76" measuredH="20" zOrder="103" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>545684</color>
+        <size>12</size>
+        <text>Canh%20bao%20xau</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="259" controlTypeID="com.balsamiq.mockups::Button" x="483" y="682" w="83" h="23" measuredW="79" measuredH="27" zOrder="104" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>BaloonIcon%7Cxsmall</icon>
+        <size>11</size>
+        <text>Chia%20se</text>
+      </controlProperties>
+    </control>
+    <control controlID="260" controlTypeID="com.balsamiq.mockups::Image" x="958" y="726" w="53" h="47" measuredW="77" measuredH="79" zOrder="105" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="261" controlTypeID="com.balsamiq.mockups::Label" x="648" y="742" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="106" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>799805</color>
+        <text>Xem%20them</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="262" controlTypeID="com.balsamiq.mockups::Label" x="726" y="860" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="107" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>799805</color>
+        <text>Xem%20them</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,36 @@
+<h1><%=title%></h1>
+<ul>
+    <% for(var i=0; i<list.length; i++) { %>
+        <li class="location-item" id="location-item-<%=list[i].id%>">
+            <img class='img_40x40' src="<%=list[i].file_img%>" />
+            <div class="right-block">
+                <div class="location-title">
+                    <%=list[i].pos_url %>
+                </div>
+
+                <div class="location-address">
+                  <%=list[i].address%>
+                </div>
+                <%if(list[i].numOfMember){%>
+                    <div class="location-note">
+                      <%=list[i].numOfMember%>
+                    </div>
+                <%}%>
+                <%if(list[i].comment){%>
+                    <div class="location-note">
+                      <%=list[i].comment%>
+                    </div>
+                <%}%>
+                <%if(list[i].follow){%>
+                    <div class="location-note">
+                      <%=list[i].follow%>
+                    </div>
+                <%}%>
+            </div>
+            <%latlng = list[i].lat + ',' + list[i].lng%>
+            <a href="<%='?address=' + list[i].address + '&latlng=' + latlng%>" class="start_way operation-link" >Từ đây</a>
+            <a href="<%='?address=' + list[i].address + '&latlng=' + latlng%>" class="end_way operation-link" >Đến đây</a>
+            <div class="clear"></div>
+        </li>
+    <% } %>
+</ul>

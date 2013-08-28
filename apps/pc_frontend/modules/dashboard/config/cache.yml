@@ -1,0 +1,63 @@
+_newPosList:
+  enabled: on
+  lifetime: 60
+
+_memberCheckinNewPosList:
+  enabled: on
+  lifetime: 60
+
+_newCommentPosList:
+  enabled: on
+  lifetime: 60
+
+_memberFollowPosList:
+  enabled: on
+  lifetime: 60
+
+_memberCommentPosList:
+  enabled: on
+  lifetime: 60
+
+_memberCheckinPosList:
+  enabled: on
+  lifetime: 60
+
+_newPhotoPosList:
+  enabled: on
+  lifetime: 60
+
+_newMemberList:
+  enabled: on
+  lifetime: 60
+
+_memberPositiveList:
+  enabled: on
+  lifetime: 60
+
+_newPhotoMemberList:
+  enabled: on
+  lifetime: 60
+
+_newRentHouseList:
+  enabled: on
+  lifetime: 60
+
+_updateStatusRentHouseList:
+  enabled: on
+  lifetime: 60
+
+_newCommentRentHouseList:
+  enabled: on
+  lifetime: 60
+
+_manyFollowRentHouseList:
+  enabled: on
+  lifetime: 60
+
+_manyCommentRentHouseList:
+  enabled: on
+  lifetime: 60
+
+_newPhotoRentHouseList:
+  enabled: on
+  lifetime: 60

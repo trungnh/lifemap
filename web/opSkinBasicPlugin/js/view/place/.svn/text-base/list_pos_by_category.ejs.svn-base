@@ -1,0 +1,89 @@
+<h1><%=title%></h1>
+<ul>
+    <% for(var i=0; i<list.length; i++) { %>
+        <li class="location-item" id="location-item-<%=list[i].id%>">
+            <div class="location-item-left">
+                <div class="content_item">
+                    <img class='img_40x40' src="<%=list[i].file_category%>" />
+                    <div class="right-block">
+                        <div class="location-title">
+                            <%=list[i].pos_url %>
+                        </div>
+
+                        <div class="location-address">
+                          <%=list[i].address%>
+                        </div>
+                        <div class="location-note">
+                          <%=list[i].count_checkin%> Đã đến | <%=list[i].count_comment%> cảm nhận | <%=list[i].count_follow%> quan tâm
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <%if(list[i].event_title){%>
+                    <div class="content_event">
+                        <img class='img_40x40' src="<%=list[i].event_image%>" />
+                        <div class="right-block">
+                            <div class="location-title">
+                                <a href='# '><%=list[i].event_title %></a>
+                            </div>
+                            <div class="location-event"><%=list[i].category_event%></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                <%}%>
+                <%if(list[i].newest_comment){%>
+                    <div class="content_event">
+                        <img class='img_40x40' src="<%=list[i].member_comment_image%>"/>
+                        <div class="right-block">
+                            <div class="location-address">
+                                <%=list[i].newest_comment+' '%><%=list[i].member_comment %>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                <%}%>
+            </div>
+            <div class="location-item-right">
+                <div id="pos_actions">
+                    <input type='hidden' id="pos_id" value="<%=list[i].id%>"/>
+                    <ul>
+                    <%if(!list[i].checkin_again){ %>
+                      <li><div id='pos_checkin_box'><a href="#" id="pos_checkin" title="Đánh dấu bạn đang ở đây">Đ</a></div></li>
+                    <%}else{
+                        if(list[i].checkin_again == 0){%>
+                          <li><a href="#" title="Bạn đang ở đây từ lúc <%=list[i].time_of_checkin%>"> Đ</a></li>
+                        <%}%>
+                        <%if(list[i].checkin_again == 1){%>
+                              <li><div id='pos_checkin_box'><a href="#" id="pos_checkin" title="Bạn đã ở đây vào lúc <%=list[i].time_of_checkin%>">Đ</a></div></li>
+                        <%}%>
+                        <%if(list[i].checkin_again == 2){%>
+                             <li><a href="#"  title="Bạn đã ở đây vào lúc <%=list[i].time_of_checkin%>">Đ</a></li>
+                        <%}%>
+                    <%}%>
+                    <li>|</li>
+                    <%if(!list[i].follow_status){%>
+                     <li><div id='pos_follow_box'><a href="#" id="pos_follow" title="Quan tâm địa điểm này">Q</a></div></li>
+                    <%}else{
+                        if(list[i].follow_status==1){%>
+                          <li><a href="#" title="Bạn đang quan tâm địa điểm này">Q</a></li>
+                        <%}else{%>
+                          <li><div id='pos_follow_box'><a href="#" id="pos_follow" title="Quan tâm địa điểm này">Q</a></div></li>
+                          <%}
+                        }%>
+                    </ul>
+                </div>
+                <%if(list[i].file_img){%>
+                    <img class='img_120x120' src="<%=list[i].file_img%>" title="<%=list[i].title%>"/>
+                <%}%>
+            </div>
+            <div class="clear"></div>
+            <div class="location-item-bottom">
+                <%latlng = list[i].lat + ',' + list[i].lng%>
+                <a href="<%='?address=' + list[i].address + '&latlng=' + latlng%>" class="start_way operation-link" title="Tìm đường đi từ điểm này">Từ đây</a>
+                <a href="<%='?address=' + list[i].address + '&latlng=' + latlng%>" class="end_way operation-link" title="Tìm đường đi tới điểm này">Đến đây</a>
+                <a href="pos/sendMailForm?id=<%=list[i].id%>" id="pos_send_mail" title="Gửi mail đặt lịch hẹn với bạn bè" class="ajax operation-link">Gửi mail</a>
+            </div>
+            <div class="clear"></div>
+        </li>
+    <% } %>
+</ul>
