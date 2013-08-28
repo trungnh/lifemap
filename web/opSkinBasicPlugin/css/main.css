@@ -120,7 +120,7 @@ body {
 #header_container {
     border-top: 1px solid #245279;
     background: #37538c;
-    height: 82px;
+    height: 55px;
     width: 100%;
 }
 .header_nav {
@@ -213,6 +213,7 @@ body {
     margin-top: 17px;
     margin-left: 200px;
     height: 16px;
+    float: left;
 }
 
 
