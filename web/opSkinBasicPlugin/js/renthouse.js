@@ -354,12 +354,6 @@ $(document).ready(function () {
                     });
                     $("#result-search").html(html);
 
-                    var total_search = new EJS({
-                        url: root_rent_house +'/view/total_search_house'
-                    }).render({
-                        total:data.total
-                    });
-                    $("#total_search").html(total_search);
                     //display marker
                     deleteOverlays();
 
