@@ -16,7 +16,7 @@
 <div id="pagingmap_main" class="paging_map">
 
 </div>
-<div class="wait_load"><?php echo image_tag('24.gif'); ?></div>
+<!--<div class="wait_load">--><?php //echo image_tag('24.gif'); ?><!--</div>-->
 
 <div id="show-button-container">
     <span id="show-button" title="Hiện ra">&nbsp;</span>
