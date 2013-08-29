@@ -118,10 +118,10 @@ body {
 /********** HEADER**********/
 
 #header_container {
-    background: #f1f1f1;
-    height: 55px;
+    border-top: 1px solid #245279;
+    background: #37538c;
+    height: 82px;
     width: 100%;
-    box-shadow: 0 0 2px #333;-webkit-box-shadow: 0 0 2px #333;-moz-box-shadow: 0 0 2px #333;
 }
 .header_nav {
     margin: 0 auto;
@@ -129,7 +129,6 @@ body {
 
 #login-nav {
     float: right;
-    margin-top: 15px;
 }
 
 #header_container li {
@@ -211,10 +210,9 @@ body {
 }
 
 #searchbox {
-    margin-top: 13px;
-    margin-left: 10%;
+    margin-top: 17px;
+    margin-left: 200px;
     height: 16px;
-    float: left;
 }
 
 
@@ -309,6 +307,7 @@ body {
 #main_container{
     width: 100%;
     height: 100%;
+    border-top: 1px solid #eaeaea;
     position: relative;
     z-index: 1;
     /* background: url("../images/bg_main.gif") repeat ; */
@@ -853,9 +852,8 @@ ul.inline li {display: inline;}
 #userMenu p a {
     display: block;
     font-size: 12px;
-    font-family: arial;
     color: #8ab4da !important;
-    font-weight: bold;
+    font-weight: normal;
     padding: 4px 10px;
     text-decoration: none;
     float: left;
@@ -980,11 +978,12 @@ ul.inline li {display: inline;}
     -moz-font-feature-settings: inherit;
     -moz-font-language-override: inherit;
     background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #4d90fe;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
     font-family: inherit;
     font-size: 12px;
     font-weight: normal;
-    padding: 5px;
+    padding: 3px 5px 6px 6px;
     z-index: 40;
     position: relative;
     width: 350px;
@@ -998,24 +997,16 @@ ul.inline li {display: inline;}
     color: #666666;
 }
 .searchbox .btn {
-    background: url(../images/btn.jpg) no-repeat;
+    background: url("../images/search-button.png") no-repeat scroll 0 0 transparent;
     color: #FFFFFF;
     cursor: pointer;
-    height: 29px;
+    float: right;
+    height: 24px;
     position: absolute;
-    right: -78px;
-    top: -1px;
-    width: 70px;
-    border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;
+    right: -36px;
+    top: 1px;
+    width: 30px;
 }
-/*.searchbox .btn:before{
-    width: 10px;height: 10px;
-    border-radius: 100%;-moz-border-radius: 100%;-webkit-border-radius: 100%;
-    border: 2px solid #fff;
-    background: transparent;
-    position: absolute;
-    top: 10px;
-}*/
 
 
 /*==============================================================================

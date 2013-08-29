@@ -2,7 +2,8 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn: 'mysql:dbname=lifemap;host=localhost;port=3306'
+      dsn: 'mysql:host=localhost;dbname=lifemap'
       username: root
+      password: 
       encoding: utf8
-      attributes: { 164: true }
+      attributes: { 164: true }	  
