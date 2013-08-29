@@ -122,6 +122,8 @@ body {
     height: 55px;
     width: 100%;
     box-shadow: 0 0 2px #333;-webkit-box-shadow: 0 0 2px #333;-moz-box-shadow: 0 0 2px #333;
+    position: relative;
+    z-index: 10;
 }
 .header_nav {
     margin: 0 auto;
