@@ -118,7 +118,7 @@ body {
 /********** HEADER**********/
 
 #header_container {
-    background: #2d2d2d;
+    background: #f1f1f1;
     height: 55px;
     width: 100%;
     box-shadow: 0 0 2px #333;-webkit-box-shadow: 0 0 2px #333;-moz-box-shadow: 0 0 2px #333;
@@ -980,12 +980,11 @@ ul.inline li {display: inline;}
     -moz-font-feature-settings: inherit;
     -moz-font-language-override: inherit;
     background: none repeat scroll 0 0 #FFFFFF;
-    border: medium none;
-    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #4d90fe;
     font-family: inherit;
     font-size: 12px;
     font-weight: normal;
-    padding: 3px 5px 6px 6px;
+    padding: 5px;
     z-index: 40;
     position: relative;
     width: 350px;
@@ -999,16 +998,24 @@ ul.inline li {display: inline;}
     color: #666666;
 }
 .searchbox .btn {
-    background: url("../images/search-button.png") no-repeat scroll 0 0 transparent;
+    background: url(../images/btn.jpg) no-repeat;
     color: #FFFFFF;
     cursor: pointer;
-    float: right;
-    height: 24px;
+    height: 29px;
     position: absolute;
-    right: -36px;
-    top: 1px;
-    width: 30px;
+    right: -78px;
+    top: -1px;
+    width: 70px;
+    border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;
 }
+/*.searchbox .btn:before{
+    width: 10px;height: 10px;
+    border-radius: 100%;-moz-border-radius: 100%;-webkit-border-radius: 100%;
+    border: 2px solid #fff;
+    background: transparent;
+    position: absolute;
+    top: 10px;
+}*/
 
 
 /*==============================================================================
