@@ -1,5 +1,5 @@
 #leftCol {
-    width: 521px;
+    width: 381px;
     float:left;
     padding: 3px 0px;
     font-family: verdana, san-serif;
@@ -165,8 +165,8 @@ location-note
 #main_container .paging_map {
     height: 25px;
     position: absolute;
-    left: 300px;
-    top: 2px;
+    left: 256px;
+    top: 12px;
     width: 120px;
     z-index: 100;
 }
@@ -1486,4 +1486,31 @@ location-note
     background: #bcd5ac;
     font-size: 10px;
     color: black;
+}
+#left-col-nav{
+    height: 44px;
+    border-bottom: 1px solid #ebebeb;
+    background: white;
+}
+
+.kd-button{
+    margin-left: 0px !important;
+    border: 1px 1px 1px 1px solid #ddd;
+    border: 1px solid #c6c6c6;
+    min-width: 40px;
+    height: 27px;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 27px;
+    font-size: 85%;
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    color: #333 !important;
+    padding: 0px 8px;
+    margin-right: 8px;
+}
+#left-col-nav ul{
+    margin-left: 8px;
+    margin-top: 8px;
 }
