@@ -46,7 +46,7 @@ form{padding: 0px;	margin: 0px;}
 /* Input boxes - just a bit smaller than normal so they align well. */
 input, textarea, button, select{	font: Verdana, Arial, Helvetica, sans-serif;border: 1px solid #d8d8d4;}
 
-
+input:focus, textarea:focus{outline: none;}
 textarea{
     font-size: 100%;
     font-family: verdana, arial, tahoma,  sans-serif;
