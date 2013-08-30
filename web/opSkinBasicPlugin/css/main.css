@@ -856,7 +856,7 @@ ul.inline li {display: inline;}
     display: block;
     font-size: 12px;
     font-family: arial;
-    color: #8ab4da !important;
+    color: #15c !important;
     font-weight: bold;
     padding: 4px 10px;
     text-decoration: none;
@@ -3357,14 +3357,6 @@ table.box-lfriend tr td .border-external-nom{ margin: 0 auto ; margin-top: 30px;
     float: right;
 }
 
-#login-problem a:hover {
-    background-color: #4C4C4C;
-    background-image: none;
-    background-position: 0 -102px;
-    background-repeat: repeat-x;
-    outline: medium none;
-    text-decoration: none !important;
-}
 
 #login-problem .login-choice {
     float: left;
