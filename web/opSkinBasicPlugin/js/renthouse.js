@@ -399,19 +399,8 @@ $(document).ready(function () {
     function hide_rh_searchform() {
         // ẩn form tìm kiếm
         $('#info-search').slideUp();
-        $('.show_frm_search').html("<a class='ok-button'>Hiện form tìm kiếm</a>");
     }
-    $('.show_frm_search').live('click',function(){
-        if( $('.show_frm_search').hasClass('hide')){
-            $('.show_frm_search').removeClass('hide');
-            $('#info-search').slideUp();
-            $('.show_frm_search').html("<a class='ok-button'>Hiện form tìm kiếm</a>");
-        }else{
-            $('#info-search').show();
-            $('.show_frm_search').addClass('hide');
-            $('.show_frm_search').html("<a class='ok-button'>Ẩn form tìm kiếm</a>");
-        }
-    });
+
     // load my house
     function loadMyHouse(current_page){
         var bound = map.getBounds();
@@ -1697,6 +1686,15 @@ $(document).ready(function () {
         $('#photo-nav-content').html('');
         $('#notification').html('');
     }
+
+    /**Chọn tỉnh thành*/
+    $(".select-city").change(function(){
+        var value = $(this).val();
+        var position = value?value.split(/,/):null;
+        setMapCenter(new google.maps.LatLng(position[0],position[1]));
+        page = 1;
+        loadSearchRentHouse(page);
+    });
     
     /* tuent
      * update nhà

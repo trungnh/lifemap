@@ -14,7 +14,7 @@ class rentHouseActions extends lfPosPluginActions {
      * action để chạy đến view rentHouseSuccess
      */
     function executeRentHouse(sfWebRequest $request) {
-
+        $this->provinces = opToolkit::getDealProvinces();
     }
     /*
      * tuent
@@ -24,9 +24,9 @@ class rentHouseActions extends lfPosPluginActions {
         $output = array();
         $output['is_login'] = false;
 
-        if ($this->getUser()->getMemberId()) {
+//        if ($this->getUser()->getMemberId()) {
             $output['is_login'] = true;
-        }
+//        }
 
         echo json_encode($output);
 
@@ -41,7 +41,7 @@ class rentHouseActions extends lfPosPluginActions {
             'max_lat' => $request->getParameter("max_lat", 0),
             'min_lng' => $request->getParameter("min_lng", 0),
             'max_lng' => $request->getParameter("max_lng", 0),
-            //'type_rent_house' => $request->getParameter("type_rent_house"),
+            'type_rent_house' => $request->getParameter("type_rent_house"),
             'time_post' => $request->getParameter("time_post"),
             'price'     => $request->getParameter("price"),
             'area'      => $request->getParameter("area"),
