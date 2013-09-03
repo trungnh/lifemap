@@ -35,7 +35,7 @@ $(document).ready(function () {
         // config window
         var viewHeight = $(window).height();
         $("#map").css('height', viewHeight - 85+"px");
-        $("#leftCol").css({
+        $("#left-col-display").css({
             'height': viewHeight - 105+"px",
             'overflow': 'auto'
         });
@@ -1115,6 +1115,18 @@ $(document).ready(function () {
         
         /* hiển thị rightcol */
         showRightCol();
+        jQuery("#leftCol").hide();
+        jQuery("#show-left-col").show();
+    });
+
+    $("#show-left-col").live('click', function(){
+        jQuery("#leftCol").show();
+        jQuery("#show-left-col").hide();
+    });
+
+    $("#hide-left-col").live('click', function(){
+        jQuery("#leftCol").hide();
+        jQuery("#show-left-col").show();
     });
    
     /*

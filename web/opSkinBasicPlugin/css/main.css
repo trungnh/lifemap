@@ -4289,3 +4289,41 @@ textarea.formStyle {
 .image-coment{
     float: right;
 }
+.expand-left {
+    background: no-repeat url('//maps.gstatic.com/mapfiles/hpimgs28.png') -155px -26px;
+    width: 6px;
+    height: 12px;
+    margin-top: 4px;
+    text-align: center;
+    margin-left: 7px;
+}
+#show-left-col.arrow-small{
+    height: 19px;
+    width: 19px;
+    border: 1px solid #999;
+    line-height: normal;
+    margin-top: 55px;
+}
+#show-left-col {
+    background: white;
+    height: 58px;
+    width: 28px;
+    text-align: center;
+    cursor: pointer;
+}
+.collapse-left3 {
+    background: no-repeat url('//maps.gstatic.com/mapfiles/hpimgs28.png') -132px -26px;
+    width: 6px;
+    height: 12px;
+    float: right;
+}
+
+#hide-left-col {
+    top: 20px;
+    left: 335px;
+    height: 25px;
+    width: 36px;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+}
