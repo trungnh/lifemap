@@ -1126,10 +1126,10 @@ $(document).ready(function () {
     });
 
     $("#hide-left-col").live('click', function(){
-        google.maps.event.trigger(map, 'resize');
         jQuery("#leftCol").hide();
         jQuery("#show-left-col").show();
         jQuery("#pagingmap_main").hide();
+        google.maps.event.trigger(map, 'resize');
     });
    
     /*
