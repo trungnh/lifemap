@@ -4327,3 +4327,24 @@ textarea.formStyle {
     position: absolute;
     text-align: center;
 }
+#header_container .leaflet-control-requery a{
+    background: url('https://ss1.4sqi.net/img/icon-explore-requery-61d3bc7b3e786d8f824bfce4f7294f34.png') 1px 1px no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 39px;
+    width: 38px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+.menu-map{
+    width: 480px;
+    height: 28px;
+    position: absolute;
+    left: 530px;
+    top: 55px;
+    background: #fff;
+    border: 2px solid #f1f1f1;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px 0px;
+}
