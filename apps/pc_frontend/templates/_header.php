@@ -30,7 +30,10 @@
 </div>
 
 <div class="menu-map">
+</div>
 
+<div class="leaflet-control-locate leaflet-control" style="">
+    <a href="#" title=""></a>
 </div>
 
 <!--header end-->

@@ -4354,4 +4354,23 @@ textarea.formStyle {
     box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px 0px;
     margin-top: 6px;
     border: 1px solid #bfbfbf;
+    border-radius: 2px;
+}
+
+.leaflet-control-locate a{
+    background: rgba(255, 255, 255, 0.9) url('https://ss1.4sqi.net/img/icon-explorereset-small-585b3b604f1dc95e16135661d475c205.png') 0 0 no-repeat;
+    height: 19px;
+    width: 19px;
+    display: block;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.leaflet-control-locate{
+    position: relative;
+    top: 114px;
+    left: 417px;
+    z-index: 7;
 }
