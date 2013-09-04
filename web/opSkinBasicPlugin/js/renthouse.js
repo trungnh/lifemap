@@ -76,6 +76,12 @@ $(document).ready(function () {
         var myOptions = {
             zoom: 15,
             center: latlng,
+            panControl: false,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.SMALL
+            },
+            streetViewControl: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         map = new google.maps.Map(document.getElementById("map"),myOptions);

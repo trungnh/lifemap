@@ -4345,12 +4345,13 @@ textarea.formStyle {
 }
 .menu-map{
     width: 480px;
-    height: 28px;
+    height: 23px;
     position: absolute;
     left: 530px;
     top: 55px;
     background: #fff;
-    border: 2px solid #f1f1f1;
     -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px 0px;
     box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px 0px;
+    margin-top: 6px;
+    border: 1px solid #bfbfbf;
 }

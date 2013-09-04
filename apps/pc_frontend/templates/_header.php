@@ -30,10 +30,7 @@
 </div>
 
 <div class="menu-map">
-    <div class="leaflet-control-requery leaflet-control active" style="">
-        <a href="#"></a>
-        <span style="display: none">Search this area</span>
-    </div>
+
 </div>
 
 <!--header end-->
