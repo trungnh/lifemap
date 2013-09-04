@@ -4349,7 +4349,7 @@ textarea.formStyle {
     position: absolute;
     left: 530px;
     top: 55px;
-    background: #fff;
+    background-color: rgb(255, 255, 255);
     -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px 0px;
     box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px 0px;
     margin-top: 6px;
@@ -4369,7 +4369,7 @@ textarea.formStyle {
 }
 
 .leaflet-control-locate{
-    position: relative;
+    position: absolute;
     top: 114px;
     left: 417px;
     z-index: 7;
