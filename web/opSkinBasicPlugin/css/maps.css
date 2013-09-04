@@ -12,6 +12,7 @@
 }
 
 #left-col-display {
+    background: #eee;
 }
 
 #ContentsContainerMap
@@ -86,7 +87,28 @@
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
     margin: 10px;
     border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;
+    background: rgb(211,255,249); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(211,255,249,1) 0%, rgba(247,247,247,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(211,255,249,1)), color-stop(100%,rgba(247,247,247,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(211,255,249,1) 0%,rgba(247,247,247,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(211,255,249,1) 0%,rgba(247,247,247,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(211,255,249,1) 0%,rgba(247,247,247,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(211,255,249,1) 0%,rgba(247,247,247,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3fff9', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
 }
+/*#left-col-display ul li:before{
+    background: url("../images/new.png") no-repeat top left;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0;
+}*/
 .location-item {
     /*width: 265px;*/
     /*border-bottom: 1px #cccccc solid;*/
@@ -1501,7 +1523,6 @@ location-note
 
 .kd-button{
     margin-left: 0px !important;
-    border: 1px 1px 1px 1px solid #ddd;
     border: 1px solid #c6c6c6;
     min-width: 40px;
     height: 27px;
@@ -1510,11 +1531,12 @@ location-note
     text-align: center;
     font-weight: bold;
     line-height: 27px;
-    font-size: 85%;
+    font-size: 10px;
     background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
     color: #333 !important;
     padding: 0px 8px;
     margin-right: 3px;
+    border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;
 }
 #left-col-nav ul{
     margin-left: 8px;

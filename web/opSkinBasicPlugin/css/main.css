@@ -215,7 +215,7 @@ body {
 #searchbox {
     margin-top: 13px;
     margin-left: 10%;
-    height: 16px;
+    height: 26px;
     float: left;
 }
 
@@ -982,22 +982,28 @@ ul.inline li {display: inline;}
     -moz-font-feature-settings: inherit;
     -moz-font-language-override: inherit;
     background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #4d90fe;
     font-family: inherit;
     font-size: 12px;
     font-weight: normal;
-    padding: 5px;
     z-index: 40;
     position: relative;
     width: 350px;
 }
-.searchbox input {
+.searchbox #txtData{
+}
+.searchbox input#txtData {
     background: none repeat scroll 0 0 transparent;
     border: 0 none;
     height: 16px;
     width: 336px;
     display: block;
     color: #666666;
+    padding: 5px;
+    width: 340px;
+    border: 1px solid #dedede;
+}
+.searchbox input#txtData:forcus,.searchbox input#txtData:active{
+    border: 1px solid #4d90fe;
 }
 .searchbox .btn {
     background: url(../images/btn.jpg) no-repeat;
