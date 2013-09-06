@@ -36,8 +36,10 @@ $(document).ready(function () {
         var viewHeight = $(window).height();
         $("#map").css('height', viewHeight - 85+"px");
         $("#left-col-display").css({
-            'height': viewHeight - 155+"px",
-            'overflow': 'auto'
+            'height': viewHeight - 155+"px"
+        });
+        $('#left-col-display').slimscroll({
+            height: 'auto'
         });
         var latlng = new google.maps.LatLng(21.022502, 105.846062);
         // get position of member from cookie

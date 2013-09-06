@@ -4,6 +4,6 @@ all:
 #  layout: layoutE
 
 rentHouseSuccess:
-  javascripts: [/opSkinBasicPlugin/js/ejs/ejs_production,/opSkinBasicPlugin/js/ajaxupload.3.5.js,/opSkinBasicPlugin/js/renthouse]
+  javascripts: [/opSkinBasicPlugin/js/ejs/ejs_production,/opSkinBasicPlugin/js/ajaxupload.3.5.js,/opSkinBasicPlugin/js/renthouse,/opSkinBasicPlugin/js/jquery/jquery.slimscroll,/opSkinBasicPlugin/js/jquery/jquery.slimscroll.min.js,/opSkinBasicPlugin/js/jquery/jquery.slimscroll.js]
   stylesheets: []
   layout: layoutE
