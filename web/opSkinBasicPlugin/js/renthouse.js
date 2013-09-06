@@ -1145,8 +1145,11 @@ $(document).ready(function () {
         
         /* hiển thị rightcol */
         showRightCol();
-        jQuery("#leftCol").hide();
+        jQuery("#leftCol").css("margin-left","-410px");
         jQuery("#show-left-col").show();
+        jQuery(".leaflet-control-requery").css("left","30px");
+        jQuery(".leaflet-control-locate").css("left","7px");
+        google.maps.event.trigger(map, 'resize');
     });
 
     $("#show-left-col").live('click', function(){
@@ -1155,6 +1158,7 @@ $(document).ready(function () {
         jQuery("#pagingmap_main").show();
         jQuery(".leaflet-control-requery").css("left","445px");
         jQuery(".leaflet-control-locate").css("left","417px");
+        google.maps.event.trigger(map, 'resize');
     });
 
     $("#hide-left-col").live('click', function(){
