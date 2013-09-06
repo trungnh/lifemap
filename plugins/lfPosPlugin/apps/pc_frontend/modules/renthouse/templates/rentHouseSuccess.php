@@ -36,6 +36,7 @@
 
 <div title="Hiển thị bảng điều khiển" id="show-left-col" jstcache="0" class="arrow-small" style="left: 7px;display: none; position: absolute;">
     <img class="expand-left" src="//maps.gstatic.com/mapfiles/transparent.png" jstcache="0">
+    <span  style="display: none">Hiển thị bảng điều khiển</span>
 </div>
 
 <div class="leaflet-control-requery leaflet-control" id="refresh-renthouse">

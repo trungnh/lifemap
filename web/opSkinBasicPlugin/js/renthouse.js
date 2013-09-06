@@ -1163,6 +1163,14 @@ $(document).ready(function () {
         jQuery(".leaflet-control-locate").css("left","7px");
         google.maps.event.trigger(map, 'resize');
     });
+
+    $("#show-left-col").live("mouseover", function(){
+        jQuery("#show-left-col span").show();
+    });
+
+    $("#show-left-col").live("mouseout", function(){
+        jQuery("#show-left-col span").hide();
+    });
    
     /*
      * tuent

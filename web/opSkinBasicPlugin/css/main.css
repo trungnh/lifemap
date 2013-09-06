@@ -4395,3 +4395,30 @@ textarea.formStyle {
     left: 417px;
     z-index: 7;
 }
+
+#show-left-col span{
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font: bold 11px "Lucida Grande",Lucida,Arial,sans-serif;
+    left: 28px;
+    min-width: 145px;
+    padding: 7px 8px 8px;
+    position: absolute;
+    text-align: center;
+    top: -6px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#show-left-col span:after {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 5px solid rgba(0, 0, 0, 0.75);
+    content: '';
+    display: block;
+    left: -5px;
+    position: absolute;
+    top: 9px;
+}
