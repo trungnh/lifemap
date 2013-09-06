@@ -1,6 +1,3 @@
-<div title="Hiển thị bảng điều khiển" id="show-left-col" jstcache="0" class="arrow-small" style="left: -1px;display: none; position: absolute;">
-    <img class="expand-left" src="//maps.gstatic.com/mapfiles/transparent.png" id="panelimg2" jstcache="0">
-</div>
 <div class="logo">
 </div>
 <div class="searchbox" id="searchbox">

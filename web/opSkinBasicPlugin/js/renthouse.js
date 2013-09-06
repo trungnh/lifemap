@@ -1148,7 +1148,7 @@ $(document).ready(function () {
     });
 
     $("#show-left-col").live('click', function(){
-        jQuery("#leftCol").show();
+        jQuery("#leftCol").css("margin-left","0px");
         jQuery("#show-left-col").hide();
         jQuery("#pagingmap_main").show();
         jQuery(".leaflet-control-requery").css("left","445px");
@@ -1156,11 +1156,11 @@ $(document).ready(function () {
     });
 
     $("#hide-left-col").live('click', function(){
-        jQuery("#leftCol").hide();
+        jQuery("#leftCol").css("margin-left","-410px");
         jQuery("#show-left-col").show();
         jQuery("#pagingmap_main").hide();
         jQuery(".leaflet-control-requery").css("left","30px");
-        jQuery(".leaflet-control-locate").css("left","5px");
+        jQuery(".leaflet-control-locate").css("left","7px");
         google.maps.event.trigger(map, 'resize');
     });
    

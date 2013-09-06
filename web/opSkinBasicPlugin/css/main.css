@@ -4299,16 +4299,18 @@ textarea.formStyle {
     background: no-repeat url('//maps.gstatic.com/mapfiles/hpimgs28.png') -155px -26px;
     width: 6px;
     height: 12px;
-    margin-top: 4px;
-    text-align: center;
-    margin-left: 7px;
+    margin-top: 3px;
 }
 #show-left-col.arrow-small{
-    height: 19px;
-    width: 19px;
+    height: 17px;
+    width: 17px;
     border: 1px solid #999;
     line-height: normal;
     margin-top: 55px;
+    z-index: 4;
+    border-radius: 3px;
+    top: 23px;
+    border: 1px solid #bfbfbf;
 }
 #show-left-col {
     background: white;
