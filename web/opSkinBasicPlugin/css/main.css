@@ -4333,34 +4333,53 @@ textarea.formStyle {
     position: absolute;
     text-align: center;
 }
-#header_container .leaflet-control-requery a{
-    background: url('https://ss1.4sqi.net/img/icon-explore-requery-61d3bc7b3e786d8f824bfce4f7294f34.png') 1px 1px no-repeat;
+.leaflet-control-requery a{
+    background: url('https://ss1.4sqi.net/img/icon-explore-requery-61d3bc7b3e786d8f824bfce4f7294f34.png') -2px -1px no-repeat;
     cursor: pointer;
     display: block;
     height: 39px;
     width: 38px;
     position: absolute;
-    top: -5px;
-    left: -5px;
 }
-.menu-map{
-    width: 480px;
-    height: 23px;
+.menu-map-sub{
+    margin-top: 4px;
+    margin-left: 7px;
+}
+.leaflet-control-requery.spin a {
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transition-timing-function: linear;
+}
+
+.leaflet-control-requery {
     position: absolute;
-    left: 530px;
-    top: 55px;
-    background-color: rgb(255, 255, 255);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px 0px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px 0px;
-    margin-top: 6px;
+    top: 11px;
+    left: 445px;
+    width: 33px !important;
+    height: 33px;
+    background: #fff;
+    overflow: visible;
+    opacity: 1;
     border: 1px solid #bfbfbf;
-    border-radius: 2px;
+    text-align: center;
+    width: 38px;
+    -moz-transition-duration: 0.33s;
+    -moz-transition-property: background,border,color,opacity,box-shadow;
+    -webkit-transition-duration: 0.33s;
+    -webkit-transition-property: background,border,color,opacity,box-shadow;
+    transition-duration: 0.33s;
+    transition-property: background,border,color,opacity,box-shadow;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 1;
 }
 
 .leaflet-control-locate a{
-    background: rgba(255, 255, 255, 0.9) url('https://ss1.4sqi.net/img/icon-explorereset-small-585b3b604f1dc95e16135661d475c205.png') 0 0 no-repeat;
-    height: 19px;
-    width: 19px;
+    background: rgba(255, 255, 255, 0.9) url('https://ss1.4sqi.net/img/icon-explorereset-small-585b3b604f1dc95e16135661d475c205.png') -1px 0px no-repeat;
+    height: 17px;
+    width: 17px;
     display: block;
     border: 1px solid #bfbfbf;
     border-radius: 3px;
@@ -4370,7 +4389,7 @@ textarea.formStyle {
 
 .leaflet-control-locate{
     position: absolute;
-    top: 114px;
+    top: 58px;
     left: 417px;
     z-index: 7;
 }

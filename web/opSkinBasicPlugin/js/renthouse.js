@@ -78,7 +78,7 @@ $(document).ready(function () {
             center: latlng,
             panControl: false,
             zoomControl: true,
-            zoomControlOptions: {
+                zoomControlOptions: {
                 style: google.maps.ZoomControlStyle.SMALL
             },
             streetViewControl: false,
@@ -102,6 +102,7 @@ $(document).ready(function () {
             title: "Vị trí hiện tại của bạn!",
             draggable: false,
             animation: google.maps.Animation.DROP,
+            icon: 'http://www.shopby.vn/images/map/user_position.png',
             map: map
         });
         var infowindow = new google.maps.InfoWindow(
@@ -216,6 +217,27 @@ $(document).ready(function () {
         page = 1;
         menu_flag = 1;
         keyword = $('.sel-keyword').val();
+        loadSearchRentHouse(page);
+    });
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+    function showPosition(position) {
+        var lat = position.coords.latitude;
+        var lng = position.coords.longitude;
+        map.setCenter(new google.maps.LatLng(lat, lng));
+    }
+    $("#get-current-location").live('click', function(){
+        event.preventDefault();
+        getLocation();
+    });
+    $("#refresh-renthouse").live('click', function(){
+        event.preventDefault();
+        page = 1;
         loadSearchRentHouse(page);
     });
     $("#a-my-house").live("click",function(event){
@@ -1129,12 +1151,16 @@ $(document).ready(function () {
         jQuery("#leftCol").show();
         jQuery("#show-left-col").hide();
         jQuery("#pagingmap_main").show();
+        jQuery(".leaflet-control-requery").css("left","445px");
+        jQuery(".leaflet-control-locate").css("left","417px");
     });
 
     $("#hide-left-col").live('click', function(){
         jQuery("#leftCol").hide();
         jQuery("#show-left-col").show();
         jQuery("#pagingmap_main").hide();
+        jQuery(".leaflet-control-requery").css("left","30px");
+        jQuery(".leaflet-control-locate").css("left","5px");
         google.maps.event.trigger(map, 'resize');
     });
    
