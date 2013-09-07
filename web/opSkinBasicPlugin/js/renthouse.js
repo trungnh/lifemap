@@ -238,7 +238,6 @@ $(document).ready(function () {
         getLocation();
     });
     $("#refresh-renthouse").live('click', function(){
-        event.preventDefault();
         page = 1;
         loadSearchRentHouse(page);
     });
