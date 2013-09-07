@@ -21,8 +21,8 @@
             </div>
             
             <div id="login-inputs" class="clear">
-                <input class="login-input-item" type="text" id="_mail_address" name="authMailAddress[mail_address]" value="Email" onfocus="this.value=''">
-                <input class="login-input-item" type="password" id="_password" name="authMailAddress[password]" value="Mật khẩu" onfocus="this.value=''" >
+                <input class="login-input-item" type="text" placeholder="Email" id="_mail_address" name="authMailAddress[mail_address]" onfocus="this.value=''">
+                <input class="login-input-item" type="password" placeholder="Mật khẩu" id="_password" name="authMailAddress[password]" onfocus="this.value=''" >
                 <input id="login-submit" type="submit" value="Đăng nhập">
             </div>
         </form>
