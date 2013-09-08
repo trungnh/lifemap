@@ -1,3 +1,0 @@
-<a href="javascript:;" title="Trước" id="prev_pagingmap_main" class="previous_map">&nbsp;</a>
-    <div id="tongso_main" class="textpaging"><%=page%>/<%=last%> trang</div>
-<a href="javascript:;" title="Sau" id="next_pagingmap_main" class="next_map">&nbsp;</a>

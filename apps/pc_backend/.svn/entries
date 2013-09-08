@@ -1,43 +1,0 @@
-10
-
-dir
-378
-svn://svn@server.lifemap.vn/sns/branches/dev.lifemap.vn/apps/pc_backend
-svn://svn@server.lifemap.vn/sns
-
-
-
-2012-01-16T01:08:09.938494Z
-95
-thuclh
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-5e9f5a41-994a-4848-aa8c-f8b918b99710
-
-i18n
-dir
-
-config
-dir
-
-lib
-dir
-
-modules
-dir
-
-templates
-dir
-

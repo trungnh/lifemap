@@ -1,80 +1,0 @@
-10
-
-dir
-378
-svn://svn@server.lifemap.vn/sns/branches/dev.lifemap.vn/plugins/opBlogPlugin
-svn://svn@server.lifemap.vn/sns
-
-
-
-2011-12-26T06:27:03.409291Z
-2
-thuclh
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-5e9f5a41-994a-4848-aa8c-f8b918b99710
-
-i18n
-dir
-
-test
-dir
-
-LICENSE
-file
-
-
-
-
-2012-02-21T06:37:20.473188Z
-3b83ef96387f14655fc854ddc3c6bd57
-2011-12-26T06:27:03.409291Z
-2
-thuclh
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11358
-
-apps
-dir
-
-config
-dir
-
-lib
-dir
-
-data
-dir
-
