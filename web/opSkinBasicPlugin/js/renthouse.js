@@ -241,6 +241,7 @@ $(document).ready(function () {
     $("#refresh-renthouse").live('click', function(){
         page = 1;
         loadSearchRentHouse(page);
+        $("#refresh-renthouse").addClass("spin");
     });
     $("#a-my-house").live("click",function(event){
         // xóa nội dung left col
