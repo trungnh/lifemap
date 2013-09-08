@@ -21,7 +21,7 @@ $(document).ready(function () {
     var area='';
     var num_room='';
     var direction='';
-    
+
     $('.ajax').live('click',function(e){
         e.preventDefault();
         $.fn.colorbox({
@@ -29,7 +29,7 @@ $(document).ready(function () {
             open:true
         })
     });
-    
+
     /* Load Map */
     function initialize() {
         // config window
@@ -134,8 +134,8 @@ $(document).ready(function () {
         animation: google.maps.Animation.DROP,
         map: null
     });
-    
-    /*  
+
+    /*
      * tuent
      * tạo global_infowindow ứng với global_marker
      */
@@ -143,77 +143,78 @@ $(document).ready(function () {
     {
         content: ''
     });
-    
+
     /* xóa global marker và global infowindow */
     function deleteGlobalOverlay() {
         // xóa listener map dragend
         google.maps.event.clearListeners(map, 'dragend');
-        
+
         // xóa global marker khỏi map
         global_marker.setMap(null);
-        
+
         // đóng global infowindow
         global_infowindow.close();
-        
+
         // ẩn rightcol
         hideRightCol();
-        
+
         // ẩn nút show rightcol đi
         $('#show-button-container').hide();
     }
-    
+
     $('#a-find-house').click(function(event){
         $('#add-my-new-place').html('');
         $("#pagingmap_main").html('');
         deleteOverlays();
         deleteRightColContent();
-        
+
         deleteOverlays();
         deleteGlobalOverlay();
-        
+
         event.preventDefault();
         visitedLeftNav($(this));
 
         loadCategory();
     });
-    
+
     /* huent
      * Thêm -  bỏ tìm kiếm nâng cao
      */
     $('#top-search').live('click', function(){
         if($(this).hasClass('pulldown-button')){
             $('#top-search-box').removeClass('hidden');
-            
+
             // thay class thành pullup
             $(this).removeClass('pulldown-button');
             $(this).addClass('pullup-button');
-            
+
             // đổi text hướng dẫn
             $(this).html('Bỏ tìm kiếm nâng cao');
         }
         else{
             // thu gọn tìm kiếm nâng cao
             $('#top-search-box').addClass('hidden');
-            
+
             // thay class pulldown
             $(this).removeClass('pullup-button');
             $(this).addClass('pulldown-button');
-            
+
             // đổi text hướng dẫn
             $(this).html('Tìm kiếm nâng cao');
         }
     });
-    
-    
+
+
     /* huent
      * find-house
      */
     $(".form-search-rent-house").live("submit",function(event) {
         event.preventDefault();
-        price = $('.sel-price-house').val();
+        min_price = $('#min-price').val();
+        max_price = $('#max-price').val();
         time_post = $('.sel-time-post').val();
-        //type_rent_house = $('.sel-type-house').val();
-        area = $('.sel-area').val();
+        type_rent_house = $('.sel-type-house').val();
+//        area = $('.sel-area').val();
         num_room = $('.sel-num-room').val();
         direction = $('.sel-direction').val();
         page = 1;
@@ -250,23 +251,23 @@ $(document).ready(function () {
         deleteRightColContent();
         deleteOverlays();
         deleteGlobalOverlay();
-        
+
         menu_flag = 5;
         event.preventDefault();
         visitedLeftNav($(this));
         page = 1;
         loadMyHouse(page);
     });
-    
+
     $("#a-follow").click(function(event){
         // xoa noi dung cu
         $('#add-my-new-place').html('');
         $("#pagingmap_main").html('');
         deleteOverlays();
         deleteRightColContent();
-        
+
         deleteGlobalOverlay();
-        
+
         menu_flag = 4;
         event.preventDefault();
         visitedLeftNav($(this));
@@ -274,17 +275,17 @@ $(document).ready(function () {
 
         loadMyFollowHouse(page);
     });
-    
+
     $("#searchForm").submit(function(event){
         event.preventDefault();
         page = 1;
 
         keyword = $('#txtData').val();
         visitedLeftNav($('#a-find-house'));
-        menu_flag = 6;        
+        menu_flag = 6;
         loadSearchByTextPos(page, keyword);
     });
-    
+
     /* huent
      * check-in, follow infowindow
      */
@@ -321,8 +322,8 @@ $(document).ready(function () {
 
     // next
     $("#next_pagingmap_main").live("click",function(){
-        if(next_page){            
-            loadMenuByFlag(menu_flag, page+1);            
+        if(next_page){
+            loadMenuByFlag(menu_flag, page+1);
         }
     });
 
@@ -348,7 +349,7 @@ $(document).ready(function () {
             beforeSend: function(){
                 showLoading();
             },
-            data: 'page='+current_page+'&keyword='+keyword+'&time_post='+time_post+'&price='+price+'&area='+area+'&num_room='+num_room+'&direction='+direction+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
+            data: 'page='+current_page+'&keyword='+keyword+'&time_post='+time_post+'&minPrice='+min_price+'&maxPrice='+max_price+'&area='+area+'&num_room='+num_room+'&direction='+direction+'&min_lat='+min_lat+'&max_lat='+max_lat+'&min_lng='+min_lng+'&max_lng='+max_lng+'&random='+Math.random(),
             success: function(data){
                 if(data.status){
                     page = current_page;
@@ -362,10 +363,10 @@ $(document).ready(function () {
                     }else{
                         prev_page = current_page -1;
                     }
-                    
+
                     // ẩn form tìm kiếm
                     hide_rh_searchform();
-                    
+
                     //display paging
                     var paging_html = new EJS({
                         url: root_rent_house +'/view/pagingmap'
@@ -411,7 +412,7 @@ $(document).ready(function () {
                     }).render({
                         description:data.description
                     })
-                        
+
                     );
                 }
                 hideLoading();
@@ -421,7 +422,7 @@ $(document).ready(function () {
             }
         });
     }
-    
+
     /* tuent
      * ẩn form tìm nhà cho thuê
      */
@@ -512,7 +513,7 @@ $(document).ready(function () {
                     }
                 }else{
                     $("#left-col-display").html(new EJS({
-                        url: root_rent_house+'/view/error_display'
+                        url: root_rent_house+'/view/place/me/me_login_display'
                     }).render({
                         description:data.description
                     }));
@@ -717,7 +718,7 @@ $(document).ready(function () {
                 break;
         }
     }
-    
+
     function loadCategory(){
 //        $.ajax({
 //            url: 'loadSubCategory',
@@ -770,7 +771,7 @@ $(document).ready(function () {
     function addMarker(marker) {
         markersArray.push(marker);
     }
-    
+
     // Removes the overlays from the map, but keeps them in the array
     function clearOverlays() {
         if (markersArray) {
@@ -796,7 +797,7 @@ $(document).ready(function () {
             markersArray.length = 0;
         }
     }
-    
+
     // visited nav
     function visitedLeftNav(element){
         removeAllActivedClass();
@@ -804,7 +805,7 @@ $(document).ready(function () {
         element.attr("style", "color: #da7a26 !important");
         addActived(element);
     }
-    
+
     /**
      *Hàm tạo infowindow cho marker
      *@param marker marker co infowindow
@@ -817,12 +818,12 @@ $(document).ready(function () {
         var latlng = marker.getPosition();
         edit_lat = latlng.lat();
         edit_lng = latlng.lng();
-                    
+
         var infowindow = new google.maps.InfoWindow(
         {
             content: content
         });
-        
+
         infowindowsArray.push(infowindow);
         google.maps.event.addListener(marker, 'click', function() {
             clearInfowindows();
@@ -836,9 +837,9 @@ $(document).ready(function () {
                     element.addClass('li-active');
                 }
             }
-            
+
         });
-        
+
         if(elements){
             if(elements[0]) {
                 var element1 = elements[0];
@@ -849,7 +850,7 @@ $(document).ready(function () {
                     element1.addClass('li-active');
                 });
             }
-            
+
             if(elements[1]) {
                 var element2 = elements[1];
                 element2.live('click', function() {
@@ -863,7 +864,7 @@ $(document).ready(function () {
             }
         }
     }
-    
+
     /*Ẩn các Infowindows*/
     function clearInfowindows(){
         if (infowindowsArray) {
@@ -882,18 +883,18 @@ $(document).ready(function () {
             infowindowsArray.length = 0;
         }
     }
-    
+
     /*
      * phần nhà cho thuê
      */
-    
+
     /* tuent
      */
     $('#show-button-container').hide();
     $('#info-nav-content').hide();
     $('#photo-nav-content').hide();
     $('#notification').hide();
-    
+
     /* tuent
      * lắng nghe click vào các nav-item ở rightcol (thông tin | đăng ảnh | bình luận)
      */
@@ -901,30 +902,30 @@ $(document).ready(function () {
         $('#creat-renthouse-rightcol-nav a').removeClass('actived');
         $(this).addClass('actived');
     });
-    
+
     /*
      * tuent
      * lắng nghe click vào đăng tin nhà cho thuê
      */
-    $('#a-post-house').click(function(event){ 
+    $('#a-post-house').click(function(event){
         // xóa các nội dung cũ
         deleteRightColContent();
-        
+
         /* xóa hết các overlays */
         deleteOverlays();
         $("#add-my-new-place").html('');
         $("#pagingmap_main").html('');
-        
+
         /* chặn chuyển url */
         event.preventDefault();
-        
+
         /* active nav đăng tin nhà */
         visitedLeftNav($(this));
-        
+
         /* thực hiện hàm tạo nhà mới */
         createNewRentHouse();
     });
-    
+
     /* tuent
      * sinh nội dung cho Info nav
      */
@@ -937,25 +938,25 @@ $(document).ready(function () {
         //            beforeSend: function() {
         //                showLoading();
         //            },
-            
+
         //            success: function(data){
         // thiết lập nội dung nhập thông tin cho nhà
         var info_tab = new EJS({
             url: root_rent_house+'/view/content-for-info-nav'
         }).render({
             //                    sub_categories: data
-            }); 
-                
+            });
+
         $('#info-nav-content').html(info_tab);
-                        
+
     //                hideLoading();
     //            },
     //            error: function(){
     //                hideLoading();
     //            }
-    //        }); 
+    //        });
     }
-    
+
     /* tuent
      * sinh nội dung cho Photo nav
      */
@@ -966,24 +967,24 @@ $(document).ready(function () {
 
         // tạo nội dung cho tab đăng ảnh
         $('#photo-nav-content').html(photo_tab);
-        
+
         loadAjaxUpload();
     }
-    
+
     /*
      * hue
      * đăng ảnh, comment cho pos-rent-house
      */
-    $('#a-house-photo').live("click",function(event){        
+    $('#a-house-photo').live("click",function(event){
         /* chặn chuyển url */
         event.preventDefault();
- 
+
         /* active nav đăng ảnh */
         addActived($(this));
-        
+
         /* ẩn nội dung cho tab thông tin */
         $('#info-nav-content').hide();
-        
+
         /* nếu đăng nhà thành công */
         if(is_success){
             // cho phép đăng ảnh
@@ -993,7 +994,7 @@ $(document).ready(function () {
             $('#notification').show();
         }
     });
-   
+
     $('#a-house-comment').live("click",function(event){
         /* chặn chuyển url */
         event.preventDefault();
@@ -1005,11 +1006,11 @@ $(document).ready(function () {
     $('#a-house-info').live("click",function(event){
         /* chặn chuyển url */
         event.preventDefault();
-        
+
         /* ẩn nội dung photo nav và notification */
         $('#photo-nav-content').hide();
         $('#notification').hide();
-        
+
         /* hiện nội dung info nav */
         $('#info-nav-content').show();
 
@@ -1022,9 +1023,9 @@ $(document).ready(function () {
         /* xóa nội dung trong infotab và phototab */
         $('#info-nav-content').html();
         $('#photo-nav-content').html();
-        
+
         // thiết lập lại trạng thái đăng nhà
-        is_success = false;            
+        is_success = false;
 
         /* kiểm tra đăng nhập hay chưa */
         $.ajax({
@@ -1042,47 +1043,47 @@ $(document).ready(function () {
                     var html = new EJS({
                         url: root_rent_house + '/view/post_house_instruction'
                     }).render({});
-                    
+
                     // gắn vào leftcol
                     $('#left-col-display').html(html);
-                    
+
                     // tạo một marker ở tâm bản đồ
                     showNewMarker();
-                    
-                    /* gắn nav cho rightcol */ 
+
+                    /* gắn nav cho rightcol */
                     var info_nav = new EJS({
                         url: root_rent_house+'/view/house_info_nav'
                     }).render({});
-                    
+
                     $('#rightcol-nav').html(info_nav);
-        
+
                     /* tạo nội dung cho 'thông tin' và 'đăng ảnh' */
                     generateContentForInfoNav();
                     generateContentForPhotoNav();
-                    
+
                     /* ẩn nội dung cho right col */
                     $('#info-nav-content').hide();
                     $('#photo-nav-content').hide();
                     $('#notification').hide();
                 }
-                
+
                 // nếu chưa đăng nhập
                 else{
                     // hiển thị yêu cầu đăng nhập hoặc đăng ký
                     var html2 = new EJS({
                         url: root_rent_house + '/view/post_house_not_login'
                     }).render({});
-                    
+
                     $('#left-col-display').html(html2);
                 }
                 hideLoading();
             },
-            
+
             error: function(){
                 hideLoading();
             }
         });
-        
+
         // lắng nge kéo thả bản đồ
         google.maps.event.addListener(map, 'dragend', function(){
             global_infowindow.close();
@@ -1090,58 +1091,58 @@ $(document).ready(function () {
         });
     }
 
-    
+
     /* tuent
      * tạo một marker mới ở tâm bản đồ
      */
     function showNewMarker(){
         /* setMap lại cho global_marker */
         global_marker.setMap(map);
-        
+
         // set marker vào tâm bản đồ
         global_marker.setPosition(map.getCenter());
-        
-        // bật infowindow xác nhận đăng nhà hay ko                      
+
+        // bật infowindow xác nhận đăng nhà hay ko
         var html = new EJS({
             url: root_rent_house+'/view/check_position_ok'
         }).render({});
-                        
+
         global_infowindow.setContent(html);
         global_infowindow.open(map, global_marker);
-                    
+
         // lắng nghe kéo thả marker
         google.maps.event.addListener(global_marker, 'dragend', function() {
             // show ra rightcol
             showRightCol();
         });
-        
+
         // lắng nghe click marker
         google.maps.event.addListener(global_marker, 'click', function() {
             global_infowindow.open(map, global_marker);
         });
     }
-        
+
     /* tuent
      * lắng nghe xác nhận đăng tin nhà
      */
     $('#confirm-post-house').live('click', function(){
         /* active nav thông tin nhà */
         addActived($('#a-house-info'));
-        
+
         /* hiển thị nút show right col */
         $('#show-button-container').show();
-            
+
         /* thông báo rằng đã xác nhận đăng nhà */
         var new_content = new EJS({
             url: root_rent_house+'/view/post_house_confirmed'
         }).render({});
-                
+
         global_infowindow.setContent(new_content);
         global_infowindow.open(map, global_marker);
-        
+
         /* hiển thị nội dung của info nav */
         $('#info-nav-content').show();
-        
+
         /* hiển thị rightcol */
         showRightCol();
         jQuery("#leftCol").css("margin-left","-410px");
@@ -1176,12 +1177,28 @@ $(document).ready(function () {
     $("#show-left-col").live("mouseout", function(){
         jQuery("#show-left-col span").hide();
     });
-   
+
+    $("#refresh-renthouse").live("mouseover", function(){
+        jQuery("#refresh-renthouse span").show();
+    });
+
+    $("#refresh-renthouse").live("mouseout", function(){
+        jQuery("#refresh-renthouse span").hide();
+    });
+
+    $("#get-current-location").live("mouseover", function(){
+        jQuery("#get-current-location span").show();
+    });
+
+    $("#get-current-location").live("mouseout", function(){
+        jQuery("#get-current-location span").hide();
+    });
+
     /*
      * tuent
      * đẩy dữ liệu lên server sau khi hoàn tất đăng tin nhà
      */
-   
+
     $('#post-house-ok').live('click', function(){
         // Đẩy dữ liệu lên server
         var latlng = global_marker.getPosition();
@@ -1189,7 +1206,7 @@ $(document).ready(function () {
         info += '&lat=' + latlng.lat() + '&lng=' + latlng.lng();
         /*
         *baond
-        *validation 
+        *validation
         */
         var valid='';
         var price = $("#renthouse-price").val();
@@ -1213,7 +1230,7 @@ $(document).ready(function () {
             if (!mail.match(/^([a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,4}$)/i)) {
                 valid += '<br />Email của bạn nhập chưa đúng';
             }
-      
+
         }
         if(mail.length<1){
             valid +='<br/> Bạn phải nhập địa chỉ Email';
@@ -1261,75 +1278,75 @@ $(document).ready(function () {
                 }
             });
         }
-        
+
     // lưu dữ liệu
-        
+
     });
-       
-    
+
+
     /* tuent
      * nghe click để show/hide right col (house info)
      */
-    
+
     $('#hide-button').live('click', function(){
         hideRightCol();
     });
-    
+
     $('#show-button').live('click', function(){
         showRightCol();
     });
-    
+
     /*
      * tuent
      * show rightcol
      */
     function showRightCol(){
         $('#detail-info').animate({
-            width: 'show' 
+            width: 'show'
         }, 100);
     }
-    
+
     /*
      * tuent
      * hide rightcol
      */
     function hideRightCol(){
         $('#detail-info').animate({
-            width: 'hide' 
+            width: 'hide'
         }, 100);
     }
-    
+
     /*
      * tuent
      * lắng nghe click vào nút nhập thêm thông tin cho đăng tin nhà
      */
-    
+
     $('#more-info').live('click', function(){
         if($(this).hasClass('show-more')){
-            // hiển thị phần nhập thêm thông tin 
+            // hiển thị phần nhập thêm thông tin
             var html = new EJS({
                 url: root_rent_house+'/view/more-house-info'
-            }).render({}); 
+            }).render({});
             $('#more-house-info').append(html);
-            
+
             //đổi class thành show-less
             $(this).removeClass('show-more');
             $(this).addClass('show-less');
-            
+
             // thay text hướng dẫn
             $(this).html('Bỏ chọn nhập thêm thông tin');
         }else if($(this).hasClass('show-less')){
             $('#more-house-info').html('');
-            
+
             //đổi class thành show-more
             $(this).removeClass('show-less');
             $(this).addClass('show-more');
-            
+
             // thay text hướng dẫn
             $(this).html('Nhập thêm thông tin');
         }
     });
-    
+
     /*
      * tuent
      * add class actived vào một đối tượng
@@ -1337,16 +1354,16 @@ $(document).ready(function () {
     function addActived(element){
         element.addClass('actived');
     }
-    
+
     /* tuent
      * remove actived class
      */
     function removedActived(element){
         element.removeClass('actived');
     }
-    
-    
-    
+
+
+
     /*
      * tuent
      * check has class actived
@@ -1357,7 +1374,7 @@ $(document).ready(function () {
         }
         return false;
     }
-    
+
     /*
      * tuent
      * addIsSet: xác nhận set nội dung cho right col
@@ -1365,7 +1382,7 @@ $(document).ready(function () {
     function addIsSet(element){
         element.addClass('is_set');
     }
-    
+
     /*
      * tuent
      * kiểm tra xem right col đã được set content hay chưa
@@ -1374,10 +1391,10 @@ $(document).ready(function () {
         if(element.hasClass('is_set')){
             return true;
         }
-        
+
         return false;
-    } 
-    
+    }
+
     /*
      * tuent
      */
@@ -1389,12 +1406,12 @@ $(document).ready(function () {
             $(element).removeClass('is_set');
         }
     }
-    
+
     /*
-     * tuent 
+     * tuent
      * dùng thông tin của member trong đăng ký nhà
-     */   
-    
+     */
+
     $('#get-my-info').live('click', function(){
         $.ajax({
             url: 'getMemberInfo',
@@ -1403,7 +1420,7 @@ $(document).ready(function () {
             beforeSend: function() {
                 showLoading();
             },
-            
+
             success: function(data){
                 $('#renthouse-email').val(data.email);
                 $('#renthouse-owner-name').val(data.name);
@@ -1512,34 +1529,34 @@ $(document).ready(function () {
             });
         }
     });
-    
-    
+
+
     /* tuent
      * chinh sua  nha
-     */ 
+     */
     $('.location-edit').live('click', function(){
         $('.location-edit').removeClass('actived');
         /* xóa nội dung right col */
         deleteRightColContent();
-       
+
         /* active nav thông tin nhà */
         addActived($(this));
         // lấy pos_id
         var pos_id = $(this).children('input').val();
-        
+
         // gắn nav cho righ col
         var nav = new EJS({
             url: root_rent_house+'/view/edit_house_nav'
         }).render({
             pos_id: pos_id
         });
-        
+
         $('#rightcol-nav').html(nav);
-        
+
         // lắng nghe click vào marker để chỉnh sửa tọa độ
-        
-        
-        
+
+
+
         // thiết lập nội dung cho div#info-nav-content và div#photo-nav-content
         $.ajax({
             url: 'editHouse',
@@ -1549,15 +1566,15 @@ $(document).ready(function () {
             beforeSend: function() {
                 showLoading();
             },
-            
+
             success: function(data){
                 // sinh nội dung cho div#info-nav-content
                 var html = new EJS({
                     url: root_rent_house+'/view/rightcol_edit_pos_info'
                 }).render({
                     pos: data
-                }); 
-                
+                });
+
                 $('#info-nav-content').html(html);
 
                 var html_image = new EJS({
@@ -1565,32 +1582,32 @@ $(document).ready(function () {
                 }).render({
                     images:data.images
                 });
-                
+
                 // sinh nội dung cho div#info-nav-content
                 $('#photo-nav-content').html(html_image);
                 new_pos_id = pos_id;
                 loadAjaxUpload();
                 // ẩn sửa ảnh
-                $('#photo-nav-content').hide();                
-                
+                $('#photo-nav-content').hide();
+
                 // active nav sửa nhà
                 addActived($('#a-house-edit-info'));
-        
+
                 // hiển thị cột  sửa thông tin
                 $('#info-nav-content').show();
-        
+
                 /* hiển thị nút show right col */
                 $('#show-button-container').show();
-        
+
                 // hiển thị right col
                 showRightCol();
-                        
+
                 hideLoading();
             },
             error: function(){
                 hideLoading();
             }
-        }); 
+        });
     });
 
 
@@ -1694,15 +1711,15 @@ $(document).ready(function () {
     }
 
 
-    $('#refresh-map-button-rent-house').live('click',function(event){                       
+    $('#refresh-map-button-rent-house').live('click',function(event){
         menu_flag = 5;
-        event.preventDefault();        
+        event.preventDefault();
         page = 1;
         loadNewRentHouse(page);
     });
 
     function loadListNewRentHouse(){
-        menu_flag = 5;        
+        menu_flag = 5;
         visitedLeftNav($(this));
         page = 1;
 
@@ -1714,8 +1731,8 @@ $(document).ready(function () {
         $("#add-my-new-place").html(add_map);
         loadNewRentHouse(page);
     }
-    
-    
+
+
     /* tuent
      * click vào nav chỉnh sửa nhà
      */
@@ -1725,7 +1742,7 @@ $(document).ready(function () {
         $('#photo-nav-content').hide();
         $('#info-nav-content').show();
     });
-    
+
     /* tuent
      * click vào chỉnh sửa ảnh
      */
@@ -1734,10 +1751,10 @@ $(document).ready(function () {
         addActived($(this));
         $('#info-nav-content').hide();
         $('#photo-nav-content').show();
-        
+
     });
-    
-    /* tuent 
+
+    /* tuent
      * xóa nội dung trong các div#info-nav-content, div#photo-nav-content, div#notification
      * ở right col
      */
@@ -1755,7 +1772,7 @@ $(document).ready(function () {
         page = 1;
         loadSearchRentHouse(page);
     });
-    
+
     /* tuent
      * update nhà
      */
@@ -1763,7 +1780,7 @@ $(document).ready(function () {
         var pos_id = $('#pos-id-to-update').val();
         var info = $('#edit-pos-form').serialize();
         info += '&pos_id=' + pos_id +'&lat=' + edit_lat +'&lng=' + edit_lng;
-        
+
         $.ajax({
             url: 'updateHouse',
             type: 'get',
@@ -1772,15 +1789,15 @@ $(document).ready(function () {
             beforeSend: function() {
                 showLoading();
             },
-            
+
             success: function(data){
                 $('#info-nav-content').html('Bạn đã sửa nhà thành công');
-                        
+
                 hideLoading();
             },
             error: function(){
                 hideLoading();
             }
-        }); 
+        });
     });
 });
