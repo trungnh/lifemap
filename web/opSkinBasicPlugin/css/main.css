@@ -4359,6 +4359,7 @@ textarea.formStyle {
     margin-left: 7px;
 }
 @-webkit-keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);-moz-transform:rotate(360deg);} to{-webkit-transform:rotate(360deg);transform:rotate(360deg);-moz-transform:rotate(360deg);}}
+@keyframes rotate{from{transform:rotate(0deg);} to{transform:rotate(360deg);}}
 .leaflet-control-requery.spin a {
     -webkit-animation-name: rotate;
     -webkit-animation-duration: 1s;
